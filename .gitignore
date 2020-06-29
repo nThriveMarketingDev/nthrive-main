@@ -1,3 +1,4 @@
+node_modules/
 dist/
 getting-started-with-jest/
 coverage/
