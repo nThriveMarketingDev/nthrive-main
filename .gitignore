@@ -1,0 +1,6 @@
+dist/
+getting-started-with-jest/
+coverage/
+.env
+tests/
+webpack.dev.js

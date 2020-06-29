@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="11px" height="21px" viewBox="0 0 11 21" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 3.8.3 (29802) - http://www.bohemiancoding.com/sketch -->
+    <title>Icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.911555504">
+        <g id="Desktop-HD" transform="translate(-1156.000000, -1182.000000)" fill="#2DA48F">
+            <g id="brand-story" transform="translate(169.000000, 793.000000)">
+                <g id="banner---05" transform="translate(44.000000, 68.000000)">
+                    <g id="menu">
+                        <g id="arrows" transform="translate(0.000000, 321.000000)">
+                            <path d="M943.337386,10.9166912 C942.887538,10.4564167 942.887538,9.71025 943.337386,9.24997549 L952.203503,0.172602941 C952.428137,-0.0575343137 952.792879,-0.0575343137 953.017513,0.172602941 L953.831524,1.00596078 C954.056159,1.23609804 954.056159,1.60918137 953.831524,1.83931863 L946.185845,9.66635784 C945.96121,9.8964951 945.96121,10.2701716 946.185845,10.4997157 L953.831524,18.327348 C954.056159,18.5574853 954.056159,18.9305686 953.831524,19.1607059 L953.017513,19.9940637 C952.792879,20.224201 952.428137,20.224201 952.203503,19.9940637 L943.337386,10.9166912 Z" id="Icon" transform="translate(948.500000, 10.083333) scale(-1, 1) translate(-948.500000, -10.083333) "></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
