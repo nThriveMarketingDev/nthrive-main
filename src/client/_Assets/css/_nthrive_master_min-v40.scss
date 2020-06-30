@@ -1141,6 +1141,16 @@ label.label-blur[for="Contact_me_Details__c"] {
     }
  }
 
+ .sl-side.img-width-160px {
+    text-align:center;
+    & img {
+        max-width: 160px;
+        margin-top: 40px;
+        position: relative;
+        z-index: 99;
+    }
+ }
+
 
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
     img[src*=".svg"] {
