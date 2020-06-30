@@ -4269,7 +4269,16 @@ figcaption p {
 }
 
 .solution-details {
-    padding-bottom: 166px
+    padding-bottom: 166px;
+    width: auto;
+}
+
+.solution-details .primary {
+    max-width: 700px;
+}
+
+.solutions .l-content-width {
+    max-width: none;
 }
 
 .newsletter-page .info-links {
