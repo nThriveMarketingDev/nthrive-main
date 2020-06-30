@@ -5,3 +5,4 @@ coverage/
 .env
 tests/
 webpack.dev.js
+src/server/

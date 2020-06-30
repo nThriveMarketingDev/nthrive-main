@@ -1131,6 +1131,17 @@ label.label-blur[for="Contact_me_Details__c"] {
     padding-bottom: 15px
 }
 
+.sl-side.img-width-200px {
+    text-align:center;
+    & img {
+        max-width: 200px;
+        margin-top: 40px;
+        position: relative;
+        z-index: 99;
+    }
+ }
+
+
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
     img[src*=".svg"] {
         width: 100%
@@ -2758,7 +2769,7 @@ select.error {
 .story {
     width: 23.25%;
     float: left;
-    margin: 0 0.86%;
+    margin: 9px 0.86%;
     position: relative
 }
 
