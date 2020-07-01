@@ -2512,6 +2512,19 @@ span.sm {
     background: $color-cae3dd;
 }
 
+.contact-tabs .tab a:hover {
+    background: transparent;
+    border: 1px solid $color-00515b;
+    border-top: 5px solid $color-00515b;
+    box-shadow: 0 0 4px 2px $color-eeeeee;
+    color: $color-00515b;
+}
+
+.contact-tabs .tab a:hover h3, 
+.contact-tabs .tab a:hover p {
+    color: $color-00515b;
+}
+
 .arrow-box .tab-detail {
     padding: 30px 30px 5px 30px
 }
