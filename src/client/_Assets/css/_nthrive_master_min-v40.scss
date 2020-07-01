@@ -2776,7 +2776,8 @@ select.error {
     width: 23.25%;
     float: left;
     margin: 9px 0.86%;
-    position: relative
+    position: relative;
+    box-sizing:border-box;
 }
 
 .story .story_content {
@@ -4904,7 +4905,7 @@ textarea.std-input3 {
     // filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='$color-f2f3f4', endColorstr='$color-e5e8eb', GradientType=0);
     background-image: url('../images/icon/udarrow.png');
     background-repeat: no-repeat;
-    background-position: 92% center;
+    background-position: right 40px center;
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
