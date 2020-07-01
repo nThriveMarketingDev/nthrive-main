@@ -441,6 +441,10 @@ div.main {
     z-index: 9999999;
 }
 
+form .red {
+    transform: translateY(-10px);
+}
+
 .form-two-third {
     width: 70%;
     display: inline-block;
