@@ -2772,10 +2772,6 @@ select.error {
     color: $color-ffffff
 }
 
-.story-box {
-    padding-bottom: 110px
-}
-
 .story {
     width: 23.25%;
     float: left;
@@ -2839,7 +2835,8 @@ select.error {
     border: 1px solid $color-d1dee9;
     border-radius: 3px;
     box-shadow: 0 0 2px $color-d1dee9;
-    float: left
+    float: left;
+    box-sizing:border-box;
 }
 
 .story_content .story-big:before {
@@ -6873,7 +6870,8 @@ iframe[name="google_conversion_frame"] {
         width: auto;
         min-height: 100px;
         max-width: 300px;
-        margin-bottom: 35px
+        margin-bottom: 35px;
+        box-sizing:border-box;
     }
 
     .l-title-width {
