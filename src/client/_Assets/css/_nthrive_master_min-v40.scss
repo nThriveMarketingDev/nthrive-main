@@ -5693,6 +5693,10 @@ iframe[name="google_conversion_frame"] {
 }
 
 @media (max-width: 840px) {
+    .solution-details .primary {
+        max-width: none;
+    }
+
     .recent-wrap .show-more {
         left: 36%;
     }
