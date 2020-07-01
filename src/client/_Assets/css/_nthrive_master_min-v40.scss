@@ -4300,6 +4300,14 @@ figcaption p {
     max-width: none;
 }
 
+.l-title-width.l-align-center.mtb-20px.bg-f2f2f2 {
+    max-width: none;
+}
+
+ul.claims-table li .bullets {
+    padding-right: 20px;
+}
+
 .newsletter-page .info-links {
     height: 214px
 }
@@ -5686,6 +5694,10 @@ iframe[name="google_conversion_frame"] {
 }
 
 @media (max-width: 840px) {
+    .solution-details .primary {
+        max-width: none;
+    }
+
     .recent-wrap .show-more {
         left: 36%;
     }
