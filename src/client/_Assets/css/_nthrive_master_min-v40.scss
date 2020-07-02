@@ -9184,6 +9184,30 @@ img.glen {
     background-size: 25px;
 }
 
+.ehnac.hfm-widget {
+    padding: 20px 0;
+    background-color: #f2f2f2;
+}
+
+.ehnac.hfm-widget h2 {
+    margin-right: 25px;
+}
+
+.ehnac.hfm-widget p {
+    padding-left: 0;
+    border-left: 0;
+    max-width: 405px;
+    margin: 15px 0 !important;
+}
+
+.ehnac.hfm-widget h2 img {
+    width: 90px;
+}
+
+.ehnac .hfm {
+    background: none;
+}
+
 @media only screen and (max-width: 1024px) {
     .hfm-widget:hover {
         transform: none;
@@ -9201,7 +9225,7 @@ img.glen {
     }
 
     .hfm-widget h2 {
-        margin: auto;
+        margin: auto !important;
         float: none;
         font-size: 20px !important;
     }
