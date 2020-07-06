@@ -1,4 +1,5 @@
 ﻿@import "colors";
+@import "fonts";
 
 html {
     font-size: 100%;
@@ -9,7 +10,7 @@ html {
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Roboto', sans-serif;
+    font-family: $font-roboto;
     color: $color-374252
 }
 
@@ -55,11 +56,11 @@ abbr[title] {
 }
 
 b, strong {
-    font-weight: inherit;
+    font-weight: $font-inherit;
 }
 
 b, strong {
-    font-weight: bolder
+    font-weight: $font-bolder
 }
 
 b.inline, strong.inline, .inline {
@@ -73,7 +74,7 @@ dfn {
 h1 {
     font-size: 2em;
     margin: 0.67em 0;
-    font-family: 'Roboto', sans-serif
+    font-family: $font-roboto
 }
 
 mark {
@@ -111,14 +112,14 @@ svg:not(:root) {
 
 code, kbd, pre, samp, address, caption, th, figcaption {
     font-size: 1em;
-    font-weight: normal;
+    font-weight: $font-normal;
     font-style: normal
 }
 
 ul, ol, li, dl, dt, dd, h1, h2, h3, h4, h5, h6, hgroup, p, blockquote, figure, form, fieldset, input, legend, pre, abbr, button {
     margin: 0;
     padding: 0;
-    font-family: 'Roboto', sans-serif, Calibri
+    font-family: $font-roboto
 }
 
 dl, menu, ol, ul {
@@ -151,7 +152,7 @@ button, input, select, textarea {
 }
 
 optgroup {
-    font-weight: bold
+    font-weight: $font-bold
 }
 
 button, input {
@@ -246,9 +247,9 @@ textarea {
 }
 
 span.tooltip {
-    font-family: arial;
+    font-family: $font-arial;
     font-size: 14px;
-    font-weight: regular;
+    font-weight: $font-normal;
     position: absolute;
     padding: 6px 20px;
     color: $color-ffffff;
@@ -342,7 +343,7 @@ div.main {
 
 .l-schedule li:nth-child(n) {
     width: 35%;
-    font-weight: 500
+    font-weight: $font-500
 }
 
 .l-schedule {
@@ -352,7 +353,7 @@ div.main {
 
 .l-schedule li:nth-child(2n) {
     width: 65%;
-    font-weight: 400
+    font-weight: $font-400
 }
 
 .l-schedule li p {
@@ -557,7 +558,7 @@ div.main {
 .table-body.rev-table p {
     padding: 20px 20px;
     font-size: 14px;
-    font-weight: 400;
+    font-weight: $font-400;
     line-height: 2;
     margin: 0 !important
 }
@@ -584,8 +585,8 @@ p.rev-p {
     padding: 0 15px;
     color: $color-ffffff;
     font-size: 14px;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 600;
+    font-family: $font-roboto;
+    font-weight: $font-600;
     line-height: 2.3;
     -webkit-transition: all 0.1s ease-in;
     -moz-transition: all 0.1s ease-in;
@@ -668,8 +669,8 @@ input.error[type="checkbox"] {
     line-height: 28px;
     font-size: 16px;
     color: $color-ffffff;
-    font-family: Trebuchet, Arial, sans-serif;
-    font-weight: bold;
+    font-family: $font-arial;
+    font-weight: $font-bold;
     box-sizing: border-box;
 }
 
@@ -733,16 +734,16 @@ ol.numbers.text-24px a {
 }
 
 ol.numbers.text-500 {
-    font-weight: 500;
+    font-weight: $font-500;
 }
 
 ol.numbers p {
     font-size: 14px;
-    font-weight: 400;
+    font-weight: $font-400;
 }
 
 .table-body.claims-table p.text-600 {
-    font-weight: 600;
+    font-weight: $font-600;
 }
 
 .narrow-col.open .menu-panel-wrap {
@@ -767,7 +768,7 @@ ol.numbers p {
     margin: 2px;
     display: block;
     font-size: 13px;
-    font-weight: 500;
+    font-weight: $font-500;
 }
 
 html .sub-list.adv-list {
@@ -1042,7 +1043,7 @@ form #checkboxes.checkbox-error div.error {
 
 label.label-blur[for="Contact_me_Details__c"] {
     font-size: initial !important;
-    font-weight: 400;
+    font-weight: $font-400;
     padding: 0
 }
 
@@ -1056,12 +1057,12 @@ label.label-blur[for="Contact_me_Details__c"] {
 
 .three-col.claims-table li:last-child p {
     font-size: 18px;
-    font-weight: 500;
+    font-weight: $font-500;
 }
 
 .three-col.table-head li p {
     font-size: 16px !important;
-    font-weight: 500;
+    font-weight: $font-500;
 }
 
 .text-e91e62 {
@@ -1823,7 +1824,7 @@ select::-ms-expand {
 .content-block-wrap {
     font-size: 14px;
     line-height: 24px;
-    font-weight: 400;
+    font-weight: $font-400;
     color: $color-86939e
 }
 
@@ -1858,7 +1859,7 @@ select::-ms-expand {
 }
 
 .image-caption1 {
-    font-weight: 300;
+    font-weight: $font-300;
     line-height: 14px;
     font-size: 12px;
     padding-top: 5px;
@@ -1866,7 +1867,7 @@ select::-ms-expand {
 }
 
 .image-caption2 {
-    font-weight: 300;
+    font-weight: $font-300;
     line-height: 14px;
     font-size: 12px;
     padding-top: 5px;
@@ -1889,7 +1890,7 @@ select::-ms-expand {
 h3.popover-title {
     font-size: 15px;
     letter-spacing: 0.1px;
-    font-weight: 500;
+    font-weight: $font-500;
     color: $color-374252;
     padding: 15px 30px 16px 30px;
     border-bottom: 1px solid $color-cdcdcd;
@@ -1899,7 +1900,7 @@ h3.popover-title {
 h3.popover-title span {
     font-size: 10px;
     letter-spacing: 0.1px;
-    font-weight: 500;
+    font-weight: $font-500;
     color: $color-374252
 }
 
@@ -2070,12 +2071,12 @@ body #menu > li > a:hover {
     padding: 1em 0 0.6em;
     margin: 0;
     font-size: 130%;
-    font-weight: 300
+    font-weight: $font-300
 }
 
 .dropdown-menu h2 {
-    font-family: Roboto;
-    font-weight: 600;
+    font-family: $font-roboto;
+    font-weight: $font-600;
     font-size: 15px;
     color: $color-374252;
     letter-spacing: 0.1px;
@@ -2142,7 +2143,7 @@ body #menu div.first-sub a.hover-menu {
 }
 
 .dropdown-menu div.first-sub a {
-    font-weight: 500;
+    font-weight: $font-500;
     text-decoration: none;
     font-size: 14px
 }
@@ -2174,7 +2175,7 @@ body #menu div.first-sub a.hover-menu {
 h3.submenu-title, h3.menu-title, div.submenu-title, div.menu-title {
     font-size: 15px;
     letter-spacing: 0.1px;
-    font-weight: 500;
+    font-weight: $font-500;
     color: $color-374252;
     padding: 15px 30px 16px 30px;
     border-bottom: 1px solid $color-cdcdcd;
@@ -2183,7 +2184,7 @@ h3.submenu-title, h3.menu-title, div.submenu-title, div.menu-title {
 
 div.sub-right {
     font-size: 28px;
-    font-weight: 300;
+    font-weight: $font-300;
     line-height: 32px;
     color: $color-374252
 }
@@ -2225,13 +2226,13 @@ div.right-column-wrap p {
 p.submenu-title {
     font-size: 14px;
     color: $color-5e6977;
-    font-weight: 500
+    font-weight: $font-500
 }
 
 p.submenu-desc {
     font-size: 11px;
     color: $color-86939e;
-    font-weight: 400;
+    font-weight: $font-400;
     letter-spacing: 0.1
 }
 
@@ -2290,7 +2291,7 @@ body .right-column-wrap .submenu-change-default.hide-default {
 
 body {
     background: $color-e5e5e4;
-    font-family: 'Roboto', sans-serif
+    font-family: $font-roboto
 }
 
 .wrapper {
@@ -2327,7 +2328,7 @@ body {
 .menunav a {
     color: $color-ffffff;
     display: block;
-    font-weight: 500;
+    font-weight: $font-500;
     text-decoration: none;
     text-transform: capitalize
 }
@@ -2549,8 +2550,8 @@ span.arrow {
 .slider-title {
     color: $color-ffffff !important;
     font-size: 36px;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 300;
+    font-family: $font-roboto;
+    font-weight: $font-300;
     line-height: normal;
     float: none
 }
@@ -2607,8 +2608,8 @@ input:focus-visible {
     -webkit-appearance: none;
     outline: none !important;
     font-size: 14px;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 400;
+    font-family: $font-roboto;
+    font-weight: $font-400;
     line-height: 35px;
     padding: 0 0 0 5.66%;
     letter-spacing: 0.1px;
@@ -2707,8 +2708,8 @@ select.error {
     padding: 0 20px;
     color: $color-ffffff !important;
     font-size: 14px;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 400;
+    font-family: $font-roboto;
+    font-weight: $font-400;
     line-height: 50px;
     transition: all 0.1s ease-in;
     background: $color-4a1c6b;
@@ -2729,7 +2730,7 @@ select.error {
 .mb-button .btn {
     height: auto;
     padding: 0.2em 1.8em;
-    font-weight: 500;
+    font-weight: $font-500;
     font-size: 17px;
     line-height: 2.9;
     box-shadow: 0 0 3px rgba(0,0,0,1);
@@ -2874,7 +2875,7 @@ select.error {
     display: inline-block;
     color: $color-374252;
     font-size: 14px;
-    font-weight: 500;
+    font-weight: $font-500;
     padding-right: 12px;
     background: url('../images/icon/rightmini.svg') no-repeat right center;
     background-size: 4px 8px
@@ -2923,7 +2924,7 @@ select.error {
     height: 38px;
     color: $color-374252;
     font-size: 14px;
-    font-weight: 500;
+    font-weight: $font-500;
     line-height: 38px;
     padding: 0 20px
 }
@@ -2944,14 +2945,14 @@ select.error {
 .sub-list h4 {
     color: $color-374252;
     font-size: 16px;
-    font-weight: 500;
+    font-weight: $font-500;
     line-height: 25px;
     padding-bottom: 10px
 }
 
 .sub-list p {
     font-size: 14px;
-    font-weight: 400;
+    font-weight: $font-400;
     color: $color-86939e;
     letter-spacing: 0px;
     line-height: 24px
@@ -3028,7 +3029,7 @@ select.error {
 .right-text-box h2 {
     color: $color-475465;
     font-size: 28px;
-    font-weight: 300
+    font-weight: $font-300
 }
 
 .right-text-box > p {
@@ -3062,7 +3063,7 @@ select.error {
 .naham .right-text-box h2 {
     font-size: 21px;
     color: $color-374252;
-    font-weight: 400;
+    font-weight: $font-400;
 }
 
 .naham .right-text-box h2.text-24px {
@@ -3090,8 +3091,8 @@ select.error {
     box-shadow: none;
     color: $color-929da7;
     font-size: 14px;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 400;
+    font-family: $font-roboto;
+    font-weight: $font-400;
     line-height: 48px;
     padding: 0 3%;
     width: 94%
@@ -3179,7 +3180,7 @@ figure.image-text-left.mr-20px {
 
 figcaption p {
     font-size: 13px;
-    font-weight: 500;
+    font-weight: $font-500;
     color: $color-86939e;
     line-height: 18px
 }
@@ -3413,7 +3414,7 @@ figcaption p {
 .banner-form h2 {
     font-size: 13px;
     line-height: 15px;
-    font-weight: 500;
+    font-weight: $font-500;
     border-bottom: 1px solid $color-eef2f5;
     text-align: left;
     padding: 25px 25px 15px 25px
@@ -3437,8 +3438,8 @@ figcaption p {
     padding: 10px 0;
     color: $color-ffffff !important;
     font-size: 16px;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 400;
+    font-family: $font-roboto;
+    font-weight: $font-400;
     line-height: 30px !important;
     transition: all 0.1s ease-in;
     background: $color-4a1c6b;
@@ -3488,7 +3489,7 @@ figcaption p {
     height: 24px;
     line-height: 24px;
     font-size: 12px;
-    font-weight: 500;
+    font-weight: $font-500;
     min-width: 80px
 }
 
@@ -3505,7 +3506,7 @@ figcaption p {
     display: inline-block;
     color: $color-717c8a;
     font-size: 14px;
-    font-weight: 500;
+    font-weight: $font-500;
     line-height: 30px;
     padding-right: 44px;
     background: url('../images/icon/comment.svg') no-repeat right center;
@@ -3596,7 +3597,7 @@ figcaption p {
 .leader-bio h4 {
     color: $color-475465;
     font-size: 24px;
-    font-weight: 300;
+    font-weight: $font-300;
     line-height: normal;
     padding-bottom: 5px
 }
@@ -3604,7 +3605,7 @@ figcaption p {
 .leader-bio h6 {
     color: $color-475465;
     font-size: 13px;
-    font-weight: 500;
+    font-weight: $font-500;
     line-height: normal;
     padding-bottom: 22px
 }
@@ -3612,7 +3613,7 @@ figcaption p {
 .leader-bio p {
     color: $color-98a4ae;
     font-size: 14px;
-    font-weight: 400;
+    font-weight: $font-400;
     line-height: 24px;
     padding: 0 15px;
     min-height: 94px
@@ -3621,7 +3622,7 @@ figcaption p {
 .leader-bio span {
     color: $color-475465;
     font-size: 14px;
-    font-weight: 500;
+    font-weight: $font-500;
     text-decoration: none
 }
 
@@ -3696,7 +3697,7 @@ figcaption p {
 
 .bread-crum a {
     font-size: 13px;
-    font-weight: 400
+    font-weight: $font-400
 }
 
 .bread-crum li.current {
@@ -3710,7 +3711,7 @@ figcaption p {
 .bread-crum li {
     margin-right: 22px;
     position: relative;
-    font-weight: 500
+    font-weight: $font-500
 }
 
 .bread-crum li:last-child:after, .bread-crum li.current:after {
@@ -3738,7 +3739,7 @@ figcaption p {
 
 .elt-sidebar a.selected {
     color: $color-374252 !important;
-    font-weight: 500
+    font-weight: $font-500
 }
 
 .elt-pglink {
@@ -3747,14 +3748,14 @@ figcaption p {
 
 .elt-pglink h6 {
     font-size: 15px;
-    font-weight: 500;
+    font-weight: $font-500;
     position: relative
 }
 
 .elt-pglink p {
     color: $color-acbac5;
     font-size: 13px;
-    font-weight: 400
+    font-weight: $font-400
 }
 
 .elt-pg-nav li {
@@ -3831,13 +3832,13 @@ figcaption p {
 .events-page .elt-pg-nav .level-one > li > a, .events-page .elt-pg-nav .level-one > li > span {
     display: block;
     padding-bottom: 2px;
-    font-weight: 600;
+    font-weight: $font-600;
     position: relative;
     line-height: 24px
 }
 
 .elt-pg-nav .selected > a {
-    font-weight: 500;
+    font-weight: $font-500;
     color: $color-374252
 }
 
@@ -3875,7 +3876,7 @@ figcaption p {
     padding: 0 10px;
     color: $color-ffffff !important;
     font-size: 12px;
-    font-weight: 500;
+    font-weight: $font-500;
     line-height: 24px;
     text-align: center;
     text-decoration: none;
@@ -3980,9 +3981,9 @@ figcaption p {
     background: $color-441a63 url("../images/icon/selectarrow.png") no-repeat 92% center;
     border: medium none;
     border-radius: 2px;
-    font-family: "Roboto", sans-serif;
+    font-family: $font-roboto;
     font-size: 14px;
-    font-weight: 400;
+    font-weight: $font-400;
     height: 35px;
     position: relative;
     width: 100%;
@@ -3995,9 +3996,9 @@ figcaption p {
     border: none;
     box-shadow: none;
     color: $color-ffffff;
-    font-family: "Roboto", sans-serif;
+    font-family: $font-roboto;
     font-size: 14px;
-    font-weight: 400;
+    font-weight: $font-400;
     background: $color-441a63 url("../images/icon/selectarrow.png") no-repeat 92% center;
     -webkit-appearance: none;
     -moz-appearance: none;
@@ -4328,7 +4329,7 @@ ul.claims-table li .bullets {
 
 .pagination span, .pagination a {
     font-size: 14px;
-    font-weight: 400;
+    font-weight: $font-400;
     text-decoration: none;
     padding: 3px 7px;
     display: block
@@ -4365,11 +4366,11 @@ ul.claims-table li .bullets {
 
 .didyoumean a {
     color: $color-8e2b5a;
-    font-weight: 500
+    font-weight: $font-500
 }
 
 .pagination li.current-page {
-    font-weight: 600
+    font-weight: $font-600
 }
 
 .divider {
@@ -4499,7 +4500,7 @@ ul.claims-table li .bullets {
 }
 
 .popup-close:before {
-    font-family: Arial, "Helvetica CY", "Nimbus Sans L", sans-serif !important;
+    font-family: $font-arial !important;
     font-size: 30px;
     line-height: 35px;
     position: absolute;
@@ -4686,7 +4687,7 @@ a.wrightarrow {
 
 .elt-pglink.active p {
     color: $color-374252;
-    font-weight: 600;
+    font-weight: $font-600;
     position: relative
 }
 
@@ -4707,7 +4708,7 @@ a.wrightarrow {
 .toptitle .read-link1 {
     color: $color-9cabb9;
     background: none;
-    font-weight: 400
+    font-weight: $font-400
 }
 
 .bloglist li {
@@ -4768,7 +4769,7 @@ a.oldpost {
     height: auto;
     line-height: normal;
     font-size: 14px;
-    font-weight: 500;
+    font-weight: $font-500;
     color: $color-a0aebc;
     min-width: 1px
 }
@@ -4854,7 +4855,7 @@ a.oldpost {
     outline: none !important;
     color: $color-86939e;
     font-size: 14px;
-    font-weight: 400;
+    font-weight: $font-400;
     line-height: 44px;
     padding: 15px 18px 0;
     box-sizing: border-box
@@ -4886,9 +4887,9 @@ textarea.std-input3 {
     border: 1px solid $color-d4dbe2;
     border-radius: 0;
     color: $color-86939e;
-    font-family: "Roboto", sans-serif;
+    font-family: $font-roboto;
     font-size: 14px;
-    font-weight: 500;
+    font-weight: $font-500;
     height: 46px;
     position: relative;
     width: 100%;
@@ -4907,9 +4908,9 @@ textarea.std-input3 {
     border: none;
     box-shadow: none;
     color: $color-86939e;
-    font-family: "Roboto", sans-serif;
+    font-family: $font-roboto;
     font-size: 14px;
-    font-weight: 400;
+    font-weight: $font-400;
     background: rgb(242, 243, 244);
     background: -moz-linear-gradient(top, rgba(242, 243, 244, 1) 0%, rgba(229, 232, 235, 1) 100%);
     background: -webkit-linear-gradient(top, rgba(242, 243, 244, 1) 0%, rgba(229, 232, 235, 1) 100%);
@@ -5043,8 +5044,8 @@ textarea.std-input3 {
 
 .banner-title {
     color: $color-ffffff !important;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 300;
+    font-family: $font-roboto;
+    font-weight: $font-300;
     line-height: normal;
     text-shadow: 0 0 5px rgba(0,0,0,1);
 }
@@ -5477,7 +5478,7 @@ iframe[name="google_conversion_frame"] {
     background: $color-4ebd79;
     color: $color-ffffff;
     font-size: 18px;
-    font-weight: 700;
+    font-weight: $font-700;
     text-align: center;
     text-transform: uppercase;
     line-height: 24px;
@@ -5547,7 +5548,7 @@ iframe[name="google_conversion_frame"] {
     font-family: 'arrow-left-l';
     src: url('../fonts/arrow-left-l.eot?v64gwq');
     src: url('../fonts/arrow-left-l.eot?v64gwq#iefix') format('embedded-opentype'), url('../fonts/arrow-left-l.ttf?v64gwq') format('truetype'), url('../fonts/arrow-left-l.woff?v64gwq') format('woff'), url('../fonts/arrow-left-l.svg?v64gwq#arrow-left-l') format('svg');
-    font-weight: normal;
+    font-weight: $font-normal;
     font-style: normal;
 }
 
@@ -5555,7 +5556,7 @@ iframe[name="google_conversion_frame"] {
     font-family: 'arrow-left-l' !important;
     speak: none;
     font-style: normal;
-    font-weight: normal;
+    font-weight: $font-normal;
     font-variant: normal;
     text-transform: none;
     line-height: 1;
@@ -5577,7 +5578,7 @@ iframe[name="google_conversion_frame"] {
     font-family: 'arrow-right-l';
     src: url('../fonts/arrow-right-l.eot?jck1ok');
     src: url('../fonts/arrow-right-l.eot?jck1ok#iefix') format('embedded-opentype'), url('../fonts/arrow-right-l.ttf?jck1ok') format('truetype'), url('../fonts/arrow-right-l.woff?jck1ok') format('woff'), url('../fonts/arrow-right-l.svg?jck1ok#arrow-right-l') format('svg');
-    font-weight: normal;
+    font-weight: $font-normal;
     font-style: normal;
 }
 
@@ -5598,7 +5599,7 @@ iframe[name="google_conversion_frame"] {
     font-family: 'arrow-left-l' !important;
     speak: none;
     font-style: normal;
-    font-weight: normal;
+    font-weight: $font-normal;
     font-variant: normal;
     text-transform: none;
     line-height: 1;
@@ -5625,14 +5626,14 @@ iframe[name="google_conversion_frame"] {
 }
 
 .start, .next, .prev {
-    font-family: 'Roboto', sans-serif, Calibri;
+    font-family: $font-roboto;
 }
 
 @font-face {
     font-family: 'sns';
     src: url('../fonts/sns.eot?f4xt3o');
     src: url('../fonts/sns.eot?f4xt3o#iefix') format('embedded-opentype'), url('../fonts/sns.ttf?f4xt3o') format('truetype'), url('../fonts/sns.woff?f4xt3o') format('woff'), url('../fonts/sns.svg?f4xt3o#sns') format('svg');
-    font-weight: normal;
+    font-weight: $font-normal;
     font-style: normal;
 }
 
@@ -5640,7 +5641,7 @@ iframe[name="google_conversion_frame"] {
     font-family: 'sns' !important;
     speak: none;
     font-style: normal;
-    font-weight: normal;
+    font-weight: $font-normal;
     font-variant: normal;
     text-transform: none;
     line-height: 1;
@@ -6121,7 +6122,7 @@ iframe[name="google_conversion_frame"] {
     h2 {
         color: $color-374252;
         font-size: 30px;
-        font-weight: 300;
+        font-weight: $font-300;
         letter-spacing: -0.3px;
         line-height: 36px
     }
@@ -6305,7 +6306,7 @@ iframe[name="google_conversion_frame"] {
     h2 {
         color: $color-374252;
         font-size: 28px;
-        font-weight: 300;
+        font-weight: $font-300;
         letter-spacing: -0.3px;
         line-height: 32px
     }
@@ -6862,7 +6863,7 @@ iframe[name="google_conversion_frame"] {
 
     .l-title-width p {
         font-size: 16px;
-        font-weight: 300;
+        font-weight: $font-300;
         line-height: 30px;
         padding-top: 22px
     }
@@ -6942,7 +6943,7 @@ iframe[name="google_conversion_frame"] {
         background: $color-ffffff;
         color: $color-374252;
         font-size: 14px;
-        font-weight: 500;
+        font-weight: $font-500;
         display: block;
         padding: 0 30px 0 20px;
         position: relative;
@@ -6965,7 +6966,7 @@ iframe[name="google_conversion_frame"] {
         text-align: left;
         color: $color-374252;
         font-size: 14px;
-        font-weight: 500;
+        font-weight: $font-500;
         border: 1px solid $color-86939e;
         box-sizing: border-box;
         z-index: 9999
@@ -6983,7 +6984,7 @@ iframe[name="google_conversion_frame"] {
         display: block;
         color: $color-374252;
         font-size: 14px;
-        font-weight: 500;
+        font-weight: $font-500;
         padding: 8px 20px
     }
 
@@ -7070,7 +7071,7 @@ iframe[name="google_conversion_frame"] {
     .right-text-box h2 {
         color: $color-475465;
         font-size: 28px !important;
-        font-weight: 300;
+        font-weight: $font-300;
         line-height: 36px !important
     }
 
@@ -7124,9 +7125,9 @@ iframe[name="google_conversion_frame"] {
         border-radius: 2px;
         box-shadow: none;
         color: $color-929da7;
-        font-family: "Roboto", sans-serif;
+        font-family: $font-roboto;
         font-size: 14px;
-        font-weight: 400;
+        font-weight: $font-400;
         height: 50px;
         line-height: 48px;
         padding: 0 20px;
@@ -7236,7 +7237,7 @@ iframe[name="google_conversion_frame"] {
 
     .btn-mini {
         font-size: 12px;
-        font-weight: 500;
+        font-weight: $font-500;
         height: 24px;
         line-height: 24px;
         min-width: 80px
@@ -7261,7 +7262,7 @@ iframe[name="google_conversion_frame"] {
     .leader-bio h4 {
         color: $color-475465;
         font-size: 26px;
-        font-weight: 300;
+        font-weight: $font-300;
         line-height: 32px;
         padding-bottom: 0
     }
@@ -7269,7 +7270,7 @@ iframe[name="google_conversion_frame"] {
     .leader-bio h6 {
         color: $color-475465;
         font-size: 13px;
-        font-weight: 500;
+        font-weight: $font-500;
         line-height: 25px;
         padding-bottom: 16px
     }
@@ -7697,7 +7698,7 @@ iframe[name="google_conversion_frame"] {
     .user-profile p {
         color: $color-374252;
         font-size: 14px;
-        font-weight: 400
+        font-weight: $font-400
     }
 
     .sp-title {
@@ -8084,7 +8085,7 @@ iframe[name="google_conversion_frame"] {
     }
 
     .newsletter-info .news-content h5 {
-        font-weight: 500;
+        font-weight: $font-500;
         padding-bottom: 0
     }
 
@@ -8169,7 +8170,7 @@ iframe[name="google_conversion_frame"] {
     .choose-box .news-content h5 {
         color: $color-00515b;
         font-size: 13px;
-        font-weight: 500;
+        font-weight: $font-500;
         line-height: 25px;
         padding-bottom: 12px
     }
@@ -8842,7 +8843,7 @@ input[type="text"], input[type="email"], input[type="search"], textarea, select 
     font-size: 17px;
     line-height: 1.29412;
     letter-spacing: -.021em;
-    font-family: "Roboto", sans-serif;
+    font-family: $font-roboto;
     outline: none;
     width: 100%;
     height: 1.29412em;
@@ -9021,7 +9022,7 @@ a.download-btn {
     color: $color-ffffff !important;
     font-size: 14px;
     line-height: 50px;
-    font-weight: 300;
+    font-weight: $font-300;
     width: 170px;
     margin: auto;
     display: inline-block;
@@ -9159,7 +9160,7 @@ img.glen {
     margin-top: 20px;
     text-align: right;
     color: $color-78a735;
-    font-weight: 400;
+    font-weight: $font-400;
     margin-right: 5px;
 }
 
@@ -9302,7 +9303,7 @@ a:hover .link-arrow2 {
 }
 
 .right-text-box h2.text-500 {
-    font-weight: 500;
+    font-weight: $font-500;
 }
 
 .right-text-box h2.text-86939E {
@@ -9392,7 +9393,7 @@ ul.bullets.text-16px li {
     content: '\2193';
     position: absolute;
     bottom: -30px;
-    font-weight: bold;
+    font-weight: $font-bold;
     font-size: x-large;
 }
 

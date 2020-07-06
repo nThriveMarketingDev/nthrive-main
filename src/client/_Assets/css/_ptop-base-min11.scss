@@ -1,15 +1,16 @@
 ﻿@import "colors";
+@import "fonts";
 
 html {
-    font-size: 100%;
-    -ms-text-size-adjust: 100%;
-    -webkit-text-size-adjust: 100%
+    font-size: $font-100pc;
+    -ms-text-size-adjust: $font-100pc;
+    -webkit-text-size-adjust: $font-100pc
 }
 
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Roboto', sans-serif;
+    font-family: $font-roboto;
     color: $color-86939e;
     overflow-x: hidden
 }
@@ -41,9 +42,9 @@ div:focus {
 }
 
 h1 {
-    font-size: 2em;
+    font-size: $font-2em;
     margin: 0.67em 0;
-    font-family: 'Roboto', sans-serif
+    font-family: $font-roboto
 }
 
 img {
@@ -53,7 +54,7 @@ img {
 ul, ol, li, dl, dt, dd, h1, h2, h3, h4, h5, h6, hgroup, p, blockquote, figure, form, fieldset, input, legend, pre, abbr, button {
     margin: 0;
     padding: 0;
-    font-family: 'Roboto', sans-serif, Calibri
+    font-family: $font-roboto
 }
 
 dl, menu, ol, ul {
@@ -65,7 +66,7 @@ fieldset, iframe, img {
 }
 
 button, input, select, textarea {
-    font: inherit;
+    font: $font-inherit;
     margin: 0
 }
 
@@ -74,7 +75,7 @@ button, input {
 }
 
 button, select {
-    text-transform: none
+    text-transform: $text-transform-none
 }
 
 button, html [type="button"], [type="reset"], [type="submit"] {
@@ -141,12 +142,12 @@ textarea {
 
 ::-webkit-input-placeholder {
     color: $color-inherit;
-    opacity: 0.54
+    opacity: $op-54
 }
 
 ::-webkit-file-upload-button {
     -webkit-appearance: button;
-    font: inherit
+    font: $font-inherit
 }
 
 header {
@@ -232,7 +233,7 @@ div.main {
 }
 
 .l-align-center {
-    text-align: center;
+    text-align: $text-center;
     margin: 0 auto
 }
 
@@ -403,7 +404,7 @@ ul.bullets li, ul.content-list li {
 
 ul.bullets li, ul.content-list li {
     margin-bottom: .7em;
-    line-height: 1.4em
+    line-height: $lh-1-4em
 }
 
 .bullets ul.bullets {
@@ -437,11 +438,11 @@ a.anchor {
 }
 
 .text-left {
-    text-align: left
+    text-align: $text-left
 }
 
 .text-center {
-    text-align: center
+    text-align: $text-center
 }
 
 .space-30px {
@@ -479,8 +480,8 @@ a.anchor {
 
 #nav a, #menu a {
     display: block;
-    text-decoration: none;
-    font-weight: 500
+    text-decoration: $text-decoration-none;
+    font-weight: $font-500
 }
 
 #menu .button-dropdown > a {
@@ -495,20 +496,20 @@ a.anchor {
 
 #nav a, #menu a {
     display: block;
-    text-decoration: none;
-    font-weight: 500;
+    text-decoration: $text-decoration-none;
+    font-weight: $font-500;
     padding: 0 20px
 }
 
 #sticky-nav a {
-    font-size: 13px
+    font-size: $font-13px
 }
 
 #main-nav .first a {
-    font-weight: 400 !important;
+    font-weight: $font-400 !important;
     padding: 5px 15px !important;
     display: block;
-    line-height: 2.5em !important
+    line-height: $lh-2-5em !important
 }
 
 #nav .menu-hover, #menu .menu-hover {
@@ -540,13 +541,13 @@ a.anchor {
 }
 
 #nav ul li a, #menu ul li a {
-    line-height: 15px
+    line-height: $lh-15px
 }
 
 #nav ul a, #menu ul a {
     padding: 15px 30px;
     margin: 0;
-    font-size: 14px
+    font-size: $font-14px
 }
 
 #nav li {
@@ -557,9 +558,9 @@ a.anchor {
 
 #nav a {
     display: block;
-    text-decoration: none;
-    text-transform: capitalize;
-    font-weight: 500
+    text-decoration: $text-decoration-none;
+    text-transform: $text-transform-capitalize;
+    font-weight: $font-500
 }
 
 #nav .menu-hover, #menu .menu-hover {
@@ -602,7 +603,7 @@ a.anchor {
 }
 
 #sticky-nav .right-nav li ul li, #menu li ul li {
-    line-height: 1 !important;
+    line-height: $lh-1 !important;
     padding: 0;
     margin: 0;
     display: block
@@ -626,7 +627,7 @@ body #sticky-nav .right-nav li {
 }
 
 #nav ul li a {
-    line-height: 15px
+    line-height: $lh-15px
 }
 
 #nav ul a, #menu ul a, .nav-filter #info ul a {
@@ -637,7 +638,7 @@ body #sticky-nav .right-nav li {
     white-space: nowrap;
     padding: 15px 30px;
     margin: 0;
-    font-size: 14px
+    font-size: $font-14px
 }
 
 body img.desktop-landscape {
@@ -663,7 +664,7 @@ body img.desktop-landscape {
     overflow: hidden;
     top: 65px;
     height: 435px;
-    text-align: center;
+    text-align: $text-center;
     margin: 0 auto;
 }
 
@@ -693,7 +694,7 @@ body img.desktop-landscape {
 }
 
 .banner-caption-v {
-    text-align: center;
+    text-align: $text-center;
     width: 100%;
     position: relative;
     top: 49%;
@@ -729,12 +730,12 @@ body img.desktop-landscape {
 .inner-banner a, .inner-banner a:active {
     display: inline-block;
     border: 1px solid $color-ffffff;
-    line-height: 2;
+    line-height: $lh-2;
     padding: 10px 20px;
     margin: 40px 0 0 7px;
     color: $color-ffffff;
-    font-size: 13px;
-    font-weight: 500
+    font-size: $font-13px;
+    font-weight: $font-500
 }
 
 .inner-banner a {
@@ -743,9 +744,9 @@ body img.desktop-landscape {
 }
 
 .mb-button a.btn, .mb-button a.btn:active {
-    line-height: 2.7 !important;
+    line-height: $lh-2-7 !important;
     height: auto;
-    font-size: 18px;
+    font-size: $font-18px;
     padding: 0.2em 20px;
     margin: 10px 0 0 7px;
     position: relative;
@@ -793,8 +794,8 @@ body img.desktop-landscape {
     padding: 16px 11px;
     margin: 2px;
     display: block;
-    font-size: 13px;
-    font-weight: 500
+    font-size: $font-13px;
+    font-weight: $font-500
 }
 
 .nsocials-share-count {
@@ -878,17 +879,17 @@ select::-ms-expand {
 
 #menu .submenu-list a span.submenu-desc {
     display: block;
-    font-size: 11px;
+    font-size: $font-11px;
     color: $color-a2acb4;
-    text-decoration: none !important
+    text-decoration: $text-decoration-none !important
 }
 
 body #menu .submenu-desc {
-    text-decoration: none !important
+    text-decoration: $text-decoration-none !important
 }
 
 #menu .submenu-list a:hover span.submenu-title {
-    text-decoration: underline
+    text-decoration: $text-underline
 }
 
 .dropdown-menu > li > a:after {
@@ -948,7 +949,7 @@ body #menu > li > a:hover {
 }
 
 .logo-anim {
-    opacity: 0;
+    opacity: $op-0;
     -webkit-transition: all 300ms ease-out;
     -moz-transition: all 300ms ease-out;
     -o-transition: all 300ms ease-out;
@@ -967,7 +968,7 @@ body #menu > li > a:hover {
 }
 
 .logo-anim.move {
-    opacity: 1;
+    opacity: $op-100;
     -moz-transform: translate3d(0px, 0px, 0px);
     -webkit-transform: translate3d(0px, 0px, 0px);
     -o-transform: translate(0px, 0px);
@@ -1057,7 +1058,7 @@ div.right-column-wrap p {
 
 body {
     background: $color-e5e5e4;
-    font-family: 'Roboto', sans-serif
+    font-family: $font-roboto
 }
 
 .wrapper {
@@ -1075,7 +1076,7 @@ body {
 
 .th-dots {
     float: left;
-    line-height: 6;
+    line-height: $lh-6;
     margin-left: 0;
     position: relative;
     top: 3px
@@ -1176,22 +1177,22 @@ input:focus, select:focus, textarea:focus {
 
 ::-webkit-input-placeholder {
     color: $color-c2c9ce;
-    opacity: 1
+    opacity: $op-100
 }
 
 :-moz-placeholder {
     color: $color-c2c9ce;
-    opacity: 1
+    opacity: $op-100
 }
 
 ::-moz-placeholder {
     color: $color-c2c9ce;
-    opacity: 1
+    opacity: $op-100
 }
 
 :-ms-input-placeholder {
     color: $color-c2c9ce;
-    opacity: 1
+    opacity: $op-100
 }
 
 .btn {
@@ -1199,10 +1200,10 @@ input:focus, select:focus, textarea:focus {
     height: 48px;
     padding: 0 20px;
     color: $color-ffffff !important;
-    font-size: 14px;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 400;
-    line-height: 48px;
+    font-size: $font-14px;
+    font-family: $font-roboto;
+    font-weight: $font-400;
+    line-height: $lh-48px;
     -webkit-transition: all 0.1s ease-in;
     -moz-transition: all 0.1s ease-in;
     -o-transition: all 0.1s ease-in;
@@ -1214,7 +1215,7 @@ input:focus, select:focus, textarea:focus {
     -webkit-appearance: none;
     outline: none;
     min-width: 130px;
-    text-align: center;
+    text-align: $text-center;
     cursor: pointer
 }
 
@@ -1222,10 +1223,10 @@ input:focus, select:focus, textarea:focus {
     display: inline-block;
     padding: 0 15px;
     color: $color-ffffff;
-    font-size: 14px;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 400;
-    line-height: 2.3;
+    font-size: $font-14px;
+    font-family: $font-roboto;
+    font-weight: $font-400;
+    line-height: $lh-2-3;
     -webkit-transition: all 0.1s ease-in;
     -moz-transition: all 0.1s ease-in;
     -o-transition: all 0.1s ease-in;
@@ -1236,7 +1237,7 @@ input:focus, select:focus, textarea:focus {
     box-shadow: none;
     -webkit-appearance: none;
     outline: none;
-    text-align: center;
+    text-align: $text-center;
     cursor: pointer;
 }
 
@@ -1244,7 +1245,7 @@ input:focus, select:focus, textarea:focus {
     display: inline-block;
     height: 43px;
     min-width: 70px;
-    line-height: 43px
+    line-height: $lh-43px
 }
 
 .btn:hover {
@@ -1317,15 +1318,15 @@ input:focus, select:focus, textarea:focus {
 }
 
 .text-32px {
-    font-size: 32px;
+    font-size: $font-32px;
 }
 
 .text-34px {
-    font-size: 34px;
+    font-size: $font-34px;
 }
 
 .text-46px {
-    font-size: 46px
+    font-size: $font-46px
 }
 
 .pb-0px {
@@ -1377,8 +1378,8 @@ input:focus, select:focus, textarea:focus {
 }
 
 .text-30px {
-    font-size: 30px;
-    line-height: 38px
+    font-size: $font-30px;
+    line-height: $lh-38px
 }
 
 .full-width {
@@ -1440,11 +1441,11 @@ input:focus, select:focus, textarea:focus {
 .ana-info {
     padding-left: 65px;
     padding-right: 65px;
-    font-weight: 300
+    font-weight: $font-300
 }
 
 .ana-info p {
-    line-height: 1.8;
+    line-height: $lh-1-8;
 }
 
 .ana-right .ana-pic {
@@ -1491,15 +1492,15 @@ input:focus, select:focus, textarea:focus {
 
 .popup-close:before {
     font-family: Arial, "Helvetica CY", "Nimbus Sans L", sans-serif !important;
-    font-size: 30px;
-    line-height: 35px;
+    font-size: $font-30px;
+    line-height: $lh-35px;
     position: absolute;
     top: 0;
     right: 0;
     display: block;
     width: 35px;
     content: "\00d7";
-    text-align: center
+    text-align: $text-center
 }
 
 .mb-70px {
@@ -1531,33 +1532,33 @@ input:focus, select:focus, textarea:focus {
 
 .banner-title, h1.banner-title, h2.banner-title, h3.banner-title, h4.banner-title, h5.banner-title {
     color: $color-ffffff !important;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 300;
-    line-height: normal;
-    font-size: 84px;
-    font-weight: 200;
+    font-family: $font-roboto;
+    font-weight: $font-300;
+    line-height: $lh-normal;
+    font-size: $font-84px;
+    font-weight: $font-200;
     padding-right: 8px;
 }
 
 .sub-banner-title, h1.sub-banner-title, h2.sub-banner-title, h3.sub-banner-title, h4.sub-banner-title, h5.sub-banner-title, p.sub-banner-title {
-    font-size: 18px;
-    font-weight: 300;
-    letter-spacing: .12em;
+    font-size: $font-18px;
+    font-weight: $font-300;
+    letter-spacing: $ls_12em;
     padding-right: 8px;
     color: $color-ffffff;
 }
 
 .wheel-box-header, h1.wheel-box-header, h2.wheel-box-header, h3.wheel-box-header, h4.wheel-box-header, h5.wheel-box-header, p.wheel-box-header {
-    font-weight: 500;
-    font-size: 26px;
-    line-height: 1.6;
+    font-weight: $font-500;
+    font-size: $font-26px;
+    line-height: $lh-1-6;
     color: $color-43484d;
 }
 
 .wheel-box-subheader, h1.wheel-box-subheader, h2.wheel-box-subheader, h3.wheel-box-subheader, h4.wheel-box-subheader, h5.wheel-box-subheader {
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 1.6;
+    font-size: $font-18px;
+    font-weight: $font-400;
+    line-height: $lh-1-6;
     color: $color-43484d;
 }
 
@@ -1570,34 +1571,34 @@ input:focus, select:focus, textarea:focus {
 }
 
 a, a:active {
-    text-decoration: none
+    text-decoration: $text-decoration-none
 }
 
 h1 {
-    font-size: 32px;
-    line-height: 39px;
-    font-weight: 300;
+    font-size: $font-32px;
+    line-height: $lh-39px;
+    font-weight: $font-300;
     color: $color-374252
 }
 
 h2 {
-    font-size: 32px;
-    line-height: 38px;
-    font-weight: 300;
-    letter-spacing: -0.3px;
+    font-size: $font-32px;
+    line-height: $lh-38px;
+    font-weight: $font-300;
+    letter-spacing: $ls-0_3px;
     color: $color-374252
 }
 
 h3 {
-    font-size: 28px;
-    font-weight: 300;
-    line-height: 32px;
+    font-size: $font-28px;
+    font-weight: $font-300;
+    line-height: $lh-32px;
     color: $color-374252
 }
 
 section p, p {
-    line-height: 24px;
-    font-size: 15px
+    line-height: $lh-24px;
+    font-size: $font-15px
 }
 
 .btn-border:hover {
@@ -1666,66 +1667,66 @@ section p, p {
 }
 
 .text-500 {
-    font-weight: 500
+    font-weight: $font-500
 }
 
 .text-400 {
-    font-weight: 400
+    font-weight: $font-400
 }
 
 .text-300 {
-    font-weight: 300
+    font-weight: $font-300
 }
 
 .text-200 {
-    font-weight: 200
+    font-weight: $font-200
 }
 
 .text-underline {
-    text-decoration: underline !important
+    text-decoration: $text-underline !important
 }
 
 .text-14px {
-    font-size: 14px;
-    line-height: 1.6
+    font-size: $font-14px;
+    line-height: $lh-1-6
 }
 
 .text-16px {
-    font-size: 16px;
-    line-height: 1.6
+    font-size: $font-16px;
+    line-height: $lh-1-6
 }
 
 .text-18px {
-    font-size: 18px;
-    line-height: 1.6
+    font-size: $font-18px;
+    line-height: $lh-1-6
 }
 
 .text-20px {
-    font-size: 20px;
-    line-height: 1.6
+    font-size: $font-20px;
+    line-height: $lh-1-6
 }
 
 .text-22px {
-    font-size: 22px;
-    line-height: 1.6
+    font-size: $font-22px;
+    line-height: $lh-1-6
 }
 
 .text-26px {
-    font-size: 26px;
-    line-height: 1.6
+    font-size: $font-26px;
+    line-height: $lh-1-6
 }
 
 .text-28px {
-    font-size: 28px;
-    line-height: 1.6
+    font-size: $font-28px;
+    line-height: $lh-1-6
 }
 
 .lh-26px {
-    line-height: 26px
+    line-height: $lh-26px
 }
 
 .text-right-width p {
-    letter-spacing: -0.1px
+    letter-spacing: $ls-0_1px
 }
 
 .text-right-width {
@@ -1873,14 +1874,14 @@ body #menu > li > a {
 }
 
 .main > div.buttonset h2 {
-    font-weight: 300;
+    font-weight: $font-300;
     color: $color-cccccc
 }
 
 .main > div.buttonset button {
     background: $color-ffffff;
     color: $color-54565b;
-    font-size: .8em
+    font-size: $font-08em
 }
 
 .main > div.buttonset button:hover {
@@ -1897,8 +1898,8 @@ ul.bullets {
 ul.bullets li {
     list-style: disc;
     margin-bottom: 10px;
-    line-height: 24px;
-    font-size: 14px;
+    line-height: $lh-24px;
+    font-size: $font-14px;
     float: none !important
 }
 
@@ -1906,7 +1907,7 @@ form label.error {
     color: $color-ff0000;
     padding-top: 5px;
     display: block !important;
-    text-align: left
+    text-align: $text-left
 }
 
 label.error + label#terms-conditions2, label.error + label.terms-conditions {
@@ -1915,8 +1916,8 @@ label.error + label#terms-conditions2, label.error + label.terms-conditions {
 
 label.error {
     margin-left: 0;
-    font-size: 15px;
-    line-height: 20px
+    font-size: $font-15px;
+    line-height: $lh-20px
 }
 
 .std-input1.error, .std-input3.error {
@@ -1924,15 +1925,15 @@ label.error {
 }
 
 input.invalid, textarea.invalid {
-    border: 2px solid red
+    border: 2px solid $color-ff0000
 }
 
 input.valid, textarea.valid {
-    border: 2px solid green
+    border: 2px solid $color-008000
 }
 
 form .relative li {
-    text-align: left
+    text-align: $text-left
 }
 
 .popup .flow-wrap label.label-blur {
@@ -1947,19 +1948,19 @@ form .relative li {
     position: absolute;
     left: 20px;
     top: 17px;
-    font-size: 14px
+    font-size: $font-14px
 }
 
 .form-half, .form-full {
     position: relative;
-    text-align: left
+    text-align: $text-left
 }
 
 .input-holder label, .support-issue label {
     position: absolute;
     top: 15px;
     left: 15px;
-    font-size: 14px;
+    font-size: $font-14px;
     color: $color-86939e
 }
 
@@ -1989,12 +1990,12 @@ label.error + label#terms-conditions {
     cursor: pointer;
     display: inline-block;
     height: 25px;
-    line-height: 13px;
+    line-height: $lh-13px;
     -webkit-user-select: none;
     -moz-user-select: none;
     -khtml-user-select: none;
     -ms-user-select: none;
-    font-size: 14px
+    font-size: $font-14px
 }
 
 .input-holder textarea + label.error, .support-issue textarea + label.error {
@@ -2015,7 +2016,7 @@ input[type="checkbox"], input[type="radio"] {
 }
 
 .error_show {
-    color: red;
+    color: $color-ff0000;
     margin-left: 10px
 }
 
@@ -2027,35 +2028,35 @@ form .error {
     color: $color-ff0000;
     padding-top: 5px;
     display: block !important;
-    text-align: left
+    text-align: $text-left
 }
 
 input.invalid, textarea.invalid {
-    border: 2px solid red
+    border: 2px solid $color-ff0000
 }
 
 input.valid, textarea.valid {
-    border: 2px solid green
+    border: 2px solid $color-008000
 }
 
 form .relative li {
-    text-align: left
+    text-align: $text-left
 }
 
 label.label-blur, .l-focus label.label-focus, .l-focus label.label-focus, .l-blur label.label-focus, .l-blur label.label-blur, label.label-focus.blur {
     top: -8px !important;
     background: $color-ffffff;
     display: block;
-    font-weight: 500;
+    font-weight: $font-500;
     padding: 2px 7px;
     left: 15px;
-    font-size: 12px !important;
+    font-size: $font-12px !important;
     color: $color-374252 !important;
 }
 
 input.valid ~ label.label-focus, .l-focus input.valid ~ label {
     top: 5px;
-    font-size: 12px;
+    font-size: $font-12px;
     color: $color-374252;
 }
 
@@ -2071,12 +2072,12 @@ input.valid ~ label.label-focus, .l-focus input.valid ~ label {
     position: absolute;
     left: 20px;
     top: 17px;
-    font-size: 14px
+    font-size: $font-14px
 }
 
 .form-half, .form-full {
     position: relative;
-    text-align: left
+    text-align: $text-left
 }
 
 .lp-form form {
@@ -2093,7 +2094,7 @@ input.valid ~ label.label-focus, .l-focus input.valid ~ label {
 .lp-form .btn {
     background: $color-7b214c;
     margin-bottom: 20px;
-    font-size: 18px;
+    font-size: $font-18px;
 }
 
 .l-form-cont-right {
@@ -2106,7 +2107,7 @@ input.valid ~ label.label-focus, .l-focus input.valid ~ label {
     position: absolute;
     top: 15px;
     left: 15px;
-    font-size: 14px;
+    font-size: $font-14px;
     color: $color-86939e;
     z-index: 9
 }
@@ -2149,12 +2150,12 @@ form > div.input-holder:first-of-type {
     cursor: pointer;
     display: inline-block;
     height: 25px;
-    line-height: 13px;
+    line-height: $lh-13px;
     -webkit-user-select: none;
     -moz-user-select: none;
     -khtml-user-select: none;
     -ms-user-select: none;
-    font-size: 14px
+    font-size: $font-14px
 }
 
 .input-holder textarea + .error, .support-issue textarea + .error {
@@ -2186,12 +2187,12 @@ input.mb-25px[type="checkbox"] {
 }
 
 .elt-content a.btn {
-    text-decoration: none !important
+    text-decoration: $text-decoration-none !important
 }
 
 .elt-content ul.l-list-two-col a, .elt-content ul.l-inline-list a, .elt-content ul.l-half-col, .elt-content ul.l-clearfix a {
     color: $color-86939e;
-    text-decoration: none
+    text-decoration: $text-decoration-none
 }
 
 .support-issue {
@@ -2253,7 +2254,7 @@ input.mb-25px[type="checkbox"] {
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
     height: auto;
-    text-align: center
+    text-align: $text-center
 }
 
 .clearfix, .wrapper {
@@ -2270,14 +2271,14 @@ input.mb-25px[type="checkbox"] {
 
 .hide, .overvideo.hide, .play-btn.hide, .ie8 .play-btn.hide, .ie8 .overvideo.hide {
     visibility: hidden;
-    opacity: 0;
+    opacity: $op-0;
     display: none;
     background: none
 }
 
 .overvideo, .play-btn {
     visibility: visible;
-    opacity: 1;
+    opacity: $op-100;
     display: block
 }
 
@@ -2304,10 +2305,10 @@ a.play-btn {
 }
 
 .nth-service .footer-form-title {
-    font-size: 36px;
-    line-height: 38px;
-    font-weight: 300;
-    letter-spacing: -0.3px;
+    font-size: $font-36px;
+    line-height: $lh-38px;
+    font-weight: $font-300;
+    letter-spacing: $ls-0_3px;
     color: $color-374252
 }
 
@@ -2400,7 +2401,7 @@ a.play-btn {
     left: 0;
     display: none;
     overflow: auto;
-    text-align: center;
+    text-align: $text-center;
     -webkit-overflow-scrolling: touch
 }
 
@@ -2432,10 +2433,10 @@ a.play-btn {
 .popup {
     position: relative;
     outline: none;
-    -webkit-text-size-adjust: 100%;
-    -moz-text-size-adjust: 100%;
-    -ms-text-size-adjust: 100%;
-    text-size-adjust: 100%;
+    -webkit-text-size-adjust: $font-100pc;
+    -moz-text-size-adjust: $font-100pc;
+    -ms-text-size-adjust: $font-100pc;
+    text-size-adjust: $font-100pc;
     display: none
 }
 
@@ -2452,7 +2453,7 @@ a.play-btn {
     cursor: pointer;
     -webkit-transition: color .2s;
     transition: color .2s;
-    text-decoration: none;
+    text-decoration: $text-decoration-none;
     color: $color-95979c;
     border: 0;
     outline: 0;
@@ -2489,15 +2490,15 @@ a.play-btn {
 
 .popup-close:before {
     font-family: Arial, "Helvetica CY", "Nimbus Sans L", sans-serif !important;
-    font-size: 30px;
-    line-height: 35px;
+    font-size: $font-30px;
+    line-height: $lh-35px;
     position: absolute;
     top: 0;
     right: 0;
     display: block;
     width: 35px;
     content: "\00d7";
-    text-align: center
+    text-align: $text-center
 }
 
 .popup-option-overlay {
@@ -2517,8 +2518,8 @@ a.play-btn {
     padding: 30px;
     background: $color-ffffff;
     color: $color-333333;
-    font-size: 19px;
-    line-height: 30px;
+    font-size: $font-19px;
+    line-height: $lh-30px;
     border: 3px solid $color-8e2b5a;
     z-index: 9999999;
     -webkit-border-radius: 5px 5px 5px 5px;
@@ -2532,8 +2533,8 @@ a.play-btn {
     padding: 30px;
     background: $color-ffffff;
     color: $color-333333;
-    font-size: 19px;
-    line-height: 30px;
+    font-size: $font-19px;
+    line-height: $lh-30px;
     border: 3px solid $color-8e2b5a;
     z-index: 9999999;
     -webkit-border-radius: 5px 5px 5px 5px;
@@ -2601,16 +2602,16 @@ a.play-btn {
     -webkit-appearance: none;
     outline: none !important;
     color: $color-86939e;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 1;
+    font-size: $font-14px;
+    font-weight: $font-400;
+    line-height: $lh-1;
     padding: 15px 18px 0;
     box-sizing: border-box
 }
 
 textarea.std-input3 {
     height: 198px;
-    line-height: normal;
+    line-height: $lh-normal;
     resize: none;
     padding-top: 15px;
     padding-bottom: 15px
@@ -2634,15 +2635,15 @@ textarea.std-input3 {
     border: 1px solid $color-d4dbe2;
     border-radius: 0;
     color: $color-86939e;
-    font-family: "Roboto", sans-serif;
-    font-size: 14px;
-    font-weight: 500;
+    font-family: $font-roboto;
+    font-size: $font-14px;
+    font-weight: $font-500;
     height: 46px;
     position: relative;
     width: 100%;
     overflow: hidden;
     box-sizing: border-box;
-    text-align: left;
+    text-align: $text-left;
     background: rgb(242, 243, 244);
     background: -moz-linear-gradient(top, rgba(242, 243, 244, 1) 0%, rgba(229, 232, 235, 1) 100%);
     background: -webkit-linear-gradient(top, rgba(242, 243, 244, 1) 0%, rgba(229, 232, 235, 1) 100%);
@@ -2655,9 +2656,9 @@ textarea.std-input3 {
     border: none;
     box-shadow: none;
     color: $color-86939e;
-    font-family: "Roboto", sans-serif;
-    font-size: 14px;
-    font-weight: 400;
+    font-family: $font-roboto;
+    font-size: $font-14px;
+    font-weight: $font-400;
     background: rgb(242, 243, 244);
     background: -moz-linear-gradient(top, rgba(242, 243, 244, 1) 0%, rgba(229, 232, 235, 1) 100%);
     background: -webkit-linear-gradient(top, rgba(242, 243, 244, 1) 0%, rgba(229, 232, 235, 1) 100%);
@@ -2713,7 +2714,7 @@ select.error {
 
 input.valid + label, textarea.valid + label {
     top: 5px;
-    font-size: 12px;
+    font-size: $font-12px;
     color: $color-374252;
 }
 
@@ -2728,8 +2729,8 @@ label.error + label#terms-conditions2, label.error + label.terms-conditions {
 label.error {
     display: none;
     margin-left: 0;
-    font-size: 15px;
-    line-height: 20px
+    font-size: $font-15px;
+    line-height: $lh-20px
 }
 
 .std-input1.error, .std-input3.error {
@@ -2737,31 +2738,31 @@ label.error {
 }
 
 .error_show {
-    color: red;
+    color: $color-ff0000;
     margin-left: 10px
 }
 
 input.invalid, textarea.invalid {
-    border: 2px solid red
+    border: 2px solid $color-ff0000
 }
 
 input.valid, textarea.valid {
-    border: 2px solid green
+    border: 2px solid $color-008000
 }
 
 form .relative li {
-    text-align: left
+    text-align: $text-left
 }
 
 label.label-blur {
     left: 15px;
-    font-size: 12px !important;
+    font-size: $font-12px !important;
     color: $color-374252 !important;
 }
 
 input.valid ~ label.label-focus {
     top: 5px;
-    font-size: 12px;
+    font-size: $font-12px;
     color: $color-374252;
 }
 
@@ -2777,19 +2778,19 @@ input.valid ~ label.label-focus {
     position: absolute;
     left: 20px;
     top: 17px;
-    font-size: 14px
+    font-size: $font-14px
 }
 
 .form-half, .form-full {
     position: relative;
-    text-align: left
+    text-align: $text-left
 }
 
 .input-holder label, .support-issue label {
     position: absolute;
     top: 15px;
     left: 15px;
-    font-size: 14px;
+    font-size: $font-14px;
     color: $color-86939e;
     z-index: 9
 }
@@ -2828,12 +2829,12 @@ label.error + label#terms-conditions {
     cursor: pointer;
     display: inline-block;
     height: 25px;
-    line-height: 13px;
+    line-height: $lh-13px;
     -webkit-user-select: none;
     -moz-user-select: none;
     -khtml-user-select: none;
     -ms-user-select: none;
-    font-size: 14px
+    font-size: $font-14px
 }
 
 .input-holder textarea + label.error, .support-issue textarea + label.error {
@@ -2904,11 +2905,11 @@ input.mb-25px[type="checkbox"] {
 }
 
 #subscribe-form-footer .text-18px, #footer-thank-you .text-18px {
-    line-height: 30px
+    line-height: $lh-30px
 }
 
 .webinar-wrap figure {
-    text-align: right;
+    text-align: $text-right;
     max-height: 311px;
     display: block
 }
@@ -3026,11 +3027,11 @@ input.mb-25px[type="checkbox"] {
 
 @media (max-width: 900px) {
     .text-34px {
-        font-size: 24px;
+        font-size: $font-24px;
     }
 
     .text-16px {
-        font-size: 14px;
+        font-size: $font-14px;
     }
 
     .l-600-width {
@@ -3048,11 +3049,11 @@ input.mb-25px[type="checkbox"] {
     }
 
     .text-34px {
-        font-size: 18px;
+        font-size: $font-18px;
     }
 
     .text-16px {
-        font-size: 14px;
+        font-size: $font-14px;
     }
 
     .l-600-width {
@@ -3060,11 +3061,11 @@ input.mb-25px[type="checkbox"] {
     }
 
     .text-34px {
-        font-size: 18px;
+        font-size: $font-18px;
     }
 
     .text-32px {
-        font-size: 24px
+        font-size: $font-24px
     }
 
     .ana-pic {
@@ -3085,7 +3086,7 @@ input.mb-25px[type="checkbox"] {
     }
 
     .text-30px {
-        line-height: 30px
+        line-height: $lh-30px
     }
 
     .webinar-wrap img {
@@ -3117,7 +3118,7 @@ input.mb-25px[type="checkbox"] {
     .std-input3 {
         box-sizing: border-box;
         height: 40px;
-        line-height: 1;
+        line-height: $lh-1;
         padding: 0 3px
     }
 
@@ -3135,7 +3136,7 @@ input.mb-25px[type="checkbox"] {
 
     .btn {
         height: 35px;
-        line-height: 35px
+        line-height: $lh-35px
     }
 
     .input-holder label, .support-issue label {
@@ -3145,8 +3146,8 @@ input.mb-25px[type="checkbox"] {
 
 @media (max-width: 765px) {
     .text-20px {
-        font-size: 18px;
-        line-height: 22px
+        font-size: $font-18px;
+        line-height: $lh-22px
     }
 
     form .btn.block {
@@ -3161,7 +3162,7 @@ input.mb-25px[type="checkbox"] {
 @media (max-width: 480px) {
     .position-wrap .text-30px {
         margin-top: 2em;
-        font-size: 18px;
+        font-size: $font-18px;
     }
 
     .response {
@@ -3176,8 +3177,8 @@ input.mb-25px[type="checkbox"] {
     }
 
     h1 {
-        font-size: 26px !important;
-        line-height: 30px
+        font-size: $font-26px !important;
+        line-height: $lh-30px
     }
 }
 
@@ -3193,13 +3194,13 @@ input.mb-25px[type="checkbox"] {
 
 @media screen and (max-width: 52.75em) {
     .nthrive-main-menu {
-        font-size: 80%
+        font-size: $font-80pc
     }
 }
 
 @media screen and (max-width: 43em) {
     .nthrive-main-menu {
-        font-size: 120%;
+        font-size: $font-120pc;
         border: none
     }
 
@@ -3210,7 +3211,7 @@ input.mb-25px[type="checkbox"] {
 
     .nthrive-main-menu .nthrive-menusub-inner {
         padding: 0 2em;
-        font-size: 75%
+        font-size: $font-75pc
     }
 
     .nthrive-main-menu > ul > li {
@@ -3243,7 +3244,7 @@ input.mb-25px[type="checkbox"] {
 
     a {
         color: $color-000000;
-        text-decoration: none
+        text-decoration: $text-decoration-none
     }
 
     a:link, a:visited {
@@ -3371,7 +3372,7 @@ input.mb-25px[type="checkbox"] {
 
     .position-wrap .text-30px {
         margin-top: 2em;
-        font-size: 22px;
+        font-size: $font-22px;
     }
 
     .m-big {
@@ -3410,8 +3411,8 @@ input.mb-25px[type="checkbox"] {
         position: absolute;
         right: 6%;
         border: none;
-        font-weight: 700;
-        text-align: center;
+        font-weight: $font-700;
+        text-align: $text-center;
         z-index: 2
     }
 
@@ -3429,7 +3430,7 @@ input.mb-25px[type="checkbox"] {
         content: "";
         display: block;
         margin-top: -50%;
-        opacity: 0;
+        opacity: $op-0;
         padding-top: 100%;
         -webkit-transition-property: opacity;
         transition-property: opacity
@@ -3482,7 +3483,7 @@ input.mb-25px[type="checkbox"] {
         top: 30%;
         padding: 0 20px;
         margin: 0;
-        text-align: left
+        text-align: $text-left
     }
 
     .inner-banner img {
@@ -3593,13 +3594,13 @@ input.mb-25px[type="checkbox"] {
     }
 
     .content-wrap p {
-        font-size: 16px;
-        line-height: 33px
+        font-size: $font-16px;
+        line-height: $lh-33px
     }
 
     .content-wrap p {
-        font-size: 16px;
-        line-height: 20px
+        font-size: $font-16px;
+        line-height: $lh-20px
     }
 
     .facebook {
@@ -3627,7 +3628,7 @@ input.mb-25px[type="checkbox"] {
 
     .mobmenuopen #mobile-main-menu {
         z-index: 9999999;
-        opacity: 1;
+        opacity: $op-100;
         height: 400px;
         overflow-y: scroll
     }
@@ -3644,11 +3645,11 @@ input.mb-25px[type="checkbox"] {
         padding-right: 0;
         transition: all 0.2s ease 0s;
         background: $color-441a63;
-        text-align: left;
+        text-align: $text-left;
         box-sizing: border-box;
         padding-bottom: 20px;
         display: block;
-        opacity: 0;
+        opacity: $op-0;
         z-index: -1
     }
 }
@@ -3663,10 +3664,10 @@ input.mb-25px[type="checkbox"] {
 @media only screen and (max-width: 1404px) {
     h2 {
         color: $color-374252;
-        font-size: 30px;
-        font-weight: 300;
-        letter-spacing: -0.3px;
-        line-height: 36px
+        font-size: $font-30px;
+        font-weight: $font-300;
+        letter-spacing: $ls-0_3px;
+        line-height: $lh-36px
     }
 
     .great-place {
@@ -3686,10 +3687,10 @@ input.mb-25px[type="checkbox"] {
 @media only screen and (max-width: 1023px) {
     h2 {
         color: $color-374252;
-        font-size: 28px;
-        font-weight: 300;
-        letter-spacing: -0.3px;
-        line-height: 32px
+        font-size: $font-28px;
+        font-weight: $font-300;
+        letter-spacing: $ls-0_3px;
+        line-height: $lh-32px
     }
 
     .l-theme-padding {
@@ -3706,7 +3707,7 @@ input.mb-25px[type="checkbox"] {
     }
 
     .banner-title {
-        font-size: 42px
+        font-size: $font-42px
     }
 
     body img.desktop-landscape {
@@ -3830,14 +3831,14 @@ input.mb-25px[type="checkbox"] {
 
     .btn {
         height: 45px;
-        line-height: 45px
+        line-height: $lh-45px
     }
 
     .input-box .btn {
         padding: 0;
         width: 100%;
         height: 50px;
-        line-height: 50px
+        line-height: $lh-50px
     }
 
     .l-align-left, .l-align-right {
@@ -3856,12 +3857,12 @@ input.mb-25px[type="checkbox"] {
         padding-right: 0;
         transition: all 0.2s ease 0s;
         background: $color-441a63;
-        text-align: center;
+        text-align: $text-center;
         height: auto;
         height: calc(100vh - 80px);
         box-sizing: border-box;
         padding-bottom: 20px;
-        opacity: 0;
+        opacity: $op-0;
         z-index: -1
     }
 
@@ -3869,11 +3870,11 @@ input.mb-25px[type="checkbox"] {
         top: 100%;
         position: absolute;
         z-index: 9999999;
-        opacity: 1
+        opacity: $op-100
     }
 
     .nav-outer-wrap {
-        opacity: 1
+        opacity: $op-100
     }
 
     .mobmenuopen {
@@ -3886,14 +3887,14 @@ input.mb-25px[type="checkbox"] {
     }
 
     .banner-title {
-        font-size: 36px !important;
-        line-height: 42px !important;
+        font-size: $font-36px !important;
+        line-height: $lh-42px !important;
         padding-bottom: 26px
     }
 
     .inner-banner-wrapper .nt-search p {
-        font-size: 16px;
-        line-height: 24px
+        font-size: $font-16px;
+        line-height: $lh-24px
     }
 
     .comp-list {
@@ -3921,15 +3922,15 @@ input.mb-25px[type="checkbox"] {
     }
 
     .ana-info h2.text-30px.mb-25px {
-        font-size: 18px !important;
-        line-height: 24px;
+        font-size: $font-18px !important;
+        line-height: $lh-24px;
         margin-bottom: 15px
     }
 
     #main-content .ana-info p {
         margin-bottom: 10px;
         height: auto;
-        line-height: 18px
+        line-height: $lh-18px
     }
 
     .ana-right .ana-pic {
@@ -3956,7 +3957,7 @@ input.mb-25px[type="checkbox"] {
         width: 92%;
         box-sizing: border-box;
         height: 30px;
-        line-height: 30px;
+        line-height: $lh-30px;
         padding: 0 20px;
         padding-right: 0;
         float: left
@@ -3971,8 +3972,8 @@ input.mb-25px[type="checkbox"] {
     }
 
     .ana-info p {
-        font-size: 14px;
-        line-height: 24px;
+        font-size: $font-14px;
+        line-height: $lh-24px;
         margin-bottom: 20px
     }
 
@@ -4020,14 +4021,14 @@ input.mb-25px[type="checkbox"] {
     .ana-info p {
         display: block;
         display: -webkit-box;
-        font-size: 14px;
-        line-height: 24px;
+        font-size: $font-14px;
+        line-height: $lh-24px;
         margin-bottom: 20px;
         height: 45px;
         -webkit-line-clamp: 2;
         -webkit-box-orient: vertical;
         overflow: hidden;
-        text-overflow: ellipsis;
+        text-overflow: $text-overflow-ellipsis;
         padding-bottom: 0
     }
 
@@ -4090,12 +4091,12 @@ input.mb-25px[type="checkbox"] {
         border-radius: 0;
         box-sizing: border-box;
         height: 50px;
-        line-height: 18px;
+        line-height: $lh-18px;
         margin: 0;
         overflow: hidden;
         padding: 0;
         position: relative;
-        text-align: left;
+        text-align: $text-left;
         width: 100%
     }
 
@@ -4105,7 +4106,7 @@ input.mb-25px[type="checkbox"] {
 
     textarea.std-input3 {
         height: 168px;
-        line-height: normal;
+        line-height: $lh-normal;
         padding-bottom: 15px;
         padding-top: 15px;
         resize: none
@@ -4113,7 +4114,7 @@ input.mb-25px[type="checkbox"] {
 
     .contact-form-content .btn {
         height: 50px;
-        line-height: 50px
+        line-height: $lh-50px
     }
 
     .l-one-third {
@@ -4146,7 +4147,7 @@ input.mb-25px[type="checkbox"] {
 
     .accordion .l-inline-list .cat, .accordion .l-inline-list .title-click {
         max-width: 210px;
-        font-size: 14px
+        font-size: $font-14px
     }
 
     .cta-btn span.arrow-toggle {
@@ -4170,12 +4171,12 @@ input.mb-25px[type="checkbox"] {
     .th-dots {
         float: left;
         height: 60px;
-        line-height: normal;
+        line-height: $lh-normal;
         margin-left: 0;
         padding: 0 4px;
         position: relative;
         top: 0;
-        line-height: 60px
+        line-height: $lh-60px
     }
 
     .main-nav {
@@ -4185,12 +4186,12 @@ input.mb-25px[type="checkbox"] {
         padding-right: 0;
         transition: all 0.2s ease 0s;
         background: $color-441a63;
-        text-align: center;
+        text-align: $text-center;
         height: auto;
         height: calc(100vh - 60px);
         box-sizing: border-box;
         padding-bottom: 20px;
-        opacity: 0;
+        opacity: $op-0;
         z-index: -1
     }
 
@@ -4326,15 +4327,12 @@ body img.desktop-landscape {
 
 @media only screen and (max-width: 360px) {
     .accordion-header h2 span {
-        font-size: 10px !important
+        font-size: $font-10px !important
     }
 }
 
-@media only screen and (min-width: 1360px) {
-}
-
 .visually-hidden {
-    opacity: 0;
+    opacity: $op-0;
     visibility: hidden;
     position: absolute;
     left: -9999px;
@@ -4347,7 +4345,7 @@ body img.desktop-landscape {
 
 .menu-panel a .skip-nav {
     float: left;
-    font-weight: 700;
+    font-weight: $font-700;
     padding: 10px
 }
 
@@ -4360,7 +4358,7 @@ body img.desktop-landscape {
     left: -999999px;
     overflow: hidden;
     position: absolute;
-    font-size: 15px;
+    font-size: $font-15px;
     padding: 15px;
     background: $color-ffffff;
     display: inline-block;
@@ -4389,7 +4387,7 @@ body img.desktop-landscape {
 .highlight pre {
     background: $color-f7f7f7;
     border-radius: 3px;
-    line-height: 1.45;
+    line-height: $lh-1-45;
     margin-bottom: 0;
     overflow: auto;
     padding: 16px;
@@ -4421,7 +4419,7 @@ body.tab .menu:focus {
 
 a.open + .navarrow {
     display: block;
-    opacity: 1;
+    opacity: $op-100;
     visibility: visible
 }
 
@@ -4439,8 +4437,8 @@ a.open + .navarrow {
 
 #toggleMenu > a {
     color: $color-ffffff;
-    font-size: 20px;
-    line-height: 1;
+    font-size: $font-20px;
+    line-height: $lh-1;
     padding: 12px 20px;
     margin: 0
 }
@@ -4513,13 +4511,13 @@ a.open + .navarrow {
     }
 
     body .main-nav {
-        opacity: 1
+        opacity: $op-100
     }
 
     .nthrive-main-menu figure {
         display: none;
         visibility: hidden;
-        opacity: 0
+        opacity: $op-0
     }
 
     .logo-wrap.l-align-left {
@@ -4547,7 +4545,7 @@ a.open + .navarrow {
         overflow-y: auto;
         -webkit-overflow-scrolling: touch;
         visibility: hidden;
-        text-align: left;
+        text-align: $text-left;
         width: auto !important
     }
 
@@ -4572,7 +4570,7 @@ a.open + .navarrow {
 
     .m-open a + .navarrow {
         display: none;
-        opacity: 0;
+        opacity: $op-0;
         visibility: hidden
     }
 
@@ -4602,7 +4600,7 @@ a.open + .navarrow {
     }
 
     .nav-top-level > a {
-        font-size: 16px
+        font-size: $font-16px
     }
 
     #main {

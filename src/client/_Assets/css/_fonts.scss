@@ -1,0 +1,148 @@
+﻿/* Font Families */
+$font-roboto: 'Roboto', sans-serif, Calibri;
+$font-arial: Arial, "Helvetica CY", "Nimbus Sans L", sans-serif;
+
+/* Font Weights */
+$font-100: 100;
+$font-200: 200;
+$font-300: 300;
+$font-400: 400;
+$font-500: 500;
+$font-600: 600;
+$font-700: 700;
+$font-900: 900;
+$font-normal: normal;
+$font-bold: bold;
+$font-bolder: bolder;
+$font-inherit: inherit;
+
+/* Font Sizes */
+$font-08em: .8em;
+$font-1-3em: 1.3em;
+$font-1-9em: 1.9em;
+$font-2em: 2em;
+$font-10px: 10px;
+$font-11px: 11px;
+$font-12px: 12px;
+$font-13px: 13px;
+$font-14px: 14px;
+$font-15px: 15px;
+$font-16px: 16px;
+$font-17px: 17px;
+$font-18px: 18px;
+$font-19px: 19px;
+$font-20px: 20px;
+$font-21px: 21px;
+$font-22px: 22px;
+$font-23px: 23px;
+$font-24px: 24px;
+$font-25px: 25px;
+$font-26px: 26px;
+$font-28px: 28px;
+$font-30px: 30px;
+$font-32px: 32px;
+$font-34px: 34px;
+$font-36px: 36px;
+$font-42px: 42px;
+$font-44px: 44px;
+$font-46px: 46px;
+$font-48px: 48px;
+$font-50px: 50px;
+$font-52px: 52px;
+$font-64px: 64px;
+$font-84px: 84px;
+$font-141px: 141px;
+$font-200px: 200px;
+$font-70pc: 70%;
+$font-75pc: 75%;
+$font-80pc: 80%;
+$font-100pc: 100%;
+$font-120pc: 120%;
+$font-xlarge: x-large;
+$font-inherit: inherit;
+$font-initial: initial;
+
+/* Text Align, Transform, Decoration & Styles*/
+$text-center: center;
+$text-left: left;
+$text-right: right;
+$text-underline: underline;
+$text-transform-none: none;
+$text-transform-capitalize: capitalize;
+$text-transform-uppercase: uppercase;
+$text-decoration-none: none;
+$text-overflow-ellipsis: ellipsis;
+$font-normal: normal;
+$font-italic: italic;
+
+/* Letter Spacing */
+$ls-0_1px: -0.1px;
+$ls-0_2px: -0.2px;
+$ls-0_3px: -0.3px;
+$ls-0_6px: -0.6px;
+$ls-0_7px: -0.7px;
+$ls-0_9px: -0.9px;
+$ls-1_5px: -1.5px;
+$ls-1_9px: -1.9px;
+$ls-5_3px: -5.3px;
+$ls_12em: .12em;
+
+/* Line Heights */
+$lh-1: 1;
+$lh-1-3: 1.3;
+$lh-1-45: 1.45;
+$lh-1-4: 1.4;
+$lh-1-5: 1.5;
+$lh-1-6: 1.6;
+$lh-1-7: 1.7;
+$lh-1-8: 1.8;
+$lh-2: 2;
+$lh-2-3: 2.3;
+$lh-2-7: 2.7;
+$lh-6: 6;
+$lh-1-4em: 1.4em;
+$lh-2-5em: 2.5em;
+$lh-13px: 13px;
+$lh-14px: 14px;
+$lh-15px: 15px;
+$lh-16px: 16px;
+$lh-17px: 17px;
+$lh-18px: 18px;
+$lh-19px: 19px;
+$lh-20px: 20px;
+$lh-21px: 21px;
+$lh-22px: 22px;
+$lh-24px: 24px;
+$lh-25px: 25px;
+$lh-26px: 26px;
+$lh-28px: 28px;
+$lh-29px: 29px;
+$lh-30px: 30px;
+$lh-32px: 32px;
+$lh-33px: 33px;
+$lh-35px: 35px;
+$lh-36px: 36px;
+$lh-38px: 38px;
+$lh-39px: 39px;
+$lh-40px: 40px;
+$lh-42px: 42px;
+$lh-43px: 43px;
+$lh-45px: 45px;
+$lh-46px: 46px;
+$lh-48px: 48px;
+$lh-50px: 50px;
+$lh-52px: 52px;
+$lh-54px: 54px;
+$lh-56px: 56px;
+$lh-60px: 60px;
+$lh-68px: 68px;
+$lh-145px: 145px;
+$lh-201px: 201px;
+$lh-normal: normal;
+
+/* Opacity */
+$op-0: 0;
+$op-30: 0.3;
+$op-40: 0.4;
+$op-54: 0.54;
+$op-100: 1;
