@@ -43,7 +43,7 @@ h3 {
 
 h4 {
     font-size: $font-18px;
-    line-height: $lh-1-3
+    line-height: $lh-1_3
 }
 
 section p, p {
@@ -64,7 +64,7 @@ h2.event-section-header {
 
 h4.header-text {
     font-size: $font-44px;
-    line-height: $lh-1-3;
+    line-height: $lh-1_3;
     font-weight: $font-500;
     margin-top: 10px
 }
@@ -80,7 +80,7 @@ h4.header-text {
 }
 
 section .eltlink p {
-    line-height: $lh-1-5
+    line-height: $lh-1_5
 }
 
 .news-content a:hover {
@@ -249,7 +249,7 @@ section .eltlink p {
     border-radius: 5px;
     font-size: $font-10px;
     display: inline-block;
-    line-height: $lh-1-4;
+    line-height: $lh-1_4;
     margin-right: 6px;
 }
 
@@ -374,7 +374,6 @@ section .eltlink p {
     background: -moz-linear-gradient(-45deg, $color-7043a9 0%, $color-200255 100%);
     background: -webkit-linear-gradient(-45deg, $color-7043a9 0%, $color-200255 100%);
     background: linear-gradient(135deg, $color-7043a9 0%, $color-200255 100%);
-    // filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='$color-7043a9', endColorstr='$color-200255', GradientType=1)
 }
 
 .bg-gradient-green {
@@ -385,7 +384,6 @@ section .eltlink p {
     background: -o-linear-gradient(-45deg, $color-498b81 0%, $color-228072 46%, $color-1a6666 100%);
     background: -ms-linear-gradient(-45deg, $color-498b81 0%, $color-228072 46%, $color-1a6666 100%);
     background: linear-gradient(135deg, $color-498b81 0%, $color-228072 46%, $color-1a6666 100%);
-    // filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='$color-498b81', endColorstr='$color-1a6666', GradientType=1)
 }
 
 .bg-gradient-pink {
@@ -393,7 +391,6 @@ section .eltlink p {
     background: -moz-linear-gradient(top, $color-b52465 1%, $color-90277c 50%, $color-872981 100%);
     background: -webkit-linear-gradient(top, $color-b52465 1%, $color-90277c 50%, $color-872981 100%);
     background: linear-gradient(to bottom, $color-b52465 1%, $color-90277c 50%, $color-872981 100%);
-    // filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='$color-b52465', endColorstr='$color-872981', GradientType=0)
 }
 
 .map-overlay {
@@ -442,7 +439,7 @@ a.button-box:hover {
 }
 
 .text-emphasis {
-    font-size: $font-1-3em
+    font-size: $font-1_3em
 }
 
 .text-italic {
@@ -1133,7 +1130,7 @@ body #menu > li > a {
 
 .nthrive-menu h3 {
     color: $color-54565b;
-    font-size: $font-1-9em;
+    font-size: $font-1_9em;
     font-weight: $font-300;
     background: $color-333333
 }
@@ -1163,7 +1160,7 @@ body #menu > li > a {
 .main > div.buttonset button {
     background: $color-ffffff;
     color: $color-54565b;
-    font-size: $font-08em
+    font-size: $font-0_8em
 }
 
 .main > div.buttonset button:hover {
@@ -1196,7 +1193,7 @@ ul.bullets.light-border, ul.content-list.light-border {
 ul.bullets li {
     list-style: disc;
     margin-bottom: 10px;
-    line-height: $lh-1-7;
+    line-height: $lh-1_7;
     font-size: $font-14px;
     float: none !important;
     display: list-item !important
@@ -2033,7 +2030,7 @@ ul.light-border.content-list li {
 
 .sitemap-width > a {
     font-weight: $font-600;
-    line-height: $lh-1-4;
+    line-height: $lh-1_4;
     color: $color-441a63;
     font-size: $font-18px;
     display: block;
@@ -2043,14 +2040,14 @@ ul.light-border.content-list li {
 .sitemap-width > ul {
     font-weight: $font-400;
     color: $color-374252;
-    line-height: $lh-1-4;
+    line-height: $lh-1_4;
     display: inline-block
 }
 
 .sitemap-width > ul a {
     font-weight: $font-400;
     color: $color-374252;
-    line-height: $lh-1-4;
+    line-height: $lh-1_4;
     display: block;
     padding: 7px 0
 }
@@ -2458,7 +2455,7 @@ span.sm {
 }
 
 .recent-box p {
-    line-height: $lh-1-5 !important;
+    line-height: $lh-1_5 !important;
     padding-bottom: 9px;
     max-width: 95%;
 }

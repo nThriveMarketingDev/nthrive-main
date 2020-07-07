@@ -2,7 +2,7 @@
 @import "fonts";
 
 html {
-    font-size: 100%;
+    font-size: $font-100pc;
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%
 }
@@ -51,8 +51,8 @@ a {
 
 abbr[title] {
     border-bottom: none;
-    text-decoration: underline;
-    text-decoration: underline dotted
+    text-decoration: $text-underline;
+    text-decoration: $text-underline dotted
 }
 
 b, strong {
@@ -68,11 +68,11 @@ b.inline, strong.inline, .inline {
 }
 
 dfn {
-    font-style: italic
+    font-style: $font-italic
 }
 
 h1 {
-    font-size: 2em;
+    font-size: $font-2em;
     margin: 0.67em 0;
     font-family: $font-roboto
 }
@@ -83,12 +83,12 @@ mark {
 }
 
 small {
-    font-size: 80%
+    font-size: $font-80pc
 }
 
 sub, sup {
-    font-size: 50%;
-    line-height: 0;
+    font-size: $font-50pc;
+    line-height: $lh-0;
     position: relative;
     vertical-align: baseline
 }
@@ -111,9 +111,9 @@ svg:not(:root) {
 }
 
 code, kbd, pre, samp, address, caption, th, figcaption {
-    font-size: 1em;
+    font-size: $font-1em;
     font-weight: $font-normal;
-    font-style: normal
+    font-style: $font-normal
 }
 
 ul, ol, li, dl, dt, dd, h1, h2, h3, h4, h5, h6, hgroup, p, blockquote, figure, form, fieldset, input, legend, pre, abbr, button {
@@ -131,7 +131,7 @@ fieldset, iframe, img {
 }
 
 caption, th {
-    text-align: left
+    text-align: $text-left
 }
 
 table {
@@ -160,7 +160,7 @@ button, input {
 }
 
 button, select {
-    text-transform: none
+    text-transform: $text-transform-none
 }
 
 button, html [type="button"], [type="reset"], [type="submit"] {
@@ -226,7 +226,7 @@ textarea {
 
 ::-webkit-input-placeholder {
     color: $color-inherit;
-    opacity: 0.54
+    opacity: $op-54
 }
 
 ::-webkit-file-upload-button {
@@ -248,7 +248,7 @@ textarea {
 
 span.tooltip {
     font-family: $font-arial;
-    font-size: 14px;
+    font-size: $font-14px;
     font-weight: $font-normal;
     position: absolute;
     padding: 6px 20px;
@@ -260,8 +260,8 @@ span.tooltip {
     -moz-background-clip: padding;
     background-clip: padding-box;
     margin-top: 0;
-    text-align: center;
-    text-decoration: none;
+    text-align: $text-center;
+    text-decoration: $text-decoration-none;
     box-shadow: 0 0 3px $color-000000;
     z-index: 9999;
     right: 0;
@@ -365,13 +365,13 @@ div.main {
 }
 
 .l-schedule li, .l-schedule li p {
-    font-size: 16px !important;
-    line-height: 28px !important
+    font-size: $font-16px !important;
+    line-height: $lh-28px !important
 }
 
 .l-content-lg-width .text-16px p, .l-content-lg-width .text-16px li {
-    font-size: 16px !important;
-    line-height: 26px !important
+    font-size: $font-16px !important;
+    line-height: $lh-26px !important
 }
 
 #main-content .tab-content .sub-list li p {
@@ -423,8 +423,8 @@ div.main {
     padding: 0;
     background: $color-ffffff;
     color: $color-333333;
-    font-size: 19px;
-    line-height: 30px;
+    font-size: $font-19px;
+    line-height: $lh-30px;
     border: 3px solid $color-8e2b5a;
     z-index: 9999999;
     -webkit-border-radius: 5px 5px 5px 5px;
@@ -506,7 +506,7 @@ div.main {
     padding: 0;
     position: relative;
     left: 50%;
-    text-align: center;
+    text-align: $text-center;
 }
 
 .centeredmenu ul li {
@@ -523,7 +523,7 @@ div.main {
     display: block;
     margin: 0 20px;
     padding: 0 10px;
-    font-size: 14px
+    font-size: $font-14px
 }
 
 .grecaptcha-badge {
@@ -557,9 +557,9 @@ div.main {
 
 .table-body.rev-table p {
     padding: 20px 20px;
-    font-size: 14px;
+    font-size: $font-14px;
     font-weight: $font-400;
-    line-height: 2;
+    line-height: $lh-2;
     margin: 0 !important
 }
 
@@ -571,7 +571,7 @@ div.main {
 }
 
 p.rev-caption {
-    line-height: 1.3;
+    line-height: $lh-1_3;
 }
 
 p.rev-p {
@@ -584,10 +584,10 @@ p.rev-p {
     display: inline-block;
     padding: 0 15px;
     color: $color-ffffff;
-    font-size: 14px;
+    font-size: $font-14px;
     font-family: $font-roboto;
     font-weight: $font-600;
-    line-height: 2.3;
+    line-height: $lh-2_3;
     -webkit-transition: all 0.1s ease-in;
     -moz-transition: all 0.1s ease-in;
     -o-transition: all 0.1s ease-in;
@@ -598,12 +598,12 @@ p.rev-p {
     box-shadow: none;
     -webkit-appearance: none;
     outline: none;
-    text-align: center;
+    text-align: $text-center;
     cursor: pointer;
 }
 
 .visually-hidden {
-    opacity: 0;
+    opacity: $op-0;
     visibility: hidden;
     position: absolute;
     overflow: hidden !important;
@@ -666,8 +666,8 @@ input.error[type="checkbox"] {
     width: 50%;
     height: 28px;
     padding: 0;
-    line-height: 28px;
-    font-size: 16px;
+    line-height: $lh-28px;
+    font-size: $font-16px;
     color: $color-ffffff;
     font-family: $font-arial;
     font-weight: $font-bold;
@@ -686,7 +686,7 @@ input.error[type="checkbox"] {
     padding-right: 10px;
     background-color: $color-eeeeee;
     color: $color-999999;
-    text-align: right;
+    text-align: $text-right;
 }
 
 .onoffswitch-switch {
@@ -717,7 +717,7 @@ input.error[type="checkbox"] {
 }
 
 ol.numbers.text-24px, ol.numbers.text-24px h3 {
-    font-size: 24px;
+    font-size: $font-24px;
 }
 
 ol.numbers.text-24px li h3 {
@@ -738,7 +738,7 @@ ol.numbers.text-500 {
 }
 
 ol.numbers p {
-    font-size: 14px;
+    font-size: $font-14px;
     font-weight: $font-400;
 }
 
@@ -767,7 +767,7 @@ ol.numbers p {
     padding: 16px 11px;
     margin: 2px;
     display: block;
-    font-size: 13px;
+    font-size: $font-13px;
     font-weight: $font-500;
 }
 
@@ -863,7 +863,7 @@ html .sub-list.adv-list {
 }
 
 .logo-anim {
-    opacity: 0;
+    opacity: $op-0;
     -webkit-transition: all 300ms ease-out;
     -moz-transition: all 300ms ease-out;
     -o-transition: all 300ms ease-out;
@@ -882,7 +882,7 @@ html .sub-list.adv-list {
 }
 
 .logo-anim.move {
-    opacity: 1;
+    opacity: $op-100;
     -moz-transform: translate3d(0px, 0px, 0px);
     -webkit-transform: translate3d(0px, 0px, 0px);
     -o-transform: translate(0px, 0px);
@@ -1042,7 +1042,7 @@ form #checkboxes.checkbox-error div.error {
 }
 
 label.label-blur[for="Contact_me_Details__c"] {
-    font-size: initial !important;
+    font-size: $font-initial !important;
     font-weight: $font-400;
     padding: 0
 }
@@ -1056,12 +1056,12 @@ label.label-blur[for="Contact_me_Details__c"] {
 }
 
 .three-col.claims-table li:last-child p {
-    font-size: 18px;
+    font-size: $font-18px;
     font-weight: $font-500;
 }
 
 .three-col.table-head li p {
-    font-size: 16px !important;
+    font-size: $font-16px !important;
     font-weight: $font-500;
 }
 
@@ -1109,7 +1109,6 @@ label.label-blur[for="Contact_me_Details__c"] {
     background: -o-linear-gradient(top, rgba(242,242,242,0) 0%, rgba(242,242,242,1) 32%, rgba(242,242,242,1) 100%);
     background: -ms-linear-gradient(top, rgba(242,242,242,0) 0%, rgba(242,242,242,1) 32%, rgba(242,242,242,1) 100%);
     background: linear-gradient(to bottom, rgba(242,242,242,0) 0%, rgba(242,242,242,1) 32%, rgba(242,242,242,1) 100%);
-    // filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$color-f2f2f2', endColorstr='$color-f2f2f2', GradientType=0 );
 }
 
 .h-200px .hide-gradient {
@@ -1137,7 +1136,7 @@ label.label-blur[for="Contact_me_Details__c"] {
 }
 
 .sl-side.img-width-200px {
-    text-align:center;
+    text-align: $text-center;
     & img {
         max-width: 200px;
         margin-top: 40px;
@@ -1147,7 +1146,7 @@ label.label-blur[for="Contact_me_Details__c"] {
  }
 
  .sl-side.img-width-160px {
-    text-align:center;
+    text-align: $text-center;
     & img {
         max-width: 160px;
         margin-top: 40px;
@@ -1178,7 +1177,7 @@ label.label-blur[for="Contact_me_Details__c"] {
 }
 
 .l-align-center {
-    text-align: center;
+    text-align: $text-center;
     margin: 0 auto
 }
 
@@ -1373,13 +1372,13 @@ ul.bullets li, ul.content-list li {
 
 ul.bullets li, ul.content-list li {
     margin-bottom: .7em;
-    line-height: 1.4em
+    line-height: $lh-1_4em
 }
 
 ol.numbers {
     list-style-type: decimal;
-    line-height: 1.7;
-    font-size: 14px;
+    line-height: $lh-1_7;
+    font-size: $font-14px;
     margin-bottom: 20px;
     padding: 0 0 0 25px
 }
@@ -1423,15 +1422,15 @@ a.anchor {
 }
 
 .text-right {
-    text-align: right
+    text-align: $text-right
 }
 
 .text-left {
-    text-align: left
+    text-align: $text-left
 }
 
 .text-center {
-    text-align: center
+    text-align: $text-center
 }
 
 .space-30px {
@@ -1509,10 +1508,10 @@ a.anchor {
 #large-view-nav li {
     margin: 0;
     padding-right: 0;
-    font-size: 13px;
-    font-style: normal;
-    text-decoration: none;
-    line-height: 4.5
+    font-size: $font-13px;
+    font-style: $font-normal;
+    text-decoration: $text-decoration-none;
+    line-height: $lh-4_5
 }
 
 #large-view-nav li.rm0 {
@@ -1593,11 +1592,11 @@ a.anchor {
     color: $color-ffffff;
     cursor: pointer;
     display: block;
-    font-size: 13px !important;
+    font-size: $font-13px !important;
     padding: 10px 5px;
     position: absolute;
     right: 1%;
-    text-align: center;
+    text-align: $text-center;
     top: .1em;
     width: 50px;
     background: $color-transp;
@@ -1759,7 +1758,7 @@ a.anchor {
 
 li.mb-first:overlay {
     background: $color-000000;
-    opacity: 0.2
+    opacity: $op-20
 }
 
 li.hbsslider-slide {
@@ -1799,7 +1798,7 @@ select::-ms-expand {
 }
 
 .credit-text-wrap {
-    line-height: 4;
+    line-height: $lh-4;
     height: 80px
 }
 
@@ -1822,8 +1821,8 @@ select::-ms-expand {
 }
 
 .content-block-wrap {
-    font-size: 14px;
-    line-height: 24px;
+    font-size: $font-14px;
+    line-height: $lh-24px;
     font-weight: $font-400;
     color: $color-86939e
 }
@@ -1860,16 +1859,16 @@ select::-ms-expand {
 
 .image-caption1 {
     font-weight: $font-300;
-    line-height: 14px;
-    font-size: 12px;
+    line-height: $lh-14px;
+    font-size: $font-12px;
     padding-top: 5px;
     color: $color-662d91
 }
 
 .image-caption2 {
     font-weight: $font-300;
-    line-height: 14px;
-    font-size: 12px;
+    line-height: $lh-14px;
+    font-size: $font-12px;
     padding-top: 5px;
     color: $color-662d91
 }
@@ -1888,18 +1887,18 @@ select::-ms-expand {
 }
 
 h3.popover-title {
-    font-size: 15px;
-    letter-spacing: 0.1px;
+    font-size: $font-15px;
+    letter-spacing: $ls-0_1px;
     font-weight: $font-500;
     color: $color-374252;
     padding: 15px 30px 16px 30px;
     border-bottom: 1px solid $color-cdcdcd;
-    line-height: 29px
+    line-height: $lh-29px
 }
 
 h3.popover-title span {
-    font-size: 10px;
-    letter-spacing: 0.1px;
+    font-size: $font-10px;
+    letter-spacing: $ls-0_1px;
     font-weight: $font-500;
     color: $color-374252
 }
@@ -1918,7 +1917,7 @@ h3.popover-title span {
     min-width: 534px;
     height: 350px;
     padding: 1px;
-    text-align: left;
+    text-align: $text-left;
     white-space: normal;
     background-color: $color-f6f6f6;
     -webkit-background-clip: padding-box;
@@ -1933,17 +1932,17 @@ h3.popover-title span {
 
 #menu .submenu-list a span.submenu-desc {
     display: block;
-    font-size: 11px;
+    font-size: $font-11px;
     color: $color-a2acb4;
-    text-decoration: none !important
+    text-decoration: $text-decoration-none !important
 }
 
 body #menu .submenu-desc {
-    text-decoration: none !important
+    text-decoration: $text-decoration-none !important
 }
 
 #menu .submenu-list a:hover span.submenu-title {
-    text-decoration: underline
+    text-decoration: $text-underline
 }
 
 .dropdown-menu > li > a:after {
@@ -2070,16 +2069,16 @@ body #menu > li > a:hover {
     color: $color-afdefa;
     padding: 1em 0 0.6em;
     margin: 0;
-    font-size: 130%;
+    font-size: $font-130pc;
     font-weight: $font-300
 }
 
 .dropdown-menu h2 {
     font-family: $font-roboto;
     font-weight: $font-600;
-    font-size: 15px;
+    font-size: $font-15px;
     color: $color-374252;
-    letter-spacing: 0.1px;
+    letter-spacing: $ls-0_1px;
     padding: 12px 30px
 }
 
@@ -2104,7 +2103,7 @@ body #menu > li > a:hover {
     padding: 0;
     margin: 0;
     margin-top: 3px;
-    text-align: left;
+    text-align: $text-left;
     width: 774px;
     background: $color-f6f6f6 url(../images/navigation/bg-white.jpg) repeat-y top left;
     -webkit-border-radius: 2px 2px;
@@ -2121,7 +2120,7 @@ body #menu > li > a:hover {
 .dropdown-menu div.first-sub {
     padding: 0;
     margin: 0;
-    font-size: 14px
+    font-size: $font-14px
 }
 
 body #menu div.first-sub a.hover-menu {
@@ -2131,7 +2130,7 @@ body #menu div.first-sub a.hover-menu {
 .dropdown-menu .submenu-change-default > div.second-sub, .dropdown-menu .submenu-change > div.second-sub {
     padding: 15px 30px 0 30px;
     margin: 0;
-    font-size: 14px
+    font-size: $font-14px
 }
 
 .dropdown-menu .submenu-change > div.second-sub:last-child {
@@ -2144,14 +2143,14 @@ body #menu div.first-sub a.hover-menu {
 
 .dropdown-menu div.first-sub a {
     font-weight: $font-500;
-    text-decoration: none;
-    font-size: 14px
+    text-decoration: $text-decoration-none;
+    font-size: $font-14px
 }
 
 .dropdown-menu a, .sticky header .nthrive-main-nav .dropdown-menu a, header.bg-purple .nthrive-main-nav .dropdown-menu a {
     width: auto !important;
     display: block;
-    line-height: 15px
+    line-height: $lh-15px
 }
 
 .dropdown-menu div.first-sub {
@@ -2164,7 +2163,7 @@ body #menu div.first-sub a.hover-menu {
 
 .dropdown-menu .second-sub-wrap {
     margin: 0;
-    font-size: 14px;
+    font-size: $font-14px;
     width: 170px
 }
 
@@ -2173,19 +2172,19 @@ body #menu div.first-sub a.hover-menu {
 }
 
 h3.submenu-title, h3.menu-title, div.submenu-title, div.menu-title {
-    font-size: 15px;
-    letter-spacing: 0.1px;
+    font-size: $font-15px;
+    letter-spacing: $ls-0_1px;
     font-weight: $font-500;
     color: $color-374252;
     padding: 15px 30px 16px 30px;
     border-bottom: 1px solid $color-cdcdcd;
-    line-height: 29px
+    line-height: $lh-29px
 }
 
 div.sub-right {
-    font-size: 28px;
+    font-size: $font-28px;
     font-weight: $font-300;
-    line-height: 32px;
+    line-height: $lh-32px;
     color: $color-374252
 }
 
@@ -2218,22 +2217,22 @@ div.right-column-wrap p {
 
 .menu-description-wrap {
     padding: 30px;
-    line-height: 22px;
-    font-size: 14px;
+    line-height: $lh-22px;
+    font-size: $font-14px;
     max-width: 310px
 }
 
 p.submenu-title {
-    font-size: 14px;
+    font-size: $font-14px;
     color: $color-5e6977;
     font-weight: $font-500
 }
 
 p.submenu-desc {
-    font-size: 11px;
+    font-size: $font-11px;
     color: $color-86939e;
     font-weight: $font-400;
-    letter-spacing: 0.1
+    letter-spacing: $ls-0_1px
 }
 
 #menu .dropdown-menu a {
@@ -2317,25 +2316,25 @@ body {
 }
 
 .menunav ul li {
-    font-size: 13px;
-    font-style: normal;
-    line-height: 4.5;
+    font-size: $font-13px;
+    font-style: $font-normal;
+    line-height: $lh-4_5;
     margin: 0;
     padding-right: 0;
-    text-decoration: none
+    text-decoration: $text-decoration-none
 }
 
 .menunav a {
     color: $color-ffffff;
     display: block;
     font-weight: $font-500;
-    text-decoration: none;
-    text-transform: capitalize
+    text-decoration: $text-decoration-none;
+    text-transform: $text-transform-capitalize
 }
 
 .th-dots {
     float: left;
-    line-height: 6;
+    line-height: $lh-6;
     margin-left: 0;
     position: relative;
     top: 3px
@@ -2549,10 +2548,10 @@ span.arrow {
 
 .slider-title {
     color: $color-ffffff !important;
-    font-size: 36px;
+    font-size: $font-36px;
     font-family: $font-roboto;
     font-weight: $font-300;
-    line-height: normal;
+    line-height: $lh-normal;
     float: none
 }
 
@@ -2561,7 +2560,7 @@ span.arrow {
 }
 
 .slider-title h1 {
-    line-height: 48px
+    line-height: $lh-48px
 }
 
 .slider-title:hover {
@@ -2607,12 +2606,12 @@ input:focus-visible {
     box-shadow: none;
     -webkit-appearance: none;
     outline: none !important;
-    font-size: 14px;
+    font-size: $font-14px;
     font-family: $font-roboto;
     font-weight: $font-400;
-    line-height: 35px;
+    line-height: $lh-35px;
     padding: 0 0 0 5.66%;
-    letter-spacing: 0.1px;
+    letter-spacing: $ls-0_1px;
     vertical-align: top
 }
 
@@ -2630,22 +2629,22 @@ input:focus-visible {
 
 ::-webkit-input-placeholder {
     color: $color-c2c9ce;
-    opacity: 1
+    opacity: $op-100
 }
 
 :-moz-placeholder {
     color: $color-c2c9ce;
-    opacity: 1
+    opacity: $op-100
 }
 
 ::-moz-placeholder {
     color: $color-c2c9ce;
-    opacity: 1
+    opacity: $op-100
 }
 
 :-ms-input-placeholder {
     color: $color-c2c9ce;
-    opacity: 1
+    opacity: $op-100
 }
 
 .l-site-width-740 {
@@ -2671,7 +2670,6 @@ select.error {
     background: -moz-linear-gradient(left, rgba(11, 87, 97, 1) 0%, rgba(0, 54, 74, 1) 100%);
     background: -webkit-linear-gradient(left, rgba(11, 87, 97, 1) 0%, rgba(0, 54, 74, 1) 100%);
     background: linear-gradient(to right, rgba(11, 87, 97, 1) 0%, rgba(0, 54, 74, 1) 100%);
-    // filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='$color-0b5761', endColorstr='$color-00364a', GradientType=1)
 }
 
 .link-arrow {
@@ -2707,10 +2705,10 @@ select.error {
     height: 50px;
     padding: 0 20px;
     color: $color-ffffff !important;
-    font-size: 14px;
+    font-size: $font-14px;
     font-family: $font-roboto;
     font-weight: $font-400;
-    line-height: 50px;
+    line-height: $lh-50px;
     transition: all 0.1s ease-in;
     background: $color-4a1c6b;
     border: none;
@@ -2719,7 +2717,7 @@ select.error {
     -webkit-appearance: none;
     outline: none;
     min-width: 130px;
-    text-align: center;
+    text-align: $text-center;
     cursor: pointer
 }
 
@@ -2731,8 +2729,8 @@ select.error {
     height: auto;
     padding: 0.2em 1.8em;
     font-weight: $font-500;
-    font-size: 17px;
-    line-height: 2.9;
+    font-size: $font-17px;
+    line-height: $lh-2_9;
     box-shadow: 0 0 3px rgba(0,0,0,1);
 }
 
@@ -2874,7 +2872,7 @@ select.error {
 .read-link {
     display: inline-block;
     color: $color-374252;
-    font-size: 14px;
+    font-size: $font-14px;
     font-weight: $font-500;
     padding-right: 12px;
     background: url('../images/icon/rightmini.svg') no-repeat right center;
@@ -2923,9 +2921,9 @@ select.error {
     display: block;
     height: 38px;
     color: $color-374252;
-    font-size: 14px;
+    font-size: $font-14px;
     font-weight: $font-500;
-    line-height: 38px;
+    line-height: $lh-38px;
     padding: 0 20px
 }
 
@@ -2939,23 +2937,23 @@ select.error {
 }
 
 .sub-list {
-    text-align: left
+    text-align: $text-left
 }
 
 .sub-list h4 {
     color: $color-374252;
-    font-size: 16px;
+    font-size: $font-16px;
     font-weight: $font-500;
-    line-height: 25px;
+    line-height: $lh-25px;
     padding-bottom: 10px
 }
 
 .sub-list p {
-    font-size: 14px;
+    font-size: $font-14px;
     font-weight: $font-400;
     color: $color-86939e;
-    letter-spacing: 0px;
-    line-height: 24px
+    letter-spacing: $ls-0px;
+    line-height: $lh-24px
 }
 
 .l-list-three-col li {
@@ -3028,13 +3026,13 @@ select.error {
 
 .right-text-box h2 {
     color: $color-475465;
-    font-size: 28px;
+    font-size: $font-28px;
     font-weight: $font-300
 }
 
 .right-text-box > p {
     color: $color-717c8a;
-    line-height: 30px
+    line-height: $lh-30px
 }
 
 .right-text-box .sub-list li {
@@ -3061,18 +3059,18 @@ select.error {
 }
 
 .naham .right-text-box h2 {
-    font-size: 21px;
+    font-size: $font-21px;
     color: $color-374252;
     font-weight: $font-400;
 }
 
 .naham .right-text-box h2.text-24px {
-    font-size: 24px !important;
+    font-size: $font-24px !important;
 }
 
 #main-content .naham .right-text-box > p {
     color: $color-374252;
-    line-height: 28px;
+    line-height: $lh-28px;
 }
 
 .bg-eceff2 {
@@ -3080,7 +3078,7 @@ select.error {
 }
 
 .nth-service h2 {
-    font-size: 36px
+    font-size: $font-36px
 }
 
 .std-input1 {
@@ -3090,10 +3088,10 @@ select.error {
     border-radius: 2px;
     box-shadow: none;
     color: $color-929da7;
-    font-size: 14px;
+    font-size: $font-14px;
     font-family: $font-roboto;
     font-weight: $font-400;
-    line-height: 48px;
+    line-height: $lh-48px;
     padding: 0 3%;
     width: 94%
 }
@@ -3153,11 +3151,11 @@ select.error {
 }
 
 .nth-service p a {
-    text-decoration: underline
+    text-decoration: $text-underline
 }
 
 .nth-service p a:hover {
-    text-decoration: none
+    text-decoration: $text-decoration-none
 }
 
 .bg-7b214c {
@@ -3179,10 +3177,10 @@ figure.image-text-left.mr-20px {
 }
 
 figcaption p {
-    font-size: 13px;
+    font-size: $font-13px;
     font-weight: $font-500;
     color: $color-86939e;
-    line-height: 18px
+    line-height: $lh-18px
 }
 
 .user-pic {
@@ -3227,8 +3225,8 @@ figcaption p {
     -webkit-transform: translateX(-50%);
     -ms-transform: translateX(-50%);
     transform: translateX(-50%);
-    text-align: center;
-    line-height: 1
+    text-align: $text-center;
+    line-height: $lh-1
 }
 
 .slick-dots li {
@@ -3252,7 +3250,7 @@ figcaption p {
     cursor: pointer;
     position: absolute;
     padding: 10px 0;
-    opacity: 1;
+    opacity: $op-100;
     -webkit-transition: opacity 500ms ease;
     transition: opacity 500ms ease;
     top: 0;
@@ -3412,11 +3410,11 @@ figcaption p {
 }
 
 .banner-form h2 {
-    font-size: 13px;
-    line-height: 15px;
+    font-size: $font-13px;
+    line-height: $lh-15px;
     font-weight: $font-500;
     border-bottom: 1px solid $color-eef2f5;
-    text-align: left;
+    text-align: $text-left;
     padding: 25px 25px 15px 25px
 }
 
@@ -3426,7 +3424,7 @@ figcaption p {
 
 .form-field {
     position: relative;
-    text-align: left
+    text-align: $text-left
 }
 
 .banner-form-wrap .std-input3 {
@@ -3437,10 +3435,10 @@ figcaption p {
     display: inline-block;
     padding: 10px 0;
     color: $color-ffffff !important;
-    font-size: 16px;
+    font-size: $font-16px;
     font-family: $font-roboto;
     font-weight: $font-400;
-    line-height: 30px !important;
+    line-height: $lh-30px !important;
     transition: all 0.1s ease-in;
     background: $color-4a1c6b;
     border: none;
@@ -3449,7 +3447,7 @@ figcaption p {
     -webkit-appearance: none;
     outline: none !important;
     min-width: 120px;
-    text-align: center;
+    text-align: $text-center;
     cursor: pointer;
     margin-bottom: 20px;
     margin-top: 10px
@@ -3457,7 +3455,7 @@ figcaption p {
 
 .form-title-row {
     min-height: 35px;
-    line-height: 18px
+    line-height: $lh-18px
 }
 
 .still-image-banner-text {
@@ -3474,7 +3472,7 @@ figcaption p {
 }
 
 .text-46px {
-    font-size: 46px
+    font-size: $font-46px
 }
 
 .pb-0px {
@@ -3487,8 +3485,8 @@ figcaption p {
 
 .btn-mini {
     height: 24px;
-    line-height: 24px;
-    font-size: 12px;
+    line-height: $lh-24px;
+    font-size: $font-12px;
     font-weight: $font-500;
     min-width: 80px
 }
@@ -3505,9 +3503,9 @@ figcaption p {
 .comment-link {
     display: inline-block;
     color: $color-717c8a;
-    font-size: 14px;
+    font-size: $font-14px;
     font-weight: $font-500;
-    line-height: 30px;
+    line-height: $lh-30px;
     padding-right: 44px;
     background: url('../images/icon/comment.svg') no-repeat right center;
     background-size: 28px 26px;
@@ -3596,34 +3594,34 @@ figcaption p {
 
 .leader-bio h4 {
     color: $color-475465;
-    font-size: 24px;
+    font-size: $font-24px;
     font-weight: $font-300;
-    line-height: normal;
+    line-height: $lh-normal;
     padding-bottom: 5px
 }
 
 .leader-bio h6 {
     color: $color-475465;
-    font-size: 13px;
+    font-size: $font-13px;
     font-weight: $font-500;
-    line-height: normal;
+    line-height: $lh-normal;
     padding-bottom: 22px
 }
 
 .leader-bio p {
     color: $color-98a4ae;
-    font-size: 14px;
+    font-size: $font-14px;
     font-weight: $font-400;
-    line-height: 24px;
+    line-height: $lh-24px;
     padding: 0 15px;
     min-height: 94px
 }
 
 .leader-bio span {
     color: $color-475465;
-    font-size: 14px;
+    font-size: $font-14px;
     font-weight: $font-500;
-    text-decoration: none
+    text-decoration: $text-decoration-none
 }
 
 .leader-bio a {
@@ -3671,7 +3669,7 @@ figcaption p {
 }
 
 .corporate-citizen h3 {
-    line-height: 43px
+    line-height: $lh-43px
 }
 
 .comp-list {
@@ -3680,7 +3678,7 @@ figcaption p {
 
 .comp-list li {
     float: left;
-    text-align: center
+    text-align: $text-center
 }
 
 .comp-list li img {
@@ -3688,7 +3686,7 @@ figcaption p {
 }
 
 .lh-normal {
-    line-height: normal
+    line-height: $lh-normal
 }
 
 .bread-crum {
@@ -3696,7 +3694,7 @@ figcaption p {
 }
 
 .bread-crum a {
-    font-size: 13px;
+    font-size: $font-13px;
     font-weight: $font-400
 }
 
@@ -3747,20 +3745,20 @@ figcaption p {
 }
 
 .elt-pglink h6 {
-    font-size: 15px;
+    font-size: $font-15px;
     font-weight: $font-500;
     position: relative
 }
 
 .elt-pglink p {
     color: $color-acbac5;
-    font-size: 13px;
+    font-size: $font-13px;
     font-weight: $font-400
 }
 
 .elt-pg-nav li {
     padding-bottom: 10px;
-    font-size: 14px
+    font-size: $font-14px
 }
 
 .elt-pg-nav a, .elt-pg-nav a:visited, .elt-pg-nav a:active {
@@ -3777,7 +3775,7 @@ figcaption p {
 
 .elt-pg-nav .level-two a, .elt-pg-nav .level-two {
     color: $color-86939e;
-    line-height: 1.4
+    line-height: $lh-1_4
 }
 
 .level-two > li + ul.level-three {
@@ -3834,7 +3832,7 @@ figcaption p {
     padding-bottom: 2px;
     font-weight: $font-600;
     position: relative;
-    line-height: 24px
+    line-height: $lh-24px
 }
 
 .elt-pg-nav .selected > a {
@@ -3847,7 +3845,7 @@ figcaption p {
 }
 
 .elt-pg-nav .first > a, .left-nav1 > a {
-    font-size: 17px
+    font-size: $font-17px
 }
 
 .elt-pg-nav ul.level-three {
@@ -3875,11 +3873,11 @@ figcaption p {
     border-radius: 40px;
     padding: 0 10px;
     color: $color-ffffff !important;
-    font-size: 12px;
+    font-size: $font-12px;
     font-weight: $font-500;
-    line-height: 24px;
-    text-align: center;
-    text-decoration: none;
+    line-height: $lh-24px;
+    text-align: $text-center;
+    text-decoration: $text-decoration-none;
     outline: none !important;
     transition: all 0.1s ease-in
 }
@@ -3900,14 +3898,14 @@ figcaption p {
     top: 0;
     width: 100%;
     height: 100%;
-    opacity: 0.2
+    opacity: $op-20
 }
 
 .title-highlight {
     height: 548px;
     display: table-cell;
     vertical-align: middle;
-    text-align: center
+    text-align: $text-center
 }
 
 .l-table {
@@ -3922,7 +3920,7 @@ figcaption p {
 }
 
 .text-38px {
-    font-size: 38px
+    font-size: $font-38px
 }
 
 .info-links {
@@ -3935,7 +3933,7 @@ figcaption p {
     border: 1px solid $color-e7e7e7;
     border-top: 5px solid $color-cfd8dc;
     transition: all 0.1s ease-in;
-    text-decoration: none;
+    text-decoration: $text-decoration-none;
     outline: none !important
 }
 
@@ -3969,7 +3967,7 @@ figcaption p {
 }
 
 .management-tab h4 {
-    line-height: 38px
+    line-height: $lh-38px
 }
 
 .select-style {
@@ -3982,7 +3980,7 @@ figcaption p {
     border: medium none;
     border-radius: 2px;
     font-family: $font-roboto;
-    font-size: 14px;
+    font-size: $font-14px;
     font-weight: $font-400;
     height: 35px;
     position: relative;
@@ -3997,7 +3995,7 @@ figcaption p {
     box-shadow: none;
     color: $color-ffffff;
     font-family: $font-roboto;
-    font-size: 14px;
+    font-size: $font-14px;
     font-weight: $font-400;
     background: $color-441a63 url("../images/icon/selectarrow.png") no-repeat 92% center;
     -webkit-appearance: none;
@@ -4048,12 +4046,12 @@ figcaption p {
 }
 
 .lh-42px {
-    line-height: 42px
+    line-height: $lh-42px
 }
 
 .text-30px {
-    font-size: 30px;
-    line-height: 38px
+    font-size: $font-30px;
+    line-height: $lh-38px
 }
 
 .pb-5px {
@@ -4074,7 +4072,6 @@ figcaption p {
     background: -moz-linear-gradient(top, rgba(0, 69, 83, 1) 0%, rgba(0, 53, 73, 1) 100%);
     background: -webkit-linear-gradient(top, rgba(0, 69, 83, 1) 0%, rgba(0, 53, 73, 1) 100%);
     background: linear-gradient(to bottom, rgba(0, 69, 83, 1) 0%, rgba(0, 53, 73, 1) 100%);
-    // filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='$color-004553', endColorstr='$color-003549', GradientType=0)
 }
 
 .bg-gradient-teal-vertical1 {
@@ -4082,7 +4079,6 @@ figcaption p {
     background: -moz-linear-gradient(top, rgba(0, 81, 91, 1) 0%, rgba(3, 55, 75, 1) 100%);
     background: -webkit-linear-gradient(top, rgba(0, 81, 91, 1) 0%, rgba(3, 55, 75, 1) 100%);
     background: linear-gradient(to bottom, rgba(0, 81, 91, 1) 0%, rgba(3, 55, 75, 1) 100%);
-    // filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='$color-00515b', endColorstr='$color-03374b', GradientType=0)
 }
 
 .bg-position-ct {
@@ -4112,7 +4108,7 @@ figcaption p {
 
 .btn-sm {
     height: 45px;
-    line-height: 45px
+    line-height: $lh-45px
 }
 
 .btn.block {
@@ -4133,7 +4129,7 @@ figcaption p {
 }
 
 .lh-24px {
-    line-height: 24px
+    line-height: $lh-24px
 }
 
 .l-site-width-776 {
@@ -4145,7 +4141,7 @@ figcaption p {
 }
 
 .ls-0_1px {
-    letter-spacing: -0.1px
+    letter-spacing: $ls-0_1px
 }
 
 .bg-gradient-purple1 {
@@ -4153,7 +4149,6 @@ figcaption p {
     background: -moz-linear-gradient(left, rgba(110, 65, 167, 1) 0%, rgba(34, 4, 87, 1) 100%);
     background: -webkit-linear-gradient(left, rgba(110, 65, 167, 1) 0%, rgba(34, 4, 87, 1) 100%);
     background: linear-gradient(to right, rgba(110, 65, 167, 1) 0%, rgba(34, 4, 87, 1) 100%);
-    // filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='$color-6e41a7', endColorstr='$color-220457', GradientType=1)
 }
 
 .bg-gradient-purple1 p {
@@ -4223,7 +4218,7 @@ figcaption p {
 }
 
 .ana-info p {
-    line-height: 30px
+    line-height: $lh-30px
 }
 
 .ana-right .ana-pic {
@@ -4263,7 +4258,7 @@ figcaption p {
 
 .btm-bloglinks p {
     color: $color-65717b;
-    line-height: 35px
+    line-height: $lh-35px
 }
 
 .btm-bloglinks span {
@@ -4283,7 +4278,7 @@ figcaption p {
     color: $color-9cabb9;
     position: relative;
     padding-right: 48px;
-    line-height: 35px
+    line-height: $lh-35px
 }
 
 .more-link .link-arrow1 {
@@ -4328,9 +4323,9 @@ ul.claims-table li .bullets {
 }
 
 .pagination span, .pagination a {
-    font-size: 14px;
+    font-size: $font-14px;
     font-weight: $font-400;
-    text-decoration: none;
+    text-decoration: $text-decoration-none;
     padding: 3px 7px;
     display: block
 }
@@ -4353,7 +4348,7 @@ ul.claims-table li .bullets {
 }
 
 .search-header li {
-    line-height: 55px
+    line-height: $lh-55px
 }
 
 .search-nav a {
@@ -4412,7 +4407,7 @@ ul.claims-table li .bullets {
     left: 0;
     display: none;
     overflow: auto;
-    text-align: center;
+    text-align: $text-center;
     -webkit-overflow-scrolling: touch
 }
 
@@ -4464,7 +4459,7 @@ ul.claims-table li .bullets {
     cursor: pointer;
     -webkit-transition: color .2s;
     transition: color .2s;
-    text-decoration: none;
+    text-decoration: $text-decoration-none;
     color: $color-95979c;
     border: 0;
     outline: 0;
@@ -4501,19 +4496,19 @@ ul.claims-table li .bullets {
 
 .popup-close:before {
     font-family: $font-arial !important;
-    font-size: 30px;
-    line-height: 35px;
+    font-size: $font-30px;
+    line-height: $lh-35px;
     position: absolute;
     top: 0;
     right: 0;
     display: block;
     width: 35px;
     content: "\00d7";
-    text-align: center
+    text-align: $text-center
 }
 
 .lh-22px {
-    line-height: 22px
+    line-height: $lh-22px
 }
 
 .bg-e8eaec {
@@ -4533,7 +4528,7 @@ ul.claims-table li .bullets {
 }
 
 .lh-36px {
-    line-height: 36px
+    line-height: $lh-36px
 }
 
 .text-475465 {
@@ -4541,7 +4536,7 @@ ul.claims-table li .bullets {
 }
 
 .text-11px {
-    font-size: 11px
+    font-size: $font-11px
 }
 
 a.wrightarrow {
@@ -4590,7 +4585,7 @@ a.wrightarrow {
 }
 
 .titlep {
-    line-height: 50px;
+    line-height: $lh-50px;
     background: $color-003247;
     padding-right: 50px;
     padding-left: 25px;
@@ -4598,7 +4593,7 @@ a.wrightarrow {
 }
 
 .bread-crum1 a {
-    line-height: 50px
+    line-height: $lh-50px
 }
 
 .bread-crum1 li:after {
@@ -4681,7 +4676,7 @@ a.wrightarrow {
     position: absolute;
     top: 20px;
     left: 20px;
-    line-height: 20px;
+    line-height: $lh-20px;
     padding: 0 5px
 }
 
@@ -4692,7 +4687,7 @@ a.wrightarrow {
 }
 
 .elt-pg-nav1 p {
-    font-size: 14px
+    font-size: $font-14px
 }
 
 .elt-pglink.active p:after {
@@ -4719,9 +4714,9 @@ a.wrightarrow {
     border: 1px solid $color-c1cbd3;
     border-radius: 1px;
     padding: 0 25px;
-    line-height: 46px;
+    line-height: $lh-46px;
     color: $color-86939e;
-    font-size: 14px;
+    font-size: $font-14px;
     border-radius: 2px;
     display: inline-block
 }
@@ -4767,8 +4762,8 @@ a.oldpost {
 
 .tab-links-simple a {
     height: auto;
-    line-height: normal;
-    font-size: 14px;
+    line-height: $lh-normal;
+    font-size: $font-14px;
     font-weight: $font-500;
     color: $color-a0aebc;
     min-width: 1px
@@ -4854,16 +4849,16 @@ a.oldpost {
     -webkit-appearance: none;
     outline: none !important;
     color: $color-86939e;
-    font-size: 14px;
+    font-size: $font-14px;
     font-weight: $font-400;
-    line-height: 44px;
+    line-height: $lh-44px;
     padding: 15px 18px 0;
     box-sizing: border-box
 }
 
 textarea.std-input3 {
     height: 198px;
-    line-height: normal;
+    line-height: $lh-normal;
     resize: none;
     padding-top: 15px;
     padding-bottom: 15px
@@ -4888,19 +4883,18 @@ textarea.std-input3 {
     border-radius: 0;
     color: $color-86939e;
     font-family: $font-roboto;
-    font-size: 14px;
+    font-size: $font-14px;
     font-weight: $font-500;
     height: 46px;
     position: relative;
     width: 100%;
     overflow: hidden;
     box-sizing: border-box;
-    text-align: left;
+    text-align: $text-left;
     background: rgb(242, 243, 244);
     background: -moz-linear-gradient(top, rgba(242, 243, 244, 1) 0%, rgba(229, 232, 235, 1) 100%);
     background: -webkit-linear-gradient(top, rgba(242, 243, 244, 1) 0%, rgba(229, 232, 235, 1) 100%);
     background: linear-gradient(to bottom, rgba(242, 243, 244, 1) 0%, rgba(229, 232, 235, 1) 100%);
-    // filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='$color-f2f3f4', endColorstr='$color-e5e8eb', GradientType=0)
 }
 
 .select-style-light select {
@@ -4909,13 +4903,12 @@ textarea.std-input3 {
     box-shadow: none;
     color: $color-86939e;
     font-family: $font-roboto;
-    font-size: 14px;
+    font-size: $font-14px;
     font-weight: $font-400;
     background: rgb(242, 243, 244);
     background: -moz-linear-gradient(top, rgba(242, 243, 244, 1) 0%, rgba(229, 232, 235, 1) 100%);
     background: -webkit-linear-gradient(top, rgba(242, 243, 244, 1) 0%, rgba(229, 232, 235, 1) 100%);
     background: linear-gradient(to bottom, rgba(242, 243, 244, 1) 0%, rgba(229, 232, 235, 1) 100%);
-    // filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='$color-f2f3f4', endColorstr='$color-e5e8eb', GradientType=0);
     background-image: url('../images/icon/udarrow.png');
     background-repeat: no-repeat;
     background-position: right 40px center;
@@ -5021,7 +5014,7 @@ textarea.std-input3 {
 }
 
 .more-link.text-14px {
-    line-height: 35px
+    line-height: $lh-35px
 }
 
 .partner-companies-carousel img {
@@ -5046,7 +5039,7 @@ textarea.std-input3 {
     color: $color-ffffff !important;
     font-family: $font-roboto;
     font-weight: $font-300;
-    line-height: normal;
+    line-height: $lh-normal;
     text-shadow: 0 0 5px rgba(0,0,0,1);
 }
 
@@ -5162,8 +5155,8 @@ a.oldpost:hover {
 }
 
 .anchor-wrap, .anchor-wrap a {
-    font-size: 12px;
-    line-height: 16px
+    font-size: $font-12px;
+    line-height: $lh-16px
 }
 
 .anchor-wrap li {
@@ -5179,7 +5172,7 @@ a.oldpost:hover {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    text-align: center
+    text-align: $text-center
 }
 
 .tickercontainer .mask {
@@ -5356,7 +5349,7 @@ body {
 
 a[href^=tel] {
     color: $color-e7e6dd;
-    text-decoration: none
+    text-decoration: $text-decoration-none
 }
 
 iframe[name="google_conversion_frame"] {
@@ -5477,11 +5470,11 @@ iframe[name="google_conversion_frame"] {
     max-width: 260px;
     background: $color-4ebd79;
     color: $color-ffffff;
-    font-size: 18px;
+    font-size: $font-18px;
     font-weight: $font-700;
-    text-align: center;
-    text-transform: uppercase;
-    line-height: 24px;
+    text-align: $text-center;
+    text-transform: $text-transform-uppercase;
+    line-height: $lh-24px;
     cursor: pointer
 }
 
@@ -5502,8 +5495,8 @@ iframe[name="google_conversion_frame"] {
     padding: 30px;
     background: $color-ffffff;
     color: $color-333333;
-    font-size: 19px;
-    line-height: 30px;
+    font-size: $font-19px;
+    line-height: $lh-30px;
     border: 3px solid $color-8e2b5a;
     z-index: 9999999;
     -webkit-border-radius: 5px 5px 5px 5px;
@@ -5549,18 +5542,18 @@ iframe[name="google_conversion_frame"] {
     src: url('../fonts/arrow-left-l.eot?v64gwq');
     src: url('../fonts/arrow-left-l.eot?v64gwq#iefix') format('embedded-opentype'), url('../fonts/arrow-left-l.ttf?v64gwq') format('truetype'), url('../fonts/arrow-left-l.woff?v64gwq') format('woff'), url('../fonts/arrow-left-l.svg?v64gwq#arrow-left-l') format('svg');
     font-weight: $font-normal;
-    font-style: normal;
+    font-style: $font-normal;
 }
 
 .arrow-left-l {
     font-family: 'arrow-left-l' !important;
     speak: none;
-    font-style: normal;
+    font-style: $font-normal;
     font-weight: $font-normal;
     font-variant: normal;
-    text-transform: none;
-    line-height: 1;
-    font-size: 14px;
+    text-transform: $text-transform-none;
+    line-height: $lh-1;
+    font-size: $font-14px;
     display: block;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -5570,7 +5563,7 @@ iframe[name="google_conversion_frame"] {
     font-family: 'arrow-left-l' !important;
     content: "\e900";
     color: $color-d3d5d9;
-    font-size: 8px;
+    font-size: $font-8px;
     padding-right: 15px;
 }
 
@@ -5579,31 +5572,31 @@ iframe[name="google_conversion_frame"] {
     src: url('../fonts/arrow-right-l.eot?jck1ok');
     src: url('../fonts/arrow-right-l.eot?jck1ok#iefix') format('embedded-opentype'), url('../fonts/arrow-right-l.ttf?jck1ok') format('truetype'), url('../fonts/arrow-right-l.woff?jck1ok') format('woff'), url('../fonts/arrow-right-l.svg?jck1ok#arrow-right-l') format('svg');
     font-weight: $font-normal;
-    font-style: normal;
+    font-style: $font-normal;
 }
 
 .arrow-right-l:after {
     font-family: 'arrow-right-l' !important;
     content: "\e900";
     color: $color-d3d5d9;
-    font-size: 8px;
+    font-size: $font-8px;
     padding-left: 15px;
 }
 
 .arrow-right-l {
-    font-size: 14px;
+    font-size: $font-14px;
     display: block;
 }
 
 .arrow-left-l {
     font-family: 'arrow-left-l' !important;
     speak: none;
-    font-style: normal;
+    font-style: $font-normal;
     font-weight: $font-normal;
     font-variant: normal;
-    text-transform: none;
-    line-height: 1;
-    font-size: 14px;
+    text-transform: $text-transform-none;
+    line-height: $lh-1;
+    font-size: $font-14px;
     display: block;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -5613,7 +5606,7 @@ iframe[name="google_conversion_frame"] {
     font-family: 'arrow-left-l' !important;
     content: "\e900";
     color: $color-d3d5d9;
-    font-size: 8px;
+    font-size: $font-8px;
     padding-right: 15px;
 }
 
@@ -5621,7 +5614,7 @@ iframe[name="google_conversion_frame"] {
     font-family: 'arrow-right-l' !important;
     content: "\e900";
     color: $color-d3d5d9;
-    font-size: 8px;
+    font-size: $font-8px;
     padding-left: 15px;
 }
 
@@ -5634,17 +5627,17 @@ iframe[name="google_conversion_frame"] {
     src: url('../fonts/sns.eot?f4xt3o');
     src: url('../fonts/sns.eot?f4xt3o#iefix') format('embedded-opentype'), url('../fonts/sns.ttf?f4xt3o') format('truetype'), url('../fonts/sns.woff?f4xt3o') format('woff'), url('../fonts/sns.svg?f4xt3o#sns') format('svg');
     font-weight: $font-normal;
-    font-style: normal;
+    font-style: $font-normal;
 }
 
 [class^="sns-"], [class*=" sns-"], [class^="sns-"]:visited, [class^="sns-"]:active {
     font-family: 'sns' !important;
     speak: none;
-    font-style: normal;
+    font-style: $font-normal;
     font-weight: $font-normal;
     font-variant: normal;
-    text-transform: none;
-    line-height: 1;
+    text-transform: $text-transform-none;
+    line-height: $lh-1;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     color: $color-999999;
@@ -5688,7 +5681,7 @@ iframe[name="google_conversion_frame"] {
 
     a, a:link, a:visited {
         color: $color-000000;
-        text-decoration: none
+        text-decoration: $text-decoration-none
     }
 }
 
@@ -5708,14 +5701,14 @@ iframe[name="google_conversion_frame"] {
     }
 
     .mb-button .btn {
-        font-size: 14px;
+        font-size: $font-14px;
         padding: 0.2em 1.3em
     }
 
     .mb-button .pdf-icon-left.btn {
-        font-size: 13px;
+        font-size: $font-13px;
         padding: 1.2em 4em 1.2em 1em;
-        line-height: 1.2;
+        line-height: $lh-1_2;
     }
 
     .pdf-icon-left.btn, .pdf-icon-left.btn:hover {
@@ -5724,7 +5717,7 @@ iframe[name="google_conversion_frame"] {
     }
 
     .three-col.claims-table li:last-child p {
-        font-size: 14px
+        font-size: $font-14px
     }
 
     .three-col.table-body p {
@@ -5828,7 +5821,7 @@ iframe[name="google_conversion_frame"] {
     .first.navanchor.l-align-right > a {
         margin: 10px 0 0 0;
         padding: 0;
-        font-size: 16px;
+        font-size: $font-16px;
     }
 
     .first.navanchor.l-align-right .ptb-10px {
@@ -5969,7 +5962,7 @@ iframe[name="google_conversion_frame"] {
     }
 
     .anchor-wrap {
-        text-align: left
+        text-align: $text-left
     }
 
     .anchor-wrap.plr-10px {
@@ -6002,13 +5995,13 @@ iframe[name="google_conversion_frame"] {
     }
 
     .content-wrap h3 {
-        font-size: 25px;
-        line-height: 29px
+        font-size: $font-25px;
+        line-height: $lh-29px
     }
 
     .content-wrap p {
-        font-size: 16px;
-        line-height: 33px
+        font-size: $font-16px;
+        line-height: $lh-33px
     }
 
     .content-padding {
@@ -6016,13 +6009,13 @@ iframe[name="google_conversion_frame"] {
     }
 
     .content-wrap h3 {
-        font-size: 25px;
-        line-height: 29px
+        font-size: $font-25px;
+        line-height: $lh-29px
     }
 
     .content-wrap p {
-        font-size: 16px;
-        line-height: 20px
+        font-size: $font-16px;
+        line-height: $lh-20px
     }
 
     .content-padding {
@@ -6064,7 +6057,7 @@ iframe[name="google_conversion_frame"] {
 
     .mobmenuopen #mobile-main-menu {
         z-index: 9999999;
-        opacity: 1;
+        opacity: $op-100;
         height: 400px;
         overflow-y: scroll
     }
@@ -6081,11 +6074,11 @@ iframe[name="google_conversion_frame"] {
         padding-right: 0;
         transition: all 0.2s ease 0s;
         background: $color-441a63;
-        text-align: left;
+        text-align: $text-left;
         box-sizing: border-box;
         padding-bottom: 20px;
         display: block;
-        opacity: 0;
+        opacity: $op-0;
         z-index: -1
     }
 }
@@ -6111,20 +6104,20 @@ iframe[name="google_conversion_frame"] {
     }
 
     .text-36px {
-        font-size: 34px;
-        line-height: 38px
+        font-size: $font-34px;
+        line-height: $lh-38px
     }
 
     .slider-title h1 {
-        line-height: 46px
+        line-height: $lh-46px
     }
 
     h2 {
         color: $color-374252;
-        font-size: 30px;
+        font-size: $font-30px;
         font-weight: $font-300;
-        letter-spacing: -0.3px;
-        line-height: 36px
+        letter-spacing: $ls-0_3px;
+        line-height: $lh-36px
     }
 
     .l-theme-padding {
@@ -6165,14 +6158,14 @@ iframe[name="google_conversion_frame"] {
     }
 
     .corporate-citizen h3 {
-        font-size: 30px;
-        line-height: 40px
+        font-size: $font-30px;
+        line-height: $lh-40px
     }
 
     .title-highlight {
         display: table-cell;
         height: 480px;
-        text-align: center;
+        text-align: $text-center;
         vertical-align: middle
     }
 
@@ -6295,20 +6288,20 @@ iframe[name="google_conversion_frame"] {
 
 @media only screen and (max-width: 1023px) {
     .text-36px {
-        font-size: 32px;
-        line-height: 36px
+        font-size: $font-32px;
+        line-height: $lh-36px
     }
 
     .slider-title h1 {
-        line-height: 44px
+        line-height: $lh-44px
     }
 
     h2 {
         color: $color-374252;
-        font-size: 28px;
+        font-size: $font-28px;
         font-weight: $font-300;
-        letter-spacing: -0.3px;
-        line-height: 32px
+        letter-spacing: $ls-0_3px;
+        line-height: $lh-32px
     }
 
     .l-theme-padding {
@@ -6370,7 +6363,7 @@ iframe[name="google_conversion_frame"] {
     .story h4 {
         padding-bottom: 10px;
         padding-top: 16px;
-        line-height: 20px
+        line-height: $lh-20px
     }
 
     .story_content {
@@ -6394,7 +6387,7 @@ iframe[name="google_conversion_frame"] {
     }
 
     .nth-service h2 {
-        font-size: 32px
+        font-size: $font-32px
     }
 
     .slider-title {
@@ -6420,7 +6413,7 @@ iframe[name="google_conversion_frame"] {
     }
 
     .banner-title {
-        font-size: 42px
+        font-size: $font-42px
     }
 
     .social-strip {
@@ -6455,8 +6448,8 @@ iframe[name="google_conversion_frame"] {
     }
 
     .corporate-citizen h3 {
-        font-size: 28px;
-        line-height: 38px
+        font-size: $font-28px;
+        line-height: $lh-38px
     }
 
     .corporate-citizen h3 br {
@@ -6464,15 +6457,15 @@ iframe[name="google_conversion_frame"] {
     }
 
     .management-tab h4 {
-        font-size: 22px;
-        line-height: 1;
+        font-size: $font-22px;
+        line-height: $lh-1;
         margin-bottom: 10px
     }
 
     .title-highlight {
         display: table-cell;
         height: 420px;
-        text-align: center;
+        text-align: $text-center;
         vertical-align: middle
     }
 
@@ -6521,8 +6514,8 @@ iframe[name="google_conversion_frame"] {
     }
 
     .feature-text h3 {
-        font-size: 26px;
-        line-height: 34px
+        font-size: $font-26px;
+        line-height: $lh-34px
     }
 
     .feature-text {
@@ -6574,8 +6567,8 @@ iframe[name="google_conversion_frame"] {
     }
 
     .ana-info h3 {
-        font-size: 28px;
-        line-height: 38px;
+        font-size: $font-28px;
+        line-height: $lh-38px;
         margin-bottom: 20px
     }
 
@@ -6598,8 +6591,8 @@ iframe[name="google_conversion_frame"] {
     }
 
     .data-box h3 {
-        font-size: 28px;
-        line-height: 38px
+        font-size: $font-28px;
+        line-height: $lh-38px
     }
 
     .data-visibility .item img {
@@ -6609,8 +6602,8 @@ iframe[name="google_conversion_frame"] {
 
     .data-visibility .item h4 {
         color: $color-374252;
-        font-size: 16px;
-        line-height: 25px;
+        font-size: $font-16px;
+        line-height: $lh-25px;
         padding-bottom: 4px
     }
 
@@ -6645,7 +6638,7 @@ iframe[name="google_conversion_frame"] {
     }
 
     .l-table h3 {
-        font-size: 21px
+        font-size: $font-21px
     }
 
     .office-list li {
@@ -6663,7 +6656,7 @@ iframe[name="google_conversion_frame"] {
     }
 
     .office-info h4 {
-        font-size: 22px
+        font-size: $font-22px
     }
 
     .office-list {
@@ -6691,11 +6684,11 @@ iframe[name="google_conversion_frame"] {
     }
 
     .press-release h3 {
-        font-size: 24px
+        font-size: $font-24px
     }
 
     .today-feature-box h3 {
-        font-size: 24px
+        font-size: $font-24px
     }
 
     .today-feature-box .mb-25px {
@@ -6713,17 +6706,17 @@ iframe[name="google_conversion_frame"] {
         -webkit-line-clamp: 3;
         -webkit-box-orient: vertical;
         overflow: hidden;
-        text-overflow: ellipsis;
+        text-overflow: $text-overflow-ellipsis;
         margin-bottom: 10px;
         padding-bottom: 0
     }
 
     .in-the-news h3 {
-        font-size: 24px
+        font-size: $font-24px
     }
 
     .media-contact h3 {
-        font-size: 24px
+        font-size: $font-24px
     }
 
     .in-the-news .mb-62px {
@@ -6742,8 +6735,8 @@ iframe[name="google_conversion_frame"] {
     }
 
     .in-the-news .news-info h3 {
-        font-size: 20px;
-        line-height: 26px
+        font-size: $font-20px;
+        line-height: $lh-26px
     }
 
     .news-pic img {
@@ -6758,7 +6751,7 @@ iframe[name="google_conversion_frame"] {
         -webkit-line-clamp: 3;
         -webkit-box-orient: vertical;
         overflow: hidden;
-        text-overflow: ellipsis;
+        text-overflow: $text-overflow-ellipsis;
         margin-bottom: 10px
     }
 
@@ -6809,13 +6802,13 @@ iframe[name="google_conversion_frame"] {
     }
 
     .slider-title h1 {
-        font-size: 31px !important;
-        line-height: 36px !important
+        font-size: $font-31px !important;
+        line-height: $lh-36px !important
     }
 
     .nt-search p {
-        font-size: 17px;
-        line-height: 24px;
+        font-size: $font-17px;
+        line-height: $lh-24px;
         padding-bottom: 42px
     }
 
@@ -6838,7 +6831,7 @@ iframe[name="google_conversion_frame"] {
 
     .nt-browser-offer .std-input {
         height: 45px;
-        line-height: 45px
+        line-height: $lh-45px
     }
 
     .desktop-show {
@@ -6856,15 +6849,15 @@ iframe[name="google_conversion_frame"] {
     }
 
     h2.section-header {
-        font-size: 32px !important;
-        letter-spacing: -0.3px;
-        line-height: 42px !important
+        font-size: $font-32px !important;
+        letter-spacing: $ls-0_3px;
+        line-height: $lh-42px !important
     }
 
     .l-title-width p {
-        font-size: 16px;
+        font-size: $font-16px;
         font-weight: $font-300;
-        line-height: 30px;
+        line-height: $lh-30px;
         padding-top: 22px
     }
 
@@ -6925,8 +6918,8 @@ iframe[name="google_conversion_frame"] {
     }
 
     .story h4 {
-        font-size: 14px;
-        line-height: 20px;
+        font-size: $font-14px;
+        line-height: $lh-20px;
         padding-bottom: 14px;
         padding-top: 10px
     }
@@ -6942,7 +6935,7 @@ iframe[name="google_conversion_frame"] {
     .tab-links-mobile .dropdown, .mobile-select .dropdown {
         background: $color-ffffff;
         color: $color-374252;
-        font-size: 14px;
+        font-size: $font-14px;
         font-weight: $font-500;
         display: block;
         padding: 0 30px 0 20px;
@@ -6950,8 +6943,8 @@ iframe[name="google_conversion_frame"] {
         min-width: 188px;
         height: 38px;
         border: 1px solid $color-86939e;
-        text-align: left;
-        line-height: 38px
+        text-align: $text-left;
+        line-height: $lh-38px
     }
 
     .tab-links-mobile ul, .mobile-select ul {
@@ -6963,9 +6956,9 @@ iframe[name="google_conversion_frame"] {
         position: absolute;
         top: 100%;
         width: 100%;
-        text-align: left;
+        text-align: $text-left;
         color: $color-374252;
-        font-size: 14px;
+        font-size: $font-14px;
         font-weight: $font-500;
         border: 1px solid $color-86939e;
         box-sizing: border-box;
@@ -6983,7 +6976,7 @@ iframe[name="google_conversion_frame"] {
     .tab-links-mobile a, .mobile-select a {
         display: block;
         color: $color-374252;
-        font-size: 14px;
+        font-size: $font-14px;
         font-weight: $font-500;
         padding: 8px 20px
     }
@@ -7041,7 +7034,7 @@ iframe[name="google_conversion_frame"] {
 
     .btn {
         height: 45px;
-        line-height: 45px
+        line-height: $lh-45px
     }
 
     .btn-big {
@@ -7070,15 +7063,15 @@ iframe[name="google_conversion_frame"] {
 
     .right-text-box h2 {
         color: $color-475465;
-        font-size: 28px !important;
+        font-size: $font-28px !important;
         font-weight: $font-300;
-        line-height: 36px !important
+        line-height: $lh-36px !important
     }
 
     .right-text-box > p {
         color: $color-5e6977;
-        font-size: 16px;
-        line-height: 30px
+        font-size: $font-16px;
+        line-height: $lh-30px
     }
 
     .right-text-box .sub-list li {
@@ -7093,12 +7086,12 @@ iframe[name="google_conversion_frame"] {
     }
 
     .nth-service h2 {
-        font-size: 32px !important;
-        line-height: 42px !important
+        font-size: $font-32px !important;
+        line-height: $lh-42px !important
     }
 
     .nth-service p {
-        line-height: 30px;
+        line-height: $lh-30px;
         padding-top: 20px
     }
 
@@ -7126,10 +7119,10 @@ iframe[name="google_conversion_frame"] {
         box-shadow: none;
         color: $color-929da7;
         font-family: $font-roboto;
-        font-size: 14px;
+        font-size: $font-14px;
         font-weight: $font-400;
         height: 50px;
-        line-height: 48px;
+        line-height: $lh-48px;
         padding: 0 20px;
         width: 100%;
         box-sizing: border-box
@@ -7139,7 +7132,7 @@ iframe[name="google_conversion_frame"] {
         padding: 0;
         width: 100%;
         height: 50px;
-        line-height: 50px
+        line-height: $lh-50px
     }
 
     .nth-service {
@@ -7148,8 +7141,8 @@ iframe[name="google_conversion_frame"] {
     }
 
     .nth-service .text-14px {
-        font-size: 13px;
-        line-height: 18px;
+        font-size: $font-13px;
+        line-height: $lh-18px;
         padding-top: 34px
     }
 
@@ -7167,15 +7160,15 @@ iframe[name="google_conversion_frame"] {
 
     .menunav a {
         display: block;
-        font-size: 15px;
-        line-height: normal;
+        font-size: $font-15px;
+        line-height: $lh-normal;
         padding: 18px 30px
     }
 
     .menunav ul li {
         display: block;
         float: none;
-        line-height: normal;
+        line-height: $lh-normal;
         margin: 0
     }
 
@@ -7221,7 +7214,7 @@ iframe[name="google_conversion_frame"] {
 
     .ntselect-search2 .std-input1 {
         height: 45px;
-        line-height: 45px;
+        line-height: $lh-45px;
         border: none;
         width: 100%
     }
@@ -7236,22 +7229,22 @@ iframe[name="google_conversion_frame"] {
     }
 
     .btn-mini {
-        font-size: 12px;
+        font-size: $font-12px;
         font-weight: $font-500;
         height: 24px;
-        line-height: 24px;
+        line-height: $lh-24px;
         min-width: 80px
     }
 
     .banner-title {
-        font-size: 36px !important;
-        line-height: 42px !important;
+        font-size: $font-36px !important;
+        line-height: $lh-42px !important;
         padding-bottom: 26px
     }
 
     .inner-banner-wrapper .nt-search p {
-        font-size: 16px;
-        line-height: 24px
+        font-size: $font-16px;
+        line-height: $lh-24px
     }
 
     .leader-bio {
@@ -7261,17 +7254,17 @@ iframe[name="google_conversion_frame"] {
 
     .leader-bio h4 {
         color: $color-475465;
-        font-size: 26px;
+        font-size: $font-26px;
         font-weight: $font-300;
-        line-height: 32px;
+        line-height: $lh-32px;
         padding-bottom: 0
     }
 
     .leader-bio h6 {
         color: $color-475465;
-        font-size: 13px;
+        font-size: $font-13px;
         font-weight: $font-500;
-        line-height: 25px;
+        line-height: $lh-25px;
         padding-bottom: 16px
     }
 
@@ -7300,31 +7293,31 @@ iframe[name="google_conversion_frame"] {
     }
 
     .corporate-citizen h5 {
-        font-size: 14px;
+        font-size: $font-14px;
         padding-bottom: 25px
     }
 
     .corporate-citizen h3 {
-        font-size: 27px;
-        line-height: 38px;
+        font-size: $font-27px;
+        line-height: $lh-38px;
         padding-bottom: 32px
     }
 
     .management-tab h4 {
-        font-size: 28px;
-        line-height: 36px
+        font-size: $font-28px;
+        line-height: $lh-36px
     }
 
     .title-highlight {
         display: table-cell;
         height: 450px;
-        text-align: center;
+        text-align: $text-center;
         vertical-align: middle
     }
 
     .exe-title h2.section-header {
-        font-size: 26px !important;
-        line-height: 38px !important
+        font-size: $font-26px !important;
+        line-height: $lh-38px !important
     }
 
     .mobile-carousel {
@@ -7357,15 +7350,15 @@ iframe[name="google_conversion_frame"] {
     }
 
     .ana-info h2.text-30px.mb-25px {
-        font-size: 18px !important;
-        line-height: 24px;
+        font-size: $font-18px !important;
+        line-height: $lh-24px;
         margin-bottom: 15px
     }
 
     #main-content .ana-info p {
         margin-bottom: 10px;
         height: auto;
-        line-height: 18px
+        line-height: $lh-18px
     }
 
     .ana-list li.ana-right {
@@ -7413,12 +7406,12 @@ iframe[name="google_conversion_frame"] {
         left: 0;
         padding: 0;
         position: absolute;
-        text-align: center;
+        text-align: $text-center;
         -ms-transform: none;
         -webkit-transform: none;
         transform: none;
         z-index: 999;
-        text-align: center;
+        text-align: $text-center;
         width: 100%
     }
 
@@ -7440,8 +7433,8 @@ iframe[name="google_conversion_frame"] {
     }
 
     .management-tab h4 {
-        font-size: 22px;
-        line-height: 1
+        font-size: $font-22px;
+        line-height: $lh-1
     }
 
     .info-links {
@@ -7451,8 +7444,8 @@ iframe[name="google_conversion_frame"] {
     }
 
     .gr-table h3 {
-        font-size: 30px;
-        line-height: 37px
+        font-size: $font-30px;
+        line-height: $lh-37px
     }
 
     .home-slider .backbgbox {
@@ -7462,12 +7455,12 @@ iframe[name="google_conversion_frame"] {
     }
 
     .np-wrapper1 .slider-title {
-        text-align: center
+        text-align: $text-center
     }
 
     .np-wrapper1 .slider-title h1 {
-        font-size: 38px !important;
-        line-height: 38px !important;
+        font-size: $font-38px !important;
+        line-height: $lh-38px !important;
         margin-bottom: 0
     }
 
@@ -7475,13 +7468,13 @@ iframe[name="google_conversion_frame"] {
         display: block;
         display: -webkit-box;
         color: $color-e4e8eb;
-        font-size: 15px;
-        line-height: 24px;
+        font-size: $font-15px;
+        line-height: $lh-24px;
         height: 75px;
         -webkit-line-clamp: 3;
         -webkit-box-orient: vertical;
         overflow: hidden;
-        text-overflow: ellipsis;
+        text-overflow: $text-overflow-ellipsis;
         padding-bottom: 0
     }
 
@@ -7491,7 +7484,7 @@ iframe[name="google_conversion_frame"] {
         transform: none;
         left: 50%;
         position: absolute;
-        text-align: center;
+        text-align: $text-center;
         -ms-transform: translate(-50%, 0);
         -webkit-transform: translate(-50%, 0);
         transform: translate(-50%, 0);
@@ -7528,7 +7521,7 @@ iframe[name="google_conversion_frame"] {
     }
 
     .news-content1 p {
-        line-height: 18px
+        line-height: $lh-18px
     }
 
     .n-title {
@@ -7537,12 +7530,12 @@ iframe[name="google_conversion_frame"] {
     }
 
     .n-title h3 {
-        font-size: 26px;
+        font-size: $font-26px;
         float: left
     }
 
     .n-title a.read-link {
-        font-size: 13px;
+        font-size: $font-13px;
         float: right
     }
 
@@ -7556,8 +7549,8 @@ iframe[name="google_conversion_frame"] {
     }
 
     .news-content h5 {
-        font-size: 14px;
-        line-height: 25px;
+        font-size: $font-14px;
+        line-height: $lh-25px;
         padding-bottom: 12px
     }
 
@@ -7568,7 +7561,7 @@ iframe[name="google_conversion_frame"] {
         -webkit-line-clamp: 5;
         -webkit-box-orient: vertical;
         overflow: hidden;
-        text-overflow: ellipsis;
+        text-overflow: $text-overflow-ellipsis;
         padding-bottom: 0
     }
 
@@ -7595,8 +7588,8 @@ iframe[name="google_conversion_frame"] {
     }
 
     .feature-text h3 {
-        font-size: 27px;
-        line-height: 35px
+        font-size: $font-27px;
+        line-height: $lh-35px
     }
 
     .feature-text h6 {
@@ -7605,11 +7598,11 @@ iframe[name="google_conversion_frame"] {
 
     .news-box1 h5 {
         color: $color-374252;
-        font-size: 15px
+        font-size: $font-15px
     }
 
     .news-box1 p {
-        font-size: 13px
+        font-size: $font-13px
     }
 
     .news-box1 img {
@@ -7648,7 +7641,7 @@ iframe[name="google_conversion_frame"] {
         width: 92%;
         box-sizing: border-box;
         height: 30px;
-        line-height: 30px;
+        line-height: $lh-30px;
         padding: 0 20px;
         padding-right: 0;
         float: left
@@ -7681,13 +7674,13 @@ iframe[name="google_conversion_frame"] {
 
     .elt-content h1 {
         color: $color-003247;
-        font-size: 30px;
-        line-height: 39px;
+        font-size: $font-30px;
+        line-height: $lh-39px;
         padding-bottom: 8px
     }
 
     .elt-content h5 {
-        font-size: 14px;
+        font-size: $font-14px;
         padding-bottom: 30px
     }
 
@@ -7697,7 +7690,7 @@ iframe[name="google_conversion_frame"] {
 
     .user-profile p {
         color: $color-374252;
-        font-size: 14px;
+        font-size: $font-14px;
         font-weight: $font-400
     }
 
@@ -7773,15 +7766,15 @@ iframe[name="google_conversion_frame"] {
     }
 
     .ana-info h3 {
-        font-size: 24px;
-        line-height: 30px;
+        font-size: $font-24px;
+        line-height: $lh-30px;
         margin-bottom: 10px
     }
 
     .ana-info p {
         color: $color-97a2ac;
-        font-size: 14px;
-        line-height: 24px;
+        font-size: $font-14px;
+        line-height: $lh-24px;
         margin-bottom: 20px
     }
 
@@ -7808,14 +7801,14 @@ iframe[name="google_conversion_frame"] {
         display: block;
         display: -webkit-box;
         color: $color-97a2ac;
-        font-size: 14px;
-        line-height: 24px;
+        font-size: $font-14px;
+        line-height: $lh-24px;
         margin-bottom: 20px;
         height: 45px;
         -webkit-line-clamp: 2;
         -webkit-box-orient: vertical;
         overflow: hidden;
-        text-overflow: ellipsis;
+        text-overflow: $text-overflow-ellipsis;
         padding-bottom: 0
     }
 
@@ -7826,7 +7819,7 @@ iframe[name="google_conversion_frame"] {
         -webkit-line-clamp: 1;
         -webkit-box-orient: vertical;
         overflow: hidden;
-        text-overflow: ellipsis;
+        text-overflow: $text-overflow-ellipsis;
         padding-bottom: 0;
         margin-bottom: 6px
     }
@@ -7837,12 +7830,12 @@ iframe[name="google_conversion_frame"] {
     }
 
     .data-box h3 {
-        font-size: 27px;
-        line-height: 38px
+        font-size: $font-27px;
+        line-height: $lh-38px
     }
 
     .data-box h5 {
-        font-size: 14px
+        font-size: $font-14px
     }
 
     .data-box-wrapper {
@@ -7877,8 +7870,8 @@ iframe[name="google_conversion_frame"] {
     }
 
     .solution-details h1 {
-        font-size: 30px;
-        line-height: 39px;
+        font-size: $font-30px;
+        line-height: $lh-39px;
         margin-bottom: 20px
     }
 
@@ -7917,7 +7910,7 @@ iframe[name="google_conversion_frame"] {
         -webkit-line-clamp: 3;
         -webkit-box-orient: vertical;
         overflow: hidden;
-        text-overflow: ellipsis
+        text-overflow: $text-overflow-ellipsis
     }
 
     .news-content1 h5 {
@@ -7933,7 +7926,7 @@ iframe[name="google_conversion_frame"] {
     }
 
     .l-table h3 {
-        font-size: 24px
+        font-size: $font-24px
     }
 
     .l-table.item img {
@@ -7955,7 +7948,7 @@ iframe[name="google_conversion_frame"] {
     .std-input3 {
         box-sizing: border-box;
         height: 50px;
-        line-height: 1;
+        line-height: $lh-1;
         padding: 0 18px
     }
 
@@ -8005,12 +7998,12 @@ iframe[name="google_conversion_frame"] {
         border-radius: 0;
         box-sizing: border-box;
         height: 50px;
-        line-height: 18px;
+        line-height: $lh-18px;
         margin: 0;
         overflow: hidden;
         padding: 0;
         position: relative;
-        text-align: left;
+        text-align: $text-left;
         width: 100%
     }
 
@@ -8033,7 +8026,7 @@ iframe[name="google_conversion_frame"] {
 
     textarea.std-input3 {
         height: 168px;
-        line-height: normal;
+        line-height: $lh-normal;
         padding-bottom: 15px;
         padding-top: 15px;
         resize: none
@@ -8045,7 +8038,7 @@ iframe[name="google_conversion_frame"] {
 
     .contact-form-content .btn {
         height: 50px;
-        line-height: 50px
+        line-height: $lh-50px
     }
 
     .contact-form {
@@ -8091,15 +8084,15 @@ iframe[name="google_conversion_frame"] {
 
     .newsletter-info .news-content p {
         color: $color-5e6977;
-        font-size: 14px;
-        line-height: 18px;
+        font-size: $font-14px;
+        line-height: $lh-18px;
         display: block;
         display: -webkit-box;
         height: 40px;
         -webkit-line-clamp: 2;
         -webkit-box-orient: vertical;
         overflow: hidden;
-        text-overflow: ellipsis
+        text-overflow: $text-overflow-ellipsis
     }
 
     .news-letter-months .l-table {
@@ -8140,8 +8133,8 @@ iframe[name="google_conversion_frame"] {
     }
 
     .newsletter-page .info-links h4 {
-        font-size: 30px;
-        line-height: 36px;
+        font-size: $font-30px;
+        line-height: $lh-36px;
         margin-bottom: 0
     }
 
@@ -8163,15 +8156,15 @@ iframe[name="google_conversion_frame"] {
 
     .mobile-title h3 {
         color: $color-373e47;
-        font-size: 26px;
+        font-size: $font-26px;
         padding-bottom: 22px
     }
 
     .choose-box .news-content h5 {
         color: $color-00515b;
-        font-size: 13px;
+        font-size: $font-13px;
         font-weight: $font-500;
-        line-height: 25px;
+        line-height: $lh-25px;
         padding-bottom: 12px
     }
 
@@ -8275,7 +8268,7 @@ iframe[name="google_conversion_frame"] {
     }
 
     .today-feature-box h3 {
-        font-size: 26px;
+        font-size: $font-26px;
         float: left
     }
 
@@ -8302,8 +8295,8 @@ iframe[name="google_conversion_frame"] {
 
     .today-feature-box .feature-content h3 {
         float: none;
-        font-size: 27px;
-        line-height: 32px
+        font-size: $font-27px;
+        line-height: $lh-32px
     }
 
     .today-feature-box .feature-content a.read-link {
@@ -8414,7 +8407,7 @@ iframe[name="google_conversion_frame"] {
 
     .exitpopup .btn {
         height: 45px;
-        line-height: 45px;
+        line-height: $lh-45px;
         min-width: 90px;
     }
 }
@@ -8432,12 +8425,12 @@ iframe[name="google_conversion_frame"] {
     .th-dots {
         float: left;
         height: 60px;
-        line-height: normal;
+        line-height: $lh-normal;
         margin-left: 0;
         padding: 0 4px;
         position: relative;
         top: 0;
-        line-height: 60px
+        line-height: $lh-60px
     }
 
     .slider-title {
@@ -8477,8 +8470,8 @@ iframe[name="google_conversion_frame"] {
     }
 
     .exe-title h2.section-header {
-        font-size: 26px !important;
-        line-height: 38px !important
+        font-size: $font-26px !important;
+        line-height: $lh-38px !important
     }
 
     .leader-bio {
@@ -8503,7 +8496,7 @@ iframe[name="google_conversion_frame"] {
     }
 
     .np-wrapper1 .slider-title {
-        text-align: center;
+        text-align: $text-center;
         top: 0
     }
 
@@ -8527,7 +8520,7 @@ iframe[name="google_conversion_frame"] {
 
     .post-nav a {
         display: inline-block;
-        line-height: 43px;
+        line-height: $lh-43px;
         padding: 0 20px
     }
 
@@ -8547,8 +8540,8 @@ iframe[name="google_conversion_frame"] {
     }
 
     .news-content1 p {
-        font-size: 13px;
-        line-height: 18px
+        font-size: $font-13px;
+        line-height: $lh-18px
     }
 
     .news-box-wrapper {
@@ -8589,7 +8582,7 @@ iframe[name="google_conversion_frame"] {
         -webkit-line-clamp: 1;
         -webkit-box-orient: vertical;
         overflow: hidden;
-        text-overflow: ellipsis
+        text-overflow: $text-overflow-ellipsis
     }
 
     .in-the-news {
@@ -8598,8 +8591,8 @@ iframe[name="google_conversion_frame"] {
     }
 
     .in-the-news .news-info h3 {
-        font-size: 18px;
-        line-height: 24px
+        font-size: $font-18px;
+        line-height: $lh-24px
     }
 }
 
@@ -8711,7 +8704,7 @@ body img.desktop-landscape {
 
 @media only screen and (max-width: 360px) {
     .accordion-header h2 span {
-        font-size: 10px !important
+        font-size: $font-10px !important
     }
 }
 
@@ -8732,7 +8725,7 @@ body img.desktop-landscape {
 }
 
 .visually-hidden {
-    opacity: 0;
+    opacity: $op-0;
     visibility: hidden;
     position: absolute;
     left: -9999px;
@@ -8750,7 +8743,7 @@ body img.desktop-landscape {
 .highlight pre {
     background: $color-f7f7f7;
     border-radius: 3px;
-    line-height: 1.45;
+    line-height: $lh-1_45;
     margin-bottom: 0;
     overflow: auto;
     padding: 16px;
@@ -8769,7 +8762,7 @@ body.tab .menu:focus-visible {
 
 .menu-top-nav-item a[aria-haspopup] {
     position: relative;
-    text-decoration: none;
+    text-decoration: $text-decoration-none;
     z-index: inherit
 }
 
@@ -8797,8 +8790,8 @@ body.tab .menu:focus-visible {
 
 #toggleMenu > a {
     color: $color-ffffff;
-    font-size: 20px;
-    line-height: 1;
+    font-size: $font-20px;
+    line-height: $lh-1;
     padding: 12px 20px;
     margin: 0
 }
@@ -8823,26 +8816,26 @@ input[type="text"], input[type="email"], input[type="search"], textarea, select 
     0% {
         -ms-filter: opacity(0);
         filter: alpha(opacity=0);
-        -webkit-opacity: 0;
-        -moz-opacity: 0;
-        -o-opacity: 0;
-        opacity: 0;
+        -webkit-opacity: $op-0;
+        -moz-opacity: $op-0;
+        -o-opacity: $op-0;
+        opacity: $op-0;
     }
 
     100% {
         -ms-filter: opacity(100);
         filter: alpha(opacity=100);
-        -webkit-opacity: 1;
-        -moz-opacity: 1;
-        -o-opacity: 1;
-        opacity: 1;
+        -webkit-opacity: $op-100;
+        -moz-opacity: $op-100;
+        -o-opacity: $op-100;
+        opacity: $op-100;
     }
 }
 
 .nth-searchform-input {
-    font-size: 17px;
-    line-height: 1.29412;
-    letter-spacing: -.021em;
+    font-size: $font-17px;
+    line-height: $lh-1_29412;
+    letter-spacing: $ls-0_021em;
     font-family: $font-roboto;
     outline: none;
     width: 100%;
@@ -8924,7 +8917,7 @@ input[type="text"], input[type="email"], input[type="search"], textarea, select 
 }
 
 .overline {
-    text-decoration: overline;
+    text-decoration: $text-overline;
 }
 
 .flex {
@@ -8983,7 +8976,7 @@ input[type="text"], input[type="email"], input[type="search"], textarea, select 
 }
 
 .vmva h3 {
-    line-height: 88px;
+    line-height: $lh-88px;
 }
 
 .vmva img {
@@ -8991,7 +8984,7 @@ input[type="text"], input[type="email"], input[type="search"], textarea, select 
 }
 
 .vmva .sub-list h4.text-20px {
-    font-size: 20px;
+    font-size: $font-20px;
 }
 
 .vmva .sub-list h4 {
@@ -9005,13 +8998,13 @@ ul.bullets.mt-0 {
 .download {
     float: right;
     width: 25%;
-    text-align: center;
+    text-align: $text-center;
 }
 
 #main-content .download p {
-    font-size: 12px;
+    font-size: $font-12px;
     margin-bottom: 15px;
-    line-height: 16px;
+    line-height: $lh-16px;
     margin-top: 15px;
 }
 
@@ -9020,8 +9013,8 @@ a.download-btn {
     height: 50px;
     padding: 0 20px;
     color: $color-ffffff !important;
-    font-size: 14px;
-    line-height: 50px;
+    font-size: $font-14px;
+    line-height: $lh-50px;
     font-weight: $font-300;
     width: 170px;
     margin: auto;
@@ -9055,11 +9048,11 @@ a.download-btn img {
     .ethics h1 {
         padding-top: 0;
         margin-top: -30px;
-        font-size: 30px !important;
+        font-size: $font-30px !important;
     }
 
     .ethics h2 {
-        font-size: 30px !important;
+        font-size: $font-30px !important;
     }
 
     .sm-12-col {
@@ -9077,14 +9070,14 @@ a.download-btn img {
     }
 
     .vmva h3 {
-        line-height: inherit;
-        text-align: center;
+        line-height: $lh-inherit;
+        text-align: $text-center;
         margin-top: 15px;
-        font-size: 26px;
+        font-size: $font-26px;
     }
 
     .sm-center {
-        text-align: center;
+        text-align: $text-center;
     }
 
     .download {
@@ -9095,13 +9088,13 @@ a.download-btn img {
 
     a.download-btn {
         height: 35px;
-        line-height: 35px;
+        line-height: $lh-35px;
         width: 150px;
     }
 }
 
 .overline {
-    text-decoration: overline;
+    text-decoration: $text-overline;
 }
 
 .hfm-glen hr {
@@ -9126,7 +9119,7 @@ img.glen {
 }
 
 .hfm-glen .text-22px {
-    font-size: 22px !important;
+    font-size: $font-22px !important;
 }
 
 @media only screen and (max-width: 767px) {
@@ -9158,7 +9151,7 @@ img.glen {
     display: inline-block;
     float: left;
     margin-top: 20px;
-    text-align: right;
+    text-align: $text-right;
     color: $color-78a735;
     font-weight: $font-400;
     margin-right: 5px;
@@ -9177,7 +9170,7 @@ img.glen {
     padding-left: 20px;
     border-left: 1px solid $color-cdcdcd;
     margin-bottom: 20px !important;
-    line-height: 1.3;
+    line-height: $lh-1_3;
 }
 
 .hfm {
@@ -9228,7 +9221,7 @@ img.glen {
     .hfm-widget h2 {
         margin: auto !important;
         float: none;
-        font-size: 20px !important;
+        font-size: $font-20px !important;
     }
 
     .hfm-widget h2 img {
@@ -9240,21 +9233,21 @@ img.glen {
         border-left: none;
         padding: 20px 0 0;
         float: none;
-        text-align: center;
-        font-size: 16px;
+        text-align: $text-center;
+        font-size: $font-16px;
     }
 }
 
 @media only screen and (max-width: 320px) {
     .hfm-widget p {
-        font-size: 14px;
+        font-size: $font-14px;
     }
 }
 
 .cta-arrow-r {
     position: relative;
     padding-right: 45px;
-    line-height: 35px !important;
+    line-height: $lh-35px !important;
     display: inline-block;
 }
 
@@ -9311,7 +9304,7 @@ a:hover .link-arrow2 {
 }
 
 ul.bullets.text-16px li {
-    font-size: 16px;
+    font-size: $font-16px;
 }
 
 .right-text-box > p.text-475465 {
@@ -9394,7 +9387,7 @@ ul.bullets.text-16px li {
     position: absolute;
     bottom: -30px;
     font-weight: $font-bold;
-    font-size: x-large;
+    font-size: $font-xlarge;
 }
 
 .rpa-bot li:last-of-type::after {
@@ -9416,7 +9409,7 @@ ul.bullets.text-16px li {
 }
 
 .lh-1-3 {
-    line-height: 1.3;
+    line-height: $lh-1_3;
 }
 
 .mg-auto {

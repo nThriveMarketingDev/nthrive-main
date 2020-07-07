@@ -1,4 +1,5 @@
 ﻿@import "colors";
+@import "fonts";
 
 #logo-wrap {
     float: left
@@ -44,20 +45,20 @@ span.uparrow {
 
 .nav-top-level > a {
     display: block;
-    text-decoration: none;
-    font-weight: 500;
+    text-decoration: $text-decoration-none;
+    font-weight: $font-500;
     padding: 0 20px;
     color: $color-ffffff;
-    line-height: 50px;
-    font-size: 13px
+    line-height: $lh-50px;
+    font-size: $font-13px
 }
 
 .nav-top-level {
     margin: 0;
-    font-size: 13px;
-    font-style: normal;
-    text-decoration: none;
-    line-height: 2.8 !important;
+    font-size: $font-13px;
+    font-style: $font-normal;
+    text-decoration: $text-decoration-none;
+    line-height: $lh-2_8 !important;
     position: initial !important;
     padding: 0 5px
 }
@@ -71,7 +72,7 @@ a.menu-hover {
 
 #primary-nav > ul > li {
     position: relative;
-    text-align: left
+    text-align: $text-left
 }
 
 #primary-nav > ul > li {
@@ -93,7 +94,7 @@ a {
 }
 
 #primary-nav li {
-    text-align: left
+    text-align: $text-left
 }
 
 a.menu-hover + ul {
@@ -146,12 +147,12 @@ body #primary-nav #main-nav > li > a:hover {
 
 #primary-nav > ul {
     height: 100%;
-    line-height: 2.5em
+    line-height: $lh-2_5em
 }
 
 #primary-nav > ul > li {
     position: relative;
-    text-align: left
+    text-align: $text-left
 }
 
 #primary-nav > ul > li > ul {
@@ -177,7 +178,7 @@ body #primary-nav #main-nav > li > a:hover {
 
 #primary-nav > ul > li > ul > li > a {
     background-color: $color-f2f2f2;
-    font-weight: 400
+    font-weight: $font-400
 }
 
 body #primary-nav #main-nav > li > a:focus {
@@ -197,7 +198,7 @@ body #primary-nav #main-nav > li > a:focus {
 
 #primary-nav > ul > li > ul > li > ul > li > a {
     background-color: $color-f2f2f2;
-    font-weight: 400
+    font-weight: $font-400
 }
 
 #primary-nav > ul > li > ul > li > ul > li > a:hover, #primary-nav > ul > li > ul > li > ul > li > a:focus {
@@ -210,16 +211,16 @@ body #primary-nav #main-nav > li > a:focus {
 }
 
 #primary-nav .first a.menu-hover {
-    font-weight: 400 !important;
+    font-weight: $font-400 !important;
     padding: 5px 15px !important;
     display: block;
-    line-height: 2.5em !important
+    line-height: $lh-2_5em !important
 }
 
 .second a {
     padding: 5px 15px !important;
     display: block;
-    line-height: 2.5em !important
+    line-height: $lh-2_5em !important
 }
 
 #primary-nav .nth-hide-menu {
@@ -258,7 +259,7 @@ body #primary-nav #main-nav > li.rm0 > a {
     left: -999999px;
     overflow: hidden;
     position: absolute;
-    font-size: 15px;
+    font-size: $font-15px;
     padding: 15px;
     background: $color-ffffff;
     display: inline-block;
@@ -272,7 +273,7 @@ body #primary-nav #main-nav > li.rm0 > a {
 
 .notification-bar.hide {
     visibility: hidden !important;
-    opacity: 0 !important;
+    opacity: $op-0 !important;
     display: none !important;
 }
 
@@ -280,7 +281,7 @@ body #primary-nav #main-nav > li.rm0 > a {
     height: auto;
     background: $color-555555;
     display: block;
-    opacity: 1;
+    opacity: $op-100;
     visibility: visible;
     position: fixed;
     bottom: 0;
@@ -295,24 +296,24 @@ body #primary-nav #main-nav > li.rm0 > a {
 
 .notification-bar.close, .notification-close header .notification-bar {
     display: none;
-    opacity: 0;
+    opacity: $op-0;
     visibility: hidden;
 }
 
 .notification-bar-content {
-    text-align: center;
-    font-size: 13px;
+    text-align: $text-center;
+    font-size: $font-13px;
     margin-right: 16px;
     align-items: center;
     justify-content: center;
     padding: 10px 20px;
     max-width: 1120px;
     margin: 0 auto;
-    line-height: 2.2;
+    line-height: $lh-2_2;
 }
 
 .settings {
-    line-height: 2.3 !important
+    line-height: $lh-2_3 !important
 }
 
 .notification-bar-content-desc {
@@ -320,7 +321,7 @@ body #primary-nav #main-nav > li.rm0 > a {
     margin: 0 20px 0 0;
     padding: 0;
     float: left;
-    line-height: 2.2 !important;
+    line-height: $lh-2_2 !important;
 }
 
 .notification-bar-content-desc a {
@@ -337,12 +338,12 @@ body #primary-nav #main-nav > li.rm0 > a {
 }
 
 .table-body a, .table-body a:visited, .table-body a:active {
-    font-weight: 600;
+    font-weight: $font-600;
     color: $color-da1c5c !important
 }
 
 .table-body a:hover {
-    text-decoration: underline
+    text-decoration: $text-underline
 }
 
 header .notification-bar {
@@ -350,23 +351,23 @@ header .notification-bar {
     height: auto;
     background: $color-da1c5c;
     display: block;
-    opacity: 1;
+    opacity: $op-100;
     visibility: visible;
     color: $color-ffffff;
 }
 
 header .notification-bar-content-desc {
     float: none;
-    line-height: 1 !important;
-    text-align: center;
-    font-size: 14px;
+    line-height: $lh-1 !important;
+    text-align: $text-center;
+    font-size: $font-14px;
     margin-right: 16px;
     align-items: center;
     justify-content: center;
     padding: 0;
     max-width: 1040px;
     margin: 0 auto;
-    line-height: 1;
+    line-height: $lh-1;
 }
 
 header .link-arrow {
@@ -374,7 +375,7 @@ header .link-arrow {
 }
 
 header .notification-bar a {
-    line-height: 1;
+    line-height: $lh-1;
     padding: 5px 0 3px 0;
 }
 
@@ -386,11 +387,11 @@ header .notification-bar-content {
 header .popup-close {
     color: $color-ffffff;
     top: 0;
-    opacity: .5
+    opacity: $op-50
 }
 
 header .link-arrow-text {
-    line-height: 2.3;
+    line-height: $lh-2_3;
     float: left;
 }
 
@@ -417,12 +418,12 @@ header .link-arrow-text {
     }
 
     header .notification-bar a {
-        line-height: 1;
+        line-height: $lh-1;
         padding: 8px 0 8px 0;
     }
 
     header .link-arrow-text {
-        line-height: 1.7;
+        line-height: $lh-1_7;
         width: 80%;
         display: inline-block;
     }
@@ -436,7 +437,7 @@ header .link-arrow-text {
     }
 
     header .notification-bar a .text-left {
-        line-height: 1.5;
+        line-height: $lh-1_5;
     }
 
     header .notification-bar .more {
@@ -457,7 +458,7 @@ header .link-arrow-text {
     }
 
     .notification-bar-content-desc, .notification-bar-content {
-        line-height: 1.6;
+        line-height: $lh-1_6;
         display: block;
     }
 }
@@ -527,7 +528,7 @@ header .link-arrow-text {
     }
 
     #primary-nav li {
-        text-align: left;
+        text-align: $text-left;
         width: 100%
     }
 
@@ -680,12 +681,12 @@ header .link-arrow-text {
     }
 
     .nav-top-level, .nav-top-level > a {
-        line-height: 3
+        line-height: $lh-3
     }
 }
 
 #nav-wrap, #nth-segmentbar {
-    font-weight: normal;
+    font-weight: $font-normal;
     -webkit-text-size-adjust: 100%;
     -ms-text-size-adjust: 100%;
     text-size-adjust: 100%
@@ -694,7 +695,7 @@ header .link-arrow-text {
 #nav-wrap, #nav-wrap:before, #nav-wrap:after, #nav-wrap *, #nav-wrap *:before, #nav-wrap *:after, #nth-segmentbar, #nth-segmentbar:before, #nth-segmentbar:after, #nth-segmentbar *, #nth-segmentbar *:before, #nth-segmentbar *:after {
     box-sizing: content-box;
     pointer-events: auto;
-    letter-spacing: normal
+    letter-spacing: $ls-normal
 }
 
 #nav-wrap ul, #nth-segmentbar ul {
@@ -706,7 +707,7 @@ header .link-arrow-text {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     direction: ltr;
-    text-align: left
+    text-align: $text-left
 }
 
 #nav-wrap {
@@ -720,7 +721,7 @@ header .link-arrow-text {
     width: 100%;
     min-width: 1024px;
     height: 50px;
-    font-size: 17px;
+    font-size: $font-17px;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
@@ -761,7 +762,7 @@ header .link-arrow-text {
     }
 
     body header .first a.menu-hover {
-        font-size: 13px !important
+        font-size: $font-13px !important
     }
 }
 
@@ -791,7 +792,7 @@ header .link-arrow-text {
     margin: 0 -10px;
     width: auto;
     height: 44px;
-    text-align: justify;
+    text-align: $text-justify;
     -ms-text-justify: distribute-all-lines;
     text-justify: distribute-all-lines;
     -webkit-user-select: none;
@@ -804,8 +805,8 @@ header .link-arrow-text {
     content: '';
     width: 100%;
     display: inline-block;
-    font-size: 0;
-    line-height: 0
+    font-size: $font-0;
+    line-height: $lh-0
 }
 
 @media only screen and (max-width: 840px) {
@@ -903,7 +904,7 @@ header .link-arrow-text {
     #nav-wrap .nav-top-level, #nav-wrap #secondary-nav > li {
         height: auto;
         max-height: none;
-        opacity: 0;
+        opacity: $op-0;
         pointer-events: none;
         -webkit-transform: scale(1.1) translateY(-24px);
         -ms-transform: scale(1.1) translateY(-24px);
@@ -960,7 +961,7 @@ header .link-arrow-text {
     }
 
     #nth-menu-switch:checked ~ #nav-wrap .nav-top-level, #nth-menu-switch:target ~ #nav-wrap .nav-top-level {
-        opacity: 1;
+        opacity: $op-100;
         pointer-events: auto;
         -webkit-transform: none;
         -ms-transform: none;
@@ -1063,7 +1064,7 @@ header .link-arrow-text {
     }
 
     #nth-menu-switch:checked ~ #nav-wrap #secondary-nav li, #nth-menu-switch:target ~ #nav-wrap #secondary-nav li {
-        opacity: 1;
+        opacity: $op-100;
         pointer-events: auto;
         -webkit-transform: none;
         -ms-transform: none;
@@ -1130,7 +1131,7 @@ header .link-arrow-text {
 }
 
 #nav-wrap .nth-link.current {
-    opacity: .65
+    opacity: $op-65
 }
 
 #nav-wrap .nth-menuicon {
@@ -1161,7 +1162,7 @@ header .link-arrow-text {
     }
 
     #nth-menu-switch:checked ~ #nav-wrap .nth-searchview, #nth-menu-switch:target ~ #nav-wrap .nth-searchview {
-        opacity: 1;
+        opacity: $op-100;
         pointer-events: auto;
         -webkit-transform: none;
         -ms-transform: none;
@@ -1171,7 +1172,7 @@ header .link-arrow-text {
     }
 
     #nth-menu-switch ~ #nav-wrap .nth-searchview {
-        opacity: 0;
+        opacity: $op-0;
         display: block !important;
         -moz-transition: all 300ms ease-out 0.2s;
         -webkit-transition: all 300ms ease-out 0.2s;
@@ -1226,11 +1227,11 @@ header .link-arrow-text {
 }
 
 #nav-wrap .nth-menuicon-label:hover, #nav-wrap .nth-menuicon-label:focus, #nav-wrap .nth-menuicon-label:active {
-    opacity: .65
+    opacity: $op-65
 }
 
 #nav-wrap.touch .nth-menuicon-label {
-    opacity: 1;
+    opacity: $op-100;
     -webkit-transition: -webkit-transform 0.4s cubic-bezier(0.4, 0.01, 0.165, 0.99);
     transition: -webkit-transform 0.4s cubic-bezier(0.4, 0.01, 0.165, 0.99);
     transition: transform 0.4s cubic-bezier(0.4, 0.01, 0.165, 0.99);
@@ -1307,12 +1308,12 @@ header .link-arrow-text {
 }
 
 #nav-wrap .nth-menuicon-middle {
-    opacity: 1;
+    opacity: $op-100;
     transition: .2s all ease-in-out
 }
 
 #nth-menu-switch:checked ~ #nav-wrap .nth-menuicon-middle, #nth-menu-switch:target ~ #nav-wrap .nth-menuicon-middle {
-    opacity: 0;
+    opacity: $op-0;
     transition: .2s all ease-in-out
 }
 
@@ -1419,7 +1420,7 @@ header .link-arrow-text {
 
 .nthrive-main-nav a {
     display: block;
-    line-height: 3
+    line-height: $lh-3
 }
 
 .main-nav ul, .main-nav {
@@ -1440,7 +1441,7 @@ header .link-arrow-text {
 
 li.mb-first:overlay {
     background: $color-000000;
-    opacity: 0.2
+    opacity: $op-20
 }
 
 .nthrive-main-menu {
@@ -1530,10 +1531,10 @@ li.mb-first:overlay {
     color: $color-5e6977;
     cursor: default;
     right: -1px;
-    line-height: normal;
+    line-height: $lh-normal;
     margin: 0;
     max-height: 0;
-    opacity: 0;
+    opacity: $op-0;
     overflow: hidden;
     padding: 0;
     position: absolute;
@@ -1543,7 +1544,7 @@ li.mb-first:overlay {
 }
 
 .menu-panel-group ul p {
-    font-size: 13px;
+    font-size: $font-13px;
     margin-left: 42px;
     margin-top: -15px;
     color: $color-86939e
@@ -1577,7 +1578,7 @@ li.mb-first:overlay {
     padding: 6px 10px 6px 5px;
     text-indent: 0;
     width: auto;
-    line-height: 1.2em !important;
+    line-height: $lh-1_2em !important;
     margin-left: 35px;
     list-style-position: outside;
     list-style-type: disc;
@@ -1604,8 +1605,8 @@ li.mb-first:overlay {
 
 .nav-top-level > a {
     display: block;
-    text-decoration: none;
-    font-weight: 500;
+    text-decoration: $text-decoration-none;
+    font-weight: $font-500;
     padding: 0 20px;
     color: $color-ffffff;
     text-shadow: 0 0 2px rgba(0, 0, 0, 1);
@@ -1614,15 +1615,15 @@ li.mb-first:overlay {
 .nav-top-level {
     margin: 0;
     padding-right: 0;
-    font-size: 13px;
-    font-style: normal;
-    text-decoration: none;
-    line-height: 4.5;
+    font-size: $font-13px;
+    font-style: $font-normal;
+    text-decoration: $text-decoration-none;
+    line-height: $lh-4_5;
     position: initial !important
 }
 
 body .panel-wrap li {
-    line-height: 3 !important;
+    line-height: $lh-3 !important;
     display: block;
     float: none
 }
@@ -1635,17 +1636,17 @@ body .panel-wrap li {
     border-bottom: 9px solid $color-f2f2f2;
     margin: 0 auto;
     bottom: .4em;
-    text-align: center;
+    text-align: $text-center;
     position: relative;
     z-index: 1000;
     display: none;
-    opacity: 0;
+    opacity: $op-0;
     visibility: hidden
 }
 
 a.open + .navarrow {
     display: block;
-    opacity: 1;
+    opacity: $op-100;
     visibility: visible;
 }
 
@@ -1659,7 +1660,7 @@ a.open + .navarrow {
 
 .menu-panel.open {
     max-height: 680px;
-    opacity: 1;
+    opacity: $op-100;
     top: 3.3em;
     visibility: visible;
     z-index: 1001;
@@ -1669,7 +1670,7 @@ a.open + .navarrow {
     padding: 6px 10px 6px 5px;
     text-indent: 0;
     width: auto;
-    line-height: 1.2em !important;
+    line-height: $lh-1_2em !important;
     margin-left: 35px;
     list-style-position: outside;
     list-style-type: disc;
@@ -1679,23 +1680,23 @@ a.open + .navarrow {
 .menu-panel a {
     color: $color-454545;
     display: block;
-    font-size: 1.05em;
-    font-weight: 400;
-    line-height: 1.25;
+    font-size: $font-1_05em;
+    font-weight: $font-400;
+    line-height: $lh-1_25;
     margin: .35em 0;
-    text-decoration: none;
+    text-decoration: $text-decoration-none;
 }
 
 .menu-panel a:hover, .menu-panel a:focus {
     color: $color-b0246f;
-    text-decoration: none;
+    text-decoration: $text-decoration-none;
 }
 
 .menu-panel-group > a {
     color: $color-662d91;
-    font-size: 1.05em;
-    font-weight: 600;
-    line-height: 1.2em !important;
+    font-size: $font-1_05em;
+    font-weight: $font-600;
+    line-height: $lh-1_2em !important;
     margin-bottom: 6px;
     padding: 4px 10px;
     display: block;
@@ -1712,24 +1713,24 @@ a.open + .navarrow {
 }
 
 #primary-nav .nth-link {
-    font-size: 14px;
-    line-height: 3.14286;
-    font-weight: 400;
-    letter-spacing: -.01em;
-    font-family: "Roboto", sans-serif;
+    font-size: $font-14px;
+    line-height: $lh-3_14286;
+    font-weight: $font-400;
+    letter-spacing: $ls-0_01em;
+    font-family: $font-roboto;
     color: $color-ffffff;
     position: relative;
     z-index: 1;
     display: inline-block;
     padding: 0 10px;
     height: 44px;
-    opacity: 1;
+    opacity: $op-100;
     -ms-filter: opacity(100);
     filter: alpha(opacity=100);
-    -webkit-opacity: 1;
-    -moz-opacity: 1;
-    -o-opacity: 1;
-    text-decoration: none;
+    -webkit-opacity: $op-100;
+    -moz-opacity: $op-100;
+    -o-opacity: $op-100;
+    text-decoration: $text-decoration-none;
     white-space: nowrap;
     -webkit-transition: opacity 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
     transition: opacity 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
@@ -1812,10 +1813,10 @@ nav button {
 }
 
 .nth-searchform-input {
-    font-size: 17px;
-    line-height: 1.29412;
-    letter-spacing: -.021em;
-    font-family: "Roboto", sans-serif;
+    font-size: $font-17px;
+    line-height: $lh-1_29412;
+    letter-spacing: $ls-0_021em;
+    font-family: $font-roboto;
     outline: none;
     width: 100%;
     height: 1.29412em;
@@ -1844,10 +1845,10 @@ nav button {
 }
 
 .search-open .nth-searchview {
-    font-size: 14px;
-    line-height: 2;
-    font-weight: 400;
-    letter-spacing: -.01em;
+    font-size: $font-14px;
+    line-height: $lh-2;
+    font-weight: $font-400;
+    letter-spacing: $ls-0_01em;
     font-family: "Rototo", sans-serif;
     display: block;
     background: $color-ffffff;
@@ -1861,12 +1862,12 @@ nav button {
 }
 
 .nth-searchview-close:hover, .nth-searchview-close:active {
-    opacity: .65;
+    opacity: $op-65;
     -ms-filter: opacity(65);
     filter: alpha(opacity=65);
-    -webkit-opacity: .65;
-    -moz-opacity: .65;
-    -o-opacity: .65;
+    -webkit-opacity: $op-65;
+    -moz-opacity: $op-65;
+    -o-opacity: $op-65;
 }
 
 .nth-searchview-close {
@@ -1877,12 +1878,12 @@ nav button {
     width: 38px;
     height: 44px;
     top: 0;
-    opacity: 1;
+    opacity: $op-100;
     -ms-filter: opacity(100);
     filter: alpha(opacity=100);
-    -webkit-opacity: 1;
-    -moz-opacity: 1;
-    -o-opacity: 1;
+    -webkit-opacity: $op-100;
+    -moz-opacity: $op-100;
+    -o-opacity: $op-100;
     color: $color-ffffff;
     cursor: pointer;
     -webkit-transition: opacity 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
@@ -1964,8 +1965,8 @@ nav button {
 
 #nav a, #menu a {
     display: block;
-    text-decoration: none;
-    font-weight: 500
+    text-decoration: $text-decoration-none;
+    font-weight: $font-500
 }
 
 #menu .button-dropdown > a {
@@ -1983,18 +1984,18 @@ nav button {
 }
 
 .right-nav li {
-    line-height: 5
+    line-height: $lh-5
 }
 
 #nav a, #menu a {
     display: block;
-    text-decoration: none;
-    font-weight: 500;
+    text-decoration: $text-decoration-none;
+    font-weight: $font-500;
     padding: 0 20px
 }
 
 #sticky-nav a {
-    font-size: 13px
+    font-size: $font-13px
 }
 
 #nav .menu-hover, #menu .menu-hover {
@@ -2026,13 +2027,13 @@ nav button {
 }
 
 #nav ul li a, #menu ul li a {
-    line-height: 15px
+    line-height: $lh-15px
 }
 
 #nav ul a, #menu ul a {
     padding: 15px 30px;
     margin: 0;
-    font-size: 14px
+    font-size: $font-14px
 }
 
 .sticky-wrap .l-site-width, .sticky-wrap .right-nav, .sticky-wrap a, .sticky-wrap img {
@@ -2059,7 +2060,7 @@ nav button {
     z-index: 99999999;
     transition: top .2s ease-in-out;
     height: 65px;
-    opacity: 0.9
+    opacity: $op-90
 }
 
 body #sticky-nav .right-nav li {
@@ -2079,18 +2080,18 @@ body #sticky-nav .right-nav li.rm0 {
 }
 
 .right-nav li {
-    line-height: 5
+    line-height: $lh-5
 }
 
 #nav a {
     display: block;
-    text-decoration: none;
-    text-transform: capitalize;
-    font-weight: 500
+    text-decoration: $text-decoration-none;
+    text-transform: $text-transform-capitalize;
+    font-weight: $font-500
 }
 
 #sticky-nav a {
-    font-size: 13px
+    font-size: $font-13px
 }
 
 #nav .menu-hover, #menu .menu-hover {
@@ -2133,7 +2134,7 @@ body #sticky-nav .right-nav li.rm0 {
 }
 
 #sticky-nav .right-nav li ul li, #menu li ul li {
-    line-height: 1 !important;
+    line-height: $lh-1 !important;
     padding: 0;
     margin: 0;
     display: block
@@ -2157,7 +2158,7 @@ body #sticky-nav .right-nav li {
 }
 
 #nav ul li a {
-    line-height: 15px
+    line-height: $lh-15px
 }
 
 #nav ul a, #menu ul a, .nav-filter #info ul a {
@@ -2168,7 +2169,7 @@ body #sticky-nav .right-nav li {
     white-space: nowrap;
     padding: 15px 30px;
     margin: 0;
-    font-size: 14px
+    font-size: $font-14px
 }
 
 .nthrive-main-menu ul {
@@ -2203,10 +2204,10 @@ body #sticky-nav .right-nav li {
     background-color: $color-000000;
     -ms-filter: opacity(.6);
     filter: alpha(opacity=60);
-    -webkit-opacity: .6;
-    -moz-opacity: .6;
-    -o-opacity: .6;
-    opacity: .6;
+    -webkit-opacity: $op-60;
+    -moz-opacity: $op-60;
+    -o-opacity: $op-60;
+    opacity: $op-60;
     -webkit-transform: translate3d(0, 0, 0);
     -moz-transform: translate3d(0, 0, 0);
     -ms-transform: translate3d(0, 0, 0);
@@ -2244,7 +2245,7 @@ body #sticky-nav .right-nav li {
 }
 
 .nthrive-main-menu .nthrive-menusub-inner > div a {
-    line-height: 1.5em
+    line-height: $lh-1_5em
 }
 
 .sticky header .nthrive-main-nav .dropdown-menu, header.bg-purple .nthrive-main-nav .dropdown-menu {
@@ -2286,7 +2287,7 @@ header {
 
 .menu-panel a .skip-nav {
     float: left;
-    font-weight: 700;
+    font-weight: $font-700;
     padding: 10px
 }
 
@@ -2299,7 +2300,7 @@ header {
     left: -999999px;
     overflow: hidden;
     position: absolute;
-    font-size: 15px;
+    font-size: $font-15px;
     padding: 15px;
     background: $color-ffffff;
     display: inline-block;
@@ -2336,10 +2337,10 @@ header {
     color: $color-5e6977;
     cursor: default;
     right: -1px;
-    line-height: normal;
+    line-height: $lh-normal;
     margin: 0;
     max-height: 0;
-    opacity: 0;
+    opacity: $op-0;
     overflow: hidden;
     padding: 0;
     position: absolute;
@@ -2355,15 +2356,15 @@ header {
 .menu-panel a {
     color: $color-454545;
     display: block;
-    font-size: 1.05em;
-    font-weight: 400;
-    line-height: 1.25;
+    font-size: $font-1_05em;
+    font-weight: $font-400;
+    line-height: $lh-1_25;
     margin: .35em 0;
-    text-decoration: none
+    text-decoration: $text-decoration-none
 }
 
 .menu-panel-group ul p {
-    font-size: 13px;
+    font-size: $font-13px;
     margin-left: 42px;
     margin-top: -15px;
     color: $color-86939e
@@ -2391,13 +2392,13 @@ header {
 
 .menu-panel > p {
     color: $color-454545;
-    font-size: 1.2em;
-    line-height: 1.3em
+    font-size: $font-1_2em;
+    line-height: $lh-1_3em
 }
 
 .menu-panel a:hover, .menu-panel a:focus-visible {
     color: $color-b0246f;
-    text-decoration: none
+    text-decoration: $text-decoration-none
 }
 
 .menu-panel.l-col-1 {
@@ -2461,9 +2462,9 @@ header {
 
 .menu-panel-group > a {
     color: $color-662d91;
-    font-size: 1.05em;
-    font-weight: 600;
-    line-height: 1.2em !important;
+    font-size: $font-1_05em;
+    font-weight: $font-600;
+    line-height: $lh-1_2em !important;
     margin-bottom: 6px;
     padding: 4px 10px;
     display: block
@@ -2483,7 +2484,7 @@ header {
     padding: 6px 10px 6px 5px;
     text-indent: 0;
     width: auto;
-    line-height: 1.2em !important;
+    line-height: $lh-1_2em !important;
     margin-left: 35px;
     list-style-position: outside;
     list-style-type: disc;
@@ -2501,8 +2502,8 @@ header {
 
 .nav-top-level > a {
     display: block;
-    text-decoration: none;
-    font-weight: 500;
+    text-decoration: $text-decoration-none;
+    font-weight: $font-500;
     padding: 0 20px;
     color: $color-ffffff;
     text-shadow: 0 0 2px rgba(0,0,0,1);
@@ -2511,10 +2512,10 @@ header {
 .nav-top-level {
     margin: 0;
     padding-right: 0;
-    font-size: 13px;
-    font-style: normal;
-    text-decoration: none;
-    line-height: 4.5;
+    font-size: $font-13px;
+    font-style: $font-normal;
+    text-decoration: $text-decoration-none;
+    line-height: $lh-4_5;
     position: initial !important
 }
 
@@ -2528,7 +2529,7 @@ header #nav-wrap .nth-list {
 }
 
 body .panel-wrap li {
-    line-height: 3 !important;
+    line-height: $lh-3 !important;
     display: block;
     float: none
 }
@@ -2570,7 +2571,7 @@ header.bg-purple .navarrow {
     .nthrive-main-menu figure {
         display: none;
         visibility: hidden;
-        opacity: 0;
+        opacity: $op-0;
     }
 
     header {
@@ -2589,12 +2590,12 @@ header.bg-purple .navarrow {
         padding-right: 0;
         transition: all 0.2s ease 0s;
         background: $color-441a63;
-        text-align: center;
+        text-align: $text-center;
         height: auto;
         height: calc(100vh - 80px);
         box-sizing: border-box;
         padding-bottom: 20px;
-        opacity: 0;
+        opacity: $op-0;
         z-index: -1
     }
 
@@ -2602,11 +2603,11 @@ header.bg-purple .navarrow {
         top: 100%;
         position: absolute;
         z-index: 9999999;
-        opacity: 1
+        opacity: $op-100
     }
 
     .nav-outer-wrap {
-        opacity: 1
+        opacity: $op-100
     }
 
     body header {
@@ -2620,7 +2621,7 @@ header.bg-purple .navarrow {
     }
 
     .nav-outer-wrap {
-        opacity: 1;
+        opacity: $op-100;
     }
 
     .nthrive-main-nav {
@@ -2643,7 +2644,7 @@ header.bg-purple .navarrow {
 
     body .main-nav {
         transition: none !important;
-        opacity: 1;
+        opacity: $op-100;
     }
 
     .panel-wrap {
@@ -2654,10 +2655,10 @@ header.bg-purple .navarrow {
         max-height: auto;
         -ms-filter: opacity(100);
         filter: alpha(opacity=100);
-        -webkit-opacity: 1;
-        -moz-opacity: 1;
-        -o-opacity: 1;
-        opacity: 1;
+        -webkit-opacity: $op-100;
+        -moz-opacity: $op-100;
+        -o-opacity: $op-100;
+        opacity: $op-100;
         top: 0;
         visibility: visible;
     }
@@ -2693,20 +2694,20 @@ header.bg-purple .navarrow {
         display: none;
         -ms-filter: opacity(0);
         filter: alpha(opacity=0);
-        -webkit-opacity: 0;
-        -moz-opacity: 0;
-        -o-opacity: 0;
-        opacity: 0;
+        -webkit-opacity: $op-0;
+        -moz-opacity: $op-0;
+        -o-opacity: $op-0;
+        opacity: $op-0;
         visibility: hidden;
     }
 
     .menu-panel-group > a {
         padding: 0 30px !important;
-        line-height: 3 !important;
+        line-height: $lh-3 !important;
     }
 
     .menu-panel-group li > a {
-        line-height: 1.5em !important;
+        line-height: $lh-1_5em !important;
     }
 
     .menu-panel.l-col-3 {
@@ -2715,7 +2716,7 @@ header.bg-purple .navarrow {
     }
 
     .nthrive-main-nav a {
-        line-height: 3;
+        line-height: $lh-3;
     }
 
     #primary-nav .nth-link-search {
@@ -2759,12 +2760,12 @@ header.bg-purple .navarrow {
         padding-right: 0;
         transition: all 0.2s ease 0s;
         background: $color-441a63;
-        text-align: center;
+        text-align: $text-center;
         height: auto;
         height: calc(100vh - 60px);
         box-sizing: border-box;
         padding-bottom: 20px;
-        opacity: 0;
+        opacity: $op-0;
         z-index: -1
     }
 }

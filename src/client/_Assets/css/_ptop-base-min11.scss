@@ -404,7 +404,7 @@ ul.bullets li, ul.content-list li {
 
 ul.bullets li, ul.content-list li {
     margin-bottom: .7em;
-    line-height: $lh-1-4em
+    line-height: $lh-1_4em
 }
 
 .bullets ul.bullets {
@@ -509,7 +509,7 @@ a.anchor {
     font-weight: $font-400 !important;
     padding: 5px 15px !important;
     display: block;
-    line-height: $lh-2-5em !important
+    line-height: $lh-2_5em !important
 }
 
 #nav .menu-hover, #menu .menu-hover {
@@ -744,7 +744,7 @@ body img.desktop-landscape {
 }
 
 .mb-button a.btn, .mb-button a.btn:active {
-    line-height: $lh-2-7 !important;
+    line-height: $lh-2_7 !important;
     height: auto;
     font-size: $font-18px;
     padding: 0.2em 20px;
@@ -1226,7 +1226,7 @@ input:focus, select:focus, textarea:focus {
     font-size: $font-14px;
     font-family: $font-roboto;
     font-weight: $font-400;
-    line-height: $lh-2-3;
+    line-height: $lh-2_3;
     -webkit-transition: all 0.1s ease-in;
     -moz-transition: all 0.1s ease-in;
     -o-transition: all 0.1s ease-in;
@@ -1445,7 +1445,7 @@ input:focus, select:focus, textarea:focus {
 }
 
 .ana-info p {
-    line-height: $lh-1-8;
+    line-height: $lh-1_8;
 }
 
 .ana-right .ana-pic {
@@ -1551,14 +1551,14 @@ input:focus, select:focus, textarea:focus {
 .wheel-box-header, h1.wheel-box-header, h2.wheel-box-header, h3.wheel-box-header, h4.wheel-box-header, h5.wheel-box-header, p.wheel-box-header {
     font-weight: $font-500;
     font-size: $font-26px;
-    line-height: $lh-1-6;
+    line-height: $lh-1_6;
     color: $color-43484d;
 }
 
 .wheel-box-subheader, h1.wheel-box-subheader, h2.wheel-box-subheader, h3.wheel-box-subheader, h4.wheel-box-subheader, h5.wheel-box-subheader {
     font-size: $font-18px;
     font-weight: $font-400;
-    line-height: $lh-1-6;
+    line-height: $lh-1_6;
     color: $color-43484d;
 }
 
@@ -1688,37 +1688,37 @@ section p, p {
 
 .text-14px {
     font-size: $font-14px;
-    line-height: $lh-1-6
+    line-height: $lh-1_6
 }
 
 .text-16px {
     font-size: $font-16px;
-    line-height: $lh-1-6
+    line-height: $lh-1_6
 }
 
 .text-18px {
     font-size: $font-18px;
-    line-height: $lh-1-6
+    line-height: $lh-1_6
 }
 
 .text-20px {
     font-size: $font-20px;
-    line-height: $lh-1-6
+    line-height: $lh-1_6
 }
 
 .text-22px {
     font-size: $font-22px;
-    line-height: $lh-1-6
+    line-height: $lh-1_6
 }
 
 .text-26px {
     font-size: $font-26px;
-    line-height: $lh-1-6
+    line-height: $lh-1_6
 }
 
 .text-28px {
     font-size: $font-28px;
-    line-height: $lh-1-6
+    line-height: $lh-1_6
 }
 
 .lh-26px {
@@ -1881,7 +1881,7 @@ body #menu > li > a {
 .main > div.buttonset button {
     background: $color-ffffff;
     color: $color-54565b;
-    font-size: $font-08em
+    font-size: $font-0_8em
 }
 
 .main > div.buttonset button:hover {
@@ -2648,7 +2648,6 @@ textarea.std-input3 {
     background: -moz-linear-gradient(top, rgba(242, 243, 244, 1) 0%, rgba(229, 232, 235, 1) 100%);
     background: -webkit-linear-gradient(top, rgba(242, 243, 244, 1) 0%, rgba(229, 232, 235, 1) 100%);
     background: linear-gradient(to bottom, rgba(242, 243, 244, 1) 0%, rgba(229, 232, 235, 1) 100%);
-    // filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='$color-f2f3f4', endColorstr='$color-e5e8eb', GradientType=0)
 }
 
 .select-style-light select {
@@ -2663,7 +2662,6 @@ textarea.std-input3 {
     background: -moz-linear-gradient(top, rgba(242, 243, 244, 1) 0%, rgba(229, 232, 235, 1) 100%);
     background: -webkit-linear-gradient(top, rgba(242, 243, 244, 1) 0%, rgba(229, 232, 235, 1) 100%);
     background: linear-gradient(to bottom, rgba(242, 243, 244, 1) 0%, rgba(229, 232, 235, 1) 100%);
-    // filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='$color-f2f3f4', endColorstr='$color-e5e8eb', GradientType=0);
     background-image: url('../images/icon/udarrow.png');
     background-repeat: no-repeat;
     background-position: 92% center;
@@ -2919,7 +2917,6 @@ input.mb-25px[type="checkbox"] {
     background: -moz-linear-gradient(left, $color-006fb9 0%, $color-26ab9a 100%);
     background: -webkit-linear-gradient(left, $color-006fb9 0%,$color-26ab9a 100%);
     background: linear-gradient(to right, $color-006fb9 0%,$color-26ab9a 100%);
-    // filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$color-006fb9', endColorstr='$color-26ab9a',GradientType=1 )
 }
 
 .bg-gradient-blue .ana-info, .bg-gradient-blue h2, .bg-gradient-blue a, .bg-gradient-blue p, .bg-gradient-blue ul {
@@ -4387,7 +4384,7 @@ body img.desktop-landscape {
 .highlight pre {
     background: $color-f7f7f7;
     border-radius: 3px;
-    line-height: $lh-1-45;
+    line-height: $lh-1_45;
     margin-bottom: 0;
     overflow: auto;
     padding: 16px;
