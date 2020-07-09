@@ -1,5 +1,4 @@
 import "./_Assets/css/styles-main-pages.scss";
-import "./_Assets/css/int-phone5.scss";
 import "./_Assets/js/jquery-1.12.4.min.js";
 import "./_Assets/js/int-phone5.js";
 import "./_Assets/js/lead-anywhere-popup-form-min3.js";
