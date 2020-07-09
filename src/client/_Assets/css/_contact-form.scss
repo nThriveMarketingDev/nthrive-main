@@ -31,7 +31,7 @@
 }
 
 .contact-form {
-  max-width: none !important;
+  max-width: 1040px !important;
 }
 .contact-tabs .big-tab-links {
   margin-bottom: 15px;
@@ -40,6 +40,20 @@
   color: red;
   font-size: 14px;
   padding-right: 4px;
+}
+
+.solutions #checkboxes .form-half > div {
+  clear: both;
+  content: "";
+}
+.solutions #checkboxes .form-half input[type="checkbox"] {
+  float: left;
+  margin: 3px 0 0 0;
+}
+.solutions #checkboxes .form-half label {
+  margin: 0 0 15px 10px;
+  width: 85%;
+  float: left;
 }
 
 @media (max-width: 840px) {
