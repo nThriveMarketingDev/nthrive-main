@@ -6,3 +6,4 @@ coverage/
 tests/
 webpack.dev.js
 src/server/
+js/form.js
