@@ -69,4 +69,11 @@
     border: 1px;
     background-color: #fff;
   }
+  form > .pb-15px,
+  form > .pb-10px {
+    padding-bottom: 0;
+  }
+  .form-full span.mt-20px {
+    margin-top: 10px;
+  }
 }
