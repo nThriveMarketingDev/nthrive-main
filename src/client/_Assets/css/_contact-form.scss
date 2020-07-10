@@ -62,4 +62,11 @@
     transform: translateY(0);
     padding-top: 10px;
   }
+  .contact-tabs li.tab {
+    margin-bottom: 0;
+  }
+  .contact-tabs .tab a:hover {
+    border: 1px;
+    background-color: #fff;
+  }
 }
