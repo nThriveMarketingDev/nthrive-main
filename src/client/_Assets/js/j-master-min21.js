@@ -1187,7 +1187,7 @@ var num =
     : $('[id^="section-"]');
 $(".skip-to-main").attr("href", "#" + num),
   $(
-    '.ask-a-question[href="mailto:experts@answers-nthrive.com"], .chat-us-now[href="mailto:experts@answers-nthrive.com"], #open-video'
+    '.ask-a-question[href="mailto:experts@answers-nthrive.com"], .ask-a-question[href="https://www.nthrive.com/contact-us/"], .chat-us-now[href="mailto:experts@answers-nthrive.com"], #open-video'
   ).click(function () {
     $("body").addClass("no-scroll");
   }),
