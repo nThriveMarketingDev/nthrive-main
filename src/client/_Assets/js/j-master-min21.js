@@ -1,5 +1,3 @@
-import $ from "jquery";
-
 !(function (e) {
   "function" == typeof define && define.amd
     ? define(["jquery"], e)
@@ -3812,8 +3810,8 @@ function sticky_relocate() {
           $(this).parent("li").siblings("li").removeClass("open");
         var e = $(this).attr("href");
         return (
-          $(e).siblings("div.tab-detail").addClass("tab-current").hide(),
-          $(e).show(),
+          $(e).siblings("div.tab-detail").removeClass("show").hide(),
+          $(e).removeClass("show").addClass("show").show(),
           !1
         );
       }),
@@ -3822,8 +3820,8 @@ function sticky_relocate() {
           $(this).parent("div").parent("li").siblings("li").removeClass("open");
         var e = $(this).attr("href");
         return (
-          $(e).siblings("div.tab-detail").addClass("tab-current").hide(),
-          $(e).show(),
+          $(e).siblings("div.tab-detail").removeClass("show").hide(),
+          $(e).removeClass("show").addClass("show").show(),
           !1
         );
       }),
@@ -3853,8 +3851,8 @@ function sticky_relocate() {
           $(this).siblings("li").removeClass("open");
         var t = $(this).children("a").attr("href");
         return (
-          $(t).siblings("div.tab-detail").addClass("tab-current").hide(),
-          $(t).show(),
+          $(t).siblings("div.tab-detail").removeClass("show").hide(),
+          $(t).removeClass("show").addClass("show").show(),
           $(this).children("a").attr("href"),
           $(t).parent("li").siblings("li").removeClass("showme"),
           $(t).parent("li").addClass("showme"),
@@ -3872,8 +3870,8 @@ function sticky_relocate() {
           $(this).siblings("li").removeClass("open");
         var t = $(this).children("a").attr("href");
         return (
-          $(t).siblings("div.tab-detail").addClass("tab-current").hide(),
-          $(t).show(),
+          $(t).siblings("div.tab-detail").removeClass("show").hide(),
+          $(t).removeClass("show").addClass("show").show(),
           $(this).children("a").attr("href"),
           $(t).parent("li").siblings("li").removeClass("showme"),
           $(t).parent("li").addClass("showme"),
@@ -3994,8 +3992,8 @@ $(document).ready(function (e) {
       $(this).parent("div").parent("li").siblings("li").removeClass("open");
     var e = $(this).attr("href");
     return (
-      $(e).siblings("div.tab-detail").addClass("tab-current").hide(),
-      $(e).show(),
+      $(e).siblings("div.tab-detail").removeClass("show").hide(),
+      $(e).removeClass("show").addClass("show").show(),
       !1
     );
   }),
