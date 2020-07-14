@@ -3811,13 +3811,21 @@ function sticky_relocate() {
         $(this).parent("li").removeClass("open").addClass("open"),
           $(this).parent("li").siblings("li").removeClass("open");
         var e = $(this).attr("href");
-        return $(e).siblings("div.tab-detail").hide(), $(e).show(), !1;
+        return (
+          $(e).siblings("div.tab-detail").addClass("tab-current").hide(),
+          $(e).show(),
+          !1
+        );
       }),
       $(".contact-tabs ul li a").on("click", function () {
         $(this).parent("div").parent("li").removeClass("open").addClass("open"),
           $(this).parent("div").parent("li").siblings("li").removeClass("open");
         var e = $(this).attr("href");
-        return $(e).siblings("div.tab-detail").hide(), $(e).show(), !1;
+        return (
+          $(e).siblings("div.tab-detail").addClass("tab-current").hide(),
+          $(e).show(),
+          !1
+        );
       }),
       $(".mobile-select ul li a").on("click", function () {
         $(this).parent("li").parent("ul").slideToggle(200);
@@ -3845,7 +3853,7 @@ function sticky_relocate() {
           $(this).siblings("li").removeClass("open");
         var t = $(this).children("a").attr("href");
         return (
-          $(t).siblings("div.tab-detail").hide(),
+          $(t).siblings("div.tab-detail").addClass("tab-current").hide(),
           $(t).show(),
           $(this).children("a").attr("href"),
           $(t).parent("li").siblings("li").removeClass("showme"),
@@ -3864,7 +3872,7 @@ function sticky_relocate() {
           $(this).siblings("li").removeClass("open");
         var t = $(this).children("a").attr("href");
         return (
-          $(t).siblings("div.tab-detail").hide(),
+          $(t).siblings("div.tab-detail").addClass("tab-current").hide(),
           $(t).show(),
           $(this).children("a").attr("href"),
           $(t).parent("li").siblings("li").removeClass("showme"),
@@ -3985,7 +3993,11 @@ $(document).ready(function (e) {
     $(this).parent("div").parent("li").toggleClass("open"),
       $(this).parent("div").parent("li").siblings("li").removeClass("open");
     var e = $(this).attr("href");
-    return $(e).siblings("div.tab-detail").hide(), $(e).show(), !1;
+    return (
+      $(e).siblings("div.tab-detail").addClass("tab-current").hide(),
+      $(e).show(),
+      !1
+    );
   }),
   (function (e) {
     var t = e('<span class="arrow"></span>');

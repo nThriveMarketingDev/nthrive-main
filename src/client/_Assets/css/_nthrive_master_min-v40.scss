@@ -6024,6 +6024,60 @@ iframe[name="google_conversion_frame"] {
   width: 35px;
 }
 
+.filter-select .dropdown {
+  color: #374252;
+  font-size: 14px;
+  font-weight: 500;
+  display: block;
+  padding: 0 20px 0 20px;
+  position: relative;
+  min-width: 188px;
+  border: 1px solid #86939e;
+  text-align: left;
+  line-height: 2.5;
+}
+.filter-select ul {
+  background-color: #eee;
+  display: none;
+  left: 0;
+  list-style: outside none none;
+  margin: 0;
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  text-align: left;
+  color: #374252;
+  font-size: 14px;
+  font-weight: 500;
+  border: 1px solid #86939e;
+  box-sizing: border-box;
+  z-index: 9999;
+}
+.filter-select li {
+  border-bottom: 1px solid #86939e;
+}
+
+.filter-select .dropdown span.arrow {
+  display: block;
+  width: 16px;
+  height: 16px;
+  background: url(../images/icon/selectarrow1.png) no-repeat 50%;
+  position: absolute;
+  right: 10px;
+  top: 11px;
+}
+
+.filter-select a {
+  display: block;
+  color: #374252;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 8px 20px;
+}
+.filter-select a:hover {
+  background-color: #ffffff;
+}
+
 @media print {
   body,
   #main,
