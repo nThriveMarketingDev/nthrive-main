@@ -4992,8 +4992,28 @@ a.wrightarrow {
   font-weight: $font-400;
 }
 
-.bloglist li {
-  padding: 0 0 40px 0;
+.blog .bloglist li {
+    padding: 0 0 40px;
+    width: 46%;
+    float: left;
+    margin: 0 10px;
+}
+
+.blog .elt-content {
+    width: 100%;
+}
+
+.blog .primary {
+    width: 100%;
+    max-width: 770px;
+}
+
+@media only screen and (max-width: 840px) {
+    .blog .bloglist li {
+        width: auto;
+        float: none;
+        margin: auto;
+    }
 }
 
 .post-nav a {
