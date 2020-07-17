@@ -868,24 +868,6 @@ body img.desktop-landscape {
   padding: 45px;
 }
 
-.solutions-wrap {
-  max-width: 800px;
-}
-
-.contact-form.solutions-wrap > .bg-ffffff {
-  border: 1px solid $color-d4dbe2;
-  border-top: 8px solid $color-d4dbe2;
-}
-
-.noscript .contact-wrap form {
-  display: none;
-}
-
-.bg-eceff2 .contact-form.solutions-wrap > .bg-ffffff {
-  border: 0;
-  border-top: 0;
-}
-
 #page-nav a {
   padding: 16px 11px;
   margin: 2px;
@@ -2817,16 +2799,6 @@ textarea.std-input3 {
   padding-bottom: 15px;
 }
 
-.contact-form .btn {
-  width: 100%;
-}
-
-.contact-form-content {
-  border: 1px solid $color-d4dbe2;
-  border-top: 8px solid $color-d4dbe2;
-  padding: 46px 20px 28px;
-}
-
 .select-style-light {
   padding: 0;
   margin: 0;
@@ -3401,14 +3373,6 @@ legend {
 
   #sales-question .input-wrap {
     margin-bottom: 15px !important;
-  }
-
-  .contact-form.solutions-wrap .p-45px {
-    padding: 20px;
-  }
-
-  .contact-form {
-    padding: 0;
   }
 
   .btn {
@@ -4374,35 +4338,12 @@ legend {
     padding-bottom: 0;
   }
 
-  .contact-form-content .select-style-light {
-    border: 1px solid $color-d4dbe2;
-    border-radius: 0;
-    box-sizing: border-box;
-    height: 50px;
-    line-height: $lh-18px;
-    margin: 0;
-    overflow: hidden;
-    padding: 0;
-    position: relative;
-    text-align: $text-left;
-    width: 100%;
-  }
-
-  .contact-form-content .select-style-light select {
-    padding: 15px 18px;
-  }
-
   textarea.std-input3 {
     height: 168px;
     line-height: $lh-normal;
     padding-bottom: 15px;
     padding-top: 15px;
     resize: none;
-  }
-
-  .contact-form-content .btn {
-    height: 50px;
-    line-height: $lh-50px;
   }
 
   .l-one-third {
