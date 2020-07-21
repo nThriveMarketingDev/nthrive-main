@@ -5003,9 +5003,17 @@ a.wrightarrow {
 
   .bloglist li {
     padding: 0 0 40px;
-    width: 46%;
+    width: 49%;
     float: left;
-    margin: 0 10px;
+    margin-right: 2%;
+
+    &:nth-child(2n) {
+      margin-right: 0;
+    }
+  }
+
+  #main-content figure img, .elt-content figure img {
+    width: 100%;
   }
 }
 
