@@ -5014,6 +5014,11 @@ a.wrightarrow {
   #main-content figure img, .elt-content figure img {
     width: 100%;
   }
+
+  figure {
+    max-height: 190px;
+    overflow: hidden;
+  }
 }
 
 .blog-small-width {
@@ -5033,11 +5038,17 @@ a.wrightarrow {
 }
 
 @media only screen and (max-width: 840px) {
-  .blog-full-width .bloglist li {
-    width: auto;
-    float: none;
-    margin: auto;
-  }
+    .blog-full-width {
+        .bloglist li {
+            width: auto;
+            float: none;
+            margin: auto;
+        }
+
+        figure {
+            max-height: none;
+        }
+    }
 }
 
 .post-nav a {
