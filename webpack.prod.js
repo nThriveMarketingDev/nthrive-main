@@ -62,6 +62,10 @@ module.exports = {
       template: "./src/client/ptop-index.html",
       filename: "./ptop-index.html",
     }),
+    new HtmlWebPackPlugin({
+      template: "./src/client/userforums.html",
+      filename: "./userforums.html",
+    }),
     new MiniCssExtractPlugin(),
   ],
 };
