@@ -13,6 +13,7 @@ module.exports = {
     nthrive_main_bundle: "./src/client/index.js",
     nthrive_contact_bundle: "./src/client/contact.js",
     nthrive_ptop_bundle: "./src/client/ptop.js",
+    nthrive_userforums_bundle: "./src/client/userforums.js",
   },
   mode: "production",
   output: {

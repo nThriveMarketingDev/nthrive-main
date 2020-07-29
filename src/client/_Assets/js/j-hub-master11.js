@@ -1286,9 +1286,24 @@ $(document).ready(function () {
       $("#nth-menu-switch").prop("checked", false);
     });
   }
+
+  // Get the distance from the top of window
+  var getOffsetTop = function (elem) {
+    var distance = 0;
+    // Loop up the DOM
+    if (elem.offsetParent) {
+      do {
+        distance += elem.offsetTop;
+        elem = elem.offsetParent;
+      } while (elem);
+    }
+    return distance < 0 ? 0 : distance;
+  };
+
   if ($("#page-nav").length) {
     var top = $("#page-nav").offset().top;
   }
+
   $(window).scroll(function () {
     var y = $(this).scrollTop();
     if (window.location.href.indexOf("com/hub/") > -1) {
@@ -1303,7 +1318,10 @@ $(document).ready(function () {
       window.location.href.indexOf("com/eventslp/") > -1 ||
       window.location.href.indexOf("com/userforums/") > -1
     ) {
-      if (y >= 50) {
+      var elem = document.getElementById("nav-target");
+      var offset = getOffsetTop(elem);
+
+      if (y >= offset) {
         $("#page-nav").addClass("fixed");
         $(".logo-anim").addClass("move");
       } else {
