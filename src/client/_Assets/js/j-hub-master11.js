@@ -6155,14 +6155,19 @@ $(document).ready(function () {
   var $pageNav = $("#page-nav .l-site-width");
   var $search = $(".nth-search");
   var $mainNav = $("#main-nav");
+  var $nthContainer = $(".nth-content");
+  var $eventsPageNav = $("#page-nav");
+  var $eventsItems = $("#items");
   +$("header").append(
     '<div class="wheel-toggle btn-anim"><a href="#wheel-mobile" class="block" tabindex="-1"><span>+</span></a></div>'
   );
   function winWidth() {
     if ($(window).width() < 840) {
+      $nthContainer.append($eventsPageNav);
       $lastLine.append($secondNav);
       $mainNav.prepend($search);
     } else {
+      $eventsItems.before($eventsPageNav);
       $pageNav.append($secondNav);
       $lastLine.before($search);
     }

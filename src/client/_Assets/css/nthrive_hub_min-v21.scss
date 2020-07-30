@@ -646,6 +646,14 @@ p.rev-p {
 .sticky #nav-wrap {
   background: #441a63;
 }
+.events.sticky header,
+.events header.bg-purple,
+.events .nav-outer-wrap {
+  position: relative;
+}
+.events #nav-wrap {
+  position: relative;
+}
 #global-footer .footer-links-set {
   display: none;
 }
@@ -1222,6 +1230,21 @@ header.bg-purple {
   box-shadow: 0 0 1px rgba(0, 0, 0, 0.1);
   border: 1px solid #cdcdcd;
   box-sizing: border-box;
+}
+.events .l-two-col {
+  width: 47%;
+  float: left;
+  margin: 0 2% 2% 2%;
+  padding-top: 2%;
+}
+.speakers-wrap .l-two-col:nth-child(2n) {
+  margin: 0 2% 2% 0;
+}
+.speakers-wrap > div.speakers:nth-child(2n) {
+  background-color: transparent;
+}
+.speakers-wrap {
+  background-color: #e5e7e9;
 }
 .events .wrap {
   background-color: #e5e7e9;
@@ -6609,6 +6632,75 @@ iframe[name="google_conversion_frame"] {
   }
 }
 @media only screen and (max-width: 840px) {
+  .events #page-nav.fixed .header-logo {
+    display: none;
+  }
+  .events #page-nav.fixed {
+    background-color: transparent;
+    box-shadow: 0 0 0;
+  }
+  .events #primary-nav a:hover {
+    color: #229d8d;
+  }
+
+  .events .page-nav .selected,
+  .events .page-nav a.selected:hover {
+    background-color: #229d8d !important;
+    color: #fff !important;
+  }
+  .events .page-nav .panel-wrap {
+    position: relative;
+    top: 0;
+    width: 310px;
+    border: 0;
+    margin-left: 0;
+    width: auto;
+  }
+  .events #page-nav .second-nav > li:last-child > a {
+    background-color: transparent;
+    border-right: 0;
+    border-top: 0;
+  }
+  .events #page-nav .first > a,
+  .events #page-nav li.first > span {
+    border-right: 0;
+    border-top: 1px solid #321349;
+    border-bottom: 0;
+    background-color: transparent;
+  }
+  .events #secondary-nav {
+    left: 0;
+    margin-left: 0;
+  }
+  .events #nav-wrap .first {
+    position: relative;
+  }
+  .events .elt-pglink.selected:after,
+  .events .elt-pglink.selected:before {
+    display: none;
+  }
+  .events .page-hav .l-inline-list li {
+    display: block;
+  }
+  .events .fixed #secondary-nav {
+    left: 0;
+    margin-left: 0;
+  }
+  .events .relative.l-site-width {
+    height: auto;
+  }
+  .events #page-nav {
+    display: block;
+    margin-top: 50px;
+  }
+
+  .events .l-one-third {
+    width: 100%;
+    margin: 10px 0;
+  }
+  .events .news-box.item {
+    margin: 0;
+  }
   .home-slider-wrapper .backbgbox {
     height: 500px !important;
     max-height: none;
