@@ -5824,6 +5824,28 @@ iframe[name="google_conversion_frame"] {
   }
 }
 @media (max-width: 840px) {
+  .speakers {
+    &.l-two-col {
+      float: none;
+      width: 100%;
+      margin: 0 0 2% 0;
+      padding: 0;
+    }
+    figure {
+      float: right;
+      margin-left: 20px;
+      margin-bottom: 20px;
+    }
+    .user-pic {
+      display: block;
+      max-width: 172px;
+    }
+  }
+  .speakers-wrap {
+    .l-two-col:nth-child(2n) {
+      margin: 0 0 2% 0;
+    }
+  }
   .events #nav-wrap {
     position: fixed;
   }
