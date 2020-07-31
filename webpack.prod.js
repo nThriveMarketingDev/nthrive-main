@@ -66,6 +66,10 @@ module.exports = {
       template: "./src/client/userforums.html",
       filename: "./userforums.html",
     }),
+    new HtmlWebPackPlugin({
+      template: "./src/client/hub.html",
+      filename: "./hub.html",
+    }),
     new MiniCssExtractPlugin(),
   ],
 };
