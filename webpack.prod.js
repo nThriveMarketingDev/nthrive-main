@@ -18,7 +18,7 @@ module.exports = {
   },
   mode: "production",
   output: {
-    filename: "[name].js",
+    filename: "nthrive_[name]_bundle.js",
     libraryTarget: "var",
     library: "Client", // All of our javascipt code is accessible through this Client library.
   },
@@ -76,6 +76,12 @@ module.exports = {
       filename: "./hub.html",
       chunks: ["hub"],
     }),
-    new MiniCssExtractPlugin(),
+    new MiniCssExtractPlugin({
+      // Options similar to the same options in webpackOptions.output
+      // all options are optional
+      filename: "nthrive_[name]_bundle.css",
+      //chunkFilename: '[id].css',
+      ignoreOrder: false, // Enable to remove warnings about conflicting order
+    }),
   ],
 };
