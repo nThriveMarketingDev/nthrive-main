@@ -10,10 +10,11 @@ module.exports = {
     jquery: "jQuery",
   },
   entry: {
-    nthrive_main_bundle: "./src/client/index.js",
-    nthrive_contact_bundle: "./src/client/contact.js",
-    nthrive_ptop_bundle: "./src/client/ptop.js",
-    nthrive_userforums_bundle: "./src/client/userforums.js",
+    main: "./src/client/index.js",
+    contact: "./src/client/contact.js",
+    ptop: "./src/client/ptop.js",
+    hub: "./src/client/hub.js",
+    userforums: "./src/client/userforums.js",
   },
   mode: "production",
   output: {
@@ -53,22 +54,27 @@ module.exports = {
     new HtmlWebPackPlugin({
       template: "./src/client/index.html",
       filename: "./index.html",
+      chunks: ["main"],
     }),
     new HtmlWebPackPlugin({
       template: "./src/client/contact-us.html",
       filename: "./contact-us.html",
+      chunks: ["contact"],
     }),
     new HtmlWebPackPlugin({
       template: "./src/client/ptop-index.html",
       filename: "./ptop-index.html",
+      chunks: ["ptop"],
     }),
     new HtmlWebPackPlugin({
       template: "./src/client/userforums.html",
       filename: "./userforums.html",
+      chunks: ["userforums"],
     }),
     new HtmlWebPackPlugin({
       template: "./src/client/hub.html",
       filename: "./hub.html",
+      chunks: ["hub"],
     }),
     new MiniCssExtractPlugin(),
   ],
