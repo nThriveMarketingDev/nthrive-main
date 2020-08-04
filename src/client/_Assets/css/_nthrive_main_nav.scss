@@ -2804,3 +2804,213 @@ header.bg-purple .navarrow {
         background-color: $color-4e276b
     }
 }
+
+/* Hub Secondary Nav */
+#page-nav {
+    height: 54px;
+}
+
+#page-nav a,
+#page-nav li > span {
+    padding: 16px 11px;
+    margin: 2px;
+    display: block;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.page-nav .nav-top-level {
+    position: relative !important;
+}
+
+.page-nav .panel-wrap {
+    position: absolute;
+    top: 52px;
+    width: 310px;
+    border: 2px solid #dedede;
+}
+
+.page-nav .first {
+    position: relative;
+}
+
+.page-nav .navarrow {
+    bottom: 0.47em;
+    border-bottom: 9px solid #dedede;
+}
+
+.page-nav .nav-top-level > a.hover ~ .level-two {
+    position: absolute;
+    left: -190px;
+    top: 80px;
+}
+
+.page-nav .nav-top-level.navarrow {
+    bottom: 2em;
+}
+
+.page-nav .open .menu-panel-wrap {
+    min-height: 1px;
+}
+
+#page-nav .nav-top-level a {
+    padding: 0 11px;
+}
+
+#page-nav.fixed {
+    margin-top: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    -webkit-box-shadow: 1px 1px 3px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 1px 1px 3px 0px rgba(0, 0, 0, 0.3);
+    z-index: 999999;
+}
+
+#page-nav .header-logo {
+    height: 40px;
+    width: 123px;
+    background: url("../images/careers/icon/logo-grey.png") no-repeat center center;
+}
+
+#page-nav.fixed a,
+#page-nav.fixed li > span {
+    -moz-transition: all 300ms ease-out;
+    -webkit-transition: all 300ms ease-out;
+    -o-transition: all 300ms ease-out;
+    transition: all 300ms ease-out;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.first.navanchor.l-align-right,
+#page-nav .second-nav > li:last-child {
+    right: 0;
+    -moz-transition: all 300ms ease-out;
+    -webkit-transition: all 300ms ease-out;
+    -o-transition: all 300ms ease-out;
+    transition: all 300ms ease-out;
+    -moz-transform: translate3d(0, 0px, 0px);
+    -webkit-transform: translate3d(0, 0px, 0px);
+    -o-transform: translate(0, 0px);
+    -ms-transform: translate(0, 0px);
+    transform: translate3d(0, 0px, 0px);
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.fixed .first.navanchor.l-align-right,
+#page-nav.fixed .second-nav > li:last-child {
+    right: 140px;
+}
+
+#secondary-nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    -moz-transition: all 300ms ease-out;
+    -webkit-transition: all 300ms ease-out;
+    -o-transition: all 300ms ease-out;
+    transition: all 300ms ease-out;
+    -moz-transform: translate3d(0, 0px, 0px);
+    -webkit-transform: translate3d(0, 0px, 0px);
+    -o-transform: translate(0, 0px);
+    -ms-transform: translate(0, 0px);
+    transform: translate3d(0, 0px, 0px);
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+    z-index: 9;
+}
+
+.fixed #secondary-nav {
+    left: 140px;
+}
+
+.first.navanchor span {
+    display: block;
+    padding: 10px 20px;
+    border: 1px solid #441a63;
+}
+
+.page-nav .first.navanchor:hover span {
+    border: 1px solid #da1c5c;
+}
+
+.navanchor.l-align-right > a,
+#page-nav .second-nav > li:last-child > a {
+    padding: 6px 11px !important;
+}
+
+#page-nav .second-nav > li:last-child {
+    float: right;
+}
+
+.page-nav .selected,
+.page-nav .selected a,
+.page-nav a:hover {
+    color: #da1c5c;
+}
+
+.page-nav .selected span {
+    border: 1px solid #da1c5c;
+}
+
+@media (max-width: 840px) {
+    #secondary-nav {
+        position: relative;
+        margin-left: 2em;
+    }
+
+    #page-nav {
+        display: none;
+    }
+
+    .first.navanchor > a.elt-pglink.text-441a63 {
+        display: block !important;
+    }
+
+    .first.navanchor > a.elt-pglink {
+        display: none !important;
+    }
+
+    .first.navanchor a {
+        margin-left: 0;
+    }
+
+    .first.navanchor > a.elt-pglink.text-441a63 {
+        font-size: 16px;
+    }
+
+    .first.navanchor span {
+        padding: 0;
+    }
+
+    .first.navanchor {
+        border-top: 1px solid #321349;
+    }
+
+    .first.navanchor.l-align-right a,
+    #page-nav .second-nav > li:last-child > a {
+        padding: 6px 0 !important;
+        display: block !important;
+    }
+
+    .first.navanchor.l-align-right > a,
+    #page-nav .second-nav > li:last-child > a {
+        margin: 10px 0 0 0;
+        padding: 0;
+        font-size: 16px;
+    }
+
+    .first.navanchor.l-align-right .ptb-10px,
+    #page-nav .second-nav > li:last-child .ptb-10px {
+        padding-top: 0;
+    }
+}

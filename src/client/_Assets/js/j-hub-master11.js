@@ -1281,12 +1281,6 @@ if (window.addEventListener) {
   );
 }
 $(document).ready(function () {
-  if ($(window).width() < 840) {
-    $("#main-nav a").on("click", function () {
-      $("#nth-menu-switch").prop("checked", false);
-    });
-  }
-
   // Get the distance from the top of window
   var getOffsetTop = function (elem) {
     var distance = 0;
@@ -6232,33 +6226,24 @@ $(function () {
   checkSize();
 });
 $(document).ready(function () {
-    $(".accordion-toggle").removeClass("accordion-open"),
-        $(window).width() <= 840 &&
-        ($(".accordion").attr({ role: "tablist", multiselectable: "true" }),
-            $(".accordion-content").attr("id", function (e) {
-                return "panel-" + e;
-            }),
-            $(".accordion-content").attr("aria-labelledby", function (e) {
-                return "control-panel-" + e;
-            }),
-            $(".accordion-content").attr("aria-hidden", "true"),
-            $(".accordion .accordion-content").attr("role", "tabpanel"),
-            $(".accordion-toggle").each(function (e) {
-                ($target = $(this).children(".accordion-content")[0].id),
-                    $(this)
-                        .attr("aria-expanded", "false")
-                        .attr("aria-controls", $target)
-                        .attr("id", "control-" + $target)
-                        .removeClass("accordion-open");
-            }),
-            $(".dropdown-toggle").click(function (e) {
-                return (
-                    e.preventDefault(),
-                    "false" == $(this).parent(".accordion-toggle").attr("aria-expanded")
-                        ? ($(this).parent().parent(".accordion").find(".accordion-toggle").not(this).attr("aria-expanded", !1).removeClass("accordion-open").children(".accordion-content").attr("aria-hidden", "true").slideUp(200),
-                            $(this).parent(".accordion-toggle").attr("aria-expanded", !0).removeClass("accordion-open").addClass("accordion-open").children(".accordion-content").slideToggle(200))
-                        : $(this).parent(".accordion-toggle").attr("aria-expanded", !1).removeClass("accordion-open").children(".accordion-content").slideUp(200).attr("aria-hidden", "true"),
-                    !1
-                );
-            }));
+    $(".accordion-toggle").removeClass("accordion-open"), $(window).width() <= 840 && (
+        $(".accordion").attr({ role: "tablist", multiselectable: "true" }),
+        $(".accordion-content").attr("id", function (e) { return "panel-" + e }),
+        $(".accordion-content").attr("aria-labelledby", function (e) {
+            return "control-panel-" + e
+        }),
+        $(".accordion-content").attr("aria-hidden", "true"),
+        $(".accordion .accordion-content").attr("role", "tabpanel"),
+        $(".accordion-toggle").each(function (e) {
+            $target = $(this).children(".accordion-content")[0].id,
+                $(this).attr("aria-expanded", "false").attr("aria-controls",
+                    $target).attr("id", "control-" + $target).removeClass("accordion-open")
+        }),
+        $(".dropdown-toggle").click(function (e) {
+            return e.preventDefault(),
+                "false" == $(this).parent(".accordion-toggle").attr("aria-expanded") ?
+                    ($(this).parent().parent(".accordion").find(".accordion-toggle").not(this).attr("aria-expanded", !1).removeClass("accordion-open").children(".accordion-content").attr("aria-hidden", "true").slideUp(200),
+                        $(this).parent(".accordion-toggle").attr("aria-expanded", !0).removeClass("accordion-open").addClass("accordion-open").children(".accordion-content").slideToggle(200)) :
+                    $(this).parent(".accordion-toggle").attr("aria-expanded", !1).removeClass("accordion-open").children(".accordion-content").slideUp(200).attr("aria-hidden", "true"), !1
+        }))
 });
