@@ -4,9 +4,9 @@
     "\\src",
     "\\src\\client",
     "\\src\\client\\html",
-    "\\src\\client\\_Assets",
-    "\\src\\client\\_Assets\\css"
+    "\\src\\client\\_Assets\\css",
+    "\\src\\client\\_Assets\\js"
   ],
-  "SelectedNode": "\\src\\client\\education-revenue-cycle.html",
+  "SelectedNode": "\\webpack.prod.js",
   "PreviewInSolutionExplorer": false
 }

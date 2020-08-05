@@ -1,0 +1,17 @@
+@import "colors";
+@import "fonts";
+
+.lp-form .std-input3 {
+    height: 38px;
+    width: 65%;
+    float: right
+}
+
+.lp-form .label-lp {
+    display: inline-block
+}
+
+.lp-form .std-input3.valid {
+    padding: 5px 18px 5px
+}
+
