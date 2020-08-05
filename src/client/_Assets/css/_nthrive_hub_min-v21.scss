@@ -1244,7 +1244,7 @@ header.bg-purple {
   #items {
     > div {
       &:nth-child(2n) {
-        background-color: #f5f7f9;
+        background-color: #f1f1f1;
       }
     }
   }
@@ -1430,7 +1430,7 @@ header.bg-purple {
   .first.navanchor {
     span {
       display: block;
-      padding: 10px 24px 10px 0;
+      padding: 0 24px 0 0;
       top: 0;
       margin: 0;
       line-height: 2;

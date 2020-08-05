@@ -117,132 +117,6 @@ $(document).ready(function () {
   } else {
     $("body").removeClass("notification-close");
   }
-  $.fn.capitalize = function () {
-    $.each(this, function () {
-      var split = this.value.split(" ");
-      for (var i = 0, len = split.length; i < len; i++) {
-        split[i] =
-          split[i].charAt(0).toUpperCase() + split[i].slice(1).toLowerCase();
-      }
-      this.value = split.join(" ");
-    });
-    return this;
-  };
-  $(".capitalize")
-    .on("keyup", function () {
-      $(this).capitalize();
-    })
-    .capitalize();
-  $(".country").click(function () {
-    $dialCode = $(".highlight").data("country-code");
-    console.log($dialCode);
-    $(".intl-tel-input")
-      .removeClass("dial-us")
-      .removeClass("dial-" + $dialCode)
-      .addClass("dial-" + $dialCode);
-  });
-  if ($(".dial-us input[type='tel']").length) {
-    $(".dial-us input[type='tel']")
-      .attr("onkeydown", "javascript:backspacerDOWN(this,event);")
-      .attr("onkeyup", "javascript:backspacerUP(this,event);");
-  }
-  $.validator.addMethod(
-    "alphabetFormat",
-    function (value, element) {
-      return this.optional(element) || /^[a-z\d\-'.\s]+$/i.test(value);
-    },
-    "No special characters, do not use all caps. (i.e. John)."
-  );
-  $.validator.addMethod(
-    "hasLowercase",
-    function (value, element) {
-      if (this.optional(element)) {
-        return true;
-      }
-      return /[a-z]/.test(value);
-    },
-    "Please do not use all caps."
-  );
-  $.validator.addMethod(
-    "notEqual",
-    function (value, element, options) {
-      var elems = $(element).parents("form").find(options[0]);
-      var valueToCompare = value;
-      var matchesFound = 0;
-      jQuery.each(elems, function () {
-        thisVal = $(this).val();
-        if (thisVal == valueToCompare) {
-          matchesFound++;
-        }
-      });
-      if (this.optional(element) || matchesFound <= 1) {
-        return true;
-      } else {
-      }
-    },
-    "Please enter a Unique Value."
-  );
-  $("#sales-question").validate({
-    rules: {
-      first_name: {
-        required: true,
-        minlength: 2,
-        alphabetFormat: true,
-        hasLowercase: true,
-        notEqual: [".std-input3"],
-      },
-      last_name: {
-        required: true,
-        minlength: 2,
-        alphabetFormat: true,
-        hasLowercase: true,
-        notEqual: [".std-input3"],
-      },
-      company: { required: false, alphabetFormat: true, hasLowercase: true },
-      job_title: { required: false, hasLowercase: true },
-      phone: { required: true, minlength: 7 },
-      email: { required: !0, email: !0 },
-      State: { required: true },
-      permission_received: { required: true },
-      Sales_Question: { required: !0, minlength: 5 },
-    },
-    messages: {
-      first_name: {
-        required: "Please enter your first name",
-        minlength: "Your first name must consist of at least 2 characters",
-        alphabetFormat: "No special characters.",
-        hasLowercase: "Please do not use all caps. (i.e. John).",
-        notEqual: "First Name cannot be the same as Last Name",
-      },
-      last_name: {
-        required: "Please enter your last name",
-        minlength: "Your last name must consist of at least 2 characters",
-        alphabetFormat: "No special characters.",
-        hasLowercase: "Please do not use all caps. (i.e. Doe).",
-        notEqual: "First Name cannot be the same as Last Name",
-      },
-      company: {
-        minlength: "Company name must consist of at least 3 characters",
-        alphabetFormat: "No special characters.",
-        hasLowercase: "Please do not use all caps.",
-      },
-      job_title: {
-        minlength: "Job Title must consist of at least 3 characters",
-        hasLowercase: "Please do not use all caps.",
-      },
-      phone: {
-        required: "Please enter your phone number.(XXX) XXX-XXXX",
-        minlength: "Your phone number must consist of at least 7 characters",
-      },
-      email: "Please enter a valid email address",
-      State: "Please select your State",
-      permission_received: "This checkbox is required.",
-      Sales_Question: {
-        required: "Please enter your question",
-        minlength: "Your question must consist of at least 5 characters",
-      },
-    },
-  });
 });
 $(window).load(function () {
   var li = $(".left-column-wrap > div");
@@ -276,10 +150,6 @@ $(window).load(function () {
   });
 });
 $(document).ready(function () {
-  $("#subscribe-form").validate({
-    rules: { email: { required: !0, email: !0 } },
-    messages: { email: { required: "Please enter a valid email address" } },
-  });
   $("#subscribe-form :input").focus(function () {
     $(this)
       .parent()
@@ -309,10 +179,7 @@ $(document).ready(function () {
       },
     });
   });
-  $("#subscribe-form-body").validate({
-    rules: { email: { required: !0, email: !0 } },
-    messages: { email: { required: "Please enter a valid email address" } },
-  });
+
   $("#subscribe-form-body :input").focus(function () {
     $(this)
       .parent()
@@ -343,24 +210,6 @@ $(document).ready(function () {
         $(".thank-you-body").removeClass("hide");
       },
     });
-  });
-  $("#form-download").validate({
-    rules: {
-      first_name: { required: !0, minlength: 3 },
-      last_name: { required: !0, minlength: 3 },
-      email: { required: !0, email: !0 },
-    },
-    messages: {
-      first_name: {
-        required: "Please enter your first name",
-        minlength: "Your first name must consist of at least 3 characters",
-      },
-      last_name: {
-        required: "Please enter your last name",
-        minlength: "Your last name must consist of at least 3 characters",
-      },
-      email: "Please enter a valid email address",
-    },
   });
 });
 (function ($, window, document) {
@@ -6090,31 +5939,7 @@ $("#privacy-policy-footer").on("focus", function () {
   $("#next-button").attr("aria-hidden", "true");
   $("#next-button").addClass("hidden");
 });
-$(document).ready(function () {
-  $("#footer-form").validate({
-    rules: {
-      first_name: { required: !0, minlength: 3 },
-      last_name: { required: !0, minlength: 3 },
-      email: { required: !0, email: !0 },
-      General_Question: { required: !0, minlength: 5 },
-    },
-    messages: {
-      first_name: {
-        required: "Please enter your first name",
-        minlength: "Your first name must consist of at least 3 characters",
-      },
-      last_name: {
-        required: "Please enter your last name",
-        minlength: "Your last name must consist of at least 3 characters",
-      },
-      email: "Please enter a valid email address",
-      General_Question: {
-        required: "Please enter your question",
-        minlength: "Your question must consist of at least 5 characters",
-      },
-    },
-  });
-});
+
 $(document).ready(function () {
   $("input[type='tel']").attr("autocomplete", "none");
   $("form :input").focus(function () {
