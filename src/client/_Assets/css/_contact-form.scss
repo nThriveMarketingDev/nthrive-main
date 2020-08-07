@@ -130,11 +130,24 @@
     display: none;
 }
 
-form .error {
-    color: $color-ff0000;
-    padding-top: 5px;
-    display: block !important;
-    text-align: $text-left
+form {
+    .error {
+        color: $color-ff0000;
+        padding-top: 5px;
+        display: block !important;
+        text-align: $text-left
+    }
+
+    label.error {
+        color: $color-ff0000;
+        padding-top: 5px;
+        display: block !important;
+        text-align: $text-left;
+    }
+
+    .relative li {
+        text-align: $text-left
+    }
 }
 
 .form-focus {
@@ -187,10 +200,6 @@ input.invalid, textarea.invalid {
 
 input.valid, textarea.valid {
     border: 2px solid $color-008000
-}
-
-form .relative li {
-    text-align: $text-left
 }
 
 label.label-blur, .l-focus label.label-focus, .l-focus label.label-focus, .l-blur label.label-focus, .l-blur label.label-blur, label.label-focus.blur {
@@ -275,6 +284,17 @@ form > div.input-holder:first-of-type {
     top: 8px
 }
 
+.input-holder label.error {
+    position: relative;
+    left: 0;
+    top: 0;
+}
+
+.input-holder label.relative {
+    position: relative;
+    top: 0;
+}
+
 [type="checkbox"] ~ label#terms-conditions, [type="checkbox"] ~ label.terms-conditions {
     position: absolute;
     top: 0;
@@ -316,6 +336,10 @@ input[type="checkbox"], input[type="radio"] {
 
 input.mb-25px[type="checkbox"] {
     margin-bottom: 0
+}
+
+.popup .flow-wrap label.label-blur {
+    display: block !important;
 }
 
 .subscribe-popup-content-wrap {
@@ -438,6 +462,7 @@ input.mb-25px[type="checkbox"] {
 
 input.error[type="checkbox"] {
     display: inline-block !important;
+    outline: 1px solid $color-ff0000;
 }
 
 form #checkboxes.checkbox-error div.error {
@@ -612,6 +637,12 @@ textarea.std-input3 {
     }
 }
 
+select.error {
+    border: 1px solid $color-ff0000;
+    height: 44px;
+    color: $color-ff0000;
+}
+
 .nth-form-wrapper .break-line {
     border-color: $color-e1e8ee;
 }
@@ -682,6 +713,33 @@ textarea.std-input3 {
 .form-title-row {
     min-height: 35px;
     line-height: $lh-18px;
+}
+
+#ask-a-question,
+#chat-us-now {
+    ::placeholder,
+    :-ms-input-placeholder,
+    ::-ms-input-placeholder {
+        color: $color-86939e;
+    }
+
+    .std-input3,
+    .std-input3.valid {
+        padding: 0 18px;
+    }
+
+    textarea .std-input3,
+    textarea.std-input3.valid {
+        padding: 15px 18px;
+    }
+}
+
+.popup[data-popup-id="chat-us-now"],
+.popup[data-popup-id="chat-us-now2"],
+.popup[data-popup-id="chat-us-now3"],
+.popup[data-popup-id="chat-us-now4"],
+.popup[data-popup-id="ask-a-question"] {
+    height: auto;
 }
 
 @media only screen and (max-width: 1023px) {
@@ -776,6 +834,7 @@ textarea.std-input3 {
     form > .pb-10px {
         padding-bottom: 0;
     }
+
     .form-full span.mt-20px {
         margin-top: 10px;
     }
@@ -953,6 +1012,12 @@ textarea.std-input3 {
         padding-bottom: 15px;
         padding-top: 15px;
         resize: none;
+    }
+}
+
+@media only screen and (max-width: 479px) {
+    .select-style-light select {
+        padding: 11px 38px 11px 10px;
     }
 }
 
