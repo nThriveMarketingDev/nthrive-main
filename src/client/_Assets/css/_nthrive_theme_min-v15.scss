@@ -1175,169 +1175,8 @@ ul.bullets li span, ul.bullets li p {
     font-size: 13px
 }
 
-form label.error {
-    color: #FF0000;
-    padding-top: 5px;
-    display: block !important;
-    text-align: left
-}
-
-.form-focus {
-    display: none !important
-}
-
-input.valid + label, textarea.valid + label {
-    top: 5px;
-    font-size: 12px;
-    color: #374252;
-}
-
-.std-input3.valid {
-    padding: 15px 18px 0;
-}
-
-label.error + label#terms-conditions2, label.error + label.terms-conditions {
-    display: block !important
-}
-
-label.error {
-    display: none;
-    margin-left: 0;
-    font-size: 15px;
-    line-height: 20px
-}
-
-.std-input1.error, .std-input3.error {
-    border: 1px solid #FF0000
-}
-
-.error_show {
-    color: red;
-    margin-left: 10px
-}
-
-input.invalid, textarea.invalid {
-    border: 2px solid red
-}
-
-input.valid, textarea.valid {
-    border: 2px solid green
-}
-
-form .relative li {
-    text-align: left
-}
-
-label.label-blur {
-    top: 5px !important;
-    left: 15px;
-    font-size: 12px !important;
-    color: #374252 !important;
-}
-
-input.valid ~ label.label-focus {
-    top: 5px;
-    font-size: 12px;
-    color: #374252;
-}
-
-.valid-group input ~ label.label-focus {
-    display: block
-}
-
-.input-box {
-    position: relative
-}
-
-.input-box label.label-focus, .input-box label.label-blur {
-    position: absolute;
-    left: 20px;
-    top: 17px;
-    font-size: 14px
-}
-
-.form-half, .form-full {
-    position: relative;
-    text-align: left
-}
-
-.input-holder label, .support-issue label {
-    position: absolute;
-    top: 15px;
-    left: 15px;
-    font-size: 14px;
-    color: #86939E;
-    z-index: 9
-}
-
-.input-holder label[for="Phone"], .support-issue label[for="Phone"] {
-    left: 50px
-}
-
 .bg-width img {
     width: 100%
-}
-
-.ie8 .input-holder LABEL {
-    top: 8px
-}
-
-.input-holder label.error {
-    position: relative;
-    left: 0;
-    top: 0
-}
-
-.banner-form .input-holder label.error {
-    margin-bottom: 20px;
-    margin-top: -10px
-}
-
-label.error + label#terms-conditions {
-    display: inline-block !important
-}
-
-[type="checkbox"] ~ label#terms-conditions, [type="checkbox"] ~ label.terms-conditions {
-    position: absolute;
-    top: 0;
-    left: 25px;
-    cursor: pointer;
-    display: inline-block;
-    height: 25px;
-    line-height: 13px;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -khtml-user-select: none;
-    -ms-user-select: none;
-    font-size: 14px
-}
-
-.input-holder textarea + label.error, .support-issue textarea + label.error {
-    top: 65px
-}
-
-.agree-terms label.error + label {
-    display: block !important
-}
-
-.agree-terms input[type="checkbox"] {
-    padding: 0 !important;
-    height: auto !important;
-    width: auto !important;
-    display: block
-}
-
-input[type="checkbox"], input[type="radio"] {
-    box-sizing: border-box;
-    padding: 0
-}
-
-#Email_Opt_in__c-error {
-    margin-top: 5px
-}
-
-input.mb-25px[type="checkbox"] {
-    margin-bottom: 0
 }
 
 .elt-content p a, .elt-content ul a, .elt-content ol a {
@@ -1561,14 +1400,6 @@ a.play-btn {
     height: 34px
 }
 
-.nth-service .footer-form-title {
-    font-size: 36px;
-    line-height: 38px;
-    font-weight: 300;
-    letter-spacing: -0.3px;
-    color: #374252
-}
-
 .pressly-ticker a {
     max-height: 50px;
     float: left
@@ -1703,58 +1534,12 @@ ul.light-border.content-list li {
     width: 100%
 }
 
-.subscribe-content .form-full {
-    width: 64%;
-    float: left;
-    display: inline-block;
-    margin: 0
-}
-
-.subscribe-content .form-full .btn.block {
-    margin-top: 0
-}
-
-.subscribe-content .form-full.button-wrap {
-    width: 32%;
-    float: right
-}
-
-.subscribe-content .pardot-submit.btn {
-    width: 100%
-}
-
 .arrow-left, a.arrow-left {
     padding-left: 18px;
     background: url(/_assets/images/icon/arrow-right.png) no-repeat 0 5px;
     display: block;
     color: #7b204c;
     text-decoration: none
-}
-
-.thank-you-title-title {
-    background: url(/_assets/images/icon/circle-check.png) no-repeat left top;
-    padding-left: 30px;
-    min-height: 24px
-}
-
-.thank-you-title {
-    background: url(/_assets/images/icon/circle-check.png) no-repeat left top;
-    padding-left: 30px;
-    min-height: 24px
-}
-
-.subscribe-container p {
-    line-height: 20px
-}
-
-.subscribe-container p a:hover {
-    text-decoration: underline
-}
-
-#subscribe-body-anchor {
-    border: 1px solid #cdcdcd;
-    -webkit-border-radius: 3px 3px 3px 3px;
-    border-radius: 3px 3px 3px 3px
 }
 
 .font-weight-light {
@@ -1992,22 +1777,6 @@ ul.light-border.content-list li {
     max-width: 684px;
     margin: 0 auto;
     width: 100%
-}
-
-.form-padding {
-    padding: 70px 0
-}
-
-.form-padding {
-    padding: 70px 0
-}
-
-#subscribe-form-footer .text-18px, #footer-thank-you .text-18px {
-    line-height: 30px
-}
-
-.nth-service-form .input-box.no-margin {
-    float: right
 }
 
 .l-content-sm-width {
@@ -2400,27 +2169,8 @@ span.sm {
 }
 
 @media (max-width: 768px) {
-    .nth-service-form {
-        padding: 0 20px
-    }
-
-    #footer-form-text {
-        padding: 0 20px 30px
-    }
-
-    .nth-service-form .input-box.no-margin {
-        float: none
-    }
-
     .play-wrap-inner {
         top: 22%
-    }
-
-    .std-input3 {
-        box-sizing: border-box;
-        height: 40px;
-        line-height: 40px;
-        padding: 0 3px
     }
 
     h3.desc {
@@ -2431,10 +2181,6 @@ span.sm {
     .btn {
         height: 35px;
         line-height: 35px
-    }
-
-    .input-holder label, .support-issue label {
-        top: 10px
     }
 
     .bcplayer {
@@ -2459,22 +2205,6 @@ span.sm {
     .text-20px {
         font-size: 18px;
         line-height: 22px
-    }
-
-    #Email_Opt_in__c-error {
-        margin-top: 10px
-    }
-
-    input.mb-25px[type="checkbox"] {
-        margin-bottom: 25px
-    }
-
-    form .btn.block {
-        margin-top: 25px
-    }
-
-    form .pb-15px.input-holder {
-        padding-bottom: 0
     }
 
     .elt-sidebar {
