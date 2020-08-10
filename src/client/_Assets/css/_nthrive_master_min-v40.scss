@@ -1218,6 +1218,20 @@ html .sub-list.adv-list {
   }
 }
 
+.play-text {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  span {
+    max-width: 91%;
+  }
+  a {
+    color: #da1c5c;
+    text-decoration: underline;
+    font-weight: 600;
+  }
+}
+
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
   img[src*=".svg"] {
     width: 100%;
@@ -4840,7 +4854,8 @@ a.wrightarrow {
     }
   }
 
-  #main-content figure img, .elt-content figure img {
+  #main-content figure img,
+  .elt-content figure img {
     width: 100%;
   }
 
@@ -4867,17 +4882,17 @@ a.wrightarrow {
 }
 
 @media only screen and (max-width: 840px) {
-    .blog-full-width {
-        .bloglist li {
-            width: auto;
-            float: none;
-            margin: 0 auto 20px;
-        }
-
-        figure {
-            max-height: none;
-        }
+  .blog-full-width {
+    .bloglist li {
+      width: auto;
+      float: none;
+      margin: 0 auto 20px;
     }
+
+    figure {
+      max-height: none;
+    }
+  }
 }
 
 .post-nav a {

@@ -990,7 +990,7 @@ header.bg-purple {
   #items {
     > div {
       &:nth-child(2n) {
-        background-color: #f1f1f1;
+        background-color: #f2f2f2;
       }
     }
   }
@@ -1097,7 +1097,7 @@ header.bg-purple {
   }
   #page-nav.fixed {
     .header-logo {
-      left: 0;
+      left: -120px;
       height: 40px;
       width: 123px;
       background: url(../images/careers/icon/logo-small-registered.png)
@@ -1195,7 +1195,7 @@ header.bg-purple {
   }
   .fixed {
     #secondary-nav {
-      left: 70px;
+      left: 0;
     }
   }
   .navarrow {
@@ -5099,6 +5099,15 @@ iframe[name="google_conversion_frame"] {
     padding-top: 0.3em;
   }
 }
+@media screen and (max-width: 1006px) and (min-width: 841px) {
+  .events #page-nav.fixed a,
+  .events #page-nav.fixed li > span {
+    font-size: 12px !important;
+    padding: 10px 13px !important;
+    position: relative;
+  }
+}
+
 @media (max-width: 840px) {
   .speakers {
     &.l-two-col {
