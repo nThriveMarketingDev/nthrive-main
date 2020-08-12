@@ -1,0 +1,466 @@
+@import "colors";
+@import "fonts";
+
+.nav-dropdown .first, .nav-dropdown .first.nth-hide-menu {
+    display: none
+}
+
+.nthrive-main-nav {
+    max-width: 100%
+}
+
+span.uparrow {
+    width: 0;
+    height: 0;
+    border-left: 9px solid transparent;
+    border-right: 9px solid transparent;
+    border-bottom: 9px solid #f2f2f2;
+    margin: -9px 0 0 15px;
+    display: block;
+    position: relative;
+    z-index: 9999999
+}
+
+body header .first a.menu-hover {
+    font-weight: 400 !important;
+    padding: 0;
+    line-height: 15px !important;
+    color: #515356 !important;
+    font-size: 14px !important;
+    display: block;
+    background-image: url(../images/icon/left_arrow.png) !important;
+    background-repeat: no-repeat !important;
+    background-position: 12px center !important
+}
+
+body header .first a.menu-hover:hover, body header .first a.menu-hover:focus {
+    color: #ffffff !important;
+    background-image: url(../images/icon/left_arrow_white.png) !important
+}
+
+a.menu-hover {
+    padding-right: 12px !important
+}
+
+.container {
+    width: 90%;
+    margin: 10vh auto
+}
+
+a {
+    color: inherit
+}
+
+.nav-container, #large-view-nav, #large-view-nav ul, #large-view-nav li {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    list-style: none;
+    box-sizing: border-box
+}
+
+#large-view-nav {
+    position: relative;
+    max-width: 100%;
+    color: #ffffff;
+    margin-bottom: -3px;
+    display: inline-block
+}
+
+#large-view-nav a:focus {
+    outline: none
+}
+
+#large-view-nav li {
+    text-align: left
+}
+
+a + ul {
+    position: absolute
+}
+
+a + ul:not(.nth-show-menu) {
+    display: none
+}
+
+#large-view-nav > ul > li {
+    float: left;
+    width: auto
+}
+
+#large-view-nav > ul > li:not(#toggleMenu):not(.nth-show-menu) {
+    display: inline-block
+}
+
+#large-view-nav #toggleMenu {
+    display: none
+}
+
+#large-view-nav > ul > li > ul > li > ul {
+    top: 0;
+    right: 249px;
+    background-color: #f2f2f2;
+    z-index: 9
+}
+
+body #large-view-nav #menu > li > a {
+    padding: 0 20px;
+    margin: 0
+}
+
+#large-view-nav li {
+    position: relative
+}
+
+#large-view-nav a {
+    text-decoration: none;
+    height: 100%;
+    display: block;
+    padding: 0 1em
+}
+
+.plusMark {
+    margin-left: .5em;
+    font-size: 1em;
+    font-weight: 700
+}
+
+#large-view-nav > ul {
+    height: 100%;
+    line-height: 2.5em
+}
+
+#large-view-nav > ul > li {
+    position: relative;
+    text-align: left
+}
+
+span#toggleMenu-text {
+    position: absolute;
+    opacity: 0
+}
+
+#large-view-nav > ul > li > ul {
+    background-color: #f2f2f2
+}
+
+#large-view-nav > ul > li > ul > li > ul > li > a:hover {
+    color: #ffffff !important;
+    background-color: #b0246f !important
+}
+
+#large-view-nav > ul > li > ul > li > ul > li > a:focus, #large-view-nav > ul > li > ul > li > a:focus {
+    color: #ffffff !important;
+    background-color: #b0246f;
+    border: 0
+}
+
+a:focus, button:focus, input:focus {
+    border: 2px solid #0084ff;
+    -webkit-border-radius: 3px 3px 3px 3px;
+    border-radius: 3px 3px 3px 3px
+}
+
+#large-view-nav > ul > li > ul > li > a {
+    background-color: #f2f2f2;
+    font-weight: 400
+}
+
+body #large-view-nav #menu > li > a :focus {
+    background-color: #b0246f
+}
+
+#large-view-nav > ul > li > ul > li > a:hover, #large-view-nav > ul > li > ul > li > a:focus {
+    background-color: #b0246f !important;
+    color: #ffffff !important
+}
+
+#large-view-nav > ul > li > ul > li > ul > li > a {
+    background-color: #f2f2f2;
+    font-weight: 400
+}
+
+#large-view-nav > ul > li > ul > li > ul > li > a:hover, #large-view-nav > ul > li > ul > li > ul > li > a:focus {
+    background-color: #b0246f
+}
+
+#large-view-nav .nth-hide-menu {
+    display: none
+}
+
+#large-view-nav .nth-show-menu {
+    display: block
+}
+
+html.no-js li:hover > a + ul, html.no-js li:focus > a + ul {
+    display: block
+}
+
+#large-view-nav > ul > li#toggleMenu > a {
+    color: #fff;
+    font-size: 20px;
+    line-height: 1;
+    padding: 12px 20px;
+    margin: 0
+}
+
+body #large-view-nav > ul > li#toggleMenu > a:focus {
+    background-color: #321349 !important
+}
+
+.nth-main-nav-wrap img.logo-image {
+    max-height: 42px;
+    width: auto;
+    max-width: 255px;
+}
+
+body #large-view-nav #menu > li > a.menu-hover {
+    padding-right: 12px !important;
+    margin-right: 20px
+}
+
+body #large-view-nav #menu > li.rm0 > a {
+    padding: 0 0 0 20px;
+    margin: 0
+}
+
+#menu ul {
+    border: 1px solid #ededed
+}
+
+.skip-nav a {
+    color: #333333 !important;
+    left: -999999px;
+    overflow: hidden;
+    position: absolute;
+    font-size: 15px;
+    padding: 15px;
+    background: #ffffff;
+    display: inline-block;
+    max-width: 200px;
+    border: 1px solid #ededed
+}
+
+@media only screen and (max-width: 840px) {
+    #menu ul {
+        border: 0
+    }
+
+    #large-view-nav {
+        display: block
+    }
+
+    #large-view-nav li {
+        text-align: left;
+        width: 100%
+    }
+
+    a + ul {
+        position: relative
+    }
+
+    a + ul:not(.nth-hide-menu) {
+        display: block
+    }
+
+    #large-view-nav > ul > li {
+        float: none;
+        display: block;
+        width: 100%
+    }
+
+    #large-view-nav ul {
+        overflow-y: auto;
+        overflow-x: hidden;
+        max-height: 550px;
+        background-color: #441a63
+    }
+
+    #large-view-nav > ul > li:not(#toggleMenu):not(.nth-show-menu) {
+        display: none
+    }
+
+    #large-view-nav #toggleMenu {
+        display: block;
+        width: auto;
+        margin: 0;
+        position: fixed;
+        top: 0;
+        right: 0
+    }
+
+    #large-view-nav #toggleMenu.nth-open .icon-menu-closed {
+        display: inline-block
+    }
+
+    #large-view-nav #toggleMenu.nth-open .icon-menu {
+        display: none
+    }
+
+    #large-view-nav #toggleMenu.nth-open a {
+        color: #ffffff
+    }
+
+    #large-view-nav #toggleMenu:not(.nth-open) .icon-menu-closed {
+        display: none
+    }
+
+    #large-view-nav #toggleMenu:not(.nth-open) .icon-menu {
+        display: inline-block
+    }
+
+    #large-view-nav > ul li {
+        border-bottom: 1px solid #321349;
+        -webkit-box-shadow: none !important;
+        box-shadow: none !important
+    }
+
+    #large-view-nav ul {
+        -webkit-box-shadow: none !important;
+        box-shadow: none !important;
+        border-top: 1px solid #321349
+    }
+
+    #large-view-nav ul.first {
+        border-top: 1px solid #321349
+    }
+
+    #large-view-nav > ul li#toggleMenu {
+        border-bottom: 0
+    }
+
+    #large-view-nav > ul > li > ul {
+        width: 100%;
+        position: relative
+    }
+
+    #large-view-nav > ul > li > ul > li > a {
+        background-color: #441a63 !important;
+        color: #ffffff !important;
+        padding-left: 65px
+    }
+
+    body #large-view-nav > ul > li > ul > li > ul a {
+        padding-left: 90px !important;
+        color: #ffffff !important
+    }
+
+    body #menu li.nav-dropdown ul ul a {
+        padding: 15px 30px
+    }
+
+    #large-view-nav > ul > li > ul > li > ul > li > a {
+        background-color: #441a63 !important;
+        padding: 15px 60px
+    }
+
+    body #menu li.nav-dropdown:hover ul ul {
+        background: #441a63 !important;
+        color: #ffffff;
+        left: 0 !important;
+        padding: 0
+    }
+
+    body body #menu > li > a:hover {
+        color: #ffffff
+    }
+
+    body #menu li.nav-dropdown:hover > ul > li > a:hover, body #large-view-nav #menu > li > a:hover, body #menu li.nav-dropdown:hover > ul > li > a:focus, body #large-view-nav #menu > li > a:focus {
+        background-color: #b0246f !important;
+        color: #ffffff
+    }
+
+    body #large-view-nav #menu li.nav-dropdown > ul > li > ul > li > a:hover, body #large-view-nav #menu li.nav-dropdown > ul > li > ul > li > a:focus {
+        background-color: #b0246f !important
+    }
+
+    body #large-view-nav > ul > li > ul {
+        background-color: #441a63 !important;
+        left: 0 !important;
+        padding: 0
+    }
+
+    #large-view-nav > ul > li > ul:not(.nth-show-menu) {
+        display: none
+    }
+
+    #large-view-nav > ul > li > ul > li > ul {
+        width: 100%;
+        position: relative
+    }
+
+    #large-view-nav > ul > li > ul > li > ul:not(.nth-show-menu) {
+        display: none
+    }
+
+    .nthrive-main-nav {
+        max-height: 550px
+    }
+
+    header {
+        height: 50px;
+        background: #441a63;
+        position: fixed
+    }
+
+    .sticky header .logo-image.responsive-image, header.bg-purple .logo-image.responsive-image, .nth-main-nav-wrap .logo-image.responsive-image {
+        padding: 6px 0;
+        position: fixed;
+        top: 0
+    }
+
+    header .uparrow {
+        display: none !important
+    }
+
+    .notification-close .nthrive-main-nav {
+        top: 50px;
+        position: relative
+    }
+
+    .nth-main-nav-wrap img.logo-image {
+        max-height: 36px !important
+    }
+
+    html.no-js #large-view-nav:hover > ul > li:not(#toggleMenu), html.no-js #large-view-nav:focus > ul > li:not(#toggleMenu) {
+        display: block
+    }
+
+    html.no-js #large-view-nav:hover li:hover > a + ul, html.no-js #large-view-nav:hover li:focus > a + ul, html.no-js #large-view-nav:focus li:hover > a + ul, html.no-js #large-view-nav:focus li:focus > a + ul {
+        display: block
+    }
+
+    #large-view-nav a:hover {
+        color: #2da48f
+    }
+
+    body #menu > li > a:hover {
+        color: #ffffff !important
+    }
+
+    body header .first a.menu-hover {
+        background-image: url(../images/icon/left_arrow_white.png) !important;
+        background-position: 40px center !important
+    }
+
+    #large-view-nav > ul > li#toggleMenu > a:hover {
+        background: transparent !important;
+        border: 1px solid #0386b7
+    }
+
+    #menu .menu-hover {
+        background-image: url(../images/icon/down_arrow_white_big.png);
+        background-repeat: no-repeat;
+        background-position: 90% center;
+        padding-right: 0
+    }
+
+    #large-view-nav > ul > li > ul > li > ul {
+        right: 0
+    }
+
+    body #large-view-nav #menu > li > a.menu-hover {
+        padding-right: 0;
+        margin-right: 0
+    }
+}
