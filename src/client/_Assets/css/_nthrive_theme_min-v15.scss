@@ -10,40 +10,40 @@
 }
 
 a, a:visited, a:active {
-    text-decoration: none;
+    text-decoration: $text-decoration-none;
     outline: 0
 }
 
 h1 {
-    font-size: 32px;
-    line-height: 39px;
-    font-weight: 300;
+    font-size: $font-32px;
+    line-height: $lh-39px;
+    font-weight: $font-300;
     color: $color-374252
 }
 
 h2 {
-    font-size: 32px;
-    line-height: 38px;
-    font-weight: 300;
-    letter-spacing: -0.3px;
+    font-size: $font-32px;
+    line-height: $lh-38px;
+    font-weight: $font-300;
+    letter-spacing: $ls-0_3px;
     color: $color-374252
 }
 
 h3 {
-    font-size: 28px;
-    font-weight: 300;
-    line-height: 32px;
+    font-size: $font-28px;
+    font-weight: $font-300;
+    line-height: $lh-32px;
     color: $color-374252
 }
 
 h4 {
-    font-size: 18px;
-    line-height: 1.3
+    font-size: $font-18px;
+    line-height: $lh-1_3
 }
 
 section p, p {
-    line-height: 24px;
-    font-size: 14px
+    line-height: $lh-24px;
+    font-size: $font-14px
 }
 
 h2.section-header {
@@ -53,29 +53,29 @@ h2.section-header {
 h2.event-section-header {
     padding-top: 40px;
     border-top: 1px solid $color-cdcdcd;
-    font-size: 26px;
+    font-size: $font-26px;
     color: $color-441a63
 }
 
 h4.header-text {
-    font-size: 44px;
-    line-height: 1.3;
-    font-weight: 500;
+    font-size: $font-44px;
+    line-height: $lh-1_3;
+    font-weight: $font-500;
     margin-top: 10px
 }
 
 .l-title-width p {
-    font-size: 18px;
-    font-weight: 300
+    font-size: $font-18px;
+    font-weight: $font-300
 }
 
 .l-title-width p.text-14px {
-    font-size: 14px !important;
+    font-size: $font-14px !important;
     color: $color-86939e
 }
 
 section .eltlink p {
-    line-height: 1.5
+    line-height: $lh-1_5
 }
 
 .news-content a:hover {
@@ -92,9 +92,9 @@ section .eltlink p {
     padding: 15px 25px;
     white-space: normal;
     max-width: 180px;
-    text-align: center;
-    font-size: 18px;
-    font-weight: normal;
+    text-align: $text-center;
+    font-size: $font-18px;
+    font-weight: $font-normal;
     display: inline-block;
     -webkit-border-radius: 3px 3px 3px 3px;
     border-radius: 3px 3px 3px 3px
@@ -105,9 +105,9 @@ section .eltlink p {
     padding: 15px 25px;
     white-space: normal;
     max-width: 140px;
-    text-align: center;
-    font-size: 14px;
-    font-weight: normal
+    text-align: $text-center;
+    font-size: $font-14px;
+    font-weight: $font-normal
 }
 
 .button-box-small {
@@ -369,243 +369,243 @@ a.button-box:hover {
 }
 
 .text-900 {
-    font-weight: 900
+    font-weight: $font-900
 }
 
 .text-700 {
-    font-weight: 700
+    font-weight: $font-700
 }
 
 .text-600 {
-    font-weight: 600
+    font-weight: $font-600
 }
 
 .text-500 {
-    font-weight: 500
+    font-weight: $font-500
 }
 
 .text-400 {
-    font-weight: 400
+    font-weight: $font-400
 }
 
 .text-300 {
-    font-weight: 300
+    font-weight: $font-300
 }
 
 .text-100 {
-    font-weight: 100
+    font-weight: $font-100
 }
 
 .text-normal {
-    font-style: normal
+    font-style: $font-normal
 }
 
 .text-emphasis {
-    font-size: 1.3em
+    font-size: $font-1_3em
 }
 
 .text-italic {
-    font-style: italic
+    font-style: $font-italic
 }
 
 .text-uppercase {
-    text-transform: uppercase
+    text-transform: $text-transform-uppercase
 }
 
 .text-underline {
-    text-decoration: underline !important
+    text-decoration: $text-underline !important
 }
 
 .text-10px {
-    font-size: 10px;
-    line-height: 14px
+    font-size: $font-10px;
+    line-height: $lh-14px
 }
 
 .text-12px {
-    font-size: 12px;
-    line-height: 16px
+    font-size: $font-12px;
+    line-height: $lh-16px
 }
 
 .text-13px {
-    font-size: 13px;
-    line-height: 17px
+    font-size: $font-13px;
+    line-height: $lh-17px
 }
 
 .text-14px {
-    font-size: 14px;
-    line-height: 18px
+    font-size: $font-14px;
+    line-height: $lh-18px
 }
 
 .text-15px {
-    font-size: 15px;
-    line-height: 19px
+    font-size: $font-15px;
+    line-height: $lh-19px
 }
 
 .text-16px {
-    font-size: 16px;
-    line-height: 20px
+    font-size: $font-16px;
+    line-height: $lh-20px
 }
 
 .text-17px {
-    font-size: 17px;
-    line-height: 21px
+    font-size: $font-17px;
+    line-height: $lh-21px
 }
 
 .text-18px {
-    font-size: 18px;
-    line-height: 22px
+    font-size: $font-18px;
+    line-height: $lh-22px
 }
 
 .text-20px {
-    font-size: 20px;
-    line-height: 24px
+    font-size: $font-20px;
+    line-height: $lh-24px
 }
 
 .text-21px {
-    font-size: 21px;
-    line-height: 25px
+    font-size: $font-21px;
+    line-height: $lh-25px
 }
 
 .text-22px {
-    font-size: 22px;
-    line-height: 26px
+    font-size: $font-22px;
+    line-height: $lh-26px
 }
 
 .text-24px {
-    font-size: 24px;
-    line-height: 28px
+    font-size: $font-24px;
+    line-height: $lh-28px
 }
 
 .text-25px {
-    font-size: 25px;
-    line-height: 29px
+    font-size: $font-25px;
+    line-height: $lh-29px
 }
 
 .text-26px {
-    font-size: 26px;
-    line-height: 30px
+    font-size: $font-26px;
+    line-height: $lh-30px
 }
 
 .text-28px {
-    font-size: 28px;
-    line-height: 32px
+    font-size: $font-28px;
+    line-height: $lh-32px
 }
 
 .text-32px {
-    font-size: 32px;
-    line-height: 36px
+    font-size: $font-32px;
+    line-height: $lh-36px
 }
 
 .text-36px {
-    font-size: 36px;
-    line-height: 40px
+    font-size: $font-36px;
+    line-height: $lh-40px
 }
 
 .text-42px {
-    font-size: 42px;
-    line-height: 46px
+    font-size: $font-42px;
+    line-height: $lh-46px
 }
 
 .text-48px {
-    font-size: 48px;
-    line-height: 52px
+    font-size: $font-48px;
+    line-height: $lh-52px
 }
 
 .text-50px {
-    font-size: 50px;
-    line-height: 54px
+    font-size: $font-50px;
+    line-height: $lh-54px
 }
 
 .text-52px {
-    font-size: 52px;
-    line-height: 56px
+    font-size: $font-52px;
+    line-height: $lh-56px
 }
 
 .text-64px {
-    font-size: 64px;
-    line-height: 68px
+    font-size: $font-64px;
+    line-height: $lh-68px
 }
 
 .text-141px {
-    font-size: 141px;
-    line-height: 145px
+    font-size: $font-141px;
+    line-height: $lh-145px
 }
 
 .text-200px {
-    font-size: 200px;
-    line-height: 201px
+    font-size: $font-200px;
+    line-height: $lh-201px
 }
 
 .robotoblack {
-    font-family: "robotoblack", "roboto", sans-serif
+    font-family: $font-robotoblack
 }
 
 .op-30 {
-    opacity: 0.3
+    opacity: $op-30
 }
 
 .op-40 {
-    opacity: 0.4
+    opacity: $op-40
 }
 
 .ls-0_2px {
-    letter-spacing: -0.2px
+    letter-spacing: $ls-0_2px
 }
 
 .ls-0_6px {
-    letter-spacing: -0.6px
+    letter-spacing: $ls-0_6px
 }
 
 .ls-0_7px {
-    letter-spacing: -0.7px
+    letter-spacing: $ls-0_7px
 }
 
 .ls-0_9px {
-    letter-spacing: -0.9px
+    letter-spacing: $ls-0_9px
 }
 
 .ls-5_3px {
-    letter-spacing: -5.3px
+    letter-spacing: $ls-5_3px
 }
 
 .ls-1_5px {
-    letter-spacing: -1.5px
+    letter-spacing: $ls-1_5px
 }
 
 .ls-1_9px {
-    letter-spacing: -1.9px
+    letter-spacing: $ls-1_9px
 }
 
 .lh-14px {
-    line-height: 14px
+    line-height: $lh-14px
 }
 
 .lh-22px {
-    line-height: 22px
+    line-height: $lh-22px
 }
 
 .lh-25px {
-    line-height: 25px
+    line-height: $lh-25px
 }
 
 .lh-32px {
-    line-height: 32px
+    line-height: $lh-32px
 }
 
 .lh-30px {
-    line-height: 30px
+    line-height: $lh-30px
 }
 
 .lh-26px {
-    line-height: 26px
+    line-height: $lh-26px
 }
 
 .lh-40px {
-    line-height: 40px
+    line-height: $lh-40px
 }
 
 .text-right-width p {
-    letter-spacing: -0.1px
+    letter-spacing: $ls-0_1px
 }
 
 .text-right-width {
@@ -614,7 +614,7 @@ a.button-box:hover {
 
 .textnav a {
     color: $color-5e6977;
-    font-size: 14px;
+    font-size: $font-14px;
     padding: 0 14px
 }
 
@@ -639,7 +639,7 @@ a.button-box:hover {
 }
 
 .l-list-half-col p {
-    line-height: 38px
+    line-height: $lh-38px
 }
 
 .b-7b214c {
@@ -730,8 +730,8 @@ a.button-box.text-white.bg-eaaa00:hover, a.button-box.text-white.bg-eaaa00:focus
 }
 
 .cta-link {
-    font-size: 13px;
-    font-weight: 500;
+    font-size: $font-13px;
+    font-weight: $font-500;
     margin-top: 20px
 }
 
@@ -1060,8 +1060,8 @@ a.button-box.text-white.bg-eaaa00:hover, a.button-box.text-white.bg-eaaa00:focus
 }
 
 .note-p {
-    font-size: 10px !important;
-    line-height: 14px !important
+    font-size: $font-10px !important;
+    line-height: $lh-14px !important
 }
 
 body #menu > li > a {
@@ -1074,8 +1074,8 @@ body #menu > li > a {
 
 .nthrive-menu h3 {
     color: $color-54565b;
-    font-size: 1.9em;
-    font-weight: 300;
+    font-size: $font-1_9em;
+    font-weight: $font-300;
     background: $color-333333
 }
 
@@ -1093,18 +1093,18 @@ body #menu > li > a {
 
 .nthrive-menu-vertical a {
     border-bottom: 1px solid $color-cdcdcd;
-    font-size: 16px
+    font-size: $font-16px
 }
 
 .main > div.buttonset h2 {
-    font-weight: 300;
+    font-weight: $font-300;
     color: $color-cccccc
 }
 
 .main > div.buttonset button {
     background: $color-ffffff;
     color: $color-54565b;
-    font-size: .8em
+    font-size: $font-0_8em
 }
 
 .main > div.buttonset button:hover {
@@ -1137,8 +1137,8 @@ ul.bullets.light-border, ul.content-list.light-border {
 ul.bullets li {
     list-style: disc;
     margin-bottom: 10px;
-    line-height: 24px;
-    font-size: 14px;
+    line-height: $lh-24px;
+    font-size: $font-14px;
     float: none !important;
     display: list-item !important
 }
@@ -1153,29 +1153,29 @@ ul.bullets li span, ul.bullets li p {
 
 .banner-tag {
     height: 24px;
-    line-height: 24px;
-    font-size: 12px;
-    font-weight: 500;
+    line-height: $lh-24px;
+    font-size: $font-12px;
+    font-weight: $font-500;
     min-width: 80px;
     display: inline-block;
     padding: 0 20px;
     color: $color-ffffff !important;
-    font-family: 'Roboto', sans-serif;
+    font-family: $font-roboto;
     transition: all 0.1s ease-in;
     border: none;
     border-radius: 2px;
     box-shadow: none;
     -webkit-appearance: none;
     outline: none !important;
-    text-align: center
+    text-align: $text-center
 }
 
 .titlep.text-14px {
-    line-height: 50px
+    line-height: $lh-50px
 }
 
 #breadcrumbs li, #breadcrumbs li a {
-    font-size: 13px
+    font-size: $font-13px
 }
 
 .bg-width img {
@@ -1184,11 +1184,11 @@ ul.bullets li span, ul.bullets li p {
 
 .elt-content p a, .elt-content ul a, .elt-content ol a {
     color: $color-9e1f63;
-    text-decoration: underline
+    text-decoration: $text-underline
 }
 
 .elt-content a.btn {
-    text-decoration: none !important
+    text-decoration: $text-decoration-none !important
 }
 
 .elt-content p a:hover, .elt-content ul a:hover, .elt-content ol a:hover {
@@ -1197,7 +1197,7 @@ ul.bullets li span, ul.bullets li p {
 
 .elt-content ul.l-list-two-col a, .elt-content ul.l-inline-list a, .elt-content ul.l-half-col, .elt-content ul.l-clearfix a {
     color: $color-86939e;
-    text-decoration: none
+    text-decoration: $text-decoration-none
 }
 
 .support-issue {
@@ -1279,7 +1279,7 @@ ul.bullets li span, ul.bullets li p {
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
     height: auto;
-    text-align: center
+    text-align: $text-center
 }
 
 .clearfix, .wrapper {
@@ -1293,8 +1293,8 @@ ul.bullets li span, ul.bullets li p {
     padding: 10px 20px 10px 45px;
     border-radius: 3px;
     box-shadow: none;
-    text-transform: uppercase;
-    font-size: 14px;
+    text-transform: $text-transform-uppercase;
+    font-size: $font-14px;
     cursor: pointer;
     -webkit-transition: 0.25s all;
     -ms-transition: 0.25s all;
@@ -1330,14 +1330,14 @@ ul.bullets li span, ul.bullets li p {
 
 .hide, .overvideo.hide, .play-btn.hide, .ie8 .play-btn.hide, .ie8 .overvideo.hide {
     visibility: hidden;
-    opacity: 0;
+    opacity: $op-0;
     display: none;
     background: none
 }
 
 .overvideo, .play-btn {
     visibility: visible;
-    opacity: 1;
+    opacity: $op-100;
     display: block
 }
 
@@ -1383,7 +1383,7 @@ a.play-btn {
     margin: 0 auto;
     position: relative;
     top: 32%;
-    text-align: center
+    text-align: $text-center
 }
 
 .space-60px {
@@ -1417,7 +1417,7 @@ figure.image-text-left.mr-20px {
 }
 
 .sp-highlight {
-    line-height: 20px
+    line-height: $lh-20px
 }
 
 .nthrive-video-banner-outer-wrap .video-js.video-frame-nthrive {
@@ -1457,10 +1457,10 @@ figure.image-text-left.mr-20px {
     border-radius: 2px;
     box-shadow: none;
     color: $color-929da7;
-    font-size: 14px;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 400;
-    line-height: 48px;
+    font-size: $font-14px;
+    font-family: $font-roboto;
+    font-weight: $font-400;
+    line-height: $lh-48px;
     padding: 0 3%;
     width: 70%
 }
@@ -1470,10 +1470,10 @@ figure.image-text-left.mr-20px {
     height: 40px;
     padding: 0 10px;
     color: $color-ffffff !important;
-    font-size: 14px;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 400;
-    line-height: 40px;
+    font-size: $font-14px;
+    font-family: $font-roboto;
+    font-weight: $font-400;
+    line-height: $lh-40px;
     transition: all 0.1s ease-in;
     background: $color-4a1c6b;
     border: none;
@@ -1481,7 +1481,7 @@ figure.image-text-left.mr-20px {
     box-shadow: none;
     -webkit-appearance: none;
     outline: none !important;
-    text-align: center;
+    text-align: $text-center;
     cursor: pointer;
     width: 28%
 }
@@ -1542,23 +1542,23 @@ ul.light-border.content-list li {
     background: url(/_assets/images/icon/arrow-right.png) no-repeat 0 5px;
     display: block;
     color: $color-7b204c;
-    text-decoration: none
+    text-decoration: $text-decoration-none
 }
 
 .font-weight-light {
-    font-weight: 300
+    font-weight: $font-300
 }
 
 .font-weight-normal {
-    font-weight: 400
+    font-weight: $font-400
 }
 
 .font-weight-thick {
-    font-weight: 500
+    font-weight: $font-500
 }
 
 .font-weight-extra-thick {
-    font-weight: 600
+    font-weight: $font-600
 }
 
 .popup-option-overlay {
@@ -1586,8 +1586,8 @@ ul.light-border.content-list li {
     padding: 30px;
     background: $color-ffffff;
     color: $color-333333;
-    font-size: 19px;
-    line-height: 30px;
+    font-size: $font-19px;
+    line-height: $lh-30px;
     border: 3px solid $color-8e2b5a;
     z-index: 9999999;
     -webkit-border-radius: 5px 5px 5px 5px;
@@ -1601,8 +1601,8 @@ ul.light-border.content-list li {
     padding: 30px;
     background: $color-ffffff;
     color: $color-333333;
-    font-size: 19px;
-    line-height: 30px;
+    font-size: $font-19px;
+    line-height: $lh-30px;
     border: 3px solid $color-8e2b5a;
     z-index: 9999999;
     -webkit-border-radius: 5px 5px 5px 5px;
@@ -1658,7 +1658,7 @@ ul.light-border.content-list li {
 }
 
 .sitemap-width .second-menu > a {
-    font-weight: 500;
+    font-weight: $font-500;
     color: $color-374252
 }
 
@@ -1686,32 +1686,32 @@ ul.light-border.content-list li {
 }
 
 .sitemap-width > a {
-    font-weight: 600;
-    line-height: 1.4;
+    font-weight: $font-600;
+    line-height: $lh-1_4;
     color: $color-441a63;
-    font-size: 18px;
+    font-size: $font-18px;
     display: block;
     padding: 7px 0
 }
 
 .sitemap-width > ul {
-    font-weight: 400;
+    font-weight: $font-400;
     color: $color-374252;
-    line-height: 1.4;
+    line-height: $lh-1_4;
     display: inline-block
 }
 
 .sitemap-width > ul a {
-    font-weight: 400;
+    font-weight: $font-400;
     color: $color-374252;
-    line-height: 1.4;
+    line-height: $lh-1_4;
     display: block;
     padding: 7px 0
 }
 
 .sitemap-width > ul p {
-    font-weight: 400;
-    line-height: 1;
+    font-weight: $font-400;
+    line-height: $lh-1;
     color: $color-86939e
 }
 
@@ -1793,7 +1793,7 @@ ul.light-border.content-list li {
 }
 
 .webinar-wrap figure {
-    text-align: right;
+    text-align: $text-right;
     max-height: 311px;
     display: block
 }
@@ -1833,7 +1833,7 @@ ul.light-border.content-list li {
 }
 
 .category-container span {
-    font-size: 14px;
+    font-size: $font-14px;
     color: $color-86939e;
     display: block
 }
@@ -1863,7 +1863,7 @@ ul.light-border.content-list li {
 
 .plus {
     padding-top: 30px;
-    line-height: 2
+    line-height: $lh-2
 }
 
 .webinar-wrap a:hover {
@@ -1895,12 +1895,12 @@ ul.light-border.content-list li {
 }
 
 .bg-gradient-teal-vertical p {
-    font-size: 20px !important;
-    line-height: 36px;
+    font-size: $font-20px !important;
+    line-height: $lh-36px;
     padding: 0 30px;
-    font-weight: 500;
+    font-weight: $font-500;
     color: $color-ffffff;
-    text-align: center;
+    text-align: $text-center;
     margin-bottom: 0 !important
 }
 
@@ -1926,11 +1926,11 @@ figure.l-align-right.image-text-left {
 }
 
 .mid-size p {
-    font-size: 16px
+    font-size: $font-16px
 }
 
 .lg-size p {
-    font-size: 18px
+    font-size: $font-18px
 }
 
 .s-img {
@@ -1943,23 +1943,23 @@ figure.l-align-right.image-text-left {
 }
 
 .l-content-width.text-16px p, .l-content-width.text-16px li {
-    font-size: 16px !important;
-    line-height: 26px !important
+    font-size: $font-16px !important;
+    line-height: $lh-26px !important
 }
 
 span.sm {
-    font-size: 70%;
+    font-size: $font-70pc;
     display: inline-block;
     position: relative;
     top: -.5em;
-    font-family: 'Robato', Arial
+    font-family: $font-roboto
 }
 
 .table-header {
     color: $color-ffffff;
-    font-size: 18px;
-    font-weight: 500;
-    line-height: 2;
+    font-size: $font-18px;
+    font-weight: $font-500;
+    line-height: $lh-2;
     border: 1px solid $color-ffffff;
     background: $color-9d1f66;
     padding: 3px 20px
@@ -1975,9 +1975,9 @@ span.sm {
 
 .table-body p {
     padding: 3px 20px;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 2;
+    font-size: $font-16px;
+    font-weight: $font-400;
+    line-height: $lh-2;
     margin: 0 !important
 }
 
@@ -2026,9 +2026,9 @@ span.sm {
 
 .claims-table p {
     padding: 20px 20px;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 2;
+    font-size: $font-14px;
+    font-weight: $font-400;
+    line-height: $lh-2;
     margin: 0 !important
 }
 
@@ -2056,7 +2056,7 @@ span.sm {
 }
 
 .no-underline, a.no-underline {
-    text-decoration: none !important
+    text-decoration: $text-decoration-none !important
 }
 
 @media (max-width: 840px) {
@@ -2067,7 +2067,7 @@ span.sm {
 
     .author .plus.l-align-right {
         margin-left: 20px;
-        text-align: right !important;
+        text-align: $text-right !important;
         margin-top: 5px
     }
 
@@ -2122,7 +2122,7 @@ span.sm {
     }
 
     .text-30px {
-        line-height: 32px
+        line-height: $lh-32px
     }
 
     .category-container {
@@ -2177,13 +2177,13 @@ span.sm {
     }
 
     h3.desc {
-        font-size: 14px;
-        line-height: 18px
+        font-size: $font-14px;
+        line-height: $lh-18px
     }
 
     .btn {
         height: 35px;
-        line-height: 35px
+        line-height: $lh-35px
     }
 
     .bcplayer {
@@ -2193,7 +2193,7 @@ span.sm {
 
 @media (max-width: 765px) {
     h2 {
-        font-size: 24px !important
+        font-size: $font-24px !important
     }
 
     .pt-20px {
@@ -2201,13 +2201,13 @@ span.sm {
     }
 
     .text-42px {
-        font-size: 23px;
-        line-height: 26px
+        font-size: $font-23px;
+        line-height: $lh-26px
     }
 
     .text-20px {
-        font-size: 18px;
-        line-height: 22px
+        font-size: $font-18px;
+        line-height: $lh-22px
     }
 
     .elt-sidebar {
@@ -2217,14 +2217,14 @@ span.sm {
 
 @media (max-width: 480px) {
     .table-body p {
-        font-size: 12px;
+        font-size: $font-12px;
         padding-left: 5px
     }
 
     .author .plus.l-align-right {
         margin-left: 20px;
         display: inline-block;
-        text-align: right;
+        text-align: $text-right;
         margin-top: 5px
     }
 
@@ -2235,7 +2235,7 @@ span.sm {
     .button-box {
         padding: 10px 17px;
         margin-top: 15px;
-        font-size: 15px
+        font-size: $font-15px
     }
 
     .nthrive-button-wrap {
@@ -2243,8 +2243,8 @@ span.sm {
     }
 
     h1 {
-        font-size: 26px !important;
-        line-height: 30px
+        font-size: $font-26px !important;
+        line-height: $lh-30px
     }
 
     .l-half-col {
