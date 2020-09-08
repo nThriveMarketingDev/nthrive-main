@@ -327,7 +327,8 @@ span.tooltip[aria-hidden="false"] {
   top: -20px;
   width: 25px;
   height: 25px;
-  -webkit-box-shadow: 6px 5px 9px -9px $color-000000 5px 6px 9px -9px $color-000000;
+  -webkit-box-shadow: 6px 5px 9px -9px $color-000000 5px 6px 9px -9px
+    $color-000000;
   -moz-box-shadow: 6px 5px 9px -9px $color-000000 5px 6px 9px -9px $color-000000;
   box-shadow: 6px 5px 9px -9px $color-000000 5px 6px 9px -9px $color-000000;
   -webkit-transform: rotate(45deg);
@@ -2310,7 +2311,8 @@ body #menu > li > a:hover {
   margin-top: 3px;
   text-align: $text-left;
   width: 774px;
-  background: $color-f6f6f6 url(../images/navigation/bg-white.jpg) repeat-y top left;
+  background: $color-f6f6f6 url(../images/navigation/bg-white.jpg) repeat-y top
+    left;
   -webkit-border-radius: 2px 2px;
   border-radius: 2px 2px;
   -webkit-background-clip: padding-box;
@@ -2540,18 +2542,20 @@ span.arrow {
   float: right;
 }
 #mobile-main-menu > li > a > span.arrow {
-  background: $color-441a63 url("../images/icon/selectarrow.png") no-repeat 92% center;
+  background: $color-441a63 url("../images/icon/selectarrow.png") no-repeat 92%
+    center;
 }
 #mobile-main-menu > li.open > a > span.arrow {
-  background: $color-441a63 url("../images/icon/selectarrow-up.png") no-repeat 92%
-    center;
+  background: $color-441a63 url("../images/icon/selectarrow-up.png") no-repeat
+    92% center;
 }
 .mobile-sub-menu > li > a > span.arrow {
-  background: $color-441a63 url("../images/icon/selectarrow.png") no-repeat 92% center;
+  background: $color-441a63 url("../images/icon/selectarrow.png") no-repeat 92%
+    center;
 }
 .mobile-sub-menu > li.open-sub > a > span.arrow {
-  background: $color-441a63 url("../images/icon/selectarrow-up.png") no-repeat 92%
-    center;
+  background: $color-441a63 url("../images/icon/selectarrow-up.png") no-repeat
+    92% center;
 }
 #mobile-nav-lines {
   display: block;
@@ -2771,8 +2775,8 @@ input:focus-visible {
   vertical-align: top;
 }
 .no-svg .search-button-wrap {
-  background: $color-ffffff url("../images/icon/searchicon.png") no-repeat center
-    center;
+  background: $color-ffffff url("../images/icon/searchicon.png") no-repeat
+    center center;
 }
 .slider-title .std-input,
 .slider-title .select-style {
@@ -3259,52 +3263,65 @@ figcaption p {
   background-size: 8px 16px;
 }
 .no-svg .facebook-link {
-  background: $color-3b5998 url("../images/icon/facebook.png") no-repeat center center;
+  background: $color-3b5998 url("../images/icon/facebook.png") no-repeat center
+    center;
 }
 .no-svg .facebook-link:hover {
-  background: $color-314b80 url("../images/icon/facebook.png") no-repeat center center;
+  background: $color-314b80 url("../images/icon/facebook.png") no-repeat center
+    center;
 }
 .twitter-link {
-  background: $color-1da1f2 url("../images/icon/twitteri.svg") no-repeat center center;
+  background: $color-1da1f2 url("../images/icon/twitteri.svg") no-repeat center
+    center;
   background-size: 20px 16px;
 }
 .twitter-link:hover {
-  background: $color-168bd3 url("../images/icon/twitteri.svg") no-repeat center center;
+  background: $color-168bd3 url("../images/icon/twitteri.svg") no-repeat center
+    center;
   background-size: 20px 16px;
 }
 .no-svg .twitter-link {
-  background: $color-1da1f2 url("../images/icon/twitter.png") no-repeat center center;
+  background: $color-1da1f2 url("../images/icon/twitter.png") no-repeat center
+    center;
 }
 .no-svg .twitter-link:hover {
-  background: $color-168bd3 url("../images/icon/twitter.png") no-repeat center center;
+  background: $color-168bd3 url("../images/icon/twitter.png") no-repeat center
+    center;
 }
 .linkin-link {
-  background: $color-0077b5 url("../images/icon/linkini.svg") no-repeat center center;
+  background: $color-0077b5 url("../images/icon/linkini.svg") no-repeat center
+    center;
   background-size: 16px 16px;
 }
 .linkin-link:hover {
-  background: $color-00699f url("../images/icon/linkini.svg") no-repeat center center;
+  background: $color-00699f url("../images/icon/linkini.svg") no-repeat center
+    center;
   background-size: 16px 16px;
 }
 .no-svg .linkin-link {
-  background: $color-0077b5 url("../images/icon/linkin.png") no-repeat center center;
+  background: $color-0077b5 url("../images/icon/linkin.png") no-repeat center
+    center;
 }
 .no-svg .linkin-link:hover {
   background: $color-00699f url("../images/linkin.png") no-repeat center center;
 }
 .ytube-link {
-  background: $color-c71d20 url("../images/icon/ytubei.svg") no-repeat center center;
+  background: $color-c71d20 url("../images/icon/ytubei.svg") no-repeat center
+    center;
   background-size: 22px 15px;
 }
 .ytube-link:hover {
-  background: $color-aa181b url("../images/icon/ytubei.svg") no-repeat center center;
+  background: $color-aa181b url("../images/icon/ytubei.svg") no-repeat center
+    center;
   background-size: 22px 15px;
 }
 .no-svg .ytube-link {
-  background: $color-c71d20 url("../images/icon/ytube.png") no-repeat center center;
+  background: $color-c71d20 url("../images/icon/ytube.png") no-repeat center
+    center;
 }
 .no-svg .ytube-link:hover {
-  background: $color-aa181b url("../images/icon/ytube.png") no-repeat center center;
+  background: $color-aa181b url("../images/icon/ytube.png") no-repeat center
+    center;
 }
 .glassdoor-link {
   background: $color-007700 url("../images/icon/glassdoor.png") no-repeat center
@@ -5169,6 +5186,9 @@ iframe[name="google_conversion_frame"] {
   }
   .events #nav-wrap {
     position: fixed;
+  }
+  .events #nth-menu-switch:checked ~ #nav-wrap #secondary-nav li:last-child {
+    padding-bottom: 50px;
   }
   .pagination > li {
     display: none;
@@ -7548,7 +7568,8 @@ body img.desktop-landscape {
     width: 265px;
   }
   #pressly-body p.pressly-btn.mobile-button {
-    background: $color-1b6666 url(../images/icon/elt-bttn.svg) no-repeat 210px center;
+    background: $color-1b6666 url(../images/icon/elt-bttn.svg) no-repeat 210px
+      center;
   }
 }
 @media only screen and (min-width: 1360px) {
