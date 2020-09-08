@@ -1,6 +1,8 @@
 ﻿/* Font Families */
 $font-roboto: 'Roboto', sans-serif, Calibri;
+$font-robotoblack: "robotoblack", "roboto", sans-serif;
 $font-arial: Arial, "Helvetica CY", "Nimbus Sans L", sans-serif;
+$font-trebuchet: Trebuchet, Arial, sans-serif;
 
 /* Font Weights */
 $font-100: 100;
@@ -89,6 +91,7 @@ $font-italic: italic;
 
 /* Letter Spacing */
 $ls-0px: 0px;
+$ls-00_1px: 0.1px;
 $ls-0_1px: -0.1px;
 $ls-0_2px: -0.2px;
 $ls-0_3px: -0.3px;

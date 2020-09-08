@@ -45,19 +45,19 @@ span.uparrow {
 }
 .nav-top-level > a {
   display: block;
-  text-decoration: none;
-  font-weight: 500;
+  text-decoration: $text-decoration-none;
+  font-weight: $font-500;
   padding: 0 20px;
   color: $color-ffffff;
-  line-height: 50px;
-  font-size: 13px;
+  line-height: $lh-50px;
+  font-size: $font-13px;
 }
 .nav-top-level {
   margin: 0;
-  font-size: 13px;
+  font-size: $font-13px;
   font-style: normal;
-  text-decoration: none;
-  line-height: 2.8 !important;
+  text-decoration: $text-decoration-none;
+  line-height: $lh-2_8 !important;
   position: initial !important;
   padding: 0 5px;
 }
@@ -69,7 +69,7 @@ a.menu-hover {
 }
 #primary-nav > ul > li {
   position: relative;
-  text-align: left;
+  text-align: $text-left;
 }
 #primary-nav > ul > li {
   float: left;
@@ -86,7 +86,7 @@ a {
   outline: 2px solid $color-a6ccdb;
 }
 #primary-nav li {
-  text-align: left;
+  text-align: $text-left;
 }
 a.menu-hover + ul {
   position: absolute;
@@ -130,11 +130,11 @@ body #primary-nav #main-nav > li > a:hover {
 }
 #primary-nav > ul {
   height: 100%;
-  line-height: 2.5em;
+  line-height: $lh-2_5em;
 }
 #primary-nav > ul > li {
   position: relative;
-  text-align: left;
+  text-align: $text-left;
 }
 #primary-nav > ul > li > ul {
   background-color: $color-f2f2f2;
@@ -158,7 +158,7 @@ body #primary-nav #main-nav > li > a:hover {
 }
 #primary-nav > ul > li > ul > li > a {
   background-color: $color-f2f2f2;
-  font-weight: 400;
+  font-weight: $font-400;
 }
 body #primary-nav #main-nav > li > a:focus {
   border: 0;
@@ -177,7 +177,7 @@ body #primary-nav #main-nav > li > a:focus {
 }
 #primary-nav > ul > li > ul > li > ul > li > a {
   background-color: $color-f2f2f2;
-  font-weight: 400;
+  font-weight: $font-400;
 }
 #primary-nav > ul > li > ul > li > ul > li > a:hover,
 #primary-nav > ul > li > ul > li > ul > li > a:focus {
@@ -189,15 +189,15 @@ body #primary-nav #main-nav > li > a:focus {
   background-color: $color-441a63;
 }
 #primary-nav .first a.menu-hover {
-  font-weight: 400 !important;
+  font-weight: $font-400 !important;
   padding: 5px 15px !important;
   display: block;
-  line-height: 2.5em !important;
+  line-height: $lh-2_5em !important;
 }
 .second a {
   padding: 5px 15px !important;
   display: block;
-  line-height: 2.5em !important;
+  line-height: $lh-2_5em !important;
 }
 #primary-nav .nth-hide-menu {
   display: none;
@@ -229,7 +229,7 @@ body #primary-nav #main-nav > li.rm0 > a {
   left: -999999px;
   overflow: hidden;
   position: absolute;
-  font-size: 15px;
+  font-size: $font-15px;
   padding: 15px;
   background: $color-ffffff;
   display: inline-block;
@@ -243,35 +243,35 @@ body #primary-nav #main-nav > li.rm0 > a {
   height: auto;
   background: $color-555555;
   display: block;
-  opacity: 1;
+  opacity: $op-100;
   visibility: visible;
 }
 .notification-bar.close,
 .notification-close .notification-bar {
   display: none;
-  opacity: 0;
+  opacity: $op-0;
   visibility: hidden;
 }
 .notification-bar-content {
-  text-align: center;
-  font-size: 13px;
+  text-align: $text-center;
+  font-size: $font-13px;
   margin-right: 16px;
   align-items: center;
   justify-content: center;
   padding: 10px 0;
   max-width: 1120px;
   margin: 0 auto;
-  line-height: 2.2;
+  line-height: $lh-2_2;
 }
 .settings {
-  line-height: 2.3 !important;
+  line-height: $lh-2_3 !important;
 }
 .notification-bar-content-desc {
   width: auto;
   margin: 0 20px 0 0;
   padding: 0;
   float: left;
-  line-height: 2.2 !important;
+  line-height: $lh-2_2 !important;
 }
 .notification-bar-content-desc a {
   color: $color-ffffff;
@@ -288,11 +288,11 @@ body #primary-nav #main-nav > li.rm0 > a {
 .table-body a,
 .table-body a:visited,
 .table-body a:active {
-  font-weight: 600;
+  font-weight: $font-600;
   color: $color-da1c5c !important;
 }
 .table-body a:hover {
-  text-decoration: underline;
+  text-decoration: $text-underline;
 }
 @media only screen and (max-width: 980px) {
   body #primary-nav #main-nav > li > a {
@@ -312,7 +312,7 @@ body #primary-nav #main-nav > li.rm0 > a {
   }
   .notification-bar-content-desc,
   .notification-bar-content {
-    line-height: 1.6;
+    line-height: $lh-1_6;
     display: block;
   }
   .menu-panel-wrap {
@@ -361,7 +361,7 @@ body #primary-nav #main-nav > li.rm0 > a {
     display: block;
   }
   #primary-nav li {
-    text-align: left;
+    text-align: $text-left;
     width: 100%;
   }
   a.menu-hover + ul {
@@ -487,12 +487,12 @@ body #primary-nav #main-nav > li.rm0 > a {
   }
   .nav-top-level,
   .nav-top-level > a {
-    line-height: 3;
+    line-height: $lh-3;
   }
 }
 #nav-wrap,
 #nth-segmentbar {
-  font-weight: normal;
+  font-weight: $font-normal;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
   text-size-adjust: 100%;
@@ -511,7 +511,7 @@ body #primary-nav #main-nav > li.rm0 > a {
 #nth-segmentbar *:after {
   box-sizing: content-box;
   pointer-events: auto;
-  letter-spacing: normal;
+  letter-spacing: $ls-normal;
 }
 #nav-wrap ul,
 #nth-segmentbar ul {
@@ -531,7 +531,7 @@ body #primary-nav #main-nav > li.rm0 > a {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   direction: ltr;
-  text-align: left;
+  text-align: $text-left;
 }
 #nav-wrap {
   position: absolute;
@@ -544,7 +544,7 @@ body #primary-nav #main-nav > li.rm0 > a {
   width: 100%;
   min-width: 1024px;
   height: 50px;
-  font-size: 17px;
+  font-size: $font-17px;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -579,7 +579,7 @@ body #primary-nav #main-nav > li.rm0 > a {
     display: block;
   }
   body header .first a.menu-hover {
-    font-size: 13px !important;
+    font-size: $font-13px !important;
   }
 }
 #nth-menu-switch {
@@ -605,7 +605,7 @@ body #primary-nav #main-nav > li.rm0 > a {
   margin: 0 -10px;
   width: auto;
   height: 44px;
-  text-align: justify;
+  text-align: $text-justify;
   -ms-text-justify: distribute-all-lines;
   text-justify: distribute-all-lines;
   -webkit-user-select: none;
@@ -617,8 +617,8 @@ body #primary-nav #main-nav > li.rm0 > a {
   content: "";
   width: 100%;
   display: inline-block;
-  font-size: 0;
-  line-height: 0;
+  font-size: $font-0;
+  line-height: $lh-0;
 }
 @media only screen and (max-width: 840px) {
   #primary-nav #logo-wrap li {
@@ -705,7 +705,7 @@ body #primary-nav #main-nav > li.rm0 > a {
   #nav-wrap #secondary-nav > li {
     height: auto;
     max-height: none;
-    opacity: 0;
+    opacity: $op-0;
     pointer-events: none;
     -webkit-transform: scale(1.1) translateY(-24px);
     -ms-transform: scale(1.1) translateY(-24px);
@@ -754,7 +754,7 @@ body #primary-nav #main-nav > li.rm0 > a {
   }
   #nth-menu-switch:checked ~ #nav-wrap .nav-top-level,
   #nth-menu-switch:target ~ #nav-wrap .nav-top-level {
-    opacity: 1;
+    opacity: $op-100;
     pointer-events: auto;
     -webkit-transform: none;
     -ms-transform: none;
@@ -847,7 +847,7 @@ body #primary-nav #main-nav > li.rm0 > a {
   }
   #nth-menu-switch:checked ~ #nav-wrap #secondary-nav li,
   #nth-menu-switch:target ~ #nav-wrap #secondary-nav li {
-    opacity: 1;
+    opacity: $op-100;
     pointer-events: auto;
     -webkit-transform: none;
     -ms-transform: none;
@@ -910,7 +910,7 @@ body #primary-nav #main-nav > li.rm0 > a {
 @media only screen and (max-width: 840px) {
 }
 #nav-wrap .nth-link.current {
-  opacity: 0.65;
+  opacity: $op-65;
 }
 #nav-wrap .nth-menuicon {
   right: 0;
@@ -939,7 +939,7 @@ body #primary-nav #main-nav > li.rm0 > a {
   }
   #nth-menu-switch:checked ~ #nav-wrap .nth-searchview,
   #nth-menu-switch:target ~ #nav-wrap .nth-searchview {
-    opacity: 1;
+    opacity: $op-100;
     pointer-events: auto;
     -webkit-transform: none;
     -ms-transform: none;
@@ -948,7 +948,7 @@ body #primary-nav #main-nav > li.rm0 > a {
     transition-delay: 300ms, 300ms;
   }
   #nth-menu-switch ~ #nav-wrap .nth-searchview {
-    opacity: 0;
+    opacity: $op-0;
     display: block !important;
     -moz-transition: all 300ms ease-out 0.2s;
     -webkit-transition: all 300ms ease-out 0.2s;
@@ -1003,10 +1003,10 @@ body #primary-nav #main-nav > li.rm0 > a {
 #nav-wrap .nth-menuicon-label:hover,
 #nav-wrap .nth-menuicon-label:focus,
 #nav-wrap .nth-menuicon-label:active {
-  opacity: 0.65;
+  opacity: $op-65;
 }
 #nav-wrap.touch .nth-menuicon-label {
-  opacity: 1;
+  opacity: $op-100;
   -webkit-transition: -webkit-transform 0.4s
     cubic-bezier(0.4, 0.01, 0.165, 0.99);
   transition: -webkit-transform 0.4s cubic-bezier(0.4, 0.01, 0.165, 0.99);
@@ -1088,12 +1088,12 @@ body #primary-nav #main-nav > li.rm0 > a {
   transform: translateY(-3px);
 }
 #nav-wrap .nth-menuicon-middle {
-  opacity: 1;
+  opacity: $op-100;
   transition: 0.2s all ease-in-out;
 }
 #nth-menu-switch:checked ~ #nav-wrap .nth-menuicon-middle,
 #nth-menu-switch:target ~ #nav-wrap .nth-menuicon-middle {
-  opacity: 0;
+  opacity: $op-0;
   transition: 0.2s all ease-in-out;
 }
 #nav-wrap .nth-menuicon-bread-crust {
@@ -1190,7 +1190,7 @@ body #primary-nav #main-nav > li.rm0 > a {
 }
 .nthrive-main-nav a {
   display: block;
-  line-height: 3;
+  line-height: $lh-3;
 }
 .main-nav ul,
 .main-nav {
@@ -1209,7 +1209,7 @@ body #primary-nav #main-nav > li.rm0 > a {
 }
 li.mb-first:overlay {
   background: $color-000000;
-  opacity: 0.2;
+  opacity: $op-20;
 }
 .nthrive-main-menu {
   width: 100%;
@@ -1281,10 +1281,10 @@ li.mb-first:overlay {
   color: $color-5e6977;
   cursor: default;
   right: -1px;
-  line-height: normal;
+  line-height: $lh-normal;
   margin: 0;
   max-height: 0;
-  opacity: 0;
+  opacity: $op-0;
   overflow: hidden;
   padding: 0;
   position: absolute;
@@ -1293,7 +1293,7 @@ li.mb-first:overlay {
   visibility: hidden;
 }
 .menu-panel-group ul p {
-  font-size: 13px;
+  font-size: $font-13px;
   margin-left: 42px;
   margin-top: -15px;
   color: $color-86939e;
@@ -1321,7 +1321,7 @@ li.mb-first:overlay {
   padding: 6px 10px 6px 5px;
   text-indent: 0;
   width: auto;
-  line-height: 1.2em !important;
+  line-height: $lh-1_2em !important;
   margin-left: 35px;
   list-style-position: outside;
   list-style-type: disc;
@@ -1344,8 +1344,8 @@ li.mb-first:overlay {
 }
 .nav-top-level > a {
   display: block;
-  text-decoration: none;
-  font-weight: 500;
+  text-decoration: $text-decoration-none;
+  font-weight: $font-500;
   padding: 0 20px;
   color: $color-ffffff;
   text-shadow: 0 0 2px rgba(0, 0, 0, 1);
@@ -1353,14 +1353,14 @@ li.mb-first:overlay {
 .nav-top-level {
   margin: 0;
   padding-right: 0;
-  font-size: 13px;
+  font-size: $font-13px;
   font-style: normal;
-  text-decoration: none;
-  line-height: 4.5;
+  text-decoration: $text-decoration-none;
+  line-height: $lh-4_5;
   position: initial !important;
 }
 body .panel-wrap li {
-  line-height: 3 !important;
+  line-height: $lh-3 !important;
   display: block;
   float: none;
 }
@@ -1372,16 +1372,16 @@ body .panel-wrap li {
   border-bottom: 9px solid $color-f2f2f2;
   margin: 0 auto;
   bottom: 0.4em;
-  text-align: center;
+  text-align: $text-center;
   position: relative;
   z-index: 1000;
   display: none;
-  opacity: 0;
+  opacity: $op-0;
   visibility: hidden;
 }
 a.open + .navarrow {
   display: block;
-  opacity: 1;
+  opacity: $op-100;
   visibility: visible;
 }
 .nthrive-main-menu {
@@ -1392,7 +1392,7 @@ a.open + .navarrow {
 }
 .menu-panel.open {
   max-height: 680px;
-  opacity: 1;
+  opacity: $op-100;
   top: 3.3em;
   visibility: visible;
   z-index: 1001;
@@ -1401,7 +1401,7 @@ a.open + .navarrow {
   padding: 6px 10px 6px 5px;
   text-indent: 0;
   width: auto;
-  line-height: 1.2em !important;
+  line-height: $lh-1_2em !important;
   margin-left: 35px;
   list-style-position: outside;
   list-style-type: disc;
@@ -1410,22 +1410,22 @@ a.open + .navarrow {
 .menu-panel a {
   color: $color-454545;
   display: block;
-  font-size: 1.05em;
-  font-weight: 400;
-  line-height: 1.25;
+  font-size: $font-1_05em;
+  font-weight: $font-400;
+  line-height: $lh-1_25;
   margin: 0.35em 0;
-  text-decoration: none;
+  text-decoration: $text-decoration-none;
 }
 .menu-panel a:hover,
 .menu-panel a:focus {
   color: $color-b0246f;
-  text-decoration: none;
+  text-decoration: $text-decoration-none;
 }
 .menu-panel-group > a {
   color: $color-441a63;
-  font-size: 1.05em;
-  font-weight: 600;
-  line-height: 1.2em !important;
+  font-size: $font-1_05em;
+  font-weight: $font-600;
+  line-height: $lh-1_2em !important;
   margin-bottom: 6px;
   padding: 4px 10px;
   display: block;
