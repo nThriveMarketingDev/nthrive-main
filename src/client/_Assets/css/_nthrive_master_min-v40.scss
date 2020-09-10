@@ -5746,6 +5746,44 @@ iframe[name="google_conversion_frame"] {
   content: "\eaca";
 }
 
+@font-face {
+    font-family: 'right-circle-arrow';
+    src: url('../fonts/right-circle-arrow.eot?y3uavy');
+    src: url('../fonts/right-circle-arrow.eot?y3uavy#iefix') format('embedded-opentype'), url('../fonts/right-circle-arrow.ttf?y3uavy') format('truetype'), url('../fonts/right-circle-arrow.woff?y3uavy') format('woff'), url('../fonts/right-circle-arrow.svg?y3uavy#right-circle-arrow') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+.right-circle-arrow {
+    font-family: 'right-circle-arrow' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.right-circle-arrow.svg:before,
+.right-circle-arrow:before,
+.right-circle-arrow:after {
+    font-family: arrow-left-l !important;
+    content: "\e1000";
+}
+
+.right-circle-arrow .path1:before {
+    content: "\a1000";
+    opacity: 0.2;
+}
+
+.right-circle-arrow .path2:before {
+    content: "\a1001";
+    margin-left: -1em;
+}
+
 .small-share {
   position: absolute;
   bottom: 0;
