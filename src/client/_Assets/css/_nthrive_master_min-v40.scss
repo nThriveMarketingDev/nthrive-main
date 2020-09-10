@@ -5767,13 +5767,6 @@ iframe[name="google_conversion_frame"] {
     -moz-osx-font-smoothing: grayscale;
 }
 
-.right-circle-arrow.svg:before,
-.right-circle-arrow:before,
-.right-circle-arrow:after {
-    font-family: arrow-left-l !important;
-    content: "\e1000";
-}
-
 .right-circle-arrow .path1:before {
     content: "\a1000";
     opacity: 0.2;
@@ -5781,7 +5774,7 @@ iframe[name="google_conversion_frame"] {
 
 .right-circle-arrow .path2:before {
     content: "\a1001";
-    margin-left: -1em;
+    margin-left: -1.5em;
 }
 
 .small-share {
