@@ -5,18 +5,13 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const OptimizeCssAssetsPlugin = require("optimize-css-assets-webpack-plugin");
 const TerserPlugin = require("terser-webpack-plugin");
 const CopyPlugin = require("copy-webpack-plugin");
+const glob = require("glob");
 
 module.exports = {
   externals: {
     jquery: "jQuery",
   },
-  entry: {
-    main: "./src/client/index.js",
-    contact: "./src/client/contact.js",
-    ptop: "./src/client/ptop.js",
-    hub: "./src/client/hub.js",
-    userforums: "./src/client/userforums.js",
-  },
+  entry: glob.sync("./src/client/*.js"),
   mode: "production",
   output: {
     filename: "_assets/js/nthrive_[name]_bundle.js",
