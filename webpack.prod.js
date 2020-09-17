@@ -11,7 +11,15 @@ module.exports = {
   externals: {
     jquery: "jQuery",
   },
-  entry: glob.sync("./src/client/*.js"),
+  entry: {
+    main: "./src/client/index.js",
+    contact: "./src/client/contact.js",
+    ptop: "./src/client/ptop.js",
+    hub: "./src/client/hub.js",
+    userforums: "./src/client/userforums.js",
+    landing_page: "./src/client/landing_page.js",
+    analytics: "./src/client/analytics.js",
+  },
   mode: "production",
   output: {
     filename: "_assets/js/nthrive_[name]_bundle.js",
@@ -71,6 +79,16 @@ module.exports = {
       template: "./src/client/hub.html",
       filename: "./hub.html",
       chunks: ["hub"],
+    }),
+    new HtmlWebPackPlugin({
+      template: "./src/client/landing_page.html",
+      filename: "./landing_page.html",
+      chunks: ["landing_page"],
+    }),
+    new HtmlWebPackPlugin({
+      template: "./src/client/analytics.html",
+      filename: "./analytics.html",
+      chunks: ["analytics"],
     }),
     new MiniCssExtractPlugin({
       // Options similar to the same options in webpackOptions.output
