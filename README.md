@@ -7,5 +7,5 @@
 ## How to run dev files:
 
 - npm run dev
-- add file name path
+- add file name path to the localhost domain.
   example) Landing page dev url - http://localhost:9000/landing_page.html
