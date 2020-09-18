@@ -4,6 +4,5 @@ getting-started-with-jest/
 coverage/
 .env
 tests/
-webpack.dev.js
 src/server/
 js/form.js
