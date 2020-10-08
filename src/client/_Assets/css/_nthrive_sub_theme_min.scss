@@ -373,7 +373,6 @@ footer a:hover {
     background: -moz-linear-gradient(-45deg, #7043a9 0%, #200255 100%);
     background: -webkit-linear-gradient(-45deg, #7043a9 0%, #200255 100%);
     background: linear-gradient(135deg, #7043a9 0%, #200255 100%);
-    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#7043a9', endColorstr='#200255', GradientType=1)
 }
 
 .bg-gradient-green {
@@ -384,7 +383,6 @@ footer a:hover {
     background: -o-linear-gradient(-45deg, #498b81 0%, #228072 46%, #1a6666 100%);
     background: -ms-linear-gradient(-45deg, #498b81 0%, #228072 46%, #1a6666 100%);
     background: linear-gradient(135deg, #498b81 0%, #228072 46%, #1a6666 100%);
-    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#498b81', endColorstr='#1a6666', GradientType=1)
 }
 
 .bg-gradient-pink {
@@ -392,7 +390,6 @@ footer a:hover {
     background: -moz-linear-gradient(top, #b52465 1%, #90277c 50%, #872981 100%);
     background: -webkit-linear-gradient(top, #b52465 1%, #90277c 50%, #872981 100%);
     background: linear-gradient(to bottom, #b52465 1%, #90277c 50%, #872981 100%);
-    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#b52465', endColorstr='#872981', GradientType=0)
 }
 
 .map-overlay {
@@ -653,7 +650,7 @@ a.button-box:hover {
     padding: 0 14px
 }
 
-.#menu dropdown-menu a:hover {
+#menu dropdown-menu a:hover {
     color: #7B214C !important
 }
 
