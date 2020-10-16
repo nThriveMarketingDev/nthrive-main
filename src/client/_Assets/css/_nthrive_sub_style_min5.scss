@@ -748,22 +748,22 @@ a.anchor {
 
 .logo-image.responsive-image {
     width: auto;
-    padding: 20px 0
+    padding: 5px 0;
+    height: 40px;
 }
 
 .sticky header .logo-image.responsive-image, header.bg-purple .logo-image.responsive-image {
     width: auto;
-    padding: 13px 0
+    padding: 5px 0;
+    height: 40px;
 }
 
 .logo-image, .nthrive-main-nav a {
     display: block;
-    line-height: 6
 }
 
 .sticky header .nthrive-main-nav a, header.bg-purple .nthrive-main-nav a {
     display: block;
-    line-height: 5
 }
 
 .l-show-for-large-view, .l-show-for-large-view a {
@@ -5097,14 +5097,6 @@ ul.main-nav li {
     zoom: 1
 }
 
-ul.main-nav a:hover {
-    color: #000
-}
-
-ul.main-nav a:active {
-    color: orange
-}
-
 ul.main-nav li a {
     display: block
 }
@@ -6439,6 +6431,10 @@ body .still-image img.desktop-landscape {
 }
 
 @media only screen and (max-width:840px) {
+    #nav-wrap .nth-list {
+        top: 50px;
+    }
+
     .th-dots {
         cursor: pointer;
         padding: 0 4px
@@ -8112,11 +8108,6 @@ body .still-image img.desktop-landscape {
 
     .logo {
         width: 120px
-    }
-
-    .logo-image.responsive-image {
-        padding: 10px 0;
-        width: 100%
     }
 
     .th-dots {
