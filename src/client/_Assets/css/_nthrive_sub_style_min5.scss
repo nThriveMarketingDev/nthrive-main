@@ -2,7 +2,7 @@
 @import "fonts";
 
 html {
-    font-size: 100%;
+    font-size: $font-100pc;
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%
 }
@@ -10,7 +10,7 @@ html {
 body {
     margin: 0;
     padding: 0;
-    font-family: Roboto,sans-serif
+    font-family: $font-roboto
 }
 
 article, aside, details, figcaption, figure, footer, header, main, menu, nav, section, summary {
@@ -45,41 +45,41 @@ a:active, a:hover {
 
 abbr[title] {
     border-bottom: none;
-    text-decoration: underline;
-    text-decoration: underline dotted
+    text-decoration: $text-underline;
+    text-decoration: $text-underline dotted
 }
 
 b, strong {
-    font-weight: inherit;
+    font-weight: $font-inherit;
     display: inline-block
 }
 
 b, strong {
-    font-weight: bolder
+    font-weight: $font-bolder
 }
 
 dfn {
-    font-style: italic
+    font-style: $font-italic
 }
 
 h1 {
-    font-size: 2em;
+    font-size: $font-2em;
     margin: .67em 0;
-    font-family: Roboto,sans-serif
+    font-family: $font-roboto
 }
 
 mark {
-    background-color: #ff0;
-    color: #000
+    background-color: $color-ff0ff0;
+    color: $color-000000
 }
 
 small {
-    font-size: 80%
+    font-size: $font-80pc
 }
 
 sub, sup {
-    font-size: 50%;
-    line-height: 0;
+    font-size: $font-50pc;
+    line-height: $lh-0;
     position: relative;
     vertical-align: baseline
 }
@@ -102,15 +102,15 @@ svg:not(:root) {
 }
 
 address, caption, code, figcaption, kbd, pre, samp, th {
-    font-size: 1em;
-    font-weight: 400;
-    font-style: normal
+    font-size: $font-1em;
+    font-weight: $font-400;
+    font-style: $font-normal
 }
 
 abbr, blockquote, button, dd, dl, dt, fieldset, figure, form, h1, h2, h3, h4, h5, h6, hgroup, input, legend, li, ol, p, pre, ul {
     margin: 0;
     padding: 0;
-    font-family: Roboto,sans-serif
+    font-family: $font-roboto
 }
 
 dl, menu, ol, ul {
@@ -122,7 +122,7 @@ fieldset, iframe, img {
 }
 
 caption, th {
-    text-align: left
+    text-align: $text-left
 }
 
 table {
@@ -143,7 +143,7 @@ button, input, select, textarea {
 }
 
 optgroup {
-    font-weight: 700
+    font-weight: $font-700
 }
 
 button, input {
@@ -151,7 +151,7 @@ button, input {
 }
 
 button, select {
-    text-transform: none
+    text-transform: $text-transform-none
 }
 
 [type=reset], [type=submit], button, html [type=button] {
@@ -207,7 +207,7 @@ textarea {
 
 ::-webkit-input-placeholder {
     color: inherit;
-    opacity: .54
+    opacity: $op-54
 }
 
 ::-webkit-file-upload-button {
@@ -228,7 +228,7 @@ textarea {
 }
 
 .mobile-sub-menu .sub-menu {
-    background: #441a63 !important
+    background: $color-441a63 !important
 }
 
 .mobile-sub-menu .nav-dropdown .uparrow {
@@ -240,8 +240,8 @@ textarea {
 }
 
 .elt-content .date-format a {
-    text-decoration: none;
-    color: #86939e
+    text-decoration: $text-decoration-none;
+    color: $color-86939e
 }
 
 .elt-content .date-format li {
@@ -262,8 +262,8 @@ textarea {
 }
 
 .elt-content .date-format a {
-    text-decoration: none;
-    color: #86939e
+    text-decoration: $text-decoration-none;
+    color: $color-86939e
 }
 
 .elt-content .date-format li {
@@ -286,15 +286,15 @@ textarea {
 .dates p {
     padding: 0;
     margin: 0 0 5px 0 !important;
-    text-transform: uppercase
+    text-transform: $text-transform-uppercase
 }
 
 .date-format {
-    border-bottom: 1px solid #dedede
+    border-bottom: 1px solid $color-dedede
 }
 
 .date-format-wrap {
-    border: 1px solid #dedede
+    border: 1px solid $color-dedede
 }
 
 .date-format-wrap > ul:last-child {
@@ -304,14 +304,14 @@ textarea {
 .right .date-wrap p {
     margin: 0 !important;
     padding: 0 !important;
-    line-height: 1.4
+    line-height: $lh-1_4
 }
 
 h3.date-header {
-    line-height: 40px;
-    background: #dedede;
+    line-height: $lh-40px;
+    background: $color-dedede;
     padding: 5px;
-    font-size: 24px
+    font-size: $font-24px
 }
 
 .date-format {
@@ -351,11 +351,11 @@ h3.date-header {
     top: 80px;
     width: auto;
     padding: 30px;
-    background: #fff;
-    color: #333;
-    font-size: 19px;
-    line-height: 30px;
-    border: 3px solid #8e2b5a;
+    background: $color-ffffff;
+    color: $color-333333;
+    font-size: $font-19px;
+    line-height: $lh-30px;
+    border: 3px solid $color-8e2b5a;
     z-index: 9999999;
     -webkit-border-radius: 5px 5px 5px 5px;
     border-radius: 5px 5px 5px 5px
@@ -366,8 +366,8 @@ h3.date-header {
 }
 
 .contact-form.solutions-wrap > .bg-ffffff {
-    border: 1px solid #d4dbe2;
-    border-top: 8px solid #d4dbe2
+    border: 1px solid $color-d4dbe2;
+    border-top: 8px solid $color-d4dbe2
 }
 
 .bg-eceff2 .contact-form.solutions-wrap > .bg-ffffff {
@@ -416,7 +416,7 @@ h3.date-header {
 }
 
 .l-align-center {
-    text-align: center;
+    text-align: $text-center;
     margin: 0 auto
 }
 
@@ -571,7 +571,7 @@ figure.l-content-width img {
 }
 
 .outer-wrap {
-    background: #f6f6f6;
+    background: $color-f6f6f6;
     width: 100%;
     height: auto;
     position: relative
@@ -604,13 +604,13 @@ ul.bullets li, ul.content-list li {
 
 ul.bullets li, ul.content-list li {
     margin-bottom: .7em;
-    line-height: 1.4em
+    line-height: $lh-1_4em
 }
 
 ol.numbers {
     list-style-type: decimal;
-    line-height: 18px;
-    font-size: 14px;
+    line-height: $lh-18px;
+    font-size: $font-14px;
     margin-bottom: 20px;
     padding: 0 0 0 25px
 }
@@ -654,15 +654,15 @@ a.anchor {
 }
 
 .text-right {
-    text-align: right
+    text-align: $text-right
 }
 
 .text-left {
-    text-align: left
+    text-align: $text-left
 }
 
 .text-center {
-    text-align: center
+    text-align: $text-center
 }
 
 .space-30px {
@@ -673,11 +673,11 @@ a.anchor {
 }
 
 .l-content-width a, .l-content-width a:active, .l-content-width a:visited {
-    color: #7b214c
+    color: $color-7b214c
 }
 
 .l-content-width a.text-ffffff, .l-content-width a.text-ffffff:hover {
-    color: #fff
+    color: $color-ffffff
 }
 
 .w-auto {
@@ -767,9 +767,9 @@ a.anchor {
 }
 
 .l-show-for-large-view, .l-show-for-large-view a {
-    font-size: 13px;
-    color: #86939e;
-    text-decoration: none
+    font-size: $font-13px;
+    color: $color-86939e;
+    text-decoration: $text-decoration-none
 }
 
 .main-nav, .main-nav ul {
@@ -783,10 +783,10 @@ a.anchor {
 #large-view-nav li {
     margin: 0;
     padding-right: 0;
-    font-size: 13px;
-    font-style: normal;
-    text-decoration: none;
-    line-height: 4.5
+    font-size: $font-13px;
+    font-style: $font-normal;
+    text-decoration: $text-decoration-none;
+    line-height: $lh-4_5
 }
 
 #large-view-nav li.rm0 {
@@ -799,12 +799,12 @@ a.anchor {
 
 #menu a, #nav a {
     display: block;
-    text-decoration: none;
-    font-weight: 500
+    text-decoration: $text-decoration-none;
+    font-weight: $font-500
 }
 
 #menu .button-dropdown > a {
-    color: #fff
+    color: $color-ffffff
 }
 
 .mobile-nav {
@@ -843,18 +843,18 @@ a.anchor {
 }
 
 .right-nav li {
-    line-height: 5
+    line-height: $lh-5
 }
 
 #menu a, #nav a {
     display: block;
-    text-decoration: none;
-    font-weight: 500;
+    text-decoration: $text-decoration-none;
+    font-weight: $font-500;
     padding: 0 20px
 }
 
 #sticky-nav a {
-    font-size: 13px
+    font-size: $font-13px
 }
 
 #menu .menu-hover, #nav .menu-hover {
@@ -886,13 +886,13 @@ a.anchor {
 }
 
 #menu ul li a, #nav ul li a {
-    line-height: 15px
+    line-height: $lh-15px
 }
 
 #menu ul a, #nav ul a {
     padding: 15px 30px;
     margin: 0;
-    font-size: 14px
+    font-size: $font-14px
 }
 
 .footer-sns span {
@@ -924,7 +924,7 @@ a.anchor {
     z-index: 99999999;
     transition: top .2s ease-in-out;
     height: 65px;
-    opacity: .9
+    opacity: $op-90
 }
 
 .logo-small {
@@ -972,18 +972,18 @@ body #sticky-nav .right-nav li.rm0 {
 }
 
 .right-nav li {
-    line-height: 5
+    line-height: $lh-5
 }
 
 #nav a {
     display: block;
-    text-decoration: none;
-    text-transform: capitalize;
-    font-weight: 500
+    text-decoration: $text-decoration-none;
+    text-transform: $text-transform-capitalize;
+    font-weight: $font-500
 }
 
 #sticky-nav a {
-    font-size: 13px
+    font-size: $font-13px
 }
 
 #menu .menu-hover, #nav .menu-hover {
@@ -994,26 +994,26 @@ body #sticky-nav .right-nav li.rm0 {
 }
 
 #menu .nav-top-level > a {
-    color: #fff !important
+    color: $color-ffffff !important
 }
 
 #menu .dropdown-menu .first-sub, #menu .dropdown-menu a {
-    color: #86939e
+    color: $color-86939e
 }
 
 #nav ul, .nav-filter ul li#info ul {
-    background: #f2f2f2 !important
+    background: $color-f2f2f2 !important
 }
 
 #nav ul, .nav-filter ul li#info ul {
-    background: #fff;
+    background: $color-ffffff;
     list-style: none;
     position: absolute;
     left: -9999px
 }
 
 #nav ul {
-    background: #fff;
+    background: $color-ffffff;
     background: rgba(255,255,255,0);
     list-style: none;
     position: absolute;
@@ -1026,7 +1026,7 @@ body #sticky-nav .right-nav li.rm0 {
 }
 
 #menu li ul li, #sticky-nav .right-nav li ul li {
-    line-height: 1 !important;
+    line-height: $lh-1 !important;
     padding: 0;
     margin: 0;
     display: block
@@ -1050,18 +1050,18 @@ body #sticky-nav .right-nav li {
 }
 
 #nav ul li a {
-    line-height: 15px
+    line-height: $lh-15px
 }
 
 #menu ul a, #nav ul a, .nav-filter #info ul a {
-    color: #515356 !important
+    color: $color-515356 !important
 }
 
 #nav ul a {
     white-space: nowrap;
     padding: 15px 30px;
     margin: 0;
-    font-size: 14px
+    font-size: $font-14px
 }
 
 .footer-sns {
@@ -1127,14 +1127,14 @@ body #sticky-nav .right-nav li {
 
 #line-menus-d, #line-menus-m, #line-menus-s, #show-mobile-menu, .line-menus {
     border: 0;
-    color: #fff;
+    color: $color-ffffff;
     cursor: pointer;
     display: block;
-    font-size: 13px !important;
+    font-size: $font-13px !important;
     padding: 10px 5px;
     position: absolute;
     right: 1%;
-    text-align: center;
+    text-align: $text-center;
     top: .1em;
     width: 50px;
     background: 0 0;
@@ -1142,7 +1142,7 @@ body #sticky-nav .right-nav li {
 }
 
 .three-lines .line {
-    background: #fff none repeat scroll 0 0 !important;
+    background: $color-ffffff none repeat scroll 0 0 !important;
     height: 1px !important;
     margin-bottom: 6px !important;
     width: 100% !important
@@ -1295,8 +1295,8 @@ body #sticky-nav .right-nav li {
 }
 
 li.mb-first:overlay {
-    background: #000;
-    opacity: .2
+    background: $color-000000;
+    opacity: $op-20
 }
 
 li.hbsslider-slide {
@@ -1312,11 +1312,11 @@ li.hbsslider-slide {
     border-radius: 3px 3px 2px 2px;
     -webkit-box-shadow: 0 0 2px 0 rgba(0,0,0,.1);
     box-shadow: 0 0 2px 0 rgba(0,0,0,.1);
-    background: #fff
+    background: $color-ffffff
 }
 
 .search-bar {
-    background: #eef1f3
+    background: $color-eef1f3
 }
 
 .mobile-hide {
@@ -1337,11 +1337,11 @@ select::-ms-expand {
 
 .footer-nav-wrap {
     margin-top: 77px;
-    border-bottom: 1px solid #6c5498
+    border-bottom: 1px solid $color-6c5498
 }
 
 .credit-text-wrap {
-    line-height: 4;
+    line-height: $lh-4;
     height: 80px
 }
 
@@ -1363,10 +1363,10 @@ select::-ms-expand {
 }
 
 .content-block-wrap {
-    font-size: 14px;
-    line-height: 24px;
-    font-weight: 400;
-    color: #86939e
+    font-size: $font-14px;
+    line-height: $lh-24px;
+    font-weight: $font-400;
+    color: $color-86939e
 }
 
 .news-list {
@@ -1400,23 +1400,23 @@ select::-ms-expand {
 }
 
 .image-caption1 {
-    font-weight: 300;
-    line-height: 14px;
-    font-size: 12px;
+    font-weight: $font-300;
+    line-height: $lh-14px;
+    font-size: $font-12px;
     padding-top: 5px;
-    color: #662d91
+    color: $color-662d91
 }
 
 .image-caption2 {
-    font-weight: 300;
-    line-height: 14px;
-    font-size: 12px;
+    font-weight: $font-300;
+    line-height: $lh-14px;
+    font-size: $font-12px;
     padding-top: 5px;
-    color: #662d91
+    color: $color-662d91
 }
 
 .navbar .dropdown-menu > li > a.maintainHover {
-    color: #fff
+    color: $color-ffffff
 }
 
 .navbar .popover {
@@ -1429,24 +1429,24 @@ select::-ms-expand {
 }
 
 h3.popover-title {
-    font-size: 15px;
-    letter-spacing: .1px;
-    font-weight: 500;
-    color: #374252;
+    font-size: $font-15px;
+    letter-spacing: $ls-00_1px;
+    font-weight: $font-500;
+    color: $color-374252;
     padding: 15px 30px 16px 30px;
-    border-bottom: 1px solid #cdcdcd;
-    line-height: 29px
+    border-bottom: 1px solid $color-cdcdcd;
+    line-height: $lh-29px
 }
 
 h3.popover-title span {
-    font-size: 10px;
-    letter-spacing: .1px;
-    font-weight: 500;
-    color: #374252
+    font-size: $font-10px;
+    letter-spacing: $ls-00_1px;
+    font-weight: $font-500;
+    color: $color-374252
 }
 
 #menu li:hover h3.popover-title {
-    color: #374252 !important
+    color: $color-374252 !important
 }
 
 .popover {
@@ -1459,32 +1459,32 @@ h3.popover-title span {
     min-width: 534px;
     height: 350px;
     padding: 1px;
-    text-align: left;
+    text-align: $text-left;
     white-space: normal;
-    background-color: #f6f6f6;
+    background-color: $color-f6f6f6;
     -webkit-background-clip: padding-box;
     -moz-background-clip: padding;
     background-clip: padding-box
 }
 
 .submenu-list a {
-    color: #5e6977;
+    color: $color-5e6977;
     cursor: pointer
 }
 
 #menu .submenu-list a span.submenu-desc {
     display: block;
-    font-size: 11px;
-    color: #a2acb4;
-    text-decoration: none !important
+    font-size: $font-11px;
+    color: $color-a2acb4;
+    text-decoration: $text-decoration-none !important
 }
 
 body #menu .submenu-desc {
-    text-decoration: none !important
+    text-decoration: $text-decoration-none !important
 }
 
 #menu .submenu-list a:hover span.submenu-title {
-    text-decoration: underline
+    text-decoration: $text-underline
 }
 
 .dropdown-menu > li > a:after {
@@ -1540,7 +1540,7 @@ body #menu .submenu-desc {
 }
 
 body #menu .button-dropdown .dropdown-menu a:hover, body .dropdown-menu a p:hover, body .dropdown-menu a:hover p, body .dropdown-menu div:hover {
-    color: #7b214c !important
+    color: $color-7b214c !important
 }
 
 .nthrive-main-menu ul {
@@ -1558,7 +1558,7 @@ body #menu .button-dropdown .dropdown-menu a:hover, body .dropdown-menu a p:hove
 }
 
 .nthrive-main-menu > ul > li.cbp-hroepn a, .nthrive-main-menu > ul > li.nthrive-menu-open > a:hover {
-    color: #fff
+    color: $color-ffffff
 }
 
 .l-inline-list .dropdown-menu li {
@@ -1595,7 +1595,7 @@ body #menu .button-dropdown .dropdown-menu a:hover, body .dropdown-menu a p:hove
     padding: 5px 0;
     margin: 2px 0 0;
     list-style: none;
-    background-color: #fff;
+    background-color: $color-ffffff;
     -webkit-background-clip: padding-box;
     -moz-background-clip: padding;
     background-clip: padding-box
@@ -1603,12 +1603,12 @@ body #menu .button-dropdown .dropdown-menu a:hover, body .dropdown-menu a p:hove
 
 .dropdown-menu.narrow {
     width: 534px;
-    background-color: #f6f6f6;
+    background-color: $color-f6f6f6;
     background-image: none !important
 }
 
 .dropdown-menu li .popover {
-    background: #f6f6f6
+    background: $color-f6f6f6
 }
 
 .nthrive-main-menu .cbp-hroepn .dropdown-menu {
@@ -1622,12 +1622,12 @@ body #menu .button-dropdown .dropdown-menu a:hover, body .dropdown-menu a p:hove
     width: 100%;
     height: 100%;
     display: none;
-    background-color: #000;
+    background-color: $color-000000;
     -ms-filter: opacity(.6);
-    -webkit-opacity: .6;
-    -moz-opacity: .6;
-    -o-opacity: .6;
-    opacity: .6;
+    -webkit-opacity: $op-60;
+    -moz-opacity: $op-60;
+    -o-opacity: $op-60;
+    opacity: $op-60;
     -webkit-transform: translate3d(0,0,0);
     -moz-transform: translate3d(0,0,0);
     -ms-transform: translate3d(0,0,0);
@@ -1647,7 +1647,7 @@ body #menu .button-dropdown .dropdown-menu a:hover, body .dropdown-menu a p:hove
 }
 
 body #menu > li > a:hover {
-    color: #2da48f !important
+    color: $color-2da48f !important
 }
 
 .nthrive-main-menu .nthrive-menusub {
@@ -1679,28 +1679,28 @@ body #menu > li > a:hover {
 }
 
 .nthrive-main-menu .nthrive-menusub-inner > div a {
-    line-height: 1.5em
+    line-height: $lh-1_5em
 }
 
 .nthrive-menusub h4 {
-    color: #afdefa;
+    color: $color-afdefa;
     padding: 1em 0 .6em;
     margin: 0;
-    font-size: 130%;
-    font-weight: 300
+    font-size: $font-130pc;
+    font-weight: $font-300
 }
 
 .dropdown-menu h2 {
-    font-family: Roboto;
-    font-weight: 600;
-    font-size: 15px;
-    color: #374252;
-    letter-spacing: .1px;
+    font-family: $font-roboto;
+    font-weight: $font-600;
+    font-size: $font-15px;
+    color: $color-374252;
+    letter-spacing: $ls-00_1px;
     padding: 12px 30px
 }
 
 .dropdown-menu > li {
-    border-bottom: 1px solid #d1dee9
+    border-bottom: 1px solid $color-d1dee9
 }
 
 .dropdown-menu > li:last-child {
@@ -1708,7 +1708,7 @@ body #menu > li > a:hover {
 }
 
 #menu li:hover .dropdown-menu h2 {
-    color: #374252 !important
+    color: $color-374252 !important
 }
 
 .dropdown-menu {
@@ -1720,16 +1720,16 @@ body #menu > li > a:hover {
     padding: 0;
     margin: 0;
     margin-top: 3px;
-    text-align: left;
+    text-align: $text-left;
     width: 774px;
-    background: #f6f6f6 url(../images/navigation/bg-white.jpg) repeat-y top left;
+    background: $color-f6f6f6 url(../images/navigation/bg-white.jpg) repeat-y top left;
     -webkit-border-radius: 2px 2px;
     border-radius: 2px 2px;
     -webkit-background-clip: padding-box;
     -moz-background-clip: padding;
     background-clip: padding-box;
     min-height: 300px;
-    border: 1px solid #f2f2f2;
+    border: 1px solid $color-f2f2f2;
     -webkit-box-shadow: 0 1px 2px 0 rgba(0,0,0,.1);
     box-shadow: 0 1px 2px 0 rgba(0,0,0,.1)
 }
@@ -1743,20 +1743,20 @@ body #menu > li > a:hover {
     height: 0;
     border-left: 9px solid transparent;
     border-right: 9px solid transparent;
-    border-bottom: 9px solid #f2f2f2;
+    border-bottom: 9px solid $color-f2f2f2;
     margin: -16px 0 0 28px
 }
 
 .dropdown-menu div.first-sub {
     padding: 15px 30px;
     margin: 0;
-    font-size: 14px
+    font-size: $font-14px
 }
 
 .dropdown-menu .submenu-change-default > div.second-sub, .dropdown-menu .submenu-change > div.second-sub {
     padding: 15px 30px 0 30px;
     margin: 0;
-    font-size: 14px
+    font-size: $font-14px
 }
 
 .dropdown-menu .submenu-change > div.second-sub:last-child {
@@ -1768,20 +1768,20 @@ body #menu > li > a:hover {
 }
 
 .dropdown-menu div.first-sub a {
-    text-transform: capitalize !important;
-    font-weight: 500;
-    text-decoration: none;
-    font-size: 14px
+    text-transform: $text-transform-capitalize !important;
+    font-weight: $font-500;
+    text-decoration: $text-decoration-none;
+    font-size: $font-14px
 }
 
 .dropdown-menu a, .sticky header .nthrive-main-nav .dropdown-menu a, header.bg-purple .nthrive-main-nav .dropdown-menu a {
     width: auto !important;
     display: block;
-    line-height: 15px
+    line-height: $lh-15px
 }
 
 .dropdown-menu div.first-sub {
-    border-bottom: 1px solid #d1dee9
+    border-bottom: 1px solid $color-d1dee9
 }
 
 .dropdown-menu.active {
@@ -1790,7 +1790,7 @@ body #menu > li > a:hover {
 
 .dropdown-menu .second-sub-wrap {
     margin: 0;
-    font-size: 14px;
+    font-size: $font-14px;
     width: 170px
 }
 
@@ -1799,13 +1799,13 @@ body #menu > li > a:hover {
 }
 
 h2.menu-title, h3.submenu-title {
-    font-size: 15px;
-    letter-spacing: .1px;
-    font-weight: 500;
-    color: #374252;
+    font-size: $font-15px;
+    letter-spacing: $ls-00_1px;
+    font-weight: $font-500;
+    color: $color-374252;
     padding: 15px 30px 16px 30px;
-    border-bottom: 1px solid #cdcdcd;
-    line-height: 29px
+    border-bottom: 1px solid $color-cdcdcd;
+    line-height: $lh-29px
 }
 
 div.left-column-wrap, div.right-column-wrap {
@@ -1818,7 +1818,7 @@ div.left-column-wrap {
     width: 240px;
     left: 0;
     top: 0;
-    background: #fff
+    background: $color-ffffff
 }
 
 div.right-column-wrap {
@@ -1837,22 +1837,22 @@ div.right-column-wrap p {
 
 .menu-description-wrap {
     padding: 30px;
-    line-height: 22px;
-    font-size: 14px;
+    line-height: $lh-22px;
+    font-size: $font-14px;
     max-width: 310px
 }
 
 p.submenu-title {
-    font-size: 14px;
-    color: #5e6977;
-    font-weight: 500
+    font-size: $font-14px;
+    color: $color-5e6977;
+    font-weight: $font-500
 }
 
 p.submenu-desc {
-    font-size: 11px;
-    color: #86939e;
-    font-weight: 400;
-    letter-spacing: .1
+    font-size: $font-11px;
+    color: $color-86939e;
+    font-weight: $font-400;
+    letter-spacing: $ls-00_1px
 }
 
 #menu .dropdown-menu a {
@@ -1905,8 +1905,8 @@ body .right-column-wrap .submenu-change-default.hide-default {
 }
 
 body {
-    background: #e5e5e4;
-    font-family: Roboto,sans-serif
+    background: $color-e5e5e4;
+    font-family: $font-roboto
 }
 
 .wrapper {
@@ -1914,7 +1914,7 @@ body {
 }
 
 .container {
-    width: 1070;
+    width: 1070px;
     margin: 0 auto
 }
 
@@ -1940,7 +1940,7 @@ header {
 }
 
 .sticky header {
-    background: #441a63
+    background: $color-441a63
 }
 
 .fix-header {
@@ -1954,19 +1954,19 @@ header {
 }
 
 .menunav ul li {
-    font-size: 13px;
-    font-style: normal;
-    line-height: 4.5;
+    font-size: $font-13px;
+    font-style: $font-normal;
+    line-height: $lh-4_5;
     margin: 0;
     padding-right: 0;
-    text-decoration: none
+    text-decoration: $text-decoration-none
 }
 
 .menunav a {
-    color: #fff;
+    color: $color-ffffff;
     display: block;
-    font-weight: 500;
-    text-decoration: none
+    font-weight: $font-500;
+    text-decoration: $text-decoration-none
 }
 
 .main-nav {
@@ -1976,7 +1976,7 @@ header {
 
 .th-dots {
     float: left;
-    line-height: 6;
+    line-height: $lh-6;
     margin-left: 0;
     position: relative;
     top: 3px
@@ -1994,19 +1994,19 @@ span.arrow {
 }
 
 #mobile-main-menu > li > a > span.arrow {
-    background: #441a63 url(../images/icon/selectarrow.png) no-repeat 92% center
+    background: $color-441a63 url(../images/icon/selectarrow.png) no-repeat 92% center
 }
 
 #mobile-main-menu > li.open > a > span.arrow {
-    background: #441a63 url(../images/icon/selectarrow-up.png) no-repeat 92% center
+    background: $color-441a63 url(../images/icon/selectarrow-up.png) no-repeat 92% center
 }
 
 .mobile-sub-menu > li > a > span.arrow {
-    background: #441a63 url(../images/icon/selectarrow.png) no-repeat 92% center
+    background: $color-441a63 url(../images/icon/selectarrow.png) no-repeat 92% center
 }
 
 .mobile-sub-menu > li.open-sub > a > span.arrow {
-    background: #441a63 url(../images/icon/selectarrow-up.png) no-repeat 92% center
+    background: $color-441a63 url(../images/icon/selectarrow-up.png) no-repeat 92% center
 }
 
 #mobile-nav-lines {
@@ -2058,7 +2058,7 @@ span.arrow {
     display: inline-block;
     width: 6px;
     height: 6px;
-    background: #ababaa;
+    background: $color-ababaa;
     border-radius: 50%;
     margin-left: 4px
 }
@@ -2146,10 +2146,10 @@ span.arrow {
 
 .search-button-wrap {
     display: inline-block;
-    background: #fff;
+    background: $color-ffffff;
     border: 0;
     height: 35px;
-    background: #fff;
+    background: $color-ffffff;
     -webkit-border-radius: 0 2px 2px 0;
     border-radius: 0 2px 2px 0;
     float: left;
@@ -2176,24 +2176,24 @@ span.arrow {
 }
 
 .slider-title {
-    color: #fff !important;
-    font-size: 36px;
-    font-family: Roboto,sans-serif;
-    font-weight: 300;
-    line-height: normal;
+    color: $color-ffffff !important;
+    font-size: $font-36px;
+    font-family: $font-roboto;
+    font-weight: $font-300;
+    line-height: $lh-normal;
     float: none
 }
 
 .slider-title:hover {
-    color: #fff !important
+    color: $color-ffffff !important
 }
 
 .slider-title h1 {
-    line-height: 48px
+    line-height: $lh-48px
 }
 
 .slider-title:hover {
-    color: #fff !important
+    color: $color-ffffff !important
 }
 
 .home-slider .backbgbox {
@@ -2214,25 +2214,25 @@ span.arrow {
     width: 80.68%;
     float: left;
     height: 35px;
-    background: #fff;
+    background: $color-ffffff;
     border: none;
     -webkit-border-radius: 2px 0 0 2px;
     border-radius: 2px 0 0 2px;
     box-shadow: none;
     -webkit-appearance: none;
     outline: 0 !important;
-    color: #c2c9ce;
-    font-size: 14px;
-    font-family: Roboto,sans-serif;
-    font-weight: 400;
-    line-height: 35px;
+    color: $color-c2c9ce;
+    font-size: $font-14px;
+    font-family: $font-roboto;
+    font-weight: $font-400;
+    line-height: $lh-35px;
     padding: 0 0 0 5.66%;
-    letter-spacing: .1px;
+    letter-spacing: $ls-00_1px;
     vertical-align: top
 }
 
 .no-svg .search-button-wrap {
-    background: #fff url(../images/icon/searchicon.png) no-repeat center center
+    background: $color-ffffff url(../images/icon/searchicon.png) no-repeat center center
 }
 
 .slider-title .select-style, .slider-title .std-input {
@@ -2244,23 +2244,23 @@ span.arrow {
 }
 
 ::-webkit-input-placeholder {
-    color: #c2c9ce;
-    opacity: 1
+    color: $color-c2c9ce;
+    opacity: $op-100
 }
 
 :-moz-placeholder {
-    color: #c2c9ce;
-    opacity: 1
+    color: $color-c2c9ce;
+    opacity: $op-100
 }
 
 ::-moz-placeholder {
-    color: #c2c9ce;
-    opacity: 1
+    color: $color-c2c9ce;
+    opacity: $op-100
 }
 
 :-ms-input-placeholder {
-    color: #c2c9ce;
-    opacity: 1
+    color: $color-c2c9ce;
+    opacity: $op-100
 }
 
 .l-site-width-740 {
@@ -2282,10 +2282,10 @@ select.error {
 }
 
 .bg-gradient-teal {
-    background: #0b5761;
-    background: -moz-linear-gradient(left,#0b5761 0,#00364a 100%);
-    background: -webkit-linear-gradient(left,#0b5761 0,#00364a 100%);
-    background: linear-gradient(to right,#0b5761 0,#00364a 100%)
+    background: $color-0b5761;
+    background: -moz-linear-gradient(left,$color-0b5761 0,$color-00364a 100%);
+    background: -webkit-linear-gradient(left,$color-0b5761 0,$color-00364a 100%);
+    background: linear-gradient(to right,$color-0b5761 0,$color-00364a 100%)
 }
 
 .link-arrow {
@@ -2320,20 +2320,20 @@ select.error {
     display: inline-block;
     height: 50px;
     padding: 0 20px;
-    color: #fff !important;
-    font-size: 14px;
-    font-family: Roboto,sans-serif;
-    font-weight: 400;
-    line-height: 50px;
+    color: $color-ffffff !important;
+    font-size: $font-14px;
+    font-family: $font-roboto;
+    font-weight: $font-400;
+    line-height: $lh-50px;
     transition: all .1s ease-in;
-    background: #4a1c6b;
+    background: $color-4a1c6b;
     border: none;
     border-radius: 2px;
     box-shadow: none;
     -webkit-appearance: none;
     outline: 0 !important;
     min-width: 130px;
-    text-align: center;
+    text-align: $text-center;
     cursor: pointer
 }
 
@@ -2342,20 +2342,20 @@ select.error {
 }
 
 .btn:hover {
-    color: #fff !important;
-    background: #5c2b81
+    color: $color-ffffff !important;
+    background: $color-5c2b81
 }
 
 .btn.bg-9e1f63:hover {
-    background: #b0246f
+    background: $color-b0246f
 }
 
 .bg-9e1f63 {
-    background: #9e1f63
+    background: $color-9e1f63
 }
 
 .bg-gradient-purple p {
-    color: #fff
+    color: $color-ffffff
 }
 
 .story-box {
@@ -2377,13 +2377,13 @@ select.error {
 }
 
 .story_content_full_width .story_content {
-    border: 1px solid #e7e7e7;
+    border: 1px solid $color-e7e7e7;
     position: relative;
     padding: 26px
 }
 
 .story .story_content {
-    border: 1px solid #e7e7e7;
+    border: 1px solid $color-e7e7e7;
     position: relative;
     padding: 26px;
     float: left;
@@ -2436,9 +2436,9 @@ select.error {
 }
 
 .story-big .story_content {
-    border: 1px solid #d1dee9;
+    border: 1px solid $color-d1dee9;
     border-radius: 3px;
-    box-shadow: 0 0 2px #d1dee9;
+    box-shadow: 0 0 2px $color-d1dee9;
     float: left
 }
 
@@ -2470,9 +2470,9 @@ select.error {
 
 .read-link {
     display: inline-block;
-    color: #374252;
-    font-size: 14px;
-    font-weight: 500;
+    color: $color-374252;
+    font-size: $font-14px;
+    font-weight: $font-500;
     padding-right: 12px;
     background: url(../images/icon/rightmini.svg) no-repeat right center;
     background-size: 4px 8px
@@ -2503,13 +2503,13 @@ select.error {
 
 .tab-links {
     display: inline-block;
-    border: 1px solid #86939e;
+    border: 1px solid $color-86939e;
     border-radius: 2px
 }
 
 .tab-links li {
     float: left;
-    border-right: 1px solid #86939e
+    border-right: 1px solid $color-86939e
 }
 
 .tab-links li:last-child {
@@ -2519,10 +2519,10 @@ select.error {
 .tab-links a {
     display: block;
     height: 38px;
-    color: #374252;
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 38px;
+    color: $color-374252;
+    font-size: $font-14px;
+    font-weight: $font-500;
+    line-height: $lh-38px;
     padding: 0 20px
 }
 
@@ -2536,23 +2536,23 @@ select.error {
 }
 
 .sub-list {
-    text-align: left
+    text-align: $text-left
 }
 
 .sub-list h4 {
-    color: #374252;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 25px;
+    color: $color-374252;
+    font-size: $font-16px;
+    font-weight: $font-400;
+    line-height: $lh-25px;
     padding-bottom: 10px
 }
 
 .sub-list p {
-    font-size: 14px;
-    font-weight: 400;
-    color: #86939e;
-    letter-spacing: 0;
-    line-height: 24px
+    font-size: $font-14px;
+    font-weight: $font-400;
+    color: $color-86939e;
+    letter-spacing: $ls-0px;
+    line-height: $lh-24px
 }
 
 .l-list-three-col li {
@@ -2571,8 +2571,8 @@ select.error {
 }
 
 .tab-links li.open a {
-    background: #003247;
-    color: #fff
+    background: $color-003247;
+    color: $color-ffffff
 }
 
 .btn-big {
@@ -2584,7 +2584,7 @@ select.error {
 }
 
 .bg-fcfcfd {
-    background: #fcfcfd
+    background: $color-fcfcfd
 }
 
 .left-figure {
@@ -2614,14 +2614,14 @@ select.error {
 }
 
 .right-text-box h2 {
-    color: #475465;
-    font-size: 28px;
-    font-weight: 300
+    color: $color-475465;
+    font-size: $font-28px;
+    font-weight: $font-300
 }
 
 .right-text-box > p {
-    color: #717c8a;
-    line-height: 30px
+    color: $color-717c8a;
+    line-height: $lh-30px
 }
 
 .right-text-box .sub-list li {
@@ -2635,28 +2635,28 @@ select.error {
 }
 
 .right-text-box .read-link {
-    color: #0e5b64
+    color: $color-0e5b64
 }
 
 .bg-eceff2 {
-    background: #eceff2
+    background: $color-eceff2
 }
 
 .nth-service h2 {
-    font-size: 36px
+    font-size: $font-36px
 }
 
 .std-input1 {
     height: 48px;
-    background: #fff;
-    border: 1px solid #d4dbe2;
+    background: $color-ffffff;
+    border: 1px solid $color-d4dbe2;
     border-radius: 2px;
     box-shadow: none;
-    color: #929da7;
-    font-size: 14px;
-    font-family: Roboto,sans-serif;
-    font-weight: 400;
-    line-height: 48px;
+    color: $color-929da7;
+    font-size: $font-14px;
+    font-family: $font-roboto;
+    font-weight: $font-400;
+    line-height: $lh-48px;
     padding: 0 3%;
     width: 94%
 }
@@ -2715,19 +2715,19 @@ select.error {
 }
 
 .nth-service p a {
-    text-decoration: underline
+    text-decoration: $text-underline
 }
 
 .nth-service p a:hover {
-    text-decoration: none
+    text-decoration: $text-decoration-none
 }
 
 .bg-7b214c {
-    background: #7b214c
+    background: $color-7b214c
 }
 
 .btn.bg-7b214c:hover {
-    background: #8e2b5a
+    background: $color-8e2b5a
 }
 
 figure.image-text-left img {
@@ -2741,10 +2741,10 @@ figure.image-text-left.mr-20px {
 }
 
 figcaption p {
-    font-size: 13px;
-    font-weight: 500;
-    color: #86939e;
-    line-height: 18px
+    font-size: $font-13px;
+    font-weight: $font-500;
+    color: $color-86939e;
+    line-height: $lh-18px
 }
 
 .user-pic {
@@ -2781,7 +2781,7 @@ figcaption p {
 }
 
 footer {
-    background: #3b1657;
+    background: $color-3b1657;
     padding-top: 0
 }
 
@@ -2796,32 +2796,32 @@ footer {
 }
 
 .footer-link-header, .footer-links h5 {
-    color: #fff;
-    font-size: 14px;
-    font-weight: 500;
+    color: $color-ffffff;
+    font-size: $font-14px;
+    font-weight: $font-500;
     padding-bottom: 10px;
     margin-bottom: 10px
 }
 
 .footer-links a {
-    color: #aa9eba !important;
-    font-size: 14px;
-    font-weight: 400
+    color: $color-aa9eba !important;
+    font-size: $font-14px;
+    font-weight: $font-400
 }
 
 .footer-links a:hover {
-    color: #fff !important
+    color: $color-ffffff !important
 }
 
 .footer-links li {
     padding-bottom: 12px;
-    color: #aa9eba;
-    font-size: 14px;
-    font-weight: 400
+    color: $color-aa9eba;
+    font-size: $font-14px;
+    font-weight: $font-400
 }
 
 footer .break-line {
-    border-bottom: 1px solid #6c5583
+    border-bottom: 1px solid $color-6c5583
 }
 
 .footer-links1 {
@@ -2845,7 +2845,7 @@ footer .break-line {
     height: 0;
     border-style: solid;
     border-width: 3px 0 3px 4px;
-    border-color: transparent transparent transparent #e53f38;
+    border-color: transparent transparent transparent $color-e53f38;
     position: absolute;
     left: -10px;
     top: 5px
@@ -2862,24 +2862,24 @@ footer .break-line {
 }
 
 .copyright-box {
-    border-top: 1px solid #54356e
+    border-top: 1px solid $color-54356e
 }
 
 .copyright-box p {
-    color: #fff;
-    font-size: 12px;
-    font-family: Roboto,sans-serif;
-    font-weight: 400;
-    line-height: 26px
+    color: $color-ffffff;
+    font-size: $font-12px;
+    font-family: $font-roboto;
+    font-weight: $font-400;
+    line-height: $lh-26px
 }
 
 .footer-link-header-small, .footer-share h6 {
     float: left;
-    color: #fff;
-    font-size: 12px;
-    font-family: Roboto,sans-serif;
-    font-weight: 400;
-    line-height: 26px;
+    color: $color-ffffff;
+    font-size: $font-12px;
+    font-family: $font-roboto;
+    font-weight: $font-400;
+    line-height: $lh-26px;
     padding-right: 8px
 }
 
@@ -2906,7 +2906,7 @@ footer .break-line {
     left: 50%;
     bottom: 40px;
     position: absolute;
-    text-align: center;
+    text-align: $text-center;
     background: rgba(255,255,255,.3);
     border-radius: 30px;
     padding: 4px 8px;
@@ -2920,7 +2920,7 @@ footer .break-line {
 .slick-dots li {
     display: inline-block;
     margin: 0 4px;
-    line-height: 0
+    line-height: $lh-0
 }
 
 .slick-dots li button {
@@ -2942,94 +2942,94 @@ footer .break-line {
 }
 
 .facebook-link {
-    background: #3b5998 url(../images/icon/facebooki.svg) no-repeat center center;
+    background: $color-3b5998 url(../images/icon/facebooki.svg) no-repeat center center;
     background-size: 8px 16px
 }
 
 .facebook-link:hover {
-    background: #314b80 url(../images/icon/facebooki.svg) no-repeat center center;
+    background: $color-314b80 url(../images/icon/facebooki.svg) no-repeat center center;
     background-size: 8px 16px
 }
 
 .no-svg .facebook-link {
-    background: #3b5998 url(../images/icon/facebook.png) no-repeat center center
+    background: $color-3b5998 url(../images/icon/facebook.png) no-repeat center center
 }
 
 .no-svg .facebook-link:hover {
-    background: #314b80 url(../images/icon/facebook.png) no-repeat center center
+    background: $color-314b80 url(../images/icon/facebook.png) no-repeat center center
 }
 
 .twitter-link {
-    background: #1da1f2 url(../images/icon/twitteri.svg) no-repeat center center;
+    background: $color-1da1f2 url(../images/icon/twitteri.svg) no-repeat center center;
     background-size: 20px 16px
 }
 
 .twitter-link:hover {
-    background: #168bd3 url(../images/icon/twitteri.svg) no-repeat center center;
+    background: $color-168bd3 url(../images/icon/twitteri.svg) no-repeat center center;
     background-size: 20px 16px
 }
 
 .no-svg .twitter-link {
-    background: #1da1f2 url(../images/icon/twitter.png) no-repeat center center
+    background: $color-1da1f2 url(../images/icon/twitter.png) no-repeat center center
 }
 
 .no-svg .twitter-link:hover {
-    background: #168bd3 url(../images/icon/twitter.png) no-repeat center center
+    background: $color-168bd3 url(../images/icon/twitter.png) no-repeat center center
 }
 
 .linkin-link {
-    background: #0077b5 url(../images/icon/linkini.svg) no-repeat center center;
+    background: $color-0077b5 url(../images/icon/linkini.svg) no-repeat center center;
     background-size: 16px 16px
 }
 
 .linkin-link:hover {
-    background: #00699f url(../images/icon/linkini.svg) no-repeat center center;
+    background: $color-00699f url(../images/icon/linkini.svg) no-repeat center center;
     background-size: 16px 16px
 }
 
 .no-svg .linkin-link {
-    background: #0077b5 url(../images/icon/linkin.png) no-repeat center center
+    background: $color-0077b5 url(../images/icon/linkin.png) no-repeat center center
 }
 
 .no-svg .linkin-link:hover {
-    background: #00699f url(../images/linkin.png) no-repeat center center
+    background: $color-00699f url(../images/linkin.png) no-repeat center center
 }
 
 .ytube-link {
-    background: #c71d20 url(../images/icon/ytubei.svg) no-repeat center center;
+    background: $color-c71d20 url(../images/icon/ytubei.svg) no-repeat center center;
     background-size: 22px 15px
 }
 
 .ytube-link:hover {
-    background: #aa181b url(../images/icon/ytubei.svg) no-repeat center center;
+    background: $color-aa181b url(../images/icon/ytubei.svg) no-repeat center center;
     background-size: 22px 15px
 }
 
 .no-svg .ytube-link {
-    background: #c71d20 url(../images/icon/ytube.png) no-repeat center center
+    background: $color-c71d20 url(../images/icon/ytube.png) no-repeat center center
 }
 
 .no-svg .ytube-link:hover {
-    background: #aa181b url(../images/icon/ytube.png) no-repeat center center
+    background: $color-aa181b url(../images/icon/ytube.png) no-repeat center center
 }
 
 .glassdoor-link {
-    background: #070 url(../images/icon/glassdoor.png) no-repeat center center;
+    background: $color-070 url(../images/icon/glassdoor.png) no-repeat center center;
     background-size: 10px 17px
 }
 
 .glassdoor-link:hover {
-    background: #006d00 url(../images/icon/glassdoor.png) no-repeat center center;
+    background: $color-006d00 url(../images/icon/glassdoor.png) no-repeat center center;
     background-size: 10px 17px
 }
 
 .no-svg .glassdoor-link {
-    background: #070 url(../images/icon/glassdoor.svg) no-repeat center center;
+    background: $color-070 url(../images/icon/glassdoor.svg) no-repeat center center;
     background-size: 10px 17px
 }
 
 .no-svg .glassdoor-link:hover {
-    background: #006d00 url(../images/icon/glassdoor.svg) no-repeat center center;
+    background: $color-006d00 url(../images/icon/glassdoor.svg) no-repeat center center;
     background-size: 10px 17px
 }
 
@@ -3068,15 +3068,15 @@ footer .break-line {
     right: 15px;
     top: 160px;
     z-index: 2;
-    background: #fbfbfb
+    background: $color-fbfbfb
 }
 
 .banner-form h2 {
-    font-size: 13px;
-    line-height: 15px;
-    font-weight: 500;
-    border-bottom: 1px solid #eef2f5;
-    text-align: left;
+    font-size: $font-13px;
+    line-height: $lh-15px;
+    font-weight: $font-500;
+    border-bottom: 1px solid $color-eef2f5;
+    text-align: $text-left;
     padding: 25px 25px 15px 25px
 }
 
@@ -3086,7 +3086,7 @@ footer .break-line {
 
 .form-field {
     position: relative;
-    text-align: left;
+    text-align: $text-left;
     min-width: 250px
 }
 
@@ -3097,20 +3097,20 @@ footer .break-line {
 .small-btn {
     display: inline-block;
     padding: 5px 0;
-    color: #fff !important;
-    font-size: 16px;
-    font-family: Roboto,sans-serif;
-    font-weight: 400;
-    line-height: 30px !important;
+    color: $color-ffffff !important;
+    font-size: $font-16px;
+    font-family: $font-roboto;
+    font-weight: $font-400;
+    line-height: $lh-30px !important;
     transition: all .1s ease-in;
-    background: #4a1c6b;
+    background: $color-4a1c6b;
     border: none;
     border-radius: 2px;
     box-shadow: none;
     -webkit-appearance: none;
     outline: 0 !important;
     min-width: 120px;
-    text-align: center;
+    text-align: $text-center;
     cursor: pointer;
     margin-bottom: 20px;
     margin-top: 10px
@@ -3118,7 +3118,7 @@ footer .break-line {
 
 .form-title-row {
     min-height: 35px;
-    line-height: 16px
+    line-height: $lh-16px
 }
 
 .still-image-banner-text {
@@ -3135,7 +3135,7 @@ footer .break-line {
 }
 
 .text-46px {
-    font-size: 46px
+    font-size: $font-46px
 }
 
 .pb-0px {
@@ -3148,27 +3148,27 @@ footer .break-line {
 
 .btn-mini {
     height: 24px;
-    line-height: 24px;
-    font-size: 12px;
-    font-weight: 500;
+    line-height: $lh-24px;
+    font-size: $font-12px;
+    font-weight: $font-500;
     min-width: 80px
 }
 
 .bg-003247 {
-    background: #003247;
+    background: $color-003247;
     background: rgba(0,50,71,.89)
 }
 
 .btn.bg-003247:hover {
-    background: #0c4258
+    background: $color-0c4258
 }
 
 .comment-link {
     display: inline-block;
-    color: #717c8a;
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 30px;
+    color: $color-717c8a;
+    font-size: $font-14px;
+    font-weight: $font-500;
+    line-height: $lh-30px;
     padding-right: 44px;
     background: url(../images/icon/comment.svg) no-repeat right center;
     background-size: 28px 26px;
@@ -3246,8 +3246,8 @@ footer .break-line {
 
 .leader-bio {
     margin: 0 10px;
-    border: 1px solid #e7e7e7;
-    border-top: 5px solid #d1dee9;
+    border: 1px solid $color-e7e7e7;
+    border-top: 5px solid $color-d1dee9;
     padding: 10px;
     padding-top: 40px;
     padding-bottom: 10px;
@@ -3256,35 +3256,35 @@ footer .break-line {
 }
 
 .leader-bio h4 {
-    color: #475465;
-    font-size: 24px;
-    font-weight: 300;
-    line-height: normal;
+    color: $color-475465;
+    font-size: $font-24px;
+    font-weight: $font-300;
+    line-height: $lh-normal;
     padding-bottom: 5px
 }
 
 .leader-bio h6 {
-    color: #475465;
-    font-size: 13px;
-    font-weight: 500;
-    line-height: normal;
+    color: $color-475465;
+    font-size: $font-13px;
+    font-weight: $font-500;
+    line-height: $lh-normal;
     padding-bottom: 22px
 }
 
 .leader-bio p {
-    color: #98a4ae;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 24px;
+    color: $color-98a4ae;
+    font-size: $font-14px;
+    font-weight: $font-400;
+    line-height: $lh-24px;
     padding: 0 15px;
     min-height: 94px
 }
 
 .leader-bio span {
-    color: #475465;
-    font-size: 14px;
-    font-weight: 500;
-    text-decoration: none
+    color: $color-475465;
+    font-size: $font-14px;
+    font-weight: $font-500;
+    text-decoration: $text-decoration-none
 }
 
 .leader-bio a {
@@ -3296,7 +3296,7 @@ footer .break-line {
 }
 
 .leader-bio:hover span {
-    color: #2da48f
+    color: $color-2da48f
 }
 
 .ar-prev {
@@ -3328,11 +3328,11 @@ footer .break-line {
 }
 
 .corporate-citizen h5 {
-    color: #5e6977
+    color: $color-5e6977
 }
 
 .corporate-citizen h3 {
-    line-height: 43px
+    line-height: $lh-43px
 }
 
 .comp-list {
@@ -3341,7 +3341,7 @@ footer .break-line {
 
 .comp-list li {
     float: left;
-    text-align: center
+    text-align: $text-center
 }
 
 .comp-list li img {
@@ -3349,7 +3349,7 @@ footer .break-line {
 }
 
 .lh-normal {
-    line-height: normal
+    line-height: $lh-normal
 }
 
 .bread-crum {
@@ -3357,22 +3357,22 @@ footer .break-line {
 }
 
 .bread-crum a {
-    font-size: 13px;
-    font-weight: 400
+    font-size: $font-13px;
+    font-weight: $font-400
 }
 
 .bread-crum li.current {
-    color: #373e47
+    color: $color-373e47
 }
 
 .bread-crum li .bread-crum li a {
-    color: #86939e
+    color: $color-86939e
 }
 
 .bread-crum li {
     margin-right: 22px;
     position: relative;
-    font-weight: 500
+    font-weight: $font-500
 }
 
 .bread-crum li.current:after, .bread-crum li:last-child:after {
@@ -3380,7 +3380,7 @@ footer .break-line {
 }
 
 .bread-crum li:after {
-    color: #86939e;
+    color: $color-86939e;
     display: block;
     content: ">";
     position: absolute;
@@ -3389,13 +3389,13 @@ footer .break-line {
 }
 
 .elt-content .l-content-width h4 {
-    font-weight: 400
+    font-weight: $font-400
 }
 
 div.rail-main-nav, h4.rail-main-nav {
-    font-size: 15px;
-    line-height: 1.3;
-    font-weight: 400
+    font-size: $font-15px;
+    line-height: $lh-1_3;
+    font-weight: $font-400
 }
 
 .sub-page-nav .level-two {
@@ -3424,28 +3424,28 @@ div.rail-main-nav, h4.rail-main-nav {
 }
 
 .elt-pglink {
-    color: #374252
+    color: $color-374252
 }
 
 .elt-pglink h6 {
-    font-size: 15px;
-    font-weight: 500;
+    font-size: $font-15px;
+    font-weight: $font-500;
     position: relative
 }
 
 .elt-pglink p {
-    color: #acbac5;
-    font-size: 13px;
-    font-weight: 400
+    color: $color-acbac5;
+    font-size: $font-13px;
+    font-weight: $font-400
 }
 
 .elt-pg-nav li {
     padding-bottom: 10px;
-    font-size: 14px
+    font-size: $font-14px
 }
 
 .elt-pg-nav a, .elt-pg-nav a:active, .elt-pg-nav a:visited {
-    color: #374252
+    color: $color-374252
 }
 
 .elt-pg-nav a {
@@ -3453,11 +3453,11 @@ div.rail-main-nav, h4.rail-main-nav {
 }
 
 .elt-pg-nav a:hover {
-    color: #7b214c !important
+    color: $color-7b214c !important
 }
 
 .elt-pg-nav .level-two, .elt-pg-nav .level-two a {
-    color: #86939e
+    color: $color-86939e
 }
 
 .elt-pg-nav li.selected > a:after {
@@ -3477,21 +3477,21 @@ div.rail-main-nav, h4.rail-main-nav {
     height: 0;
     border-style: solid;
     border-width: 4px 0 4px 4px;
-    border-color: transparent transparent transparent #7b214c;
+    border-color: transparent transparent transparent $color-7b214c;
     position: absolute;
     left: -11px;
     top: 5px
 }
 
 .elt-pg-nav li.active a {
-    color: #7b214c !important
+    color: $color-7b214c !important
 }
 
 .elt-pg-nav:before {
     display: block;
     content: "";
     height: 2px;
-    background: #e1e4e7;
+    background: $color-e1e4e7;
     width: 38px;
     margin-bottom: 32px
 }
@@ -3507,18 +3507,18 @@ div.rail-main-nav, h4.rail-main-nav {
 .events-page .elt-pg-nav .level-one > li > a, .events-page .elt-pg-nav .level-one > li > span {
     display: block;
     padding-bottom: 2px;
-    text-decoration: underline;
-    font-weight: 600;
+    text-decoration: $text-underline;
+    font-weight: $font-600;
     position: relative;
-    line-height: 24px
+    line-height: $lh-24px
 }
 
 .elt-pg-nav .level-two, .elt-pg-nav .level-two a {
-    color: #86939e
+    color: $color-86939e
 }
 
 .text-374252, a.text-374252 {
-    color: #374252
+    color: $color-374252
 }
 
 .sp-title {
@@ -3532,24 +3532,24 @@ div.rail-main-nav, h4.rail-main-nav {
 
 .pill {
     display: inline-block;
-    background: #bdcad5;
+    background: $color-bdcad5;
     width: 74px;
     height: 24px;
     border-radius: 40px;
     padding: 0 10px;
-    color: #fff !important;
-    font-size: 12px;
-    font-weight: 500;
-    line-height: 24px;
-    text-align: center;
-    text-decoration: none;
+    color: $color-ffffff !important;
+    font-size: $font-12px;
+    font-weight: $font-500;
+    line-height: $lh-24px;
+    text-align: $text-center;
+    text-decoration: $text-decoration-none;
     outline: 0 !important;
     transition: all .1s ease-in
 }
 
 .pill:hover {
-    color: #fff !important;
-    background: #65717b !important
+    color: $color-ffffff !important;
+    background: $color-65717b !important
 }
 
 .tags li {
@@ -3563,14 +3563,14 @@ div.rail-main-nav, h4.rail-main-nav {
     top: 0;
     width: 100%;
     height: 100%;
-    opacity: .2
+    opacity: $op-20
 }
 
 .title-highlight {
     height: 548px;
     display: table-cell;
     vertical-align: middle;
-    text-align: center
+    text-align: $text-center
 }
 
 .l-table {
@@ -3585,7 +3585,7 @@ div.rail-main-nav, h4.rail-main-nav {
 }
 
 .text-38px {
-    font-size: 38px
+    font-size: $font-38px
 }
 
 .info-links {
@@ -3595,15 +3595,15 @@ div.rail-main-nav, h4.rail-main-nav {
 }
 
 .highlight-border {
-    border: 1px solid #e7e7e7;
-    border-top: 5px solid #cfd8dc;
+    border: 1px solid $color-e7e7e7;
+    border-top: 5px solid $color-cfd8dc;
     transition: all .1s ease-in;
-    text-decoration: none;
+    text-decoration: $text-decoration-none;
     outline: 0 !important
 }
 
 .highlight-border:hover {
-    border-top: 5px solid #00515b
+    border-top: 5px solid $color-00515b
 }
 
 .l-list-three-col.list-big li {
@@ -3617,7 +3617,7 @@ div.rail-main-nav, h4.rail-main-nav {
 }
 
 .management-tab h4 {
-    line-height: 38px
+    line-height: $lh-38px
 }
 
 .select-style {
@@ -3625,13 +3625,13 @@ div.rail-main-nav, h4.rail-main-nav {
     margin: 0;
     width: 100%;
     overflow: hidden;
-    background-color: #441a63;
-    background: #441a63 url(../images/icon/selectarrow.png) no-repeat 92% center;
+    background-color: $color-441a63;
+    background: $color-441a63 url(../images/icon/selectarrow.png) no-repeat 92% center;
     border: medium none;
     border-radius: 2px;
-    font-family: Roboto,sans-serif;
-    font-size: 14px;
-    font-weight: 400;
+    font-family: $font-roboto;
+    font-size: $font-14px;
+    font-weight: $font-400;
     height: 35px;
     position: relative;
     width: 100%;
@@ -3643,11 +3643,11 @@ div.rail-main-nav, h4.rail-main-nav {
     width: 100%;
     border: none;
     box-shadow: none;
-    color: #fff;
-    font-family: Roboto,sans-serif;
-    font-size: 14px;
-    font-weight: 400;
-    background: #441a63 url(../images/icon/selectarrow.png) no-repeat 92% center;
+    color: $color-ffffff;
+    font-family: $font-roboto;
+    font-size: $font-14px;
+    font-weight: $font-400;
+    background: $color-441a63 url(../images/icon/selectarrow.png) no-repeat 92% center;
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none
@@ -3658,11 +3658,11 @@ div.rail-main-nav, h4.rail-main-nav {
 }
 
 .bg-f5f7f9 {
-    background: #f5f7f9
+    background: $color-f5f7f9
 }
 
 .bg-e8eaec {
-    background: #e8eaec
+    background: $color-e8eaec
 }
 
 .pb-10px {
@@ -3686,20 +3686,20 @@ div.rail-main-nav, h4.rail-main-nav {
 }
 
 .text-717C8A {
-    color: #717c8a
+    color: $color-717c8a
 }
 
 .text-004259 {
-    color: #004259
+    color: $color-004259
 }
 
 .lh-42px {
-    line-height: 42px
+    line-height: $lh-42px
 }
 
 .text-30px {
-    font-size: 30px;
-    line-height: 38px
+    font-size: $font-30px;
+    line-height: $lh-38px
 }
 
 .pb-5px {
@@ -3716,17 +3716,17 @@ div.rail-main-nav, h4.rail-main-nav {
 }
 
 .bg-gradient-teal-vertical {
-    background: #004553;
-    background: -moz-linear-gradient(top,#004553 0,#003549 100%);
-    background: -webkit-linear-gradient(top,#004553 0,#003549 100%);
-    background: linear-gradient(to bottom,#004553 0,#003549 100%)
+    background: $color-004553;
+    background: -moz-linear-gradient(top,$color-004553 0,$color-003549 100%);
+    background: -webkit-linear-gradient(top,$color-004553 0,$color-003549 100%);
+    background: linear-gradient(to bottom,$color-004553 0,$color-003549 100%)
 }
 
 .bg-gradient-teal-vertical1 {
-    background: #00515b;
-    background: -moz-linear-gradient(top,#00515b 0,#03374b 100%);
-    background: -webkit-linear-gradient(top,#00515b 0,#03374b 100%);
-    background: linear-gradient(to bottom,#00515b 0,#03374b 100%)
+    background: $color-00515b;
+    background: -moz-linear-gradient(top,$color-00515b 0,$color-03374b 100%);
+    background: -webkit-linear-gradient(top,$color-00515b 0,$color-03374b 100%);
+    background: linear-gradient(to bottom,$color-00515b 0,$color-03374b 100%)
 }
 
 .bg-position-ct {
@@ -3734,7 +3734,7 @@ div.rail-main-nav, h4.rail-main-nav {
 }
 
 .text-86939E, a.text-86939E {
-    color: #86939e
+    color: $color-86939e
 }
 
 .l-one-third {
@@ -3756,7 +3756,7 @@ div.rail-main-nav, h4.rail-main-nav {
 
 .btn-sm {
     height: 45px;
-    line-height: 45px
+    line-height: $lh-45px
 }
 
 .btn.block {
@@ -3769,15 +3769,15 @@ div.rail-main-nav, h4.rail-main-nav {
 }
 
 .text-373E47, a.text-373E47 {
-    color: #373e47
+    color: $color-373e47
 }
 
 .text-28303D, a.text-28303D {
-    color: #28303d
+    color: $color-28303d
 }
 
 .lh-24px {
-    line-height: 24px
+    line-height: $lh-24px
 }
 
 .l-site-width-776 {
@@ -3789,18 +3789,18 @@ div.rail-main-nav, h4.rail-main-nav {
 }
 
 .ls-0_1px {
-    letter-spacing: -.1px
+    letter-spacing: $ls-0_1px
 }
 
 .bg-gradient-purple1 {
-    background: #6e41a7;
-    background: -moz-linear-gradient(left,#6e41a7 0,#220457 100%);
-    background: -webkit-linear-gradient(left,#6e41a7 0,#220457 100%);
-    background: linear-gradient(to right,#6e41a7 0,#220457 100%)
+    background: $color-6e41a7;
+    background: -moz-linear-gradient(left,$color-6e41a7 0,$color-220457 100%);
+    background: -webkit-linear-gradient(left,$color-6e41a7 0,$color-220457 100%);
+    background: linear-gradient(to right,$color-6e41a7 0,$color-220457 100%)
 }
 
 .bg-gradient-purple1 p {
-    color: #fff
+    color: $color-ffffff
 }
 
 .exe-title {
@@ -3808,7 +3808,7 @@ div.rail-main-nav, h4.rail-main-nav {
 }
 
 .news-box {
-    background: #fff;
+    background: $color-ffffff;
     border-radius: 4px;
     box-shadow: 0 0 1px rgba(0,0,0,.1);
     overflow: hidden;
@@ -3822,7 +3822,7 @@ div.rail-main-nav, h4.rail-main-nav {
     height: 100%;
     left: 0;
     top: 0;
-    text-decoration: none
+    text-decoration: $text-decoration-none
 }
 
 .news-content {
@@ -3868,7 +3868,7 @@ div.rail-main-nav, h4.rail-main-nav {
 }
 
 .ana-info p {
-    line-height: 30px
+    line-height: $lh-30px
 }
 
 .ana-right .ana-pic {
@@ -3903,16 +3903,16 @@ div.rail-main-nav, h4.rail-main-nav {
 }
 
 .btm-bloglinks {
-    border-top: 5px solid #e2e5e7
+    border-top: 5px solid $color-e2e5e7
 }
 
 .btm-bloglinks p {
-    color: #65717b;
-    line-height: 35px
+    color: $color-65717b;
+    line-height: $lh-35px
 }
 
 .btm-bloglinks span {
-    color: #9cabb9
+    color: $color-9cabb9
 }
 
 .link-arrow1 {
@@ -3925,10 +3925,10 @@ div.rail-main-nav, h4.rail-main-nav {
 }
 
 .more-link {
-    color: #9cabb9;
+    color: $color-9cabb9;
     position: relative;
     padding-right: 48px;
-    line-height: 35px
+    line-height: $lh-35px
 }
 
 .more-link .link-arrow1 {
@@ -3955,22 +3955,22 @@ div.rail-main-nav, h4.rail-main-nav {
 }
 
 .pagination a {
-    border: 1px solid #86939e
+    border: 1px solid $color-86939e
 }
 
 .pagination li.current-page span {
-    border: 1px solid #441a63;
-    background: #441a63;
-    color: #fff
+    border: 1px solid $color-441a63;
+    background: $color-441a63;
+    color: $color-ffffff
 }
 
 .pagination a, .pagination span {
-    font-size: 14px;
-    font-weight: 400;
-    text-decoration: none;
+    font-size: $font-14px;
+    font-weight: $font-400;
+    text-decoration: $text-decoration-none;
     padding: 3px 7px;
     display: block;
-    border: 1px solid #86939e
+    border: 1px solid $color-86939e
 }
 
 .search-wrap .pagination a, .search-wrap .pagination span {
@@ -3978,8 +3978,8 @@ div.rail-main-nav, h4.rail-main-nav {
 }
 
 .search-wrap .pagination span.currentpage {
-    background: #86939e;
-    color: #fff
+    background: $color-86939e;
+    color: $color-ffffff
 }
 
 .search-wrap .pagination {
@@ -3991,7 +3991,7 @@ div.rail-main-nav, h4.rail-main-nav {
 }
 
 .search-header li {
-    line-height: 55px
+    line-height: $lh-55px
 }
 
 .search-nav a {
@@ -4003,12 +4003,12 @@ div.rail-main-nav, h4.rail-main-nav {
 }
 
 .didyoumean a {
-    color: #8e2b5a;
-    font-weight: 500
+    color: $color-8e2b5a;
+    font-weight: $font-500
 }
 
 .pagination li.current-page {
-    font-weight: 600
+    font-weight: $font-600
 }
 
 .pagination li {
@@ -4017,7 +4017,7 @@ div.rail-main-nav, h4.rail-main-nav {
 
 .divider {
     height: 2px;
-    background: #e1e4e7;
+    background: $color-e1e4e7;
     width: 38px;
     margin-bottom: 32px
 }
@@ -4054,7 +4054,7 @@ div.rail-main-nav, h4.rail-main-nav {
     left: 0;
     display: none;
     overflow: auto;
-    text-align: center;
+    text-align: $text-center;
     -webkit-overflow-scrolling: touch
 }
 
@@ -4075,8 +4075,8 @@ div.rail-main-nav, h4.rail-main-nav {
     padding: 35px;
     -webkit-transform: translate3d(0,0,0);
     transform: translate3d(0,0,0);
-    color: #2b2e38;
-    background: #151b17
+    color: $color-2b2e38;
+    background: $color-151b17
 }
 
 .popup-is-initialized {
@@ -4106,8 +4106,8 @@ div.rail-main-nav, h4.rail-main-nav {
     cursor: pointer;
     -webkit-transition: color .2s;
     transition: color .2s;
-    text-decoration: none;
-    color: #95979c;
+    text-decoration: $text-decoration-none;
+    color: $color-95979c;
     border: 0;
     outline: 0;
     background: 0 0;
@@ -4142,28 +4142,28 @@ div.rail-main-nav, h4.rail-main-nav {
 }
 
 .popup-close:before {
-    font-family: Arial,"Helvetica CY","Nimbus Sans L",sans-serif !important;
-    font-size: 30px;
-    line-height: 35px;
+    font-family: $font-arial !important;
+    font-size: $font-30px;
+    line-height: $lh-35px;
     position: absolute;
     top: 0;
     left: 0;
     display: block;
     width: 35px;
     content: "\00d7";
-    text-align: center
+    text-align: $text-center
 }
 
 .lh-22px {
-    line-height: 22px
+    line-height: $lh-22px
 }
 
 .bg-e8eaec {
-    background: #e8eaec
+    background: $color-e8eaec
 }
 
 .bg-e0e2e5 {
-    background: #e0e2e5
+    background: $color-e0e2e5
 }
 
 .mb-70px {
@@ -4175,15 +4175,15 @@ div.rail-main-nav, h4.rail-main-nav {
 }
 
 .lh-36px {
-    line-height: 36px
+    line-height: $lh-36px
 }
 
 .text-475465 {
-    color: #475465
+    color: $color-475465
 }
 
 .text-11px {
-    font-size: 11px
+    font-size: $font-11px
 }
 
 a.wrightarrow {
@@ -4221,7 +4221,7 @@ a.wrightarrow {
 
 .boxin .bread-crum {
     padding: 0;
-    border-right: 5px solid #374252;
+    border-right: 5px solid $color-374252;
     height: 50px;
     margin-top: 0
 }
@@ -4232,15 +4232,15 @@ a.wrightarrow {
 }
 
 .titlep {
-    line-height: 50px;
-    background: #003247;
+    line-height: $lh-50px;
+    background: $color-003247;
     padding-right: 50px;
     padding-left: 25px;
     border-radius: 0 30px 30px 0
 }
 
 .bread-crum1 a {
-    line-height: 50px
+    line-height: $lh-50px
 }
 
 .bread-crum1 li:after {
@@ -4299,7 +4299,7 @@ a.wrightarrow {
 }
 
 .break-line3 {
-    border-bottom: 1px solid #d9dde2
+    border-bottom: 1px solid $color-d9dde2
 }
 
 .cta-link.warrow {
@@ -4318,23 +4318,23 @@ a.wrightarrow {
 }
 
 .time {
-    color: #fff;
+    color: $color-ffffff;
     background: rgba(0,0,0,.7);
     position: absolute;
     top: 20px;
     left: 20px;
-    line-height: 20px;
+    line-height: $lh-20px;
     padding: 0 5px
 }
 
 .elt-pglink.active p {
-    color: #374252;
-    font-weight: 600;
+    color: $color-374252;
+    font-weight: $font-600;
     position: relative
 }
 
 .elt-pg-nav1 p {
-    font-size: 14px
+    font-size: $font-14px
 }
 
 .elt-pglink.active p:after {
@@ -4348,9 +4348,9 @@ a.wrightarrow {
 }
 
 .toptitle .read-link1 {
-    color: #9cabb9;
+    color: $color-9cabb9;
     background: 0 0;
-    font-weight: 400
+    font-weight: $font-400
 }
 
 .bloglist li {
@@ -4358,12 +4358,12 @@ a.wrightarrow {
 }
 
 .post-nav a {
-    border: 1px solid #c1cbd3;
+    border: 1px solid $color-c1cbd3;
     border-radius: 1px;
     padding: 0 25px;
-    line-height: 46px;
-    color: #86939e;
-    font-size: 14px;
+    line-height: $lh-46px;
+    color: $color-86939e;
+    font-size: $font-14px;
     border-radius: 2px;
     display: inline-block
 }
@@ -4379,9 +4379,9 @@ a.oldpost span {
 }
 
 a.oldpost {
-    background: #59277f;
-    color: #fff;
-    border: 1px solid #59277f
+    background: $color-59277f;
+    color: $color-ffffff;
+    border: 1px solid $color-59277f
 }
 
 .l-list-two-col1 li {
@@ -4398,28 +4398,28 @@ a.oldpost {
 }
 
 .tags1 .pill {
-    background: #86939e;
+    background: $color-86939e;
     width: auto;
     padding: 0 14px
 }
 
 .tags1 .pill1 {
-    background: #65717b
+    background: $color-65717b
 }
 
 .tab-links-simple a {
     height: auto;
-    line-height: normal;
-    font-size: 14px;
-    font-weight: 500;
-    color: #a0aebc;
+    line-height: $lh-normal;
+    font-size: $font-14px;
+    font-weight: $font-500;
+    color: $color-a0aebc;
     min-width: 1px
 }
 
 .tab-links-simple {
     display: block;
     border: none;
-    border-bottom: 1px solid #e1e4e7
+    border-bottom: 1px solid $color-e1e4e7
 }
 
 .tab-links-simple li {
@@ -4429,12 +4429,12 @@ a.oldpost {
 
 .tab-links-simple li.open a {
     background: 0 0;
-    color: #373e47
+    color: $color-373e47
 }
 
 .search-list li {
     padding: 36px 0;
-    border-bottom: 1px solid #e1e4e7
+    border-bottom: 1px solid $color-e1e4e7
 }
 
 .touch-box .info-links {
@@ -4471,23 +4471,23 @@ a.oldpost {
     width: 100%;
     display: block;
     height: 46px;
-    background: #fff;
-    border: 1px solid #d4dbe2;
+    background: $color-ffffff;
+    border: 1px solid $color-d4dbe2;
     border-radius: 0;
     box-shadow: none;
     -webkit-appearance: none;
     outline: 0 !important;
-    color: #86939e;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 44px;
+    color: $color-86939e;
+    font-size: $font-14px;
+    font-weight: $font-400;
+    line-height: $lh-44px;
     padding: 0 18px;
     box-sizing: border-box
 }
 
 textarea.std-input3 {
     height: 198px;
-    line-height: normal;
+    line-height: $lh-normal;
     resize: none;
     padding-top: 15px;
     padding-bottom: 15px
@@ -4498,8 +4498,8 @@ textarea.std-input3 {
 }
 
 .contact-form-content {
-    border: 1px solid #d4dbe2;
-    border-top: 8px solid #d4dbe2;
+    border: 1px solid $color-d4dbe2;
+    border-top: 8px solid $color-d4dbe2;
     padding: 46px 20px 28px
 }
 
@@ -4508,36 +4508,36 @@ textarea.std-input3 {
     margin: 0;
     width: 100%;
     overflow: hidden;
-    border: 1px solid #d4dbe2;
+    border: 1px solid $color-d4dbe2;
     border-radius: 0;
-    color: #86939e;
-    font-family: Roboto,sans-serif;
-    font-size: 14px;
-    font-weight: 500;
+    color: $color-86939e;
+    font-family: $font-roboto;
+    font-size: $font-14px;
+    font-weight: $font-500;
     height: 46px;
     position: relative;
     width: 100%;
     overflow: hidden;
     box-sizing: border-box;
-    text-align: left;
-    background: #f2f3f4;
-    background: -moz-linear-gradient(top,#f2f3f4 0,#e5e8eb 100%);
-    background: -webkit-linear-gradient(top,#f2f3f4 0,#e5e8eb 100%);
-    background: linear-gradient(to bottom,#f2f3f4 0,#e5e8eb 100%)
+    text-align: $text-left;
+    background: $color-f2f3f4;
+    background: -moz-linear-gradient(top,$color-f2f3f4 0,$color-e5e8eb 100%);
+    background: -webkit-linear-gradient(top,$color-f2f3f4 0,$color-e5e8eb 100%);
+    background: linear-gradient(to bottom,$color-f2f3f4 0,$color-e5e8eb 100%)
 }
 
 .select-style-light select {
     width: 100%;
     border: none;
     box-shadow: none;
-    color: #86939e;
-    font-family: Roboto,sans-serif;
-    font-size: 14px;
-    font-weight: 400;
-    background: #f2f3f4;
-    background: -moz-linear-gradient(top,#f2f3f4 0,#e5e8eb 100%);
-    background: -webkit-linear-gradient(top,#f2f3f4 0,#e5e8eb 100%);
-    background: linear-gradient(to bottom,#f2f3f4 0,#e5e8eb 100%);
+    color: $color-86939e;
+    font-family: $font-roboto;
+    font-size: $font-14px;
+    font-weight: $font-400;
+    background: $color-f2f3f4;
+    background: -moz-linear-gradient(top,$color-f2f3f4 0,$color-e5e8eb 100%);
+    background: -webkit-linear-gradient(top,$color-f2f3f4 0,$color-e5e8eb 100%);
+    background: linear-gradient(to bottom,$color-f2f3f4 0,$color-e5e8eb 100%);
     background-image: url(../images/icon/udarrow.png);
     background-repeat: no-repeat;
     background-position: 92% center;
@@ -4571,7 +4571,7 @@ textarea.std-input3 {
 }
 
 .office-box {
-    border: 1px solid #e7e7e7
+    border: 1px solid $color-e7e7e7
 }
 
 .todays-feature {
@@ -4587,15 +4587,15 @@ textarea.std-input3 {
 }
 
 .todays-feature {
-    background: #fff;
+    background: $color-ffffff;
     border-radius: 2px;
     overflow: hidden;
-    border: 1px solid #e0e2e4
+    border: 1px solid $color-e0e2e4
 }
 
 .in-the-news li {
-    background: #fff;
-    border: 1px solid #edeff1;
+    background: $color-ffffff;
+    border: 1px solid $color-edeff1;
     position: relative;
     padding-left: 240px;
     min-height: 245px;
@@ -4613,7 +4613,7 @@ textarea.std-input3 {
 }
 
 .press-release li {
-    border-bottom: 1px solid #cfd4d8;
+    border-bottom: 1px solid $color-cfd4d8;
     padding-bottom: 38px
 }
 
@@ -4632,7 +4632,7 @@ textarea.std-input3 {
 }
 
 .media-contact li {
-    border-bottom: 1px solid #d9dde2;
+    border-bottom: 1px solid $color-d9dde2;
     padding-bottom: 34px
 }
 
@@ -4641,11 +4641,11 @@ textarea.std-input3 {
 }
 
 .text-white .more-link {
-    color: #fff
+    color: $color-ffffff
 }
 
 .more-link.text-14px {
-    line-height: 35px
+    line-height: $lh-35px
 }
 
 .partner-companies-carousel img {
@@ -4663,19 +4663,19 @@ textarea.std-input3 {
 }
 
 .nth-form-wrapper .break-line {
-    border-color: #e1e8ee
+    border-color: $color-e1e8ee
 }
 
 .inner-banner-wrapper .l-site-width .text-white p {
-    text-shadow: 0 0 2px #000
+    text-shadow: 0 0 2px $color-000000
 }
 
 .banner-title {
-    text-shadow: 0 0 5px #000;
-    color: #fff !important;
-    font-family: Roboto,sans-serif;
-    font-weight: 300;
-    line-height: normal
+    text-shadow: 0 0 5px $color-000000;
+    color: $color-ffffff !important;
+    font-family: $font-roboto;
+    font-weight: $font-300;
+    line-height: $lh-normal
 }
 
 .tabview {
@@ -4692,7 +4692,7 @@ textarea.std-input3 {
 }
 
 .fix-header .nthrive-main-nav-wrapper {
-    background: #441a63
+    background: $color-441a63
 }
 
 .boxin {
@@ -4726,7 +4726,7 @@ textarea.std-input3 {
 }
 
 .boxin {
-    background: #dfe2e5
+    background: $color-dfe2e5
 }
 
 .boxin .bread-crum {
@@ -4741,12 +4741,12 @@ textarea.std-input3 {
 }
 
 .elt-pg-nav1 a:hover p {
-    color: #374252
+    color: $color-374252
 }
 
 a.oldpost:hover {
-    background: #672897;
-    color: #fff !important
+    background: $color-672897;
+    color: $color-ffffff !important
 }
 
 .no-padding {
@@ -4789,8 +4789,8 @@ a.oldpost:hover {
 }
 
 .anchor-wrap, .anchor-wrap a {
-    font-size: 12px;
-    line-height: 16px
+    font-size: $font-12px;
+    line-height: $lh-16px
 }
 
 .anchor-wrap li {
@@ -4806,7 +4806,7 @@ a.oldpost:hover {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    text-align: center
+    text-align: $text-center
 }
 
 .tickercontainer .mask {
@@ -4930,11 +4930,11 @@ ul.ticker-controls > li:hover {
 }
 
 .ie8 .select-style, .ie9 .select-style {
-    background: #441a63
+    background: $color-441a63
 }
 
 .ie8 .select-style select, .ie9 .select-style select {
-    background: #441a63
+    background: $color-441a63
 }
 
 .no-svg .comment-link {
@@ -4942,7 +4942,7 @@ ul.ticker-controls > li:hover {
 }
 
 .ie8 .news-box, .ie9 .news-box {
-    border: 1px solid #e1e6ea
+    border: 1px solid $color-e1e6ea
 }
 
 .ie8 .slick-dots li button, .ie9 .slick-dots li button {
@@ -4978,8 +4978,8 @@ body {
 }
 
 a[href^=tel] {
-    color: #e7e6dd;
-    text-decoration: none
+    color: $color-e7e6dd;
+    text-decoration: $text-decoration-none
 }
 
 iframe[name=google_conversion_frame] {
@@ -5092,7 +5092,7 @@ ul.main-nav {
 }
 
 ul.main-nav li {
-    font-weight: 400;
+    font-weight: $font-400;
     float: left;
     zoom: 1
 }
@@ -5110,11 +5110,11 @@ ul.main-nav li.hover, ul.main-nav li:hover {
 }
 
 ul.main-nav li.hover a {
-    color: #000
+    color: $color-000000
 }
 
 .sub-menu {
-    background: #f2f2f2 !important
+    background: $color-f2f2f2 !important
 }
 
 .sub-menu li.submenu-hover {
@@ -5132,7 +5132,7 @@ div.uparrow {
     height: 0;
     border-left: 9px solid transparent;
     border-right: 9px solid transparent;
-    border-bottom: 9px solid #f2f2f2;
+    border-bottom: 9px solid $color-f2f2f2;
     margin: -9px 0 0 15px;
     display: none;
     position: relative;
@@ -5140,7 +5140,7 @@ div.uparrow {
 }
 
 #menu .sub-menu a {
-    font-weight: 400;
+    font-weight: $font-400;
     padding: 15px 15px;
     margin: 0 20px
 }
@@ -5181,21 +5181,21 @@ div.uparrow {
 }
 
 ul.main-nav ul li {
-    font-weight: 400;
+    font-weight: $font-400;
     float: none
 }
 
 #menu .sub-menu li:hover, ul.secondary-menu li:hover {
-    background: #852352;
-    color: #fff !important
+    background: $color-852352;
+    color: $color-ffffff !important
 }
 
 #menu .sub-menu li:hover ul.secondary-menu > li:hover > a, #menu .sub-menu > li:hover > a {
-    color: #fff !important
+    color: $color-ffffff !important
 }
 
 #menu .sub-menu li.hover ul.secondary-menu li a {
-    color: #515356 !important
+    color: $color-515356 !important
 }
 
 ul.main-nav ul li a {
@@ -5217,7 +5217,7 @@ ul.main-nav ul li a {
 
 #menu li.nav-dropdown:hover ul ul {
     top: 0;
-    background: #f2f2f2 !important
+    background: $color-f2f2f2 !important
 }
 
 body .still-image img.desktop-landscape {
@@ -5238,13 +5238,13 @@ body .still-image img.desktop-landscape {
 
 @media screen and (max-width:52.75em) {
     .nthrive-main-menu {
-        font-size: 80%
+        font-size: $font-80pc
     }
 }
 
 @media screen and (max-width:43em) {
     .nthrive-main-menu {
-        font-size: 120%;
+        font-size: $font-120pc;
         border: none
     }
 
@@ -5255,12 +5255,12 @@ body .still-image img.desktop-landscape {
 
     .nthrive-main-menu .nthrive-menusub-inner {
         padding: 0 2em;
-        font-size: 75%
+        font-size: $font-75pc
     }
 
     .nthrive-main-menu > ul > li {
         display: block;
-        border-bottom: 4px solid #47a3da
+        border-bottom: 4px solid $color-47a3da
     }
 
     .nthrive-main-menu > ul > li > a {
@@ -5287,12 +5287,12 @@ body .still-image img.desktop-landscape {
 
 @media print {
     #content, #main, body {
-        color: #000
+        color: $color-000000
     }
 
     a, a:link, a:visited {
-        color: #000;
-        text-decoration: none
+        color: $color-000000;
+        text-decoration: $text-decoration-none
     }
 }
 
@@ -5351,19 +5351,19 @@ body .still-image img.desktop-landscape {
     }
 
     .ana-info h2.text-30px.mb-25px {
-        font-size: 18px !important;
-        line-height: 24px;
+        font-size: $font-18px !important;
+        line-height: $lh-24px;
         margin-bottom: 15px
     }
 
     #main-content .ana-info p {
         margin-bottom: 10px;
         height: auto;
-        line-height: 18px
+        line-height: $lh-18px
     }
 
     .sub--menu {
-        background: #441a63
+        background: $color-441a63
     }
 
     .nthrive-main-nav-wrap, .nthrive-top-nav-wrap {
@@ -5462,7 +5462,7 @@ body .still-image img.desktop-landscape {
     }
 
     .anchor-wrap {
-        text-align: left
+        text-align: $text-left
     }
 
     .anchor-wrap.plr-10px {
@@ -5495,13 +5495,13 @@ body .still-image img.desktop-landscape {
     }
 
     .content-wrap h3 {
-        font-size: 25px;
-        line-height: 29px
+        font-size: $font-25px;
+        line-height: $lh-29px
     }
 
     .content-wrap p {
-        font-size: 16px;
-        line-height: 33px
+        font-size: $font-16px;
+        line-height: $lh-33px
     }
 
     .content-padding {
@@ -5509,13 +5509,13 @@ body .still-image img.desktop-landscape {
     }
 
     .content-wrap h3 {
-        font-size: 25px;
-        line-height: 29px
+        font-size: $font-25px;
+        line-height: $lh-29px
     }
 
     .content-wrap p {
-        font-size: 16px;
-        line-height: 20px
+        font-size: $font-16px;
+        line-height: $lh-20px
     }
 
     .content-padding {
@@ -5529,7 +5529,7 @@ body .still-image img.desktop-landscape {
 
     .footer-sns.l-inline-list.l-align-right {
         margin: 0 auto;
-        text-align: center;
+        text-align: $text-center;
         float: none
     }
 
@@ -5574,7 +5574,7 @@ body .still-image img.desktop-landscape {
 
     .mobmenuopen #mobile-main-menu {
         z-index: 9999999;
-        opacity: 1;
+        opacity: $op-100;
         height: 400px;
         overflow-y: scroll
     }
@@ -5590,12 +5590,12 @@ body .still-image img.desktop-landscape {
         top: 100%;
         padding-right: 0;
         transition: all .2s ease 0s;
-        background: #441a63;
-        text-align: left;
+        background: $color-441a63;
+        text-align: $text-left;
         box-sizing: border-box;
         padding-bottom: 20px;
         display: block;
-        opacity: 0;
+        opacity: $op-0;
         z-index: -1
     }
 
@@ -5634,21 +5634,21 @@ body .still-image img.desktop-landscape {
     }
 
     .still-image-banner-text h3.banner-title.text-48px {
-        font-size: 22px !important;
-        line-height: 26px !important;
-        color: #59277f !important;
+        font-size: $font-22px !important;
+        line-height: $lh-26px !important;
+        color: $color-59277f !important;
         margin-top: 20px;
         padding-bottom: 10px
     }
 
     .still-image-banner-text p.text-36px {
-        font-size: 16px;
-        line-height: 20px;
+        font-size: $font-16px;
+        line-height: $lh-20px;
         margin-bottom: 20px
     }
 
     .still-image-banner-text p.text-fbfbfb {
-        color: #86939e
+        color: $color-86939e
     }
 
     .form-field {
@@ -5691,11 +5691,11 @@ body .still-image img.desktop-landscape {
     }
 
     .footer-top {
-        text-align: center
+        text-align: $text-center
     }
 
     .credit-text-wrap, .footer-nav-wrap {
-        text-align: center
+        text-align: $text-center
     }
 
     .footer-sns ul li:first-child a {
@@ -5714,20 +5714,20 @@ body .still-image img.desktop-landscape {
     }
 
     .text-36px {
-        font-size: 34px;
-        line-height: 38px
+        font-size: $font-34px;
+        line-height: $lh-38px
     }
 
     .slider-title h1 {
-        line-height: 46px
+        line-height: $lh-46px
     }
 
     h2 {
-        color: #374252;
-        font-size: 30px;
-        font-weight: 300;
-        letter-spacing: -.3px;
-        line-height: 36px
+        color: $color-374252;
+        font-size: $font-30px;
+        font-weight: $font-300;
+        letter-spacing: $ls-0_3px;
+        line-height: $lh-36px
     }
 
     footer {
@@ -5777,14 +5777,14 @@ body .still-image img.desktop-landscape {
     }
 
     .corporate-citizen h3 {
-        font-size: 30px;
-        line-height: 40px
+        font-size: $font-30px;
+        line-height: $lh-40px
     }
 
     .title-highlight {
         display: table-cell;
         height: 480px;
-        text-align: center;
+        text-align: $text-center;
         vertical-align: middle
     }
 
@@ -5867,7 +5867,7 @@ body .still-image img.desktop-landscape {
     }
 
     .search-list li {
-        border-bottom: 1px solid #e1e4e7;
+        border-bottom: 1px solid $color-e1e4e7;
         padding: 30px 0
     }
 
@@ -5907,20 +5907,20 @@ body .still-image img.desktop-landscape {
 
 @media only screen and (max-width:1023px) {
     .text-36px {
-        font-size: 32px;
-        line-height: 36px
+        font-size: $font-32px;
+        line-height: $lh-36px
     }
 
     .slider-title h1 {
-        line-height: 44px
+        line-height: $lh-44px
     }
 
     h2 {
-        color: #374252;
-        font-size: 28px;
-        font-weight: 300;
-        letter-spacing: -.3px;
-        line-height: 32px
+        color: $color-374252;
+        font-size: $font-28px;
+        font-weight: $font-300;
+        letter-spacing: $ls-0_3px;
+        line-height: $lh-32px
     }
 
     footer {
@@ -5982,9 +5982,9 @@ body .still-image img.desktop-landscape {
     }
 
     .story-big .story_content {
-        border: 1px solid #d1dee9;
+        border: 1px solid $color-d1dee9;
         border-radius: 3px;
-        box-shadow: 0 0 2px #d1dee9;
+        box-shadow: 0 0 2px $color-d1dee9;
         float: left;
         padding-left: 150px
     }
@@ -5999,7 +5999,7 @@ body .still-image img.desktop-landscape {
     .story h4 {
         padding-bottom: 10px;
         padding-top: 16px;
-        line-height: 20px
+        line-height: $lh-20px
     }
 
     .story_content {
@@ -6023,20 +6023,20 @@ body .still-image img.desktop-landscape {
     }
 
     .nth-service h2 {
-        font-size: 32px
+        font-size: $font-32px
     }
 
     .footer-links a {
-        color: #aa9eba !important;
-        font-size: 14px;
-        font-weight: 400;
+        color: $color-aa9eba !important;
+        font-size: $font-14px;
+        font-weight: $font-400;
         overflow-wrap: break-word
     }
 
     .footer-links li {
-        color: #aa9eba;
-        font-size: 14px;
-        font-weight: 400;
+        color: $color-aa9eba;
+        font-size: $font-14px;
+        font-weight: $font-400;
         padding-bottom: 10px
     }
 
@@ -6075,7 +6075,7 @@ body .still-image img.desktop-landscape {
     }
 
     .banner-title {
-        font-size: 42px
+        font-size: $font-42px
     }
 
     .social-strip {
@@ -6104,8 +6104,8 @@ body .still-image img.desktop-landscape {
     }
 
     .corporate-citizen h3 {
-        font-size: 28px;
-        line-height: 38px
+        font-size: $font-28px;
+        line-height: $lh-38px
     }
 
     .corporate-citizen h3 br {
@@ -6113,14 +6113,14 @@ body .still-image img.desktop-landscape {
     }
 
     .management-tab h4 {
-        font-size: 28px;
-        line-height: 36px
+        font-size: $font-28px;
+        line-height: $lh-36px
     }
 
     .title-highlight {
         display: table-cell;
         height: 420px;
-        text-align: center;
+        text-align: $text-center;
         vertical-align: middle
     }
 
@@ -6169,8 +6169,8 @@ body .still-image img.desktop-landscape {
     }
 
     .feature-text h3 {
-        font-size: 26px;
-        line-height: 34px
+        font-size: $font-26px;
+        line-height: $lh-34px
     }
 
     .feature-text {
@@ -6222,8 +6222,8 @@ body .still-image img.desktop-landscape {
     }
 
     .ana-info h3 {
-        font-size: 28px;
-        line-height: 38px;
+        font-size: $font-28px;
+        line-height: $lh-38px;
         margin-bottom: 20px
     }
 
@@ -6246,8 +6246,8 @@ body .still-image img.desktop-landscape {
     }
 
     .data-box h3 {
-        font-size: 28px;
-        line-height: 38px
+        font-size: $font-28px;
+        line-height: $lh-38px
     }
 
     .data-visibility .item img {
@@ -6256,9 +6256,9 @@ body .still-image img.desktop-landscape {
     }
 
     .data-visibility .item h4 {
-        color: #374252;
-        font-size: 16px;
-        line-height: 25px;
+        color: $color-374252;
+        font-size: $font-16px;
+        line-height: $lh-25px;
         padding-bottom: 4px
     }
 
@@ -6293,7 +6293,7 @@ body .still-image img.desktop-landscape {
     }
 
     .l-table h3 {
-        font-size: 21px
+        font-size: $font-21px
     }
 
     .office-list li {
@@ -6311,7 +6311,7 @@ body .still-image img.desktop-landscape {
     }
 
     .office-info h4 {
-        font-size: 22px
+        font-size: $font-22px
     }
 
     .office-list {
@@ -6339,11 +6339,11 @@ body .still-image img.desktop-landscape {
     }
 
     .press-release h3 {
-        font-size: 24px
+        font-size: $font-24px
     }
 
     .today-feature-box h3 {
-        font-size: 24px
+        font-size: $font-24px
     }
 
     .today-feature-box .mb-25px {
@@ -6361,17 +6361,17 @@ body .still-image img.desktop-landscape {
         -webkit-line-clamp: 3;
         -webkit-box-orient: vertical;
         overflow: hidden;
-        text-overflow: ellipsis;
+        text-overflow: $text-overflow-ellipsis;
         margin-bottom: 10px;
         padding-bottom: 0
     }
 
     .in-the-news h3 {
-        font-size: 24px
+        font-size: $font-24px
     }
 
     .media-contact h3 {
-        font-size: 24px
+        font-size: $font-24px
     }
 
     .in-the-news .mb-62px {
@@ -6390,8 +6390,8 @@ body .still-image img.desktop-landscape {
     }
 
     .in-the-news .news-info h3 {
-        font-size: 20px;
-        line-height: 26px
+        font-size: $font-20px;
+        line-height: $lh-26px
     }
 
     .news-pic img {
@@ -6406,7 +6406,7 @@ body .still-image img.desktop-landscape {
         -webkit-line-clamp: 3;
         -webkit-box-orient: vertical;
         overflow: hidden;
-        text-overflow: ellipsis;
+        text-overflow: $text-overflow-ellipsis;
         margin-bottom: 10px
     }
 
@@ -6467,13 +6467,13 @@ body .still-image img.desktop-landscape {
     }
 
     .slider-title h1 {
-        font-size: 31px !important;
-        line-height: 36px !important
+        font-size: $font-31px !important;
+        line-height: $lh-36px !important
     }
 
     .nt-search p {
-        font-size: 17px;
-        line-height: 24px;
+        font-size: $font-17px;
+        line-height: $lh-24px;
         padding-bottom: 42px
     }
 
@@ -6496,7 +6496,7 @@ body .still-image img.desktop-landscape {
 
     .nt-browser-offer .std-input {
         height: 45px;
-        line-height: 45px
+        line-height: $lh-45px
     }
 
     .desktop-show {
@@ -6514,15 +6514,15 @@ body .still-image img.desktop-landscape {
     }
 
     h2.section-header {
-        font-size: 32px !important;
-        letter-spacing: -.3px;
-        line-height: 42px !important
+        font-size: $font-32px !important;
+        letter-spacing: $ls-0_3px;
+        line-height: $lh-42px !important
     }
 
     .l-title-width p {
-        font-size: 16px;
-        font-weight: 300;
-        line-height: 30px;
+        font-size: $font-16px;
+        font-weight: $font-300;
+        line-height: $lh-30px;
         padding-top: 22px
     }
 
@@ -6582,8 +6582,8 @@ body .still-image img.desktop-landscape {
     }
 
     .story h4 {
-        font-size: 14px;
-        line-height: 20px;
+        font-size: $font-14px;
+        line-height: $lh-20px;
         padding-bottom: 14px;
         padding-top: 10px
     }
@@ -6597,22 +6597,22 @@ body .still-image img.desktop-landscape {
     }
 
     .mobile-select .dropdown, .tab-links-mobile .dropdown {
-        background: #fff;
-        color: #374252;
-        font-size: 14px;
-        font-weight: 500;
+        background: $color-ffffff;
+        color: $color-374252;
+        font-size: $font-14px;
+        font-weight: $font-500;
         display: block;
         padding: 0 30px 0 20px;
         position: relative;
         min-width: 188px;
         height: 38px;
-        border: 1px solid #86939e;
-        text-align: left;
-        line-height: 38px
+        border: 1px solid $color-86939e;
+        text-align: $text-left;
+        line-height: $lh-38px
     }
 
     .mobile-select ul, .tab-links-mobile ul {
-        background: #eee;
+        background: $color-eeeeee;
         display: none;
         left: 0;
         list-style: outside none none;
@@ -6620,17 +6620,17 @@ body .still-image img.desktop-landscape {
         position: absolute;
         top: 100%;
         width: 100%;
-        text-align: left;
-        color: #374252;
-        font-size: 14px;
-        font-weight: 500;
-        border: 1px solid #86939e;
+        text-align: $text-left;
+        color: $color-374252;
+        font-size: $font-14px;
+        font-weight: $font-500;
+        border: 1px solid $color-86939e;
         box-sizing: border-box;
         z-index: 9999
     }
 
     .mobile-select li, .tab-links-mobile li {
-        border-bottom: 1px solid #86939e
+        border-bottom: 1px solid $color-86939e
     }
 
     .mobile-select li:last-child, .tab-links-mobile li:last-child {
@@ -6639,9 +6639,9 @@ body .still-image img.desktop-landscape {
 
     .mobile-select a, .tab-links-mobile a {
         display: block;
-        color: #374252;
-        font-size: 14px;
-        font-weight: 500;
+        color: $color-374252;
+        font-size: $font-14px;
+        font-weight: $font-500;
         padding: 8px 20px
     }
 
@@ -6687,7 +6687,7 @@ body .still-image img.desktop-landscape {
 
     .btn {
         height: 45px;
-        line-height: 45px
+        line-height: $lh-45px
     }
 
     .btn-big {
@@ -6714,16 +6714,16 @@ body .still-image img.desktop-landscape {
     }
 
     .right-text-box h2 {
-        color: #475465;
-        font-size: 28px !important;
-        font-weight: 300;
-        line-height: 36px !important
+        color: $color-475465;
+        font-size: $font-28px !important;
+        font-weight: $font-300;
+        line-height: $lh-36px !important
     }
 
     .right-text-box > p {
-        color: #5e6977;
-        font-size: 16px;
-        line-height: 30px
+        color: $color-5e6977;
+        font-size: $font-16px;
+        line-height: $lh-30px
     }
 
     .right-text-box .sub-list li {
@@ -6738,12 +6738,12 @@ body .still-image img.desktop-landscape {
     }
 
     .nth-service h2 {
-        font-size: 32px !important;
-        line-height: 42px !important
+        font-size: $font-32px !important;
+        line-height: $lh-42px !important
     }
 
     .nth-service p {
-        line-height: 30px;
+        line-height: $lh-30px;
         padding-top: 20px
     }
 
@@ -6765,16 +6765,16 @@ body .still-image img.desktop-landscape {
     }
 
     .std-input1 {
-        background: #fff;
-        border: 1px solid #d4dbe2;
+        background: $color-ffffff;
+        border: 1px solid $color-d4dbe2;
         border-radius: 2px;
         box-shadow: none;
-        color: #929da7;
-        font-family: Roboto,sans-serif;
-        font-size: 14px;
-        font-weight: 400;
+        color: $color-929da7;
+        font-family: $font-roboto;
+        font-size: $font-14px;
+        font-weight: $font-400;
         height: 50px;
-        line-height: 48px;
+        line-height: $lh-48px;
         padding: 0 20px;
         width: 100%;
         box-sizing: border-box
@@ -6784,7 +6784,7 @@ body .still-image img.desktop-landscape {
         padding: 0;
         width: 100%;
         height: 50px;
-        line-height: 50px
+        line-height: $lh-50px
     }
 
     .nth-service {
@@ -6793,8 +6793,8 @@ body .still-image img.desktop-landscape {
     }
 
     .nth-service .text-14px {
-        font-size: 13px;
-        line-height: 18px;
+        font-size: $font-13px;
+        line-height: $lh-18px;
         padding-top: 34px
     }
 
@@ -6820,7 +6820,7 @@ body .still-image img.desktop-landscape {
 
     .footer-share {
         display: none;
-        text-align: center
+        text-align: $text-center
     }
 
     .footer-share.mobileview {
@@ -6832,19 +6832,19 @@ body .still-image img.desktop-landscape {
     }
 
     .footer-logo {
-        text-align: center;
+        text-align: $text-center;
         width: 150px;
         margin: 0 auto;
         margin-bottom: 30px
     }
 
     .footer-link-header-small, .footer-share h6 {
-        color: #fff;
+        color: $color-ffffff;
         float: none;
-        font-family: Roboto,sans-serif;
-        font-size: 12px;
-        font-weight: 400;
-        line-height: 26px;
+        font-family: $font-roboto;
+        font-size: $font-12px;
+        font-weight: $font-400;
+        line-height: $lh-26px;
         padding-right: 0;
         padding-bottom: 22px
     }
@@ -6866,7 +6866,7 @@ body .still-image img.desktop-landscape {
     }
 
     .copyright-box {
-        text-align: center
+        text-align: $text-center
     }
 
     .copyright-box .l-align-left {
@@ -6878,7 +6878,7 @@ body .still-image img.desktop-landscape {
     }
 
     .th-dots:hover span {
-        background: #fff
+        background: $color-ffffff
     }
 
     .main-nav {
@@ -6888,13 +6888,13 @@ body .still-image img.desktop-landscape {
         top: 100%;
         padding-right: 0;
         transition: all .2s ease 0s;
-        background: #441a63;
-        text-align: center;
+        background: $color-441a63;
+        text-align: $text-center;
         height: auto;
         height: calc(100vh - 80px);
         box-sizing: border-box;
         padding-bottom: 20px;
-        opacity: 0;
+        opacity: $op-0;
         z-index: -1
     }
 
@@ -6902,29 +6902,29 @@ body .still-image img.desktop-landscape {
         top: 100%;
         position: absolute;
         z-index: 9999999;
-        opacity: 1
+        opacity: $op-100
     }
 
     .menunav a {
         display: block;
-        font-size: 15px;
-        line-height: normal;
+        font-size: $font-15px;
+        line-height: $lh-normal;
         padding: 18px 30px
     }
 
     .menunav ul li {
         display: block;
         float: none;
-        line-height: normal;
+        line-height: $lh-normal;
         margin: 0
     }
 
     .menunav > ul > li {
-        border-bottom: 1px solid #60258c
+        border-bottom: 1px solid $color-60258c
     }
 
     .nav-outer-wrap {
-        opacity: 1
+        opacity: $op-100
     }
 
     .mobmenuopen {
@@ -6936,7 +6936,7 @@ body .still-image img.desktop-landscape {
     }
 
     .inner-page header {
-        background: #441a63 !important
+        background: $color-441a63 !important
     }
 
     .social-strip {
@@ -6945,7 +6945,7 @@ body .still-image img.desktop-landscape {
 
     .social-strip.mobileview {
         display: block;
-        background: #eef1f3;
+        background: $color-eef1f3;
         width: auto;
         padding: 8px 20px
     }
@@ -6965,7 +6965,7 @@ body .still-image img.desktop-landscape {
 
     .ntselect-search2 .std-input1 {
         height: 45px;
-        line-height: 45px;
+        line-height: $lh-45px;
         border: none;
         width: 100%
     }
@@ -6980,22 +6980,22 @@ body .still-image img.desktop-landscape {
     }
 
     .btn-mini {
-        font-size: 12px;
-        font-weight: 500;
+        font-size: $font-12px;
+        font-weight: $font-500;
         height: 24px;
-        line-height: 24px;
+        line-height: $lh-24px;
         min-width: 80px
     }
 
     .banner-title {
-        font-size: 36px !important;
-        line-height: 42px !important;
+        font-size: $font-36px !important;
+        line-height: $lh-42px !important;
         padding-bottom: 26px
     }
 
     .inner-banner-wrapper .nt-search p {
-        font-size: 16px;
-        line-height: 24px
+        font-size: $font-16px;
+        line-height: $lh-24px
     }
 
     .leader-bio {
@@ -7004,18 +7004,18 @@ body .still-image img.desktop-landscape {
     }
 
     .leader-bio h4 {
-        color: #475465;
-        font-size: 26px;
-        font-weight: 300;
-        line-height: 32px;
+        color: $color-475465;
+        font-size: $font-26px;
+        font-weight: $font-300;
+        line-height: $lh-32px;
         padding-bottom: 0
     }
 
     .leader-bio h6 {
-        color: #475465;
-        font-size: 13px;
-        font-weight: 500;
-        line-height: 25px;
+        color: $color-475465;
+        font-size: $font-13px;
+        font-weight: $font-500;
+        line-height: $lh-25px;
         padding-bottom: 16px
     }
 
@@ -7044,31 +7044,31 @@ body .still-image img.desktop-landscape {
     }
 
     .corporate-citizen h5 {
-        font-size: 14px;
+        font-size: $font-14px;
         padding-bottom: 25px
     }
 
     .corporate-citizen h3 {
-        font-size: 27px;
-        line-height: 38px;
+        font-size: $font-27px;
+        line-height: $lh-38px;
         padding-bottom: 32px
     }
 
     .management-tab h4 {
-        font-size: 28px;
-        line-height: 36px
+        font-size: $font-28px;
+        line-height: $lh-36px
     }
 
     .title-highlight {
         display: table-cell;
         height: 450px;
-        text-align: center;
+        text-align: $text-center;
         vertical-align: middle
     }
 
     .exe-title h2.section-header {
-        font-size: 26px !important;
-        line-height: 38px !important
+        font-size: $font-26px !important;
+        line-height: $lh-38px !important
     }
 
     .mobile-carousel {
@@ -7104,21 +7104,21 @@ body .still-image img.desktop-landscape {
         left: 0;
         padding: 0;
         position: absolute;
-        text-align: center;
+        text-align: $text-center;
         -ms-transform: none;
         -webkit-transform: none;
         transform: none;
         z-index: 999;
-        text-align: center;
+        text-align: $text-center;
         width: 100%
     }
 
     .mobile-carousel .slick-dots li.slick-active button {
-        background: #9ea9b1
+        background: $color-9ea9b1
     }
 
     .mobile-carousel .slick-dots li button {
-        background: #dadee1;
+        background: $color-dadee1;
         border: medium none;
         border-radius: 50%;
         box-shadow: none;
@@ -7131,8 +7131,8 @@ body .still-image img.desktop-landscape {
     }
 
     .management-tab h4 {
-        font-size: 30px;
-        line-height: 36px
+        font-size: $font-30px;
+        line-height: $lh-36px
     }
 
     .info-links {
@@ -7142,8 +7142,8 @@ body .still-image img.desktop-landscape {
     }
 
     .gr-table h3 {
-        font-size: 30px;
-        line-height: 37px
+        font-size: $font-30px;
+        line-height: $lh-37px
     }
 
     .home-slider .backbgbox {
@@ -7153,26 +7153,26 @@ body .still-image img.desktop-landscape {
     }
 
     .np-wrapper1 .slider-title {
-        text-align: center
+        text-align: $text-center
     }
 
     .np-wrapper1 .slider-title h1 {
-        font-size: 38px !important;
-        line-height: 38px !important;
+        font-size: $font-38px !important;
+        line-height: $lh-38px !important;
         margin-bottom: 0
     }
 
     .np-wrapper1 .slider-title p {
         display: block;
         display: -webkit-box;
-        color: #e4e8eb;
-        font-size: 15px;
-        line-height: 24px;
+        color: $color-e4e8eb;
+        font-size: $font-15px;
+        line-height: $lh-24px;
         height: 75px;
         -webkit-line-clamp: 3;
         -webkit-box-orient: vertical;
         overflow: hidden;
-        text-overflow: ellipsis;
+        text-overflow: $text-overflow-ellipsis;
         padding-bottom: 0
     }
 
@@ -7182,7 +7182,7 @@ body .still-image img.desktop-landscape {
         transform: none;
         left: 50%;
         position: absolute;
-        text-align: center;
+        text-align: $text-center;
         -ms-transform: translate(-50%,0);
         -webkit-transform: translate(-50%,0);
         transform: translate(-50%,0);
@@ -7219,7 +7219,7 @@ body .still-image img.desktop-landscape {
     }
 
     .news-content1 p {
-        line-height: 18px
+        line-height: $lh-18px
     }
 
     .n-title {
@@ -7228,12 +7228,12 @@ body .still-image img.desktop-landscape {
     }
 
     .n-title h3 {
-        font-size: 26px;
+        font-size: $font-26px;
         float: left
     }
 
     .n-title a.read-link {
-        font-size: 13px;
+        font-size: $font-13px;
         float: right
     }
 
@@ -7247,8 +7247,8 @@ body .still-image img.desktop-landscape {
     }
 
     .news-content h5 {
-        font-size: 14px;
-        line-height: 25px;
+        font-size: $font-14px;
+        line-height: $lh-25px;
         padding-bottom: 12px
     }
 
@@ -7259,7 +7259,7 @@ body .still-image img.desktop-landscape {
         -webkit-line-clamp: 5;
         -webkit-box-orient: vertical;
         overflow: hidden;
-        text-overflow: ellipsis;
+        text-overflow: $text-overflow-ellipsis;
         padding-bottom: 0
     }
 
@@ -7286,8 +7286,8 @@ body .still-image img.desktop-landscape {
     }
 
     .feature-text h3 {
-        font-size: 27px;
-        line-height: 35px
+        font-size: $font-27px;
+        line-height: $lh-35px
     }
 
     .feature-text h6 {
@@ -7295,12 +7295,12 @@ body .still-image img.desktop-landscape {
     }
 
     .news-box1 h5 {
-        color: #374252;
-        font-size: 15px
+        color: $color-374252;
+        font-size: $font-15px
     }
 
     .news-box1 p {
-        font-size: 13px
+        font-size: $font-13px
     }
 
     .news-box1 img {
@@ -7325,7 +7325,7 @@ body .still-image img.desktop-landscape {
 
     .mobile-search {
         display: block;
-        background: #eef1f3;
+        background: $color-eef1f3;
         padding: 0;
         height: 38px;
         overflow: hidden
@@ -7339,7 +7339,7 @@ body .still-image img.desktop-landscape {
         width: 92%;
         box-sizing: border-box;
         height: 30px;
-        line-height: 30px;
+        line-height: $lh-30px;
         padding: 0 20px;
         padding-right: 0;
         float: left
@@ -7371,14 +7371,14 @@ body .still-image img.desktop-landscape {
     }
 
     .elt-content h1 {
-        color: #003247;
-        font-size: 30px;
-        line-height: 39px;
+        color: $color-003247;
+        font-size: $font-30px;
+        line-height: $lh-39px;
         padding-bottom: 8px
     }
 
     .elt-content h5 {
-        font-size: 14px;
+        font-size: $font-14px;
         padding-bottom: 30px
     }
 
@@ -7387,9 +7387,9 @@ body .still-image img.desktop-landscape {
     }
 
     .user-profile p {
-        color: #374252;
-        font-size: 14px;
-        font-weight: 400
+        color: $color-374252;
+        font-size: $font-14px;
+        font-weight: $font-400
     }
 
     .sp-title {
@@ -7428,7 +7428,7 @@ body .still-image img.desktop-landscape {
 
     .story-box-wrapper {
         padding-bottom: 110px;
-        background: #f5f7f9;
+        background: $color-f5f7f9;
         padding-left: 26px;
         padding-right: 26px;
         padding-top: 20px
@@ -7440,11 +7440,11 @@ body .still-image img.desktop-landscape {
         margin: 0 auto;
         content: "";
         height: 1px;
-        background: #d9dde2
+        background: $color-d9dde2
     }
 
     .story {
-        background: #fff
+        background: $color-ffffff
     }
 
     .story-box-wrapper .l-theme-padding {
@@ -7460,19 +7460,19 @@ body .still-image img.desktop-landscape {
     }
 
     .ana-list .item {
-        background: #fff
+        background: $color-ffffff
     }
 
     .ana-info h3 {
-        font-size: 24px;
-        line-height: 30px;
+        font-size: $font-24px;
+        line-height: $lh-30px;
         margin-bottom: 10px
     }
 
     .ana-info p {
-        color: #97a2ac;
-        font-size: 14px;
-        line-height: 24px;
+        color: $color-97a2ac;
+        font-size: $font-14px;
+        line-height: $lh-24px;
         margin-bottom: 20px
     }
 
@@ -7494,15 +7494,15 @@ body .still-image img.desktop-landscape {
     .ana-info p {
         display: block;
         display: -webkit-box;
-        color: #97a2ac;
-        font-size: 14px;
-        line-height: 24px;
+        color: $color-97a2ac;
+        font-size: $font-14px;
+        line-height: $lh-24px;
         margin-bottom: 20px;
         height: 45px;
         -webkit-line-clamp: 2;
         -webkit-box-orient: vertical;
         overflow: hidden;
-        text-overflow: ellipsis;
+        text-overflow: $text-overflow-ellipsis;
         padding-bottom: 0
     }
 
@@ -7513,7 +7513,7 @@ body .still-image img.desktop-landscape {
         -webkit-line-clamp: 1;
         -webkit-box-orient: vertical;
         overflow: hidden;
-        text-overflow: ellipsis;
+        text-overflow: $text-overflow-ellipsis;
         padding-bottom: 0;
         margin-bottom: 6px
     }
@@ -7524,12 +7524,12 @@ body .still-image img.desktop-landscape {
     }
 
     .data-box h3 {
-        font-size: 27px;
-        line-height: 38px
+        font-size: $font-27px;
+        line-height: $lh-38px
     }
 
     .data-box h5 {
-        font-size: 14px
+        font-size: $font-14px
     }
 
     .data-box-wrapper {
@@ -7564,8 +7564,8 @@ body .still-image img.desktop-landscape {
     }
 
     .solution-details h1 {
-        font-size: 30px;
-        line-height: 39px;
+        font-size: $font-30px;
+        line-height: $lh-39px;
         margin-bottom: 20px
     }
 
@@ -7608,7 +7608,7 @@ body .still-image img.desktop-landscape {
         -webkit-line-clamp: 3;
         -webkit-box-orient: vertical;
         overflow: hidden;
-        text-overflow: ellipsis
+        text-overflow: $text-overflow-ellipsis
     }
 
     .news-content1 h5 {
@@ -7620,11 +7620,11 @@ body .still-image img.desktop-landscape {
     }
 
     .bg-white-mobile {
-        background: #fff
+        background: $color-ffffff
     }
 
     .l-table h3 {
-        font-size: 24px
+        font-size: $font-24px
     }
 
     .l-table.item img {
@@ -7646,7 +7646,7 @@ body .still-image img.desktop-landscape {
     .std-input3 {
         box-sizing: border-box;
         height: 40px;
-        line-height: 40px;
+        line-height: $lh-40px;
         padding: 0 18px
     }
 
@@ -7696,16 +7696,16 @@ body .still-image img.desktop-landscape {
     }
 
     .contact-form-content .select-style-light {
-        border: 1px solid #d4dbe2;
+        border: 1px solid $color-d4dbe2;
         border-radius: 0;
         box-sizing: border-box;
         height: 50px;
-        line-height: 18px;
+        line-height: $lh-18px;
         margin: 0;
         overflow: hidden;
         padding: 0;
         position: relative;
-        text-align: left;
+        text-align: $text-left;
         width: 100%
     }
 
@@ -7718,8 +7718,8 @@ body .still-image img.desktop-landscape {
     }
 
     .highlight-border {
-        border: 1px solid #e7e7e7;
-        border-top: 5px solid #00515b
+        border: 1px solid $color-e7e7e7;
+        border-top: 5px solid $color-00515b
     }
 
     .contact-form {
@@ -7728,7 +7728,7 @@ body .still-image img.desktop-landscape {
 
     textarea.std-input3 {
         height: 168px;
-        line-height: normal;
+        line-height: $lh-normal;
         padding-bottom: 15px;
         padding-top: 15px;
         resize: none
@@ -7740,7 +7740,7 @@ body .still-image img.desktop-landscape {
 
     .contact-form-content .btn {
         height: 50px;
-        line-height: 50px
+        line-height: $lh-50px
     }
 
     .contact-form {
@@ -7780,21 +7780,21 @@ body .still-image img.desktop-landscape {
     }
 
     .newsletter-info .news-content h5 {
-        font-weight: 500;
+        font-weight: $font-500;
         padding-bottom: 0
     }
 
     .newsletter-info .news-content p {
-        color: #5e6977;
-        font-size: 14px;
-        line-height: 18px;
+        color: $color-5e6977;
+        font-size: $font-14px;
+        line-height: $lh-18px;
         display: block;
         display: -webkit-box;
         height: 40px;
         -webkit-line-clamp: 2;
         -webkit-box-orient: vertical;
         overflow: hidden;
-        text-overflow: ellipsis
+        text-overflow: $text-overflow-ellipsis
     }
 
     .news-letter-months .l-table {
@@ -7836,8 +7836,8 @@ body .still-image img.desktop-landscape {
     }
 
     .newsletter-page .info-links h4 {
-        font-size: 30px;
-        line-height: 36px;
+        font-size: $font-30px;
+        line-height: $lh-36px;
         margin-bottom: 0
     }
 
@@ -7858,16 +7858,16 @@ body .still-image img.desktop-landscape {
     }
 
     .mobile-title h3 {
-        color: #373e47;
-        font-size: 26px;
+        color: $color-373e47;
+        font-size: $font-26px;
         padding-bottom: 22px
     }
 
     .choose-box .news-content h5 {
-        color: #00515b;
-        font-size: 13px;
-        font-weight: 500;
-        line-height: 25px;
+        color: $color-00515b;
+        font-size: $font-13px;
+        font-weight: $font-500;
+        line-height: $lh-25px;
         padding-bottom: 12px
     }
 
@@ -7971,7 +7971,7 @@ body .still-image img.desktop-landscape {
     }
 
     .today-feature-box h3 {
-        font-size: 26px;
+        font-size: $font-26px;
         float: left
     }
 
@@ -7998,8 +7998,8 @@ body .still-image img.desktop-landscape {
 
     .today-feature-box .feature-content h3 {
         float: none;
-        font-size: 27px;
-        line-height: 32px
+        font-size: $font-27px;
+        line-height: $lh-32px
     }
 
     .today-feature-box .feature-content a.read-link {
@@ -8016,7 +8016,7 @@ body .still-image img.desktop-landscape {
     }
 
     .feature-list .item {
-        background: #fff
+        background: $color-ffffff
     }
 
     .feature-info {
@@ -8038,7 +8038,7 @@ body .still-image img.desktop-landscape {
 
     .in-the-news .item {
         position: relative;
-        background: #fff;
+        background: $color-ffffff;
         box-shadow: 0 0 2px rgba(0,0,0,.1);
         border-radius: 2px
     }
@@ -8113,12 +8113,12 @@ body .still-image img.desktop-landscape {
     .th-dots {
         float: left;
         height: 60px;
-        line-height: normal;
+        line-height: $lh-normal;
         margin-left: 0;
         padding: 0 4px;
         position: relative;
         top: 0;
-        line-height: 60px
+        line-height: $lh-60px
     }
 
     .main-nav {
@@ -8127,13 +8127,13 @@ body .still-image img.desktop-landscape {
         left: 0;
         padding-right: 0;
         transition: all .2s ease 0s;
-        background: #441a63;
-        text-align: center;
+        background: $color-441a63;
+        text-align: $text-center;
         height: auto;
         height: calc(100vh - 60px);
         box-sizing: border-box;
         padding-bottom: 20px;
-        opacity: 0;
+        opacity: $op-0;
         z-index: -1
     }
 
@@ -8174,8 +8174,8 @@ body .still-image img.desktop-landscape {
     }
 
     .exe-title h2.section-header {
-        font-size: 26px !important;
-        line-height: 38px !important
+        font-size: $font-26px !important;
+        line-height: $lh-38px !important
     }
 
     .leader-bio {
@@ -8200,7 +8200,7 @@ body .still-image img.desktop-landscape {
     }
 
     .np-wrapper1 .slider-title {
-        text-align: center;
+        text-align: $text-center;
         top: 0
     }
 
@@ -8224,7 +8224,7 @@ body .still-image img.desktop-landscape {
 
     .post-nav a {
         display: inline-block;
-        line-height: 43px;
+        line-height: $lh-43px;
         padding: 0 20px
     }
 
@@ -8244,8 +8244,8 @@ body .still-image img.desktop-landscape {
     }
 
     .news-content1 p {
-        font-size: 13px;
-        line-height: 18px
+        font-size: $font-13px;
+        line-height: $lh-18px
     }
 
     .news-box-wrapper {
@@ -8286,7 +8286,7 @@ body .still-image img.desktop-landscape {
         -webkit-line-clamp: 1;
         -webkit-box-orient: vertical;
         overflow: hidden;
-        text-overflow: ellipsis
+        text-overflow: $text-overflow-ellipsis
     }
 
     .in-the-news {
@@ -8295,8 +8295,8 @@ body .still-image img.desktop-landscape {
     }
 
     .in-the-news .news-info h3 {
-        font-size: 18px;
-        line-height: 24px
+        font-size: $font-18px;
+        line-height: $lh-24px
     }
 }
 
@@ -8412,7 +8412,7 @@ body img.desktop-landscape {
 
 @media only screen and (max-width:360px) {
     .accordion-header h2 span {
-        font-size: 10px !important
+        font-size: $font-10px !important
     }
 }
 
@@ -8422,7 +8422,7 @@ body img.desktop-landscape {
     }
 
     #pressly-body p.pressly-btn.mobile-button {
-        background: #1b6666 url(../images/icon/elt-bttn.svg) no-repeat 210px center
+        background: $color-1b6666 url(../images/icon/elt-bttn.svg) no-repeat 210px center
     }
 }
 
@@ -8462,7 +8462,7 @@ body img.desktop-landscape {
 }
 
 .arrow-box.contact-tabs .tab.open:after {
-    border-bottom-color: #d4dbe2 !important
+    border-bottom-color: $color-d4dbe2 !important
 }
 
 .arrow-box.contact-tabs .tab-detail {
@@ -8479,7 +8479,7 @@ body img.desktop-landscape {
 
 .red {
     color: red;
-    font-size: 14px;
+    font-size: $font-14px;
     padding-right: 4px
 }
 

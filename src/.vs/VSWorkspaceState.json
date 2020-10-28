@@ -2,9 +2,11 @@
   "ExpandedNodes": [
     "",
     "\\client",
+    "\\client\\html",
     "\\client\\_Assets",
-    "\\client\\_Assets\\css"
+    "\\client\\_Assets\\css",
+    "\\client\\_Assets\\js"
   ],
-  "SelectedNode": "\\client\\_Assets\\css\\_nthrive_hub_min-v21.scss",
+  "SelectedNode": "\\client\\analytics.html",
   "PreviewInSolutionExplorer": false
 }
