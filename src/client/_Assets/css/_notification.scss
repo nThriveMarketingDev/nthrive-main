@@ -6,30 +6,30 @@
   height: auto;
   display: inline-block;
   padding: 0 15px;
-  color: #ffffff;
-  font-size: 14px;
-  font-family: "Roboto", sans-serif;
-  font-weight: 600;
-  line-height: 2.3;
+  color: $color-ffffff;
+  font-size: $font-14px;
+  font-family: $font-roboto;
+  font-weight: $font-600;
+  line-height: $lh-2_3;
   -webkit-transition: all 0.1s ease-in;
   -moz-transition: all 0.1s ease-in;
   -o-transition: all 0.1s ease-in;
   transition: all 0.1s ease-in;
-  background: #da1c5c;
+  background: $color-da1c5c;
   border: none;
   border-radius: 2px;
   box-shadow: none;
   -webkit-appearance: none;
   outline: none;
-  text-align: center;
+  text-align: $text-center;
   cursor: pointer;
 }
 
 .notification-bar {
   height: auto;
-  background: #555;
+  background: $color-555555;
   display: block;
-  opacity: 1;
+  opacity: $op-100;
   visibility: visible;
   position: fixed;
   bottom: 0;
@@ -45,24 +45,24 @@
 .notification-bar.close,
 .notification-close .notification-bar {
   display: none;
-  opacity: 0;
+  opacity: $op-0;
   visibility: hidden;
 }
 
 .notification-bar-content {
-  text-align: center;
-  font-size: 13px;
+  text-align: $text-center;
+  font-size: $font-13px;
   margin-right: 16px;
   align-items: center;
   justify-content: center;
   padding: 10px 0;
   max-width: 1120px;
   margin: 0 auto;
-  line-height: 2.2;
+  line-height: $lh-2_2;
 }
 
 .settings {
-  line-height: 2.3 !important;
+  line-height: $lh-2_3 !important;
 }
 
 .notification-bar-content-desc {
@@ -70,11 +70,11 @@
   margin: 0 20px 0 0;
   padding: 0;
   float: left;
-  line-height: 2.2 !important;
+  line-height: $lh-2_2 !important;
 }
 
 .notification-bar-content-desc a {
-  color: #fff;
+  color: $color-ffffff;
 }
 
 .skip-nav {
@@ -85,18 +85,18 @@
 .notification-bar a,
 .notification-bar a:visited,
 .notification-bar a:active {
-  color: #ffffff;
+  color: $color-ffffff;
 }
 
 .table-body a,
 .table-body a:visited,
 .table-body a:active {
-  font-weight: 600;
-  color: #da1c5c !important;
+  font-weight: $font-600;
+  color: $color-da1c5c !important;
 }
 
 .table-body a:hover {
-  text-decoration: underline;
+  text-decoration: $text-underline;
 }
 
 @media only screen and (max-width: 840px) {
@@ -110,7 +110,7 @@
 
   .notification-bar-content-desc,
   .notification-bar-content {
-    line-height: 1.6;
+    line-height: $lh-1_6;
     display: block;
   }
 }
