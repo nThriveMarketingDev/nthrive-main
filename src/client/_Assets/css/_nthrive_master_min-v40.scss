@@ -1232,6 +1232,21 @@ html .sub-list.adv-list {
   }
 }
 
+.home-cta-banner {
+  max-width: 608px;
+}
+.s-btn {
+  border: 2px solid #fff;
+  border-radius: 5px;
+  height: 40px;
+  line-height: 40px;
+}
+.circle-pop {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+}
+
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
   img[src*=".svg"] {
     width: 100%;
@@ -4881,7 +4896,14 @@ a.wrightarrow {
   padding-bottom: 10px;
 }
 
+.home-cta-banner.bg-f2f2f2:hover {
+  background-color: #ededed;
+}
+
 @media only screen and (max-width: 840px) {
+  .home-cta-banner img {
+    margin-top: 20px;
+  }
   .blog-full-width {
     .bloglist li {
       width: auto;

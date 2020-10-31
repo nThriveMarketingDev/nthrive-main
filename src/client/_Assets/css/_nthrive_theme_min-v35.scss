@@ -1076,6 +1076,16 @@ a.button-box.text-white.bg-eaaa00:active {
   padding-right: 20px;
 }
 
+.w-68-percent {
+  max-width: 68%;
+}
+.lh-14 {
+  line-height: 1.4 !important;
+}
+.pt-35px {
+  padding-top: 35px;
+}
+
 .mr-10px {
   margin-right: 10px;
 }
@@ -2030,12 +2040,13 @@ a.arrow-left {
   border-radius: 3px 3px 3px 3px;
 }
 
-.arrow-left, a.arrow-left {
-    padding-left: 18px;
-    background: url(/_assets/images/icon/arrow-right.png) no-repeat 0 5px;
-    display: block;
-    color: $color-7b204c;
-    text-decoration: $text-decoration-none
+.arrow-left,
+a.arrow-left {
+  padding-left: 18px;
+  background: url(/_assets/images/icon/arrow-right.png) no-repeat 0 5px;
+  display: block;
+  color: $color-7b204c;
+  text-decoration: $text-decoration-none;
 }
 
 .font-weight-light {
@@ -2891,23 +2902,23 @@ a.no-underline {
     margin: 0 auto 50px auto;
   }
 
-    .play-wrap-inner {
-        top: 22%
-    }
+  .play-wrap-inner {
+    top: 22%;
+  }
 
-    h3.desc {
-        font-size: $font-14px;
-        line-height: $lh-18px
-    }
+  h3.desc {
+    font-size: $font-14px;
+    line-height: $lh-18px;
+  }
 
-    .btn {
-        height: 35px;
-        line-height: $lh-35px
-    }
+  .btn {
+    height: 35px;
+    line-height: $lh-35px;
+  }
 
-    .bcplayer {
-        margin: 0 auto 50px auto
-    }
+  .bcplayer {
+    margin: 0 auto 50px auto;
+  }
 }
 
 @media (max-width: 765px) {
