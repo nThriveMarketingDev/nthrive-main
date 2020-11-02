@@ -19,6 +19,7 @@ module.exports = {
     userforums: "./src/client/userforums.js",
     landing_page: "./src/client/landing_page.js",
     analytics: "./src/client/analytics.js",
+    careers: "./src/client/careers.js",
   },
   mode: "production",
   output: {
@@ -89,6 +90,11 @@ module.exports = {
       template: "./src/client/analytics.html",
       filename: "./analytics.html",
       chunks: ["analytics"],
+    }),
+    new HtmlWebPackPlugin({
+      template: "./src/client/careers.html",
+      filename: "./careers.html",
+      chunks: ["careers"],
     }),
     new MiniCssExtractPlugin({
       // Options similar to the same options in webpackOptions.output
