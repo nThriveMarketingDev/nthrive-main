@@ -39,7 +39,7 @@ span.uparrow {
     font-weight: $font-500;
     padding: 0 20px;
     color: $color-ffffff;
-    line-height: 50px;
+    line-height: $lh-50px;
     font-size: $font-13px
 }
 
@@ -48,7 +48,7 @@ span.uparrow {
     font-size: $font-13px;
     font-style: $font-normal;
     text-decoration: $text-decoration-none;
-    line-height: 2.8 !important;
+    line-height: $lh-2_8 !important;
     position: initial !important;
     padding: 0 20px
 }
@@ -110,7 +110,7 @@ a.menu-hover + ul:not(.nth-show-menu) {
     font-weight: $font-normal;
     font-variant: normal;
     text-transform: $text-transform-none;
-    line-height: 1;
+    line-height: $lh-1;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     content: "\e900";
@@ -158,7 +158,7 @@ body #primary-nav #main-nav > li > a:hover {
 
 #primary-nav > ul {
     height: 100%;
-    line-height: 2.5em
+    line-height: $lh-2_5em
 }
 
 #primary-nav > ul > li {
@@ -227,13 +227,13 @@ body #primary-nav #main-nav > li > a:focus {
     font-weight: $font-400 !important;
     padding: 5px 15px !important;
     display: block;
-    line-height: 2.5em !important
+    line-height: $lh-2_5em !important
 }
 
 .second a {
     padding: 5px 15px !important;
     display: block;
-    line-height: 2.5em !important
+    line-height: $lh-2_5em !important
 }
 
 #primary-nav .nth-hide-menu {
@@ -468,7 +468,7 @@ body #primary-nav #main-nav > li.rm0 > a {
     }
 
     .nav-top-level, .nav-top-level > a {
-        line-height: 3
+        line-height: $lh-3
     }
 }
 
@@ -609,7 +609,7 @@ body #primary-nav #main-nav > li.rm0 > a {
     width: 100%;
     display: inline-block;
     font-size: $font-0;
-    line-height: 0
+    line-height: $lh-0
 }
 
 @media only screen and (max-width: 840px) {
@@ -694,7 +694,7 @@ body #primary-nav #main-nav > li.rm0 > a {
     #nav-wrap .nav-top-level, #nav-wrap #secondary-nav > li {
         height: auto;
         border-bottom: 1px solid $color-321349;
-        opacity: 0;
+        opacity: $op-0;
         pointer-events: none;
         -webkit-transform: scale(1.1) translateY(-24px);
         -ms-transform: scale(1.1) translateY(-24px);
@@ -751,7 +751,7 @@ body #primary-nav #main-nav > li.rm0 > a {
     }
 
     #nth-menu-switch:checked ~ #nav-wrap .nav-top-level, #nth-menu-switch:target ~ #nav-wrap .nav-top-level {
-        opacity: 1;
+        opacity: $op-100;
         pointer-events: auto;
         -webkit-transform: none;
         -ms-transform: none;
@@ -853,7 +853,7 @@ body #primary-nav #main-nav > li.rm0 > a {
     }
 
     #nth-menu-switch:checked ~ #nav-wrap #secondary-nav li, #nth-menu-switch:target ~ #nav-wrap #secondary-nav li {
-        opacity: 1;
+        opacity: $op-100;
         pointer-events: auto;
         -webkit-transform: none;
         -ms-transform: none;
@@ -908,7 +908,7 @@ body #primary-nav #main-nav > li.rm0 > a {
 
 #nav-wrap .nth-link {
     font-size: $font-14px;
-    line-height: 3.14286;
+    line-height: $lh-3_14286;
     font-weight: $font-400;
     letter-spacing: $ls-0_01em;
     position: relative;
@@ -916,7 +916,7 @@ body #primary-nav #main-nav > li.rm0 > a {
     display: inline-block;
     padding: 0 10px;
     height: 44px;
-    opacity: 1;
+    opacity: $op-100;
     background: no-repeat;
     text-decoration: $text-decoration-none;
     white-space: nowrap;
@@ -929,7 +929,7 @@ body #primary-nav #main-nav > li.rm0 > a {
 @media only screen and (max-width: 840px) {
     #nav-wrap .nth-link {
         font-size: $font-17px;
-        line-height: 2.52947;
+        line-height: $lh-2_52947;
         letter-spacing: $ls-0_021em
     }
 
@@ -943,7 +943,7 @@ body #primary-nav #main-nav > li.rm0 > a {
 }
 
 #nav-wrap .nth-link:hover {
-    opacity: .65
+    opacity: $op-65
 }
 
 @media only screen and (max-width: 840px) {
@@ -959,7 +959,7 @@ body #primary-nav #main-nav > li.rm0 > a {
 }
 
 #nav-wrap .nth-link.current {
-    opacity: .65
+    opacity: $op-65
 }
 
 #nav-wrap .nth-menuicon {
@@ -994,11 +994,11 @@ body #primary-nav #main-nav > li.rm0 > a {
 }
 
 #nav-wrap .nth-menuicon-label:hover, #nav-wrap .nth-menuicon-label:focus, #nav-wrap .nth-menuicon-label:active {
-    opacity: .65
+    opacity: $op-65
 }
 
 #nav-wrap.touch .nth-menuicon-label {
-    opacity: 1;
+    opacity: $op-100;
     -webkit-transition: -webkit-transform 0.4s cubic-bezier(0.4, 0.01, 0.165, 0.99);
     transition: -webkit-transform 0.4s cubic-bezier(0.4, 0.01, 0.165, 0.99);
     transition: transform 0.4s cubic-bezier(0.4, 0.01, 0.165, 0.99);
@@ -1075,12 +1075,12 @@ body #primary-nav #main-nav > li.rm0 > a {
 }
 
 #nav-wrap .nth-menuicon-middle {
-    opacity: 1;
+    opacity: $op-100;
     transition: .2s all ease-in-out
 }
 
 #nth-menu-switch:checked ~ #nav-wrap .nth-menuicon-middle, #nth-menu-switch:target ~ #nav-wrap .nth-menuicon-middle {
-    opacity: 0;
+    opacity: $op-0;
     transition: .2s all ease-in-out
 }
 
@@ -1198,7 +1198,7 @@ html.nth-segmentbar-visible body {
 
 #nth-segmentbar {
     font-size: $font-11px;
-    line-height: 1;
+    line-height: $lh-1;
     font-weight: $font-400;
     letter-spacing: $ls-0_005em;
     background: $color-444444;
@@ -1266,7 +1266,7 @@ html.nth-segmentbar-visible #nth-segmentbar {
     color: $color-ffffff;
     cursor: pointer;
     display: block;
-    line-height: 40px;
+    line-height: $lh-40px;
     margin-top: -15px;
     outline-offset: -11px;
     overflow: hidden;
@@ -1277,7 +1277,7 @@ html.nth-segmentbar-visible #nth-segmentbar {
 
 @media only screen and (max-width: 840px) {
     #nth-segmentbar .nth-segmentbar-link {
-        line-height: 44px;
+        line-height: $lh-44px;
         margin-top: -16.5px
     }
 }
